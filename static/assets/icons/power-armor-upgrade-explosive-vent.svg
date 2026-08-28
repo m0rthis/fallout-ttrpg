@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Power Armor Upgrade: Explosive vent">
+  <title>Power Armor Upgrade: Explosive vent</title>
+  <defs>
+    <radialGradient id="fpower-armor-upgrade-explosive-vent" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#fpower-armor-upgrade-explosive-vent)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#c96a3b" d="M287.586 15.297l3.504 110.963 31.537-110.963h-35.04zm-95.78.238l-1.75 236.047-170.533-43.33L130.486 377.69l-88.77-5.174 114.432 112.357-44.466-75.867L186.896 417l-51.748-109.94 110.114 79.956-12.635-185.23.002.003 75.212 170.57 75.816-89.95-6.62 154.582 60.173-39.978-20.388 79.486 75.756-142.787-75.924 1.94L487.32 155.87l-131.402 73.08-12.264-139.69-65.41 140.336-86.435-214.06h-.003zM45.503 44.095L39.355 75.94 154.285 218h.002l-77.6-166.836-31.185-7.07zm422.27 24.776l-31.184 7.07-43.738 107.37 81.068-82.59-6.147-31.85zM279.208 403.61c-40.176 0-72.708 32.537-72.708 72.71 0 5.725.636 10.706 1.887 16.05 7.25-32.545 36.097-56.655 70.82-56.655 34.82 0 63.673 23.97 70.82 56.656 1.218-5.277 1.888-10.404 1.888-16.05 0-40.175-32.536-72.71-72.71-72.71z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#c96a3b" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#c96a3b" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

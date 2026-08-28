@@ -1,0 +1,124 @@
+<div class="sheet-body">
+
+  <header class="sheet-header">
+    <img class="portrait" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" />
+    <div class="identity">
+      <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+      <div class="identity-row">
+        <label>{{localize "FALLOUT.Sheet.race"}}
+          <input type="text" name="system.details.race" value="{{system.details.race}}" />
+        </label>
+        <label>{{localize "FALLOUT.Sheet.level"}}
+          <input type="number" name="system.details.level" value="{{system.details.level}}" min="1" max="30" />
+        </label>
+      </div>
+    </div>
+  </header>
+
+  <section class="special-strip" title="{{localize 'FALLOUT.Sheet.rollHint'}}">
+    {{#each abilities}}
+    <div class="special-box">
+      <a class="special-letter" data-action="rollAbility" data-ability="{{key}}">{{abbr}}</a>
+      <input type="number" name="system.abilities.{{key}}.value" value="{{value}}" min="1" max="20" />
+      <span class="special-mod">{{#if (gte mod 0)}}+{{/if}}{{mod}}</span>
+    </div>
+    {{/each}}
+  </section>
+
+  <div class="vital-row">
+    <div class="vital">
+      <label>{{localize "FALLOUT.Sheet.sp"}}</label>
+      <div class="pool">
+        <input type="number" name="system.resources.sp.value" value="{{system.resources.sp.value}}" min="0" />
+        <span>/ {{derived.spMax}}</span>
+      </div>
+    </div>
+    <div class="vital">
+      <label>{{localize "FALLOUT.Sheet.hp"}}</label>
+      <div class="pool">
+        <input type="number" name="system.resources.hp.value" value="{{system.resources.hp.value}}" min="0" />
+        <span>/ {{derived.hpMax}}</span>
+      </div>
+    </div>
+    <div class="vital">
+      <label>{{localize "FALLOUT.Sheet.ap"}}</label>
+      <div class="pool">
+        <input type="number" name="system.resources.ap.value" value="{{system.resources.ap.value}}" min="0" />
+        <span>/ {{derived.apMax}}</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="stat-row">
+    <div class="stat"><label>{{localize "FALLOUT.Sheet.ac"}}</label><span class="stat-value">{{derived.ac}}</span></div>
+    <div class="stat"><label>{{localize "FALLOUT.Sheet.dt"}}</label><span class="stat-value">{{derived.dt}}</span></div>
+    <div class="stat"><label>{{localize "FALLOUT.Sheet.passiveSense"}}</label><span class="stat-value">{{derived.passiveSense}}</span></div>
+    <div class="stat">
+      <label>{{localize "FALLOUT.Sheet.combatSequence"}}</label>
+      <a class="stat-value rollable" data-action="rollAbility" data-ability="perception">d20</a>
+    </div>
+  </div>
+
+  <div class="defense-row">
+    <input type="text" name="system.defenses.resistances" value="{{system.defenses.resistances}}"
+           placeholder="{{localize 'FALLOUT.Sheet.resistances'}}" title="{{localize 'FALLOUT.Sheet.defenseHint'}}" />
+    <input type="text" name="system.defenses.vulnerabilities" value="{{system.defenses.vulnerabilities}}"
+           placeholder="{{localize 'FALLOUT.Sheet.vulnerabilities'}}" title="{{localize 'FALLOUT.Sheet.defenseHint'}}" />
+  </div>
+
+  <section class="panel">
+    <h2>{{localize "FALLOUT.Sheet.skills"}}</h2>
+    <div class="npc-skills" title="{{localize 'FALLOUT.Sheet.rollHint'}}">
+      {{#each skills}}
+      <span class="npc-skill">
+        <a class="skill-roll" data-action="rollSkill" data-skill="{{key}}">{{label}}</a>
+        <input type="number" name="system.skills.{{key}}.points" value="{{points}}" min="0" />
+        <span class="skill-bonus">{{#if (gte bonus 0)}}+{{/if}}{{bonus}}</span>
+      </span>
+      {{/each}}
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>{{localize "FALLOUT.Sheet.weapons"}}
+      <a class="item-create" data-action="createItem" data-type="weapon"><i class="fas fa-plus"></i></a>
+    </h2>
+    {{#each weapons}}
+    <div class="weapon-card" data-item-id="{{item.id}}">
+      <div class="weapon-title">
+        <span class="weapon-name">{{item.name}}</span>
+        <span class="weapon-controls">
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      <div class="weapon-stats">
+        <a class="weapon-roll" data-action="rollAttack">{{localize "FALLOUT.Sheet.attack"}} {{#if (gte attackBonus 0)}}+{{/if}}{{attackBonus}}</a>
+        <a class="weapon-roll" data-action="rollDamage">{{localize "FALLOUT.Sheet.damage"}} {{system.damage}}</a>
+        <a class="weapon-roll" data-action="rollTargeted">{{localize "FALLOUT.Sheet.targeted"}}</a>
+        <span>{{localize "FALLOUT.Sheet.apCost"}} {{system.apCost}}</span>
+        <span>{{localize "FALLOUT.Sheet.crit"}} {{system.critChance}}+ ({{system.crit}})</span>
+      </div>
+      {{#if system.special}}<div class="weapon-special">{{system.special}}</div>{{/if}}
+    </div>
+    {{/each}}
+  </section>
+
+  <section class="panel">
+    <h2>{{localize "FALLOUT.Sheet.conditions"}}
+      {{#if derived.d20Penalty}}<span class="penalty">(&minus;{{derived.d20Penalty}})</span>{{/if}}
+    </h2>
+    <div class="condition-track">
+      {{> "systems/fallout-ttrpg/templates/actor/parts/condition-track.hbs"}}
+    </div>
+  </section>
+
+  <section class="panel biography">
+    <h2>{{localize "FALLOUT.Sheet.notes"}}</h2>
+    {{!-- The body is what a closed toggled editor displays; the value attribute
+          is what it loads when opened. Both are required. --}}
+    <prose-mirror name="system.details.biography" value="{{system.details.biography}}"
+                  toggled compact-button>{{{enrichedBiography}}}</prose-mirror>
+  </section>
+
+</div>

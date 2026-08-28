@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Ranged Weapon Mod: Auto-Firing Turret">
+  <title>Ranged Weapon Mod: Auto-Firing Turret</title>
+  <defs>
+    <radialGradient id="franged-weapon-mod-auto-firing-turret" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#franged-weapon-mod-auto-firing-turret)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#c96a3b" d="M130.72 61C106 61.11 106 62.875 106 91H76l-15 30v60l15 30h30c0 30 0 30 30 30h120c30 0 30 0 30-30h15l15-30h180v-60H316l-15-30h-15c0-30 0-30-30-30H136c-1.875 0-3.633-.007-5.28 0zM166 271a15 15 0 0 0-15 15v45a15 15 0 0 0 15 15h60a15 15 0 0 0 15-15v-45a15 15 0 0 0-15-15h-60zm-15 105c-30 0-45 30-45 30-15 0-30 0-30 15l-60 15v15h360v-15l-60-15c0-15-15-15-30-15 0 0-15-30-45-30h-90z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#c96a3b" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#c96a3b" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

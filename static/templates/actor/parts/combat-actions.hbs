@@ -1,0 +1,141 @@
+{{!-- Sheet panel: the v2.1 combat actions (pg 126-127). Context at panels.combatActions.
+      Every AP figure here comes from the rules modules — none is typed in twice —
+      and every one of them is reported rather than spent (roadmap item 14). --}}
+<section class="panel combat-actions">
+  <h2>{{localize "FALLOUT.CombatPanel.title"}}
+    <span class="panel-note">
+      {{localize "FALLOUT.Skills.unarmed"}}
+      {{#if (gte panels.combatActions.unarmedBonus 0)}}+{{/if}}{{panels.combatActions.unarmedBonus}}
+      ({{panels.combatActions.unarmedAbility}})
+    </span>
+  </h2>
+
+  {{!-- Grapple and Escape: one formula, both directions (pg 126). --}}
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="grapple"
+       title="{{localize 'FALLOUT.Grapple.hint'}}">
+      {{localize "FALLOUT.Grapple.action"}}
+      <span class="ap-cost">{{panels.combatActions.grappleAp}} AP</span>
+    </a>
+    <a class="pip-button" data-action="escapeGrapple"
+       title="{{localize 'FALLOUT.Escape.hint'}}">
+      {{localize "FALLOUT.Escape.action"}}
+      <span class="ap-cost">{{panels.combatActions.escapeAp}} AP</span>
+    </a>
+  </div>
+  <p class="hint">{{localize "FALLOUT.CombatPanel.grappleTargetHint"}}</p>
+
+  {{!-- The Frightened check (pg 134). The roll has been complete and correct
+        since v2.1's rework landed and had no control at all, so a GM could only
+        reach it from a macro. --}}
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="rollFrightened"
+       title="{{localize 'FALLOUT.Frightened.hint'}}">
+      {{localize "FALLOUT.Frightened.action"}}
+    </a>
+  </div>
+  {{#if panels.combatActions.frightened}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.frightenedState"}}</p>
+  {{/if}}
+
+  {{!-- Who is holding you is the only thing that prices an Escape, so it is
+        shown before the roll rather than reported after a refusal. --}}
+  {{#if panels.combatActions.captor}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Grapple.grappledBy" name=panels.combatActions.captor}} —
+    {{localize "FALLOUT.CombatPanel.escapeDc" dc=panels.combatActions.escapeDC}}
+  </p>
+  {{else if panels.combatActions.heldWithoutRecord}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.heldWithoutRecord"}}</p>
+  {{/if}}
+
+  {{#if panels.combatActions.grappled}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.grappledState"}}</p>
+  {{/if}}
+  {{#if panels.combatActions.restrained}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.restrainedState"}}</p>
+  {{/if}}
+
+  {{!-- Unarmed strikes. The 5 AP double is the v2.1 addition; the third strike
+        exists only because Holey Moley (pg 52) prices it. --}}
+  <h3>{{localize "FALLOUT.Unarmed.action"}}
+    <span class="panel-note">{{localize "FALLOUT.CombatPanel.strikeAbility"
+      ability=panels.combatActions.strikeAbility}}</span>
+  </h3>
+  <div class="combat-action-row">
+    {{#each panels.combatActions.strikes}}
+    <a class="pip-button" data-action="unarmedStrike"
+       data-strikes="{{this.strikes}}" data-extra="{{this.extra}}"
+       title="{{#if this.extra}}{{localize 'FALLOUT.Unarmed.holeyMoley'}}{{else}}{{localize 'FALLOUT.Unarmed.hint'}}{{/if}}">
+      {{localize "FALLOUT.CombatPanel.strikeButton" strikes=this.strikes}}
+      <span class="ap-cost">{{this.ap}} AP</span>
+    </a>
+    {{/each}}
+  </div>
+
+  {{!-- Help: an ally *and* a skill, so the control opens a dialog. --}}
+  <h3>{{localize "FALLOUT.Help.action"}}</h3>
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="helpAlly"
+       title="{{localize 'FALLOUT.Help.hint'}}">
+      {{localize "FALLOUT.Help.action"}}
+      <span class="ap-cost">{{panels.combatActions.helpAp}} AP</span>
+    </a>
+  </div>
+  <p class="hint">{{localize "FALLOUT.CombatPanel.helpTargetHint"}}</p>
+  {{!-- A Help is spent by the very next roll and is announced nowhere else on
+        the sheet; one that silently expires is the confusion this row prevents. --}}
+  {{#each panels.combatActions.helps}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Help.pending" helper=this.helper}} —
+    {{#if this.isCheck}}{{localize "FALLOUT.CombatPanel.helpHeldCheck" bonus=this.bonus}}
+    {{else}}{{localize "FALLOUT.CombatPanel.helpHeldAttack"}}{{/if}}
+  </p>
+  {{/each}}
+
+  {{!-- Ready: a trigger, a price, and v2.1's refund on the half nobody expects. --}}
+  <h3>{{localize "FALLOUT.Ready.action"}}
+    <span class="panel-note">{{localize "FALLOUT.CombatPanel.readySurcharge"
+      surcharge=panels.combatActions.readySurcharge}}</span>
+  </h3>
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="readyAction"
+       title="{{localize 'FALLOUT.Ready.hint'}}">
+      {{localize "FALLOUT.Ready.action"}}
+      <span class="ap-cost">+{{panels.combatActions.readySurcharge}} AP</span>
+    </a>
+  </div>
+
+  {{#if panels.combatActions.readied}}
+  <ul class="ready-list">
+    {{#each panels.combatActions.readied}}
+    <li>
+      <span>{{localize "FALLOUT.CombatPanel.readiedRow" trigger=this.trigger ap=this.ap}}</span>
+      <span class="panel-controls">
+        <a data-action="triggerReady" data-effect-id="{{this.id}}"
+           title="{{localize 'FALLOUT.CombatPanel.fireHint'}}">
+          {{localize "FALLOUT.CombatPanel.fire"}}
+        </a>
+        <a data-action="lapseReady" data-effect-id="{{this.id}}"
+           title="{{localize 'FALLOUT.CombatPanel.lapseHint' refund=this.refund}}">
+          {{localize "FALLOUT.CombatPanel.lapse"}} (+{{this.refund}})
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  {{!-- The refund is the interesting half: v2.0 gave back nothing at all. Each
+        row prints its own, since each row now resolves alone; the total below
+        is what lapsing them together pays, which can be more because it floors
+        once instead of per row. --}}
+  {{#if panels.combatActions.readyDazed}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.readyRefundDazed"}}</p>
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.CombatPanel.readyRefund"
+    refund=panels.combatActions.readyRefund}}</p>
+  {{/if}}
+  {{#if panels.combatActions.readyMultiple}}
+  <p class="hint warning">{{localize "FALLOUT.CombatPanel.readyMultiple"}}</p>
+  {{/if}}
+  {{/if}}
+</section>

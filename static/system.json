@@ -1,0 +1,112 @@
+{
+  "id": "fallout-ttrpg",
+  "type": "system",
+  "title": "Fallout TTRPG (Arcane Arcade)",
+  "description": "An unofficial Foundry VTT implementation of the fan-made Fallout TTRPG v2.1 by Arcane Arcade (XP to Level 3). Requires the free rulebook to play. Not affiliated with Bethesda, Modiphius, or Arcane Arcade.",
+  "version": "0.34.0",
+  "compatibility": {
+    "minimum": "14",
+    "verified": "14.365"
+  },
+  "authors": [
+    {
+      "name": "m0rthis"
+    }
+  ],
+  "license": "LICENSE",
+  "readme": "README.md",
+  "changelog": "CHANGELOG.md",
+  "esmodules": [
+    "fallout.mjs"
+  ],
+  "styles": [
+    "styles/fallout.css"
+  ],
+  "languages": [
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json"
+    }
+  ],
+  "documentTypes": {
+    "Actor": {
+      "character": {
+        "htmlFields": [
+          "details.biography"
+        ]
+      },
+      "npc": {
+        "htmlFields": [
+          "details.biography"
+        ]
+      }
+    },
+    "Item": {
+      "weapon": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "armor": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "ammo": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "aid": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "perk": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "trait": {
+        "htmlFields": [
+          "description"
+        ]
+      },
+      "gear": {
+        "htmlFields": [
+          "description"
+        ]
+      }
+    }
+  },
+  "packs": [
+    {
+      "name": "equipment",
+      "label": "Wasteland Equipment",
+      "path": "packs/equipment",
+      "type": "Item",
+      "system": "fallout-ttrpg"
+    },
+    {
+      "name": "npcs",
+      "label": "Wasteland Creatures",
+      "path": "packs/npcs",
+      "type": "Actor",
+      "system": "fallout-ttrpg"
+    },
+    {
+      "name": "perks",
+      "label": "Perks and Traits",
+      "path": "packs/perks",
+      "type": "Item",
+      "system": "fallout-ttrpg"
+    }
+  ],
+  "grid": {
+    "distance": 5,
+    "units": "ft"
+  },
+  "primaryTokenAttribute": "resources.hp",
+  "secondaryTokenAttribute": "resources.sp"
+}

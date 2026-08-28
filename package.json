@@ -1,0 +1,26 @@
+{
+  "name": "fallout-ttrpg",
+  "version": "0.34.0",
+  "private": true,
+  "description": "Foundry VTT v14 game system for the fan-made Fallout TTRPG by Arcane Arcade (XP to Level 3), v2.0",
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build-tokens.mjs && vite build && node scripts/build-packs.mjs",
+    "dev": "vite build --watch",
+    "check": "tsc --noEmit",
+    "lint": "eslint src",
+    "lint:fix": "eslint src --fix",
+    "verify": "npm run check && npm run lint && npm run build",
+    "package": "npm run verify && rm -f fallout-ttrpg-system.zip && cd dist && zip -qr ../fallout-ttrpg-system.zip .",
+    "smoke": "node scripts/smoke.mjs"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.0.0",
+    "@foundryvtt/foundryvtt-cli": "^3.0.4",
+    "eslint": "^9.0.0",
+    "puppeteer": "^25.6.0",
+    "typescript": "^5.5.0",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^6.0.0"
+  }
+}

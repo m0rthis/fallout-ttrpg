@@ -1,0 +1,61 @@
+{
+  "Crafting": {
+    "Bench": {
+      "title": "Crafting Bench",
+      "browse": "Browse recipes",
+      "browseHint": "Search the Item Blueprint Encyclopedia (pg 94-115) for something to make.",
+
+      "skillsNote": "Fourteen of the Encyclopedia's thirty-three tables head their DC column with a skill other than Crafting — Survival for food, Medicine for medicine, Science for energy ammunition, Explosives for the two explosives tables (pg 94-115). Each recipe below prints the check it would actually be rolled with.",
+      "materialsNote": "Materials are listed, never deducted: nothing in this system represents steel, adhesive or a crafting material, so the chat card prints exactly what a build costs and the table settles it (pg 92).",
+
+      "ownedTitle": "Recipes on this sheet",
+      "noRecipes": "Nothing on this sheet carries an Encyclopedia recipe. Browse the equipment compendium to pick something to make.",
+
+      "checkLine": "{skill} DC {dc} (yours {bonus})",
+      "noCheck": "No check printed.",
+      "auto": "Automatic",
+      "autoTitle": "Your bonus already meets the listed requirement, so the item is simply made — no roll at all (pg 92).",
+      "roll": "Roll needed",
+      "cannot": "Cannot be crafted",
+      "craft": "Craft",
+      "craftHint": "Craft another one of these. Shows the check, the materials and the time before anything is rolled.",
+
+      "makes": "makes {quantity}",
+      "ranks": "{count} ranks",
+      "noMaterials": "No materials printed.",
+      "noTime": "No time printed.",
+
+      "heading": "Printed column heading: {heading}",
+      "printedMaterials": "Materials: {materials}",
+      "printedTime": "Time: {time}",
+      "automaticNote": "Automatic success — your bonus meets the listed requirement, so this is simply made with no roll (pg 92).",
+      "rollNote": "Your bonus falls short of the listed requirement, so this is a check against 10 + the printed Craft DC (pg 92).",
+      "powerArmorDays": "Power Armor: {days} day(s) of work with a check every day, and one failed day loses the entire build (pg 94).",
+      "drinkGate": "Brewing any drink needs Crafting, Survival and Science all at +{minimum} or better (pg 115). Short in: {skills}.",
+      "rankSummary": "Rank {rank}: {checks} — {materials}",
+
+      "dcOverride": "Craft DC bonus override (leave blank to use the printed cell)",
+      "dcHint": "Only fill this in for GM fiat. Supplying a bonus replaces the printed cell entirely, so a row that prints two checks would be reduced to one.",
+      "dcNeeded": "This row's DC cell is not a single number, so the printed bonus cannot be used as-is — supply the bonus the table should be rolled against.",
+
+      "assist": "Let the {count} targeted creature(s) assist: {names}",
+      "assistHint": "Each assistant halves the crafting time. An assistant whose own skill falls short of the requirement must roll too, and their failure fails the whole craft however well you roll (pg 92).",
+      "assistNone": "Target one or more tokens before opening this dialog to craft with assistance (pg 92). An assistant is not a number: one who falls short of the requirement has to roll, so they need a sheet of their own.",
+
+      "pickTitle": "What are you making?",
+      "category": "Table",
+      "anyCategory": "Any table",
+      "query": "Name contains",
+      "pickHint": "{count} recipes ship with the equipment compendium (pg 94-115). Narrow by table, by name, or both.",
+      "browseAction": "Show recipes",
+
+      "resultTitle": "Pick a recipe",
+      "recipeLabel": "Recipe",
+      "resultHint": "{count} recipes match, grouped by the table they are printed in — the table is what decides which skill the check uses. Every DC shown is 10 + the printed Craft DC bonus (pg 92).",
+      "chooseAction": "Continue",
+
+      "noMatches": "No recipe in the Encyclopedia matches that.",
+      "noPack": "The equipment compendium is not available, so there are no recipes to browse."
+    }
+  }
+}

@@ -1,0 +1,1003 @@
+[
+  {
+    "name": ".308",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 10,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": ".50",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".50",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": ".357 Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".357 Magnum",
+      "quantity": 0,
+      "costPerRound": 5,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": ".44 Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".44 Magnum",
+      "quantity": 0,
+      "costPerRound": 8,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": ".45",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".45",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": ".45-70 Gov't.",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".45-70 Gov't.",
+      "quantity": 0,
+      "costPerRound": 12,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "10mm",
+    "type": "ammo",
+    "system": {
+      "ammoType": "10mm",
+      "quantity": 0,
+      "costPerRound": 4,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "12 gauge",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 5,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "12.7mm",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12.7mm",
+      "quantity": 0,
+      "costPerRound": 12,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "20 gauge",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "5.56mm",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5.56mm",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "5mm",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 5,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "9mm",
+    "type": "ammo",
+    "system": {
+      "ammoType": "9mm",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "Flares",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Flares",
+      "quantity": 0,
+      "costPerRound": 5,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "Nails (Pack of 5)",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Nails",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load. Listed cost is per pack of 5."
+    }
+  },
+  {
+    "name": "Railway Spike",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Railway Spike",
+      "quantity": 0,
+      "costPerRound": 5,
+      "special": "",
+      "description": "Guns ammunition (pg 67). Any ten individual ammunitions are equal to 1 load."
+    }
+  },
+  {
+    "name": "Cryo Cell",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Cryo Cell",
+      "quantity": 0,
+      "costPerRound": 50,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "Energy Cell",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Energy Cell",
+      "quantity": 0,
+      "costPerRound": 30,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "Microfusion Cell",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Microfusion Cell",
+      "quantity": 0,
+      "costPerRound": 35,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "Fusion Core",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Fusion Core",
+      "quantity": 0,
+      "costPerRound": 200,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "2mm EC",
+    "type": "ammo",
+    "system": {
+      "ammoType": "2mm EC",
+      "quantity": 0,
+      "costPerRound": 40,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "Gamma cell",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Gamma cell",
+      "quantity": 0,
+      "costPerRound": 60,
+      "special": "",
+      "description": "Energy ammunition (pg 67). A single cell provides a number of rounds that varies by weapon."
+    }
+  },
+  {
+    "name": "Fuel",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Fuel",
+      "quantity": 0,
+      "costPerRound": 50,
+      "special": "",
+      "description": "Heavy ammunition (pg 67). Individual Load: 20."
+    }
+  },
+  {
+    "name": "Mini Nuke",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Mini Nuke",
+      "quantity": 0,
+      "costPerRound": 250,
+      "special": "",
+      "description": "Heavy ammunition (pg 67). Individual Load: 12."
+    }
+  },
+  {
+    "name": "Missile",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Missile",
+      "quantity": 0,
+      "costPerRound": 50,
+      "special": "",
+      "description": "Heavy ammunition (pg 67). Individual Load: 10."
+    }
+  },
+  {
+    "name": ".308 — Armor Piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 30,
+      "special": "If the weapon's damage is dealt to a creature's hit points, it ignores up to 8 points of DT and the creature's armor gains a level of decay. Cost modifier: x3 (base 10c x x3 = 30c). Applicable rounds: .308, .50, 5.56mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".50 — Armor Piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".50",
+      "quantity": 0,
+      "costPerRound": 60,
+      "special": "If the weapon's damage is dealt to a creature's hit points, it ignores up to 8 points of DT and the creature's armor gains a level of decay. Cost modifier: x3 (base 20c x x3 = 60c). Applicable rounds: .308, .50, 5.56mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5.56mm — Armor Piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5.56mm",
+      "quantity": 0,
+      "costPerRound": 6,
+      "special": "If the weapon's damage is dealt to a creature's hit points, it ignores up to 8 points of DT and the creature's armor gains a level of decay. Cost modifier: x3 (base 2c x x3 = 6c). Applicable rounds: .308, .50, 5.56mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5mm — Armor Piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "If the weapon's damage is dealt to a creature's hit points, it ignores up to 8 points of DT and the creature's armor gains a level of decay. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: .308, .50, 5.56mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Bean Bag",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 2.5,
+      "special": "The weapon's damage is instead 1d4+1 and you do not add your agility modifier, if this damage dealt to a target creature's hit points, they take one level of fatigue. Additionally, if a bean bag shot brings a creature to 0 hit points, they automatically heal 1 point unless the attack was a targeted attack to the head or eyes. Cost modifier: -50% (base 5c x -50% = 2.5c). Applicable rounds: 12 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Buck",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 3.75,
+      "special": "The weapon's range modifiers are both increased by 4 and it loses its spread property. Cost modifier: -25% (base 5c x -25% = 3.75c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "20 gauge — Buck",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 1.5,
+      "special": "The weapon's range modifiers are both increased by 4 and it loses its spread property. Cost modifier: -25% (base 2c x -25% = 1.5c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Buck Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon's damage is increased by 3, ignores 3 points of DT, and its range modifiers are each increased by 4. However, the weapon loses its Spread property and after every second attack; the weapon gains a level of decay. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "20 gauge — Buck Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 6,
+      "special": "The weapon's damage is increased by 3, ignores 3 points of DT, and its range modifiers are each increased by 4. However, the weapon loses its Spread property and after every second attack; the weapon gains a level of decay. Cost modifier: x3 (base 2c x x3 = 6c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Cap shot",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "The weapon gains the Destructive and Mangle properties. The weapon's damage ignores 2 points of DT. Cost modifier: x4 (base 5c x x4 = 20c). Applicable rounds: 12 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Dragon's Breath",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 10,
+      "special": "The weapon deals half as much damage but gains Incendiary. Cost modifier: x2 (base 5c x x2 = 10c). Applicable rounds: 12 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".308 — Explosive",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 60,
+      "special": "Each creature and object within 5 feet of the target takes 3d6 explosive damage. The target falls prone unless their Strength ability score is greater than 10. Cost modifier: x6 (base 10c x x6 = 60c). Applicable rounds: .308, .50.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".50 — Explosive",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".50",
+      "quantity": 0,
+      "costPerRound": 120,
+      "special": "Each creature and object within 5 feet of the target takes 3d6 explosive damage. The target falls prone unless their Strength ability score is greater than 10. Cost modifier: x6 (base 20c x x6 = 120c). Applicable rounds: .308, .50.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Flechette",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 10,
+      "special": "The weapon's damage total is reduced by 1 but ignores up to 6 points of DT. Cost modifier: x2 (base 5c x x2 = 10c). Applicable rounds: 12 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".308 — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 30,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 10c x x3 = 30c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".357 Magnum — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".357 Magnum",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5mm — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "9mm — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "9mm",
+      "quantity": 0,
+      "costPerRound": 6,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 2c x x3 = 6c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "10mm — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "10mm",
+      "quantity": 0,
+      "costPerRound": 12,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 4c x x3 = 12c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12.7mm — FMJ, piercing",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12.7mm",
+      "quantity": 0,
+      "costPerRound": 36,
+      "special": "The weapon's damage is increased by 2. If this damage brings a creature to 0 HP, the attack also targets the next creature behind them in a line. Cost modifier: x3 (base 12c x x3 = 36c). Applicable rounds: .308, .357, 5mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".308 — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 40,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 10c x x4 = 40c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".357 Magnum — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".357 Magnum",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 5c x x4 = 20c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".44 Magnum — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".44 Magnum",
+      "quantity": 0,
+      "costPerRound": 32,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 8c x x4 = 32c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".45 — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".45",
+      "quantity": 0,
+      "costPerRound": 8,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 2c x x4 = 8c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".45-70 Gov't. — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".45-70 Gov't.",
+      "quantity": 0,
+      "costPerRound": 48,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 12c x x4 = 48c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5mm — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 5c x x4 = 20c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5.56mm — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5.56mm",
+      "quantity": 0,
+      "costPerRound": 8,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 2c x x4 = 8c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "9mm — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": "9mm",
+      "quantity": 0,
+      "costPerRound": 8,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 2c x x4 = 8c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "10mm — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": "10mm",
+      "quantity": 0,
+      "costPerRound": 16,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 4c x x4 = 16c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12.7mm — Hollow Point",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12.7mm",
+      "quantity": 0,
+      "costPerRound": 48,
+      "special": "If the weapon deals damage to a target creature's hit points, it deals extra damage equal to its critical hit damage. If the damage is subtracted by the target's DT, the damage gains no critical hit bonus and is halved. Cost modifier: x4 (base 12c x x4 = 48c). Applicable rounds: .308, .357, .44, .45, .45-70, 5mm, 5.56mm, 9mm, 10mm, 12.7mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".357 Magnum — JFP",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".357 Magnum",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon gains Destructive. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: .357.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".308 — JSP",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".308",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "The weapon gains Breakable and its damage is increased by 3. Cost modifier: x2 (base 10c x x2 = 20c). Applicable rounds: .308, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5mm — JSP",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 10,
+      "special": "The weapon gains Breakable and its damage is increased by 3. Cost modifier: x2 (base 5c x x2 = 10c). Applicable rounds: .308, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".50 — Incendiary",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".50",
+      "quantity": 0,
+      "costPerRound": 80,
+      "special": "The weapon gains Incendiary. Cost modifier: x4 (base 20c x x4 = 80c). Applicable rounds: .50, Missile.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Missile — Incendiary",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Missile",
+      "quantity": 0,
+      "costPerRound": 200,
+      "special": "The weapon gains Incendiary. Cost modifier: x4 (base 50c x x4 = 200c). Applicable rounds: .50, Missile.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": ".50 — Match",
+    "type": "ammo",
+    "system": {
+      "ammoType": ".50",
+      "quantity": 0,
+      "costPerRound": 40,
+      "special": "The weapon's damage is increased by 5, the short range modifier is reduced by 2. Cost modifier: x2 (base 20c x x2 = 40c). Applicable rounds: .50, 5.56mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5.56mm — Match",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5.56mm",
+      "quantity": 0,
+      "costPerRound": 4,
+      "special": "The weapon's damage is increased by 5, the short range modifier is reduced by 2. Cost modifier: x2 (base 2c x x2 = 4c). Applicable rounds: .50, 5.56mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon's damage is increased by 3, ignores 3 points of DT, and its range modifiers are each increased by 2. However, after every second attack; the weapon gains a level of decay. Cost modifier: x3 (base 5c x x3 = 15c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "20 gauge — Magnum",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 6,
+      "special": "The weapon's damage is increased by 3, ignores 3 points of DT, and its range modifiers are each increased by 2. However, after every second attack; the weapon gains a level of decay. Cost modifier: x3 (base 2c x x3 = 6c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "9mm — Rubber",
+    "type": "ammo",
+    "system": {
+      "ammoType": "9mm",
+      "quantity": 0,
+      "costPerRound": 1,
+      "special": "The weapon's damage is instead 1d4+2 and you do not add your agility modifier, if this damage dealt to a target creature's hit points, they take one level of fatigue. Additionally, if a rubber bullet brings a creature to 0 hit points, they automatically heal 1 point unless the attack was a targeted attack to the head or eyes. Cost modifier: -50% (base 2c x -50% = 1c). Applicable rounds: 9mm, 10mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "10mm — Rubber",
+    "type": "ammo",
+    "system": {
+      "ammoType": "10mm",
+      "quantity": 0,
+      "costPerRound": 2,
+      "special": "The weapon's damage is instead 1d4+2 and you do not add your agility modifier, if this damage dealt to a target creature's hit points, they take one level of fatigue. Additionally, if a rubber bullet brings a creature to 0 hit points, they automatically heal 1 point unless the attack was a targeted attack to the head or eyes. Cost modifier: -50% (base 4c x -50% = 2c). Applicable rounds: 9mm, 10mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "5mm — Rubber",
+    "type": "ammo",
+    "system": {
+      "ammoType": "5mm",
+      "quantity": 0,
+      "costPerRound": 2.5,
+      "special": "The weapon's damage is instead 1d4+2 and you do not add your agility modifier, if this damage dealt to a target creature's hit points, they take one level of fatigue. Additionally, if a rubber bullet brings a creature to 0 hit points, they automatically heal 1 point unless the attack was a targeted attack to the head or eyes. Cost modifier: -50% (base 5c x -50% = 2.5c). Applicable rounds: 9mm, 10mm, 5mm.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Slug",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 20,
+      "special": "The weapon's range modifiers are each tripled and it gains the Accurate and Destructive properties. However, it loses its Spread and Powerful properties. Cost modifier: x4 (base 5c x x4 = 20c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "20 gauge — Slug",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 8,
+      "special": "The weapon's range modifiers are each tripled and it gains the Accurate and Destructive properties. However, it loses its Spread and Powerful properties. Cost modifier: x4 (base 2c x x4 = 8c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "12 gauge — Pulse Slug",
+    "type": "ammo",
+    "system": {
+      "ammoType": "12 gauge",
+      "quantity": 0,
+      "costPerRound": 30,
+      "special": "The weapon gains the same effects as the Slug ammunition type. Additionally, when dealing damage to a Robot or a creature in Power Armor; the damage is doubled. Cost modifier: x6 (base 5c x x6 = 30c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "20 gauge — Pulse Slug",
+    "type": "ammo",
+    "system": {
+      "ammoType": "20 gauge",
+      "quantity": 0,
+      "costPerRound": 12,
+      "special": "The weapon gains the same effects as the Slug ammunition type. Additionally, when dealing damage to a Robot or a creature in Power Armor; the damage is doubled. Cost modifier: x6 (base 2c x x6 = 12c). Applicable rounds: 12 gauge, 20 gauge.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Energy Cell — Bulk",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Energy Cell",
+      "quantity": 0,
+      "costPerRound": 15,
+      "special": "The weapon's damage is reduced by 3. The weapon gains Durable. Cost modifier: -50% (base 30c x -50% = 15c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Microfusion Cell — Bulk",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Microfusion Cell",
+      "quantity": 0,
+      "costPerRound": 17.5,
+      "special": "The weapon's damage is reduced by 3. The weapon gains Durable. Cost modifier: -50% (base 35c x -50% = 17.5c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Energy Cell — Optimized",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Energy Cell",
+      "quantity": 0,
+      "costPerRound": 60,
+      "special": "The weapon's damage is increased by 1 and ignores 1 point of DT. Cost modifier: x2 (base 30c x x2 = 60c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Microfusion Cell — Optimized",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Microfusion Cell",
+      "quantity": 0,
+      "costPerRound": 70,
+      "special": "The weapon's damage is increased by 1 and ignores 1 point of DT. Cost modifier: x2 (base 35c x x2 = 70c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Energy Cell — Overcharged",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Energy Cell",
+      "quantity": 0,
+      "costPerRound": 90,
+      "special": "The weapon's damage is increased by 2 and ignores 2 points of DT. The weapon gains Breakable. Cost modifier: x3 (base 30c x x3 = 90c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Microfusion Cell — Overcharged",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Microfusion Cell",
+      "quantity": 0,
+      "costPerRound": 105,
+      "special": "The weapon's damage is increased by 2 and ignores 2 points of DT. The weapon gains Breakable. Cost modifier: x3 (base 35c x x3 = 105c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Energy Cell — Max Charge",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Energy Cell",
+      "quantity": 0,
+      "costPerRound": 150,
+      "special": "The weapon's damage is increased by 4 and ignores 4 points of DT. The weapon gains Breakable and after every third attack; the weapon gains a level of decay. Cost modifier: x5 (base 30c x x5 = 150c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Microfusion Cell — Max Charge",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Microfusion Cell",
+      "quantity": 0,
+      "costPerRound": 175,
+      "special": "The weapon's damage is increased by 4 and ignores 4 points of DT. The weapon gains Breakable and after every third attack; the weapon gains a level of decay. Cost modifier: x5 (base 35c x x5 = 175c). Applicable rounds: Energy Cell, Microfusion Cell.",
+      "description": "Special Ammunition (pg 68)."
+    }
+  },
+  {
+    "name": "Syringe — Stimpak Loader",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 25,
+      "special": "This syringe allows you to load it with a stimpak, the target gains the effects of the stimpak.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Chem Loader",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 25,
+      "special": "This syringe allows you to load it with a chem, the target gains the effects of the chem. Note: You cannot load a chem that has an inhaler.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Radscorpion Venom",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 35,
+      "special": "Target becomes poisoned for 3 turns and takes 1d6 poison damage at the start of each of their turns.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Endangerol",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 40,
+      "special": "Target's DT is reduced by 3 for 1 minute.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Yellow Belly",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 50,
+      "special": "Target becomes frightened for 3 rounds.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Berserk",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 55,
+      "special": "Target spends all of its AP on its next turn to attack the nearest creature to it.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Hemorrhage",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 75,
+      "special": "Target gains one level of Bleeding.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Lock Joint",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 85,
+      "special": "Target becomes slowed for 2 turns.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Sclerosis",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 110,
+      "special": "Target becomes Deafened for 3 rounds.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Myopic Serum",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 160,
+      "special": "Target becomes Blinded for 3 rounds.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Mind Cloud",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 175,
+      "special": "All creatures beyond 30 feet of the target creature become invisible to them for 1 minute.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  },
+  {
+    "name": "Syringe — Tranquilizer",
+    "type": "ammo",
+    "system": {
+      "ammoType": "Syringe",
+      "quantity": 0,
+      "costPerRound": 500,
+      "special": "If the target's endurance is a 4 or below, they fall unconscious for 1 hour. Otherwise, they become Dazed for their next two turns and fall unconscious for 1 hour at the end of their third turn. Creature's dazed in this way can remove this condition and prevent falling unconscious by using any chem with the stimulant property.",
+      "description": "Special Ammunition (Syringer), pg 69. Targets that are not robots or synths suffer the effects from the loaded syringe if the attack roll hits and deals damage to the target's hit points."
+    }
+  }
+]

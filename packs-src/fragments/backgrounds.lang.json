@@ -1,0 +1,31 @@
+{
+  "Backgrounds": {
+    "title": "Background",
+    "pickHint": "Every background grants +2 to three skills, one trait, and a starting kit that differs by race (pg 13-18). The kit shown is the one printed for this character's race; the Apply button's tooltip is the printed sentence it came from. Applying is a one-time act — it refuses while a background is already applied, and Clear takes it back.",
+    "apply": "Apply",
+    "clear": "Clear",
+    "clearHint": "Reverses exactly what applying wrote: the skill points and caps it added, and the documents it created that are still on this sheet. Anything since eaten, sold or deleted is simply reported as gone.",
+    "clearNote": "Cleared items are the ones this button created and no others; a stack you have added to is not touched.",
+    "caps": "caps",
+    "itemsStillHeld": "granted items still on the sheet",
+    "customNote": "Choose three skills and a kit yourself (850 caps, pg 13)",
+    "noKit": "No kit for this race",
+    "noKitHint": "The chapter prints a kit for each of Human, Ghoul, Gen-2 Synth, Robot and Super Mutant. This character's race field holds something else, so there is nothing to apply — set the race first.",
+    "reportedPrefix": "Reported, not granted:",
+    "raceChanged": "This background was applied for a different race, so the kit on the sheet is not the one this character's race prints.",
+
+    "alreadyApplied": "A background is already applied to this character. Clear it first — applying a second one would stack three more +2s and a second kit onto a sheet that has been played since.",
+    "nothingApplied": "No background has been applied to this character, so there is nothing to clear. A background typed into the field by hand is not a ledger and cannot be reversed.",
+    "unknown": "No background named \"{key}\" (pg 13-18).",
+    "noKitForRace": "The chapter prints no starting kit for the race \"{race}\" (pg 13-18). Set the character's race to Human, Ghoul, Gen-2 Synth, Robot or Super Mutant first.",
+
+    "cardSkills": "<strong>Skills:</strong> {skills}",
+    "cardTrait": "<strong>Trait:</strong> {trait}",
+    "cardTraitMissing": "<strong>Trait:</strong> {trait} — not found in the Perks and Traits compendium, so it was not granted. Add it by hand.",
+    "cardKit": "<strong>{kit}:</strong> {items} item(s) and {caps} caps.",
+    "cardReported": "<em>Reported rather than granted:</em> {entries}. The book leaves these to the table — a model the player picks, or an item its own tables never print.",
+    "cardMissing": "<em>Not in the equipment compendium:</em> {entries}. Add them by hand.",
+    "cardCleared": "Background cleared: <strong>{name}</strong>. {items} item(s) removed, {caps} caps handed back, and the skill points reversed.",
+    "cardGone": "{count} granted item(s) were already gone from the sheet and could not be removed."
+  }
+}

@@ -1,0 +1,211 @@
+{{!-- Sheet panel: levelling, skill magazines, and caps (pg 5-6, 22, 88).
+      Context at panels.progression.
+
+      Strings that interpolate a value are localized in the panel module where
+      the value is computed; the rest are localized here, which is the split
+      the crafting panel already uses. --}}
+<section class="panel progression">
+  <h2>{{localize "FALLOUT.Progression.title"}}
+    <span class="panel-controls">
+      {{#if panels.progression.isGM}}
+      <a class="pip-button" data-action="awardExperience"
+         title="{{localize 'FALLOUT.Progression.awardHint'}}">
+        {{localize "FALLOUT.Progression.award"}}
+      </a>
+      {{/if}}
+      {{#if panels.progression.budget.levelMismatch}}
+      <a class="pip-button" data-action="applyLevel"
+         title="{{localize 'FALLOUT.Progression.applyLevelHint'}}">
+        {{localize "FALLOUT.Progression.applyLevel"}}
+      </a>
+      {{/if}}
+    </span>
+  </h2>
+
+  {{!-- ------------------------------------------------------ XP and budgets --}}
+  <div class="progression-budgets">
+    <span class="progression-budget">
+      {{localize "FALLOUT.Sheet.xp"}}
+      <strong>{{panels.progression.budget.xp}}</strong>
+      <span class="panel-note">
+        {{localize "FALLOUT.Progression.toNext" xp=panels.progression.budget.xpToNext}}
+      </span>
+    </span>
+    <span class="progression-budget">
+      {{localize "FALLOUT.Progression.perkPoints"}}
+      <strong>{{panels.progression.budget.perkRemaining}}</strong>
+      <span class="panel-note">
+        {{localize "FALLOUT.Progression.ofTotal"
+          spent=panels.progression.budget.perkSpent
+          total=panels.progression.budget.perkTotal}}
+      </span>
+    </span>
+    <span class="progression-budget">
+      {{localize "FALLOUT.Progression.skillPoints"}}
+      <strong>{{panels.progression.budget.skillRemaining}}</strong>
+      <span class="panel-note">
+        {{localize "FALLOUT.Progression.ofTotal"
+          spent=panels.progression.budget.skillSpent
+          total=panels.progression.budget.skillTotal}}
+      </span>
+    </span>
+  </div>
+
+  {{#if panels.progression.budget.levelMismatch}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Progression.levelMismatch"
+      level=panels.progression.budget.level
+      suggested=panels.progression.budget.suggestedLevel}}
+  </p>
+  {{/if}}
+
+  <p class="panel-controls">
+    <a class="pip-button" data-action="spendSkillPoints"
+       title="{{localize 'FALLOUT.Progression.spendSkillTitle'}}">
+      {{localize "FALLOUT.Progression.spendSkill"}}
+    </a>
+    <a class="pip-button" data-action="spendPerkPoint"
+       title="{{localize 'FALLOUT.Progression.spendPerkTitle'}}">
+      {{localize "FALLOUT.Progression.spendPerk"}}
+    </a>
+  </p>
+
+  {{!-- ------------------------------------------------------- the spend ledger --}}
+  {{#if panels.progression.spends.length}}
+  <h3>{{localize "FALLOUT.Progression.ledger"}}</h3>
+  {{#each panels.progression.spends}}
+  <div class="inventory-row spend-row">
+    <span class="item-name">{{this.label}}</span>
+    <span class="item-meta">
+      {{this.kindLabel}} · {{localize "FALLOUT.Progression.rowPoints" points=this.points level=this.level}}
+      {{#if this.note}} · {{this.note}}{{/if}}
+    </span>
+    <span class="row-controls">
+      <a data-action="undoSpend" data-index="{{this.index}}"
+         title="{{localize 'FALLOUT.Progression.undoHint'}}">
+        {{localize "FALLOUT.Progression.undo"}}
+      </a>
+    </span>
+  </div>
+  {{/each}}
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.Progression.noSpends"}}</p>
+  {{/if}}
+
+  {{#if panels.progression.unledgered}}
+  <p class="panel-note">
+    {{localize "FALLOUT.Progression.unledgered" points=panels.progression.unledgered}}
+  </p>
+  {{/if}}
+
+  {{#if panels.progression.awards.length}}
+  <h3>{{localize "FALLOUT.Progression.awardLog"}}</h3>
+  {{#each panels.progression.awards}}
+  <div class="inventory-row award-row">
+    <span class="item-name">+{{this.xp}}</span>
+    <span class="item-meta">{{this.reason}}</span>
+    <span class="item-meta">{{this.total}}</span>
+  </div>
+  {{/each}}
+  {{/if}}
+
+  {{!-- --------------------------------------------------------- skill magazines --}}
+  <h3>{{localize "FALLOUT.Progression.magazines"}}
+    <span class="panel-controls">
+      <a class="pip-button" data-action="clearMagazineBonuses"
+         title="{{localize 'FALLOUT.Progression.clearMagazinesHint'}}">
+        {{localize "FALLOUT.Progression.clearMagazines"}}
+      </a>
+    </span>
+  </h3>
+
+  {{#if panels.progression.magazines.length}}
+  {{#each panels.progression.magazines}}
+  <div class="inventory-row magazine-row">
+    <span class="item-name">{{this.title}}</span>
+    <span class="item-meta">
+      {{this.skill}} ·
+      {{localize "FALLOUT.Progression.issuesRead" count=this.count needed=this.needed}}
+      {{#if this.issues}} (#{{this.issues}}){{/if}}
+      {{#if this.permanent}} · {{localize "FALLOUT.Progression.permanentBadge"}}{{/if}}
+      {{#if this.untilRest}} · {{localize "FALLOUT.Progression.untilRestBadge"}}{{/if}}
+    </span>
+    <span class="row-controls">
+      {{#if this.owned}}
+      <a class="pip-button" data-action="readMagazine" data-item-id="{{this.id}}"
+         title="{{localize 'FALLOUT.Progression.readHint'}}">
+        {{localize "FALLOUT.Progression.read"}}
+        <span class="ap-cost">×{{this.quantity}}</span>
+      </a>
+      {{else}}
+      <span class="panel-note">{{localize "FALLOUT.Progression.notCarried"}}</span>
+      {{/if}}
+    </span>
+  </div>
+  {{#if this.unknown}}
+  <p class="hint warning">{{localize "FALLOUT.Progression.unknownMagazineRow" title=this.title}}</p>
+  {{/if}}
+  {{/each}}
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.Progression.noMagazines"}}</p>
+  {{/if}}
+
+  {{#if panels.progression.magazineBonuses.length}}
+  <p class="panel-note">
+    {{#each panels.progression.magazineBonuses}}
+    {{this.skill}} +{{this.total}}{{#if this.untilRest}}
+      ({{localize "FALLOUT.Progression.untilRestBadge"}}){{/if}}{{#unless @last}} · {{/unless}}
+    {{/each}}
+  </p>
+  {{/if}}
+
+  <p class="hint">
+    {{#if panels.progression.readAp}}
+    {{localize "FALLOUT.Progression.readDialogAp" ap=panels.progression.readAp}}
+    {{else}}
+    {{localize "FALLOUT.Progression.readDialogMinutes" minutes=panels.progression.readMinutes}}
+    {{/if}}
+    {{localize "FALLOUT.Progression.magazineNote"}}
+  </p>
+
+  {{!-- ------------------------------------------------ caps and the Discount --}}
+  <h3>{{localize "FALLOUT.Progression.caps"}}
+    <span class="panel-controls">
+      <a class="pip-button" data-action="buyWithCaps"
+         title="{{localize 'FALLOUT.Progression.buyHintShort'}}">
+        {{localize "FALLOUT.Progression.buy"}}
+      </a>
+      {{#unless panels.progression.discountAvailable}}
+      <a class="pip-button" data-action="resetDiscount"
+         title="{{localize 'FALLOUT.Progression.resetDiscountHint'}}">
+        {{localize "FALLOUT.Progression.resetDiscount"}}
+      </a>
+      {{/unless}}
+    </span>
+  </h3>
+
+  <div class="progression-budgets">
+    <span class="progression-budget">
+      {{localize "FALLOUT.Progression.capsHeld"}}
+      <strong>{{panels.progression.caps}}</strong>
+    </span>
+    <span class="progression-budget">
+      {{localize "FALLOUT.Progression.discount"}}
+      <strong>{{panels.progression.discountPercent}}%</strong>
+      <span class="panel-note">
+        {{localize "FALLOUT.Skills.barter"}}
+        {{#if (gte panels.progression.barter 0)}}+{{/if}}{{panels.progression.barter}}
+      </span>
+    </span>
+  </div>
+
+  {{#if panels.progression.discountAvailable}}
+  <p class="hint">
+    {{localize "FALLOUT.Progression.discountReady" hours=panels.progression.discountHours}}
+  </p>
+  {{else}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Progression.discountUsed" hours=panels.progression.discountHours}}
+  </p>
+  {{/if}}
+</section>

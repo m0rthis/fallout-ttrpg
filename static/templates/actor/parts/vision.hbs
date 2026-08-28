@@ -1,0 +1,174 @@
+{{!-- Sheet panel: Vision & Light, and Flames (pg 118-119). Context is at
+      panels.vision, built by src/sheets/panels/vision.ts.
+
+      Two audiences in one panel, and the split is `isGM`:
+
+        * everyone sees the readout — what this character can perceive at a
+          distance right now, and the senses that change the answer (pg 119);
+        * only the GM sees the scene controls — the light level, the vision
+          cutoffs and the fires, all of which write the scene document.
+
+      The pickers are <select> + button pairs on purpose. ApplicationV2
+      dispatches data-action on CLICK only (verified on 14.365); there is no
+      change-event equivalent, so the handler reads the <select> out of the DOM
+      when the button is pressed. The `data-vision` attribute is how it finds
+      them, scoped to this section — do not rename one without the other. --}}
+<section class="panel vision">
+  <h2>{{localize "FALLOUT.Vision.title"}}
+    <span class="panel-note">{{panels.vision.levelLabel}}</span>
+  </h2>
+
+  <p class="hint">{{panels.vision.levelNote}}</p>
+  {{#each panels.vision.bandNotes}}
+  <p class="hint warning">{{this}}</p>
+  {{/each}}
+
+  {{!-- ------------------------------------------------------------ senses --}}
+  <div class="inventory-row vision-senses">
+    <span class="item-name">{{localize "FALLOUT.Vision.senses"}}</span>
+    {{#if panels.vision.hasSenses}}
+    <span class="item-meta">
+      {{localize "FALLOUT.Light.blindsight"}} {{panels.vision.senses.blindsight}} ft
+    </span>
+    <span class="item-meta">
+      {{localize "FALLOUT.Vision.nightvision"}} {{panels.vision.senses.nightvision}} ft
+    </span>
+    {{else}}
+    <span class="item-meta">{{localize "FALLOUT.Vision.noSenses"}}</span>
+    {{/if}}
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionEditSenses"
+         title="{{localize 'FALLOUT.Vision.sensesHint'}}">
+        {{localize "FALLOUT.Vision.editSenses"}}
+      </a>
+    </span>
+  </div>
+
+  {{!-- --------------------------------------------------------- the readout --}}
+  <h3>{{localize "FALLOUT.Vision.readout"}}</h3>
+  {{#each panels.vision.rows}}
+  <div class="inventory-row vision-row">
+    <span class="item-name">{{this.feet}} ft</span>
+    <span class="item-meta">{{this.sentence}}</span>
+    {{#if this.blinded}}
+    <span class="item-tag">{{localize "FALLOUT.Vision.blindedTag"}}</span>
+    {{else if this.disadvantage}}
+    <span class="item-tag">{{localize "FALLOUT.Vision.disadvantageTag"}}</span>
+    {{/if}}
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionReportObscurement" data-feet="{{this.feet}}"
+         title="{{localize 'FALLOUT.Vision.reportHint'}}">
+        {{localize "FALLOUT.Vision.report"}}
+      </a>
+    </span>
+  </div>
+  {{/each}}
+
+  {{#if panels.vision.isGM}}
+  {{!-- ---------------------------------------------------- the light picker --}}
+  <h3>{{localize "FALLOUT.Vision.sceneLight"}}</h3>
+  <div class="inventory-row vision-light">
+    <select data-vision="light" aria-label="{{localize 'FALLOUT.Vision.sceneLight'}}">
+      {{#each panels.vision.levels}}
+      <option value="{{this.key}}" {{#if this.selected}}selected{{/if}}>{{this.label}}</option>
+      {{/each}}
+    </select>
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionSetLight"
+         title="{{localize 'FALLOUT.Vision.setLightHint'}}">
+        {{localize "FALLOUT.Vision.setLight"}}
+      </a>
+    </span>
+  </div>
+
+  {{!-- -------------------------------------------------- the vision cutoffs --}}
+  <div class="inventory-row vision-cutoffs">
+    <span class="item-name">{{localize "FALLOUT.Vision.cutoffs"}}</span>
+    <span class="item-meta">
+      {{#if panels.vision.cutoffsApplied}}
+      {{localize "FALLOUT.Vision.cutoffsOn"}}
+      {{else}}
+      {{localize "FALLOUT.Vision.cutoffsOff"}}
+      {{/if}}
+    </span>
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionApplyCutoffs"
+         title="{{localize 'FALLOUT.Vision.applyHint'}}">
+        {{localize "FALLOUT.Vision.apply"}}
+      </a>
+      {{#if panels.vision.cutoffsApplied}}
+      <a class="pip-button" data-action="visionClearCutoffs"
+         title="{{localize 'FALLOUT.Vision.clearHint'}}">
+        {{localize "FALLOUT.Vision.clear"}}
+      </a>
+      {{else}}
+      <span class="unavailable" title="{{localize 'FALLOUT.Vision.nothingToClear'}}">
+        {{localize "FALLOUT.Vision.clear"}}
+      </span>
+      {{/if}}
+    </span>
+  </div>
+  <p class="hint">{{localize "FALLOUT.Vision.cutoffsNote"}}</p>
+
+  {{!-- ------------------------------------------------------------- flames --}}
+  <h3>{{localize "FALLOUT.Vision.flames"}}</h3>
+  <div class="inventory-row vision-flames">
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionIgnite"
+         title="{{localize 'FALLOUT.Vision.igniteHint'}}">
+        {{localize "FALLOUT.Vision.ignite"}}
+      </a>
+      <a class="pip-button" data-action="visionSpread"
+         title="{{localize 'FALLOUT.Vision.spreadHint'}}">
+        {{localize "FALLOUT.Vision.spread"}}
+      </a>
+      <a class="pip-button" data-action="visionBurn"
+         title="{{localize 'FALLOUT.Vision.burnHint'}}">
+        {{localize "FALLOUT.Vision.burn"}}
+        <span class="ap-cost">{{panels.vision.burningAp}} AP</span>
+      </a>
+    </span>
+  </div>
+  <p class="hint">{{localize "FALLOUT.Vision.burningAp" ap=panels.vision.burningAp}}</p>
+
+  <div class="inventory-row vision-extinguish">
+    <select data-vision="extinguisher" aria-label="{{localize 'FALLOUT.Vision.means'}}">
+      {{#each panels.vision.extinguishers}}
+      <option value="{{this.key}}">{{this.label}}</option>
+      {{/each}}
+    </select>
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionExtinguishAll"
+         title="{{localize 'FALLOUT.Vision.extinguishAllHint'}}">
+        {{localize "FALLOUT.Vision.extinguishAll"}}
+      </a>
+    </span>
+  </div>
+
+  {{!-- One row per burning region. `meta` is its radius, damage formula, spread
+        rate and age; `growth` is when it next gains a d10 — or why it never
+        will. Both are composed in the panel from the actions layer's
+        flameAreaOf() and the pure layer's arithmetic; nothing is computed
+        here. --}}
+  {{#each panels.vision.fires}}
+  <div class="inventory-row vision-fire">
+    <span class="item-name">{{this.name}}</span>
+    <span class="item-meta">{{this.meta}}</span>
+    {{#if this.atMaximum}}
+    <span class="item-tag">{{localize "FALLOUT.Vision.maximumTag"}}</span>
+    {{/if}}
+    <span class="item-meta">{{this.growth}}</span>
+    <span class="row-controls">
+      <a class="pip-button" data-action="visionExtinguish" data-region="{{this.id}}"
+         title="{{localize 'FALLOUT.Vision.extinguishHint'}}">
+        {{localize "FALLOUT.Vision.extinguish"}}
+      </a>
+    </span>
+  </div>
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.Vision.noFires"}}</p>
+  {{/each}}
+
+  <p class="hint">{{localize "FALLOUT.Vision.gmNote"}}</p>
+  {{/if}}
+</section>

@@ -1,0 +1,849 @@
+/* Fallout TTRPG (Arcane Arcade) — sheet styles.
+   Pip-Boy-inspired: dark casing, phosphor-green readouts, industrial borders. */
+
+/* The --fallout-* properties are set at runtime by the Pip-Boy color
+   setting (src/theme.ts); the literals here are the green default. */
+.fallout-ttrpg {
+  --flt-bg: var(--fallout-bg, #1a1f1a);
+  --flt-panel: var(--fallout-panel, #232a23);
+  --flt-border: var(--fallout-border, #3c463c);
+  --flt-green: var(--fallout-accent, #6ee86e);
+  --flt-green-dim: var(--fallout-accent-dim, #4aa64a);
+  --flt-amber: var(--fallout-accent-bright, #ffb641);
+  --flt-text: var(--fallout-accent-text, #cfe3cf);
+  --flt-danger: #ff6b57;
+  font-family: "Roboto Condensed", "Arial Narrow", sans-serif;
+}
+
+.fallout-ttrpg .window-content {
+  background: var(--flt-bg);
+  color: var(--flt-text);
+}
+
+.fallout-ttrpg .sheet-body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  overflow-y: auto;
+  height: 100%;
+  padding: 0.25rem;
+}
+
+/* ---------------------------------------------------------------- header */
+
+.fallout-ttrpg .sheet-header {
+  display: flex;
+  gap: 0.75rem;
+  align-items: center;
+}
+
+.fallout-ttrpg .portrait {
+  width: 72px;
+  height: 72px;
+  object-fit: cover;
+  border: 2px solid var(--flt-border);
+  border-radius: 4px;
+  cursor: pointer;
+  background: #000;
+}
+
+.fallout-ttrpg .identity {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.fallout-ttrpg .char-name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--flt-green);
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid var(--flt-border);
+  border-radius: 0;
+}
+
+.fallout-ttrpg .identity-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.fallout-ttrpg .identity-row label,
+.fallout-ttrpg .type-label {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--flt-green-dim);
+}
+
+.fallout-ttrpg .identity-row input[type="number"] { width: 4.5rem; }
+.fallout-ttrpg .identity-row input[type="text"] { width: 9rem; }
+
+.fallout-ttrpg .karma-caps {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.fallout-ttrpg .karma-cap {
+  color: var(--flt-amber);
+  cursor: pointer;
+  font-size: 0.95rem;
+}
+.fallout-ttrpg .karma-cap:hover { text-shadow: 0 0 6px var(--flt-amber); }
+.fallout-ttrpg .karma-cap.flipped { color: var(--flt-border); }
+
+/* ---------------------------------------------------------- S.P.E.C.I.A.L. */
+
+.fallout-ttrpg .special-strip {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 0.4rem;
+}
+
+.fallout-ttrpg .special-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.15rem;
+  background: var(--flt-panel);
+  border: 2px solid var(--flt-border);
+  border-radius: 4px;
+  padding: 0.35rem 0;
+}
+
+.fallout-ttrpg .special-letter {
+  font-size: 1.15rem;
+  font-weight: 800;
+  color: var(--flt-amber);
+  cursor: pointer;
+  letter-spacing: 0.05em;
+}
+
+.fallout-ttrpg .special-letter:hover { text-shadow: 0 0 6px var(--flt-amber); }
+
+.fallout-ttrpg .special-box input {
+  width: 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
+.fallout-ttrpg .special-mod {
+  font-size: 0.95rem;
+  color: var(--flt-green);
+  font-weight: 700;
+}
+
+/* -------------------------------------------------------------- structure */
+
+.fallout-ttrpg .main-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr 1.3fr;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.fallout-ttrpg .panel {
+  background: var(--flt-panel);
+  border: 2px solid var(--flt-border);
+  border-radius: 4px;
+  padding: 0.45rem;
+}
+
+.fallout-ttrpg .panel h2 {
+  font-size: 0.85rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--flt-amber);
+  border-bottom: 1px solid var(--flt-border);
+  margin: 0 0 0.35rem 0;
+  padding-bottom: 0.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.fallout-ttrpg .panel h3 {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--flt-green-dim);
+  margin: 0.4rem 0 0.2rem;
+  border: none;
+}
+
+.fallout-ttrpg .item-create {
+  margin-left: auto;
+  font-size: 0.7rem;
+  color: var(--flt-green-dim);
+  cursor: pointer;
+}
+.fallout-ttrpg .item-create:hover { color: var(--flt-green); }
+
+/* ----------------------------------------------------------------- skills */
+
+.fallout-ttrpg .skills-table { border-collapse: collapse; width: 100%; }
+.fallout-ttrpg .skills-table th {
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--flt-green-dim);
+  text-align: center;
+}
+.fallout-ttrpg .skills-table td { padding: 0.1rem 0.15rem; }
+.fallout-ttrpg .skills-table input { width: 2.6rem; text-align: center; }
+
+.fallout-ttrpg .skill-roll {
+  cursor: pointer;
+  font-size: 0.82rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+.fallout-ttrpg .skill-roll:hover { color: var(--flt-green); text-shadow: 0 0 5px var(--flt-green); }
+
+.fallout-ttrpg .skill-ability {
+  font-size: 0.6rem;
+  color: var(--flt-green-dim);
+}
+
+.fallout-ttrpg .skill-bonus {
+  text-align: center;
+  font-weight: 700;
+  color: var(--flt-green);
+}
+
+/* ----------------------------------------------------------------- vitals */
+
+.fallout-ttrpg .vital-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.4rem;
+}
+
+.fallout-ttrpg .vital {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  border: 1px solid var(--flt-border);
+  border-radius: 4px;
+  padding: 0.3rem;
+}
+
+.fallout-ttrpg .vital label,
+.fallout-ttrpg .stat label,
+.fallout-ttrpg .condition span {
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--flt-green-dim);
+  text-align: center;
+}
+
+.fallout-ttrpg .pool { display: flex; align-items: baseline; gap: 0.2rem; }
+.fallout-ttrpg .pool input { width: 3.2rem; text-align: center; font-size: 1.15rem; font-weight: 700; }
+.fallout-ttrpg .pool span { color: var(--flt-text); font-weight: 600; }
+
+.fallout-ttrpg .stat-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.35rem;
+  margin-top: 0.45rem;
+}
+
+.fallout-ttrpg .stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid var(--flt-border);
+  border-radius: 4px;
+  padding: 0.25rem;
+}
+
+.fallout-ttrpg .stat-value { font-size: 1.05rem; font-weight: 700; color: var(--flt-green); }
+.fallout-ttrpg .stat-value.rollable { cursor: pointer; }
+.fallout-ttrpg .stat-value.rollable:hover { text-shadow: 0 0 6px var(--flt-green); }
+.fallout-ttrpg .stat-value.over-limit { color: var(--flt-danger); }
+
+.fallout-ttrpg .conditions { margin-top: 0.45rem; }
+.fallout-ttrpg .conditions .penalty { color: var(--flt-danger); margin-left: 0.4rem; }
+
+.fallout-ttrpg .condition-track {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.25rem;
+}
+
+.fallout-ttrpg .condition {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fallout-ttrpg .condition input { width: 2.6rem; text-align: center; }
+
+.fallout-ttrpg .condition-notes { width: 100%; margin-top: 0.3rem; }
+
+/* ------------------------------------------------------------------ chems */
+
+.fallout-ttrpg .chems { margin-top: 0.45rem; }
+.fallout-ttrpg .chems h3 { display: flex; align-items: baseline; gap: 0.4rem; }
+.fallout-ttrpg .chem-count {
+  font-variant-numeric: tabular-nums;
+  color: var(--flt-amber);
+}
+.fallout-ttrpg .chem-count.penalty { color: var(--flt-danger); }
+.fallout-ttrpg .chems .new-day {
+  margin-left: auto;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+.fallout-ttrpg .chems .penalty { color: var(--flt-danger); }
+.fallout-ttrpg .addictions { width: 100%; margin-top: 0.3rem; }
+
+/* ---------------------------------------------------------------- weapons */
+
+.fallout-ttrpg .weapon-card {
+  border: 1px solid var(--flt-border);
+  border-radius: 4px;
+  padding: 0.3rem 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.fallout-ttrpg .weapon-title { display: flex; justify-content: space-between; gap: 0.4rem; align-items: center; }
+.fallout-ttrpg .weapon-title .weapon-name { flex: 1; }
+/* Blocking is a state, not a one-shot, so the control shows which it is. */
+.fallout-ttrpg .item-create.blocking { color: var(--flt-amber); border-color: var(--flt-amber); }
+.fallout-ttrpg .weapon-name { font-weight: 700; color: var(--flt-amber); text-transform: uppercase; font-size: 0.85rem; }
+.fallout-ttrpg .weapon-controls a, .fallout-ttrpg .row-controls a {
+  color: var(--flt-green-dim);
+  cursor: pointer;
+  margin-left: 0.3rem;
+  font-size: 0.7rem;
+}
+.fallout-ttrpg .weapon-controls a:hover, .fallout-ttrpg .row-controls a:hover { color: var(--flt-green); }
+
+.fallout-ttrpg .weapon-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 0.7rem;
+  font-size: 0.72rem;
+  margin-top: 0.2rem;
+}
+
+.fallout-ttrpg .weapon-roll {
+  cursor: pointer;
+  font-weight: 700;
+  color: var(--flt-green);
+  text-transform: uppercase;
+}
+.fallout-ttrpg .weapon-roll:hover { text-shadow: 0 0 5px var(--flt-green); }
+
+.fallout-ttrpg .weapon-special { font-size: 0.68rem; color: var(--flt-green-dim); margin-top: 0.15rem; }
+
+/* -------------------------------------------------------------- inventory */
+
+.fallout-ttrpg .two-col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.15rem 0.8rem;
+}
+
+.fallout-ttrpg .inventory-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.78rem;
+  padding: 0.12rem 0;
+  border-bottom: 1px dotted var(--flt-border);
+}
+
+.fallout-ttrpg .item-tag {
+  font-size: 0.6rem;
+  font-weight: 800;
+  color: var(--flt-bg);
+  background: var(--flt-green-dim);
+  border-radius: 2px;
+  padding: 0 0.25rem;
+}
+
+.fallout-ttrpg .item-name { font-weight: 600; }
+.fallout-ttrpg .item-meta { font-size: 0.68rem; color: var(--flt-green-dim); flex: 1; }
+.fallout-ttrpg .row-controls { margin-left: auto; white-space: nowrap; }
+
+.fallout-ttrpg .equip-toggle { color: var(--flt-border); cursor: pointer; }
+.fallout-ttrpg .equip-toggle.equipped { color: var(--flt-amber); }
+
+/* --------------------------------------------------- combat & consumables */
+
+.fallout-ttrpg .death-saves {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-top: 0.4rem;
+  padding: 0.3rem;
+  border: 1px solid var(--flt-danger);
+  border-radius: 4px;
+  font-size: 0.75rem;
+}
+
+.fallout-ttrpg .death-save-roll {
+  color: var(--flt-danger);
+  font-weight: 800;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.fallout-ttrpg .death-save-roll:hover { text-shadow: 0 0 6px var(--flt-danger); }
+
+.fallout-ttrpg .level-helper {
+  margin-top: 0.35rem;
+  font-size: 0.66rem;
+  color: var(--flt-green-dim);
+}
+.fallout-ttrpg .level-helper .penalty { color: var(--flt-amber); margin-left: 0.4rem; }
+
+.fallout-ttrpg .defense-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3rem;
+  margin-top: 0.3rem;
+}
+
+.fallout-ttrpg .use-button {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--flt-green);
+  cursor: pointer;
+}
+.fallout-ttrpg .use-button:hover { text-shadow: 0 0 5px var(--flt-green); }
+
+.fallout-ttrpg .npc-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.15rem 0.8rem;
+}
+
+.fallout-ttrpg .npc-skill {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.75rem;
+}
+.fallout-ttrpg .npc-skill input { width: 2.4rem; text-align: center; }
+.fallout-ttrpg .npc-skill .skill-bonus { margin-left: auto; }
+
+button.fallout-apply-damage {
+  margin-top: 0.25rem;
+  width: 100%;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+/* ------------------------------------------------------------ form fields */
+
+.fallout-ttrpg input,
+.fallout-ttrpg select,
+.fallout-ttrpg textarea {
+  background: rgba(0, 0, 0, 0.35);
+  color: var(--flt-text);
+  border: 1px solid var(--flt-border);
+  border-radius: 3px;
+}
+
+.fallout-ttrpg input:focus,
+.fallout-ttrpg select:focus,
+.fallout-ttrpg textarea:focus {
+  border-color: var(--flt-green);
+  box-shadow: 0 0 4px var(--flt-green-dim);
+  outline: none;
+}
+
+.fallout-ttrpg .form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem 0.6rem;
+  margin: 0.5rem 0;
+}
+
+.fallout-ttrpg .form-grid label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--flt-green-dim);
+}
+
+.fallout-ttrpg .form-grid label.wide { grid-column: 1 / -1; }
+
+.fallout-ttrpg .description label {
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  color: var(--flt-green-dim);
+}
+
+.fallout-ttrpg .description textarea,
+.fallout-ttrpg .biography textarea { width: 100%; }
+
+/* --------------------------------------------------------- active effects */
+
+.fallout-ttrpg .active-effects { margin-top: 0.45rem; }
+.fallout-ttrpg .effect-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid var(--flt-border);
+}
+.fallout-ttrpg .effect-row.suppressed { opacity: 0.45; }
+.fallout-ttrpg .effect-icon {
+  width: 18px;
+  height: 18px;
+  border: none;
+  flex: 0 0 auto;
+}
+.fallout-ttrpg .effect-name {
+  flex: 1;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+.fallout-ttrpg .effect-name:hover { color: var(--flt-green); }
+.fallout-ttrpg .effect-remaining {
+  font-size: 0.65rem;
+  color: var(--flt-amber);
+  font-variant-numeric: tabular-nums;
+}
+
+.fallout-ttrpg .rad-locked {
+  font-size: 0.62rem;
+  color: var(--flt-danger);
+  font-variant-numeric: tabular-nums;
+}
+
+.fallout-ttrpg .roll-swings {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+.fallout-ttrpg .swing {
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid var(--flt-border);
+  border-radius: 3px;
+  padding: 0.05rem 0.25rem;
+}
+.fallout-ttrpg .swing.advantage { color: var(--flt-green); border-color: var(--flt-green-dim); }
+.fallout-ttrpg .swing.disadvantage { color: var(--flt-danger); border-color: var(--flt-danger); }
+.fallout-ttrpg .swing.cancels { color: var(--flt-green-dim); }
+
+/* --------------------------------------------- diseases and the environment */
+
+.fallout-ttrpg .diseases { margin-top: 0.45rem; }
+.fallout-ttrpg .diseases h3 a { margin-left: 0.35rem; color: var(--flt-green-dim); }
+.fallout-ttrpg .diseases h3 a:hover { color: var(--flt-green); }
+.fallout-ttrpg .disease-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid var(--flt-border);
+}
+.fallout-ttrpg .disease-row.suppressed { opacity: 0.5; }
+.fallout-ttrpg .disease-name { flex: 1; font-size: 0.75rem; }
+.fallout-ttrpg .disease-clock {
+  font-size: 0.65rem;
+  color: var(--flt-amber);
+  font-variant-numeric: tabular-nums;
+  display: flex;
+  gap: 0.3rem;
+}
+.fallout-ttrpg .disease-doses { color: var(--flt-green-dim); }
+
+/* A condition a disease has pinned in place cannot be eaten or drunk away. */
+.fallout-ttrpg .condition.locked span { color: var(--flt-danger); }
+
+.fallout-ttrpg .environment h2 { display: flex; align-items: center; gap: 0.5rem; }
+.fallout-ttrpg .weather-readout {
+  flex: 1;
+  font-size: 0.68rem;
+  font-weight: normal;
+  color: var(--flt-amber);
+  text-transform: none;
+  letter-spacing: 0;
+}
+.fallout-ttrpg .panel-controls { white-space: nowrap; }
+.fallout-ttrpg .panel-controls a { margin-left: 0.4rem; color: var(--flt-green-dim); }
+.fallout-ttrpg .panel-controls a:hover { color: var(--flt-green); }
+.fallout-ttrpg .environment-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 0.9rem;
+}
+.fallout-ttrpg .environment-flag {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.7rem;
+}
+.fallout-ttrpg .environment-flag input { width: auto; }
+
+/* ---------------------------------------------- release 4: survival panel */
+.fallout-ttrpg .survival { margin-top: 0.6rem; }
+.fallout-ttrpg .survival-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.85em;
+  padding: 0.15rem 0;
+}
+.fallout-ttrpg .survival-row .penalty { color: var(--flt-amber); }
+/* A weapon declared one-handed is a live penalty, so it reads like one. */
+.fallout-ttrpg .weapon-roll.one-handed { color: var(--flt-amber); }
+.fallout-ttrpg .weapon-note {
+  font-size: 0.8em;
+  opacity: 0.75;
+  padding: 0.1rem 0 0.2rem;
+}
+
+/* ------------------------------------------- release 5: situations + editors */
+.fallout-ttrpg .situations { margin-top: 0.6rem; }
+.fallout-ttrpg .situation-flags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-size: 0.72rem;
+}
+.fallout-ttrpg .situation {
+  border: 1px solid var(--flt-border);
+  border-radius: 3px;
+  padding: 0.05rem 0.3rem;
+  cursor: pointer;
+  color: var(--flt-green-dim);
+}
+.fallout-ttrpg .situation.holds { color: var(--flt-amber); border-color: var(--flt-amber); }
+/* Sheet-derived situations are readouts, not switches. */
+.fallout-ttrpg .situation.derived { cursor: default; font-style: italic; opacity: 0.85; }
+.fallout-ttrpg .situational-effect {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.4rem;
+  font-size: 0.75rem;
+  padding: 0.1rem 0;
+}
+/* An effect whose switch disagrees with its situation — Sync settles it. */
+.fallout-ttrpg .situational-effect.stale .situation-state { color: var(--flt-danger); }
+.fallout-ttrpg .temp-hp {
+  display: flex;
+  align-items: center;
+  gap: 0.2rem;
+  font-size: 0.6rem;
+  text-transform: uppercase;
+  color: var(--flt-green-dim);
+}
+.fallout-ttrpg .temp-hp input { width: 2.6rem; text-align: center; }
+.fallout-ttrpg prose-mirror {
+  display: block;
+  min-height: 6rem;
+  border: 1px solid var(--flt-border);
+  border-radius: 4px;
+  background: var(--flt-bg);
+  padding: 0.25rem;
+}
+/* Closed, a toggled editor shows its enriched body: plain compendium text
+   arrives as one paragraph per source line, so give them room to breathe. */
+.fallout-ttrpg prose-mirror .editor-content p { margin: 0 0 0.45rem; }
+.fallout-ttrpg prose-mirror .editor-content p:last-child { margin-bottom: 0; }
+/* Core lays the content out as `position: absolute; inset: 0`, which is right
+   for an *open* editor (the menu bar sits above it) but pins a closed one to
+   the 6rem minimum and hides the rest of a long perk behind a scrollbar.
+   Closed, let it flow and grow — capped, so a novel-length entry still scrolls.
+   Probed on 14.365: 96px clipped -> 130px, whole description visible. */
+.fallout-ttrpg prose-mirror.inactive { height: auto; }
+.fallout-ttrpg prose-mirror.inactive > .editor-content {
+  position: relative;
+  inset: auto;
+  height: auto;
+  max-height: 30rem;
+  overflow-y: auto;
+}
+
+/* Power Armor: the suit's state beyond its Defense Point pool (pg 57-59). */
+.fallout-ttrpg .power-armor { margin-top: 0.6rem; }
+.fallout-ttrpg .power-armor.overheated h3 { color: var(--flt-amber); }
+.fallout-ttrpg .pa-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem 0.8rem;
+  font-size: 0.85em;
+  opacity: 0.9;
+}
+.fallout-ttrpg .pa-row .pa-warning { color: var(--flt-amber); }
+
+/* Sheet panels (src/sheets/panel-registry.ts). */
+.fallout-ttrpg .panel-note { font-size: 0.75em; opacity: 0.75; font-weight: normal; }
+.fallout-ttrpg .pip-button {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  padding: 0.2rem 0.6rem;
+  border: 1px solid var(--flt-green-dim, currentColor);
+  border-radius: 3px;
+  cursor: pointer;
+}
+.fallout-ttrpg .pip-button:hover { background: rgba(127, 255, 127, 0.08); }
+.fallout-ttrpg .pip-button .ap-cost { font-size: 0.75em; opacity: 0.7; }
+.fallout-ttrpg .first-aid-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fallout-ttrpg .hint.warning { color: var(--flt-amber); }
+
+/* Combat actions panel. */
+.fallout-ttrpg .combat-action-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fallout-ttrpg .ready-list { list-style: none; margin: 0.4rem 0 0; padding: 0; }
+.fallout-ttrpg .ready-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-size: 0.9em;
+}
+
+/* Power Armor upgrades panel. Nineteen rows generated from the pg 59 table. */
+.fallout-ttrpg .upgrade-table { display: flex; flex-direction: column; gap: 0.1rem; }
+.fallout-ttrpg .upgrade-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.12rem 0;
+  font-size: 0.88em;
+}
+/* An upgrade the system does not automate is dimmed, not hidden: the player
+   still owns it, the sheet just will not do the arithmetic. */
+.fallout-ttrpg .upgrade-row.text-only { opacity: 0.62; }
+.fallout-ttrpg .upgrade-name.uninstalled { opacity: 0.55; }
+.fallout-ttrpg .upgrade-ranks { display: inline-flex; gap: 0.18rem; }
+.fallout-ttrpg .rank-pip {
+  width: 0.72rem;
+  height: 0.72rem;
+  border: 1px solid currentColor;
+  border-radius: 50%;
+  cursor: pointer;
+  opacity: 0.45;
+}
+.fallout-ttrpg .rank-pip.filled { background: currentColor; opacity: 1; }
+.fallout-ttrpg .automation-badge {
+  font-size: 0.68em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.05rem 0.3rem;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  opacity: 0.8;
+  white-space: nowrap;
+}
+.fallout-ttrpg .automation-badge.automation-text { opacity: 0.5; }
+.fallout-ttrpg .automation-badge.automation-helper { color: var(--flt-amber); }
+.fallout-ttrpg .pa-control-row { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
+.fallout-ttrpg .pip-button.unavailable { opacity: 0.4; cursor: not-allowed; }
+
+/* Crafting bench. */
+.fallout-ttrpg .craft-skills { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; font-size: 0.85em; }
+.fallout-ttrpg .craft-skill { white-space: nowrap; }
+.fallout-ttrpg .craft-row .item-meta { font-size: 0.82em; opacity: 0.85; }
+/* An automatic success is the one thing worth spotting before committing to a
+   craft, so it is the only badge here that gets colour. */
+.fallout-ttrpg .craft-auto {
+  color: var(--flt-amber);
+  font-size: 0.72em;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border: 1px solid currentColor;
+  border-radius: 2px;
+  padding: 0.05rem 0.28rem;
+  margin-left: 0.35rem;
+}
+.fallout-ttrpg .craft-blocked { opacity: 0.55; font-size: 0.82em; font-style: italic; }
+
+/* Wave-two panels. Each new class is paired with one that already exists, so a
+   panel renders acceptably even before it is styled. */
+.fallout-ttrpg .progression-budgets { display: flex; flex-wrap: wrap; gap: 0.15rem 0.9rem; font-size: 0.85em; }
+.fallout-ttrpg .progression-budget { white-space: nowrap; }
+.fallout-ttrpg .stealth-row,
+.fallout-ttrpg .movement-row { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.fallout-ttrpg .stealth-list,
+.fallout-ttrpg .movement-list { list-style: none; margin: 0.4rem 0 0; padding: 0; }
+.fallout-ttrpg .stealth-list li,
+.fallout-ttrpg .movement-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.5rem;
+  padding: 0.15rem 0;
+  font-size: 0.9em;
+}
+.fallout-ttrpg .background-row { display: flex; justify-content: space-between; align-items: baseline; gap: 0.5rem; }
+.fallout-ttrpg .background-applied { color: var(--flt-amber); }
+
+/* ---------------------------------------------- weapon modifications panel */
+
+.fallout-ttrpg .mods-panel { margin-top: 0.6rem; }
+.fallout-ttrpg .mods-panel h3 {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin: 0 0 0.3rem;
+  font-size: 0.8rem;
+  border-bottom: 1px solid var(--flt-border);
+}
+.fallout-ttrpg .mods-panel .slot-readout {
+  font-size: 0.7rem;
+  font-weight: normal;
+  opacity: 0.75;
+}
+.fallout-ttrpg .mods-panel .slot-readout.over {
+  color: var(--flt-danger, #b23);
+  font-weight: bold;
+  opacity: 1;
+}
+.fallout-ttrpg .mods-panel .warn {
+  margin: 0.2rem 0;
+  font-size: 0.7rem;
+  color: var(--flt-danger, #b23);
+}
+.fallout-ttrpg .mod-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.fallout-ttrpg .mod-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0;
+  border-bottom: 1px solid var(--flt-border);
+}
+.fallout-ttrpg .mod-row .mod-name { flex: 1; font-size: 0.75rem; }
+.fallout-ttrpg .mod-row .mod-meta { font-size: 0.65rem; opacity: 0.7; }
+.fallout-ttrpg .mod-row .mod-choice { flex: 0 0 auto; font-size: 0.7rem; }
+.fallout-ttrpg .mod-attach {
+  display: flex;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+}
+.fallout-ttrpg .mod-attach .mod-picker { flex: 1; font-size: 0.75rem; }

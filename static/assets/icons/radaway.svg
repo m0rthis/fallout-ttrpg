@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="RadAway">
+  <title>RadAway</title>
+  <defs>
+    <radialGradient id="fradaway" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#fradaway)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#6ee86e" d="M76 46c-33.24 0-60 26.76-60 60v300c0 33.24 26.76 60 60 60h360c33.24 0 60-26.76 60-60V106c0-33.24-26.76-60-60-60zm120 60h120v90h90v120h-90v90H196v-90h-90V196h90z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#6ee86e" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#6ee86e" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

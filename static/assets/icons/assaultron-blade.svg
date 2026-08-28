@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Assaultron Blade">
+  <title>Assaultron Blade</title>
+  <defs>
+    <radialGradient id="fassaultron-blade" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#fassaultron-blade)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#6ee86e" d="M491.313 21.406C331.102 120.193 194.688 226.866 70 350.906c29.11-21.616 63.387-37.86 103.875-49.28 40.95-60.157 100.923-106.7 170.844-130.157-23.522 69.8-70.747 130.135-131.314 171.25-9.76 38.353-26.835 69.38-48 96.374C289.153 314.63 403.748 181.7 491.312 21.406zM132.656 345.5v.344c-30.526 52.844-71.12 87.318-115.437 115.47-4.89 28.29 9.777 39.067 34.75 34.56 30.594-51.69 68.69-88.052 115.436-115.468 0-19.56-12.363-34.906-34.75-34.906z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#6ee86e" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#6ee86e" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

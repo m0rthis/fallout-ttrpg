@@ -1,0 +1,42 @@
+{
+  "Light": {
+    "noScene": "There is no scene to light — open one first.",
+    "levels": {
+      "bright": "Bright light",
+      "dim": "Dim light",
+      "darkness": "Darkness"
+    },
+    "brightNote": "{level} (pg 118): most creatures see normally. Even gloomy days provide bright light.",
+    "dimNote": "{level} (pg 118-119): a lightly obscured area — disadvantage on Perception checks that rely on sight, passive sense −5, and every ranged weapon's range halved.",
+    "darknessNote": "{level} (pg 118-119): a heavily obscured area — vision is blocked entirely and a creature effectively suffers the Blinded condition (pg 133) when trying to see anything in it.",
+
+    "obscured": {
+      "none": "At {feet} ft: unobscured (pg 118).",
+      "light": "At {feet} ft: lightly obscured (pg 118).",
+      "heavy": "At {feet} ft: heavily obscured (pg 118)."
+    },
+    "lightNote": "Disadvantage on sight-based Perception, passive sense {sense}, ranged range ×{fraction}.",
+    "blindedNote": "Vision is blocked: effectively Blinded (pg 118 → pg 133) — sight-based ability checks fail automatically, and attacks against you have advantage.",
+    "blindsightNote": "Blindsight {feet} ft (pg 119): perceived without relying on sight, so nothing here obscures it.",
+    "nightvisionNote": "Nightvision {feet} ft (pg 119): darkness within that range is only lightly obscured, in shades of gray.",
+    "blindsight": "Blindsight",
+
+    "applied": "Vision cutoffs applied to {count} token(s) — {level}, {cutoff}. Press Clear to hand the tokens back their own vision.",
+    "cutoff": "blind beyond {feet} ft",
+    "noCutoff": "no distance cutoff in force",
+    "noTokens": "No token on this scene has vision enabled, so there was nothing to cap.",
+    "cleared": "Vision restored on {count} token(s) exactly as it was authored.",
+    "nothingToClear": "No token on this scene is carrying a vision override.",
+
+    "flamesName": "Flames ({feet} ft)",
+    "flames": "Flames (pg 118): {radius} ft across from the origin, dealing {formula} fire damage and Burning, spreading {spread} ft in all directions each round.",
+    "flamesDamage": "Flames, {radius} ft (pg 118) — {formula} fire damage, and the creature gains Burning",
+    "noOneBurning": "Nothing is standing in the flames.",
+    "extinguished": "The flames are put out with {means} (pg 118). The book gives no check, no quantity and no action cost for any of the three means, so nothing was rolled.",
+    "extinguishers": {
+      "water": "water",
+      "cryo": "a weapon dealing cryo damage",
+      "fireExtinguisher": "a fire extinguisher"
+    }
+  }
+}

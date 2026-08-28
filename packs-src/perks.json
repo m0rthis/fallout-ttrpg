@@ -1,0 +1,2117 @@
+[
+  {
+    "name": "Adaptive Reflexes",
+    "type": "perk",
+    "system": {
+      "requirements": "Missing Hand, Arm, Foot, or Leg",
+      "ranks": 99,
+      "description": "(pg 34) Governing ability: General.\nYou’ve learned to endure and overcome your disability. If you lost your foot or leg, you are no longer limited to moving only 20 feet on a turn. If you lost your hand or foot: you gain 3 points which you can use to increase any of your ability scores by the amount used. If you lost your arm or leg: you gain 5 points which you can use to increase any of your ability scores by the amount used.\nRepeat: You can take this perk as many times as you have missing arms or legs.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Blind Devil",
+    "type": "perk",
+    "system": {
+      "requirements": "Permanently Blinded",
+      "ranks": 1,
+      "description": "(pg 34) Governing ability: General.\nAttuning to your loss of sight has made your other senses sharper. You can sense your surroundings with pinpoint accuracy. You can effectively “see” any target within a number of feet of you equal to 5 x your Perception ability score. Additionally, your passive sense increases by 5 and you have advantage on all your combat sequence rolls.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.passiveSense",
+          "mode": "add",
+          "value": 5,
+          "note": "your passive sense increases by 5"
+        },
+        {
+          "key": "system.bonuses.advantage.initiative",
+          "mode": "add",
+          "value": 1,
+          "note": "you have advantage on all your combat sequence rolls"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cowboy",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 1,
+      "description": "(pg 34) Governing ability: General.\nWhenever you spend AP to draw a lever action rifle, cowboy repeater, or revolver, the AP cost is reduced to 1. Additionally, if you attack and hit a surprised creature with a lever action rifle, cowboy repeater, or revolver; the attack critically hits.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Deadeye",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 3,
+      "description": "(pg 34) Governing ability: General.\nWhenever you roll attack or damage with a ranged weapon, add 2 to the result. Additionally, whenever you make a targeted attack roll to the head with a ranged weapon, add an additional 2 to the result.\nRepeat: You can take this perk up to a maximum of three times.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Duelist",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 3,
+      "description": "(pg 34) Governing ability: General.\nWhenever you roll attack or damage with an unarmed or melee weapon, add 2 to the result.\nRepeat: You can take this perk up to a maximum of three times.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Educated",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 4 or lower",
+      "ranks": 1,
+      "description": "(pg 34) Governing ability: General.\nYou gain 4 skill points when you reach 5th, 9th, 13th, 17th, 21st, 25th, and 29th level instead of 3. Additionally, you gain a number of skill points equal to the total available at your level as if your Intelligence ability score is equal to 5. (Use the Level Up table on page 6 for reference).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Entomologist",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: General.\nYou know the anatomy of various instincts. Whenever you roll damage from an attack roll against the hit points of a creature with the insect creature type, their DT is not subtracted from your damage total. (Insects include Ants, Bloatflies, Cazador, Radscorpion, etc.)",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Fight the Power!",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 2,
+      "description": "(pg 35) Governing ability: General.\nYou've had enough of these so-called \"authorities\"! Whenever you take damage to your hit points from a creature affiliated to a faction, your DT is increased by 1. Additionally, whenever you deal damage to a creature affiliated to a faction, the damage increases by 1. (Faction examples include the NCR, Brotherhood of Steel, Caesar’s Legion, Institute, or Railroad. Up to GM’s discretion.)\nRepeat: You can take this perk up to a maximum of twice.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Here and Now",
+    "type": "perk",
+    "system": {
+      "requirements": "Level 3",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: General.\nYou and each other player character immediately gain 1000 XP. Once this perk has been taken, it cannot be taken again by any other player characters.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Purifier",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 3,
+      "description": "(pg 35) Governing ability: General.\nWhenever you make an attack roll with an unarmed or melee weapon against an abomination, add 3 to the result. (Abominations include Super mutants, Deathclaws, Mirelurks, Fog crawlers, etc.)\nRepeat: You can take this perk up to a maximum of three times.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Sneering Imperialist",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 2,
+      "description": "(pg 35) Governing ability: General.\nYou don't take kindly to raiders, junkies, or freeloaders. Whenever you roll damage from an attack roll against a humanoid with no affiliation to a faction, add 3 to the result.\nRepeat: You can take this perk up to a maximum of twice.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Swift Learner",
+    "type": "perk",
+    "system": {
+      "requirements": "",
+      "ranks": 2,
+      "description": "(pg 35) Governing ability: General.\nWhenever the GM awards XP, you and each other player character gain an additional 20% bonus.\nRepeat: This perk can be taken up to a maximum of twice by one player character or once by a total of two player characters.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Heavyweight",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 4",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: Strength.\nYou can spend 6 action points to make a special unarmed attack called a heavy unarmed attack. A heavy unarmed attack is identical to an unarmed attack but the damage is increased by 2d4. Additionally, you are immune to the encumbered condition. However, you can still gain the heavily encumbered condition.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Weapon Handling",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 4",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: Strength.\nIt’s not about size, it’s about how you use it. You no longer have disadvantage on attack rolls made with weapons that you do not meet the Strength requirement for. Additionally, you ignore the negative effects of the first two levels of decay with all weapons.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Butcher",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: Strength.\nYou’re hackin’, whackin’, and choppin’ that meat! Whenever you roll damage from an attack roll made with a melee weapon, add 2 to the result. Additionally, if you make a targeted attack with a bladed melee weapon to a creature's arms or legs and deal more than double their hit points of damage to the creature's hit points, you sever the limb!",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Fisticuffs",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: Strength.\nGive ‘em the one-two! Whenever you roll damage from an attack roll made with an unarmed attack and the damage is dealt to a target’s stamina points, add 3 to the result. Additionally, if you make a targeted attack with an unarmed attack to a creature's head and deal more than their level in points of damage to the creature's hit points, they become dazed for a number of rounds equal to their 8 - their Endurance ability score (minimum of 1).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Heave Ho!",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 35) Governing ability: Strength.\nWhat a pitch! Whenever you throw an object or creature; the distance you can throw it is doubled.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hauler",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYour maximum carry load increases by 50. Additionally, when you carry heavy objects you do not become slowed.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.carryLoad",
+          "mode": "add",
+          "value": 50,
+          "note": "Your maximum carry load increases by 50"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Assert Power",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYou can spend 4 action points on your turn to frighten a target creature that is within 30 feet of you. (See page 130 for the frightened condition). You cannot frighten a creature you have already frightened.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Don’t Fence Me In",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 5",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYou can spend 3 AP to Escape grapples, restraints, or chokeholds and you always have advantage on the roll. Additionally, you can move through one enemy space on your turn without spending an additional action point.",
+      "mechanics": []
+    },
+    "effects": [
+      {
+        "name": "Don’t Fence Me In",
+        "transfer": true,
+        "system": {
+          "changes": [
+            {
+              "key": "system.bonuses.advantage.checks.resistGrapple",
+              "type": "add",
+              "value": 1,
+              "phase": "initial",
+              "priority": 20
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "Leaping Powerhouse",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 6",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYou’ve got the strongest knees in the wasteland! Whenever you long jump you can clear an additional 10 feet and whenever you high jump you can clear an additional 3 feet. Additionally, whenever you take impact damage from a fall, you take half as much.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Super Slam!",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 6",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nIf you spend your action points to move at least 15 feet in a straight line, your next unarmed or melee weapon attack has advantage. If this attack hits and deals damage to the creature's hit points, you may choose for the target to either fall prone or be knocked back a number of feet equal to 5 x your Strength ability modifier.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Stonewall",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 6",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYour damage threshold increases by 2, and whenever you roll a Strength or Ability check to resist being grappled, restrained, or knocked prone; you have advantage or you may flip one of your Karma Caps to automatically succeed.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 2,
+          "note": "Your damage threshold increases by 2"
+        },
+        {
+          "key": "system.bonuses.advantage.checks.resistGrapple",
+          "mode": "add",
+          "value": 1,
+          "note": "advantage on checks to resist being grappled, restrained, or knocked prone"
+        }
+      ]
+    },
+    "effects": [
+      {
+        "name": "Stonewall",
+        "transfer": true,
+        "system": {
+          "changes": [
+            {
+              "key": "system.bonuses.advantage.checks.resistGrapple",
+              "type": "add",
+              "value": 1,
+              "phase": "initial",
+              "priority": 20
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "K.O.",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 7",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nWhenever you deal damage to a target creature's hit points for the first time from an attack roll with an unarmed or melee weapon attack, they become dazed for 2 rounds.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Piercing Strikes",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 7",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYou know how to make devastating attacks through blocks. Whenever you deal damage from an unarmed or melee weapon attack, the target’s DT is subtracted by a number equal to your Strength ability modifier to a minimum of 0.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Dual Wielder",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 7",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nTwo is better than one! If you wield a melee or unarmed weapon in one hand while you wield another melee or unarmed weapon in your other hand, you can spend additional AP when you attack with one weapon to make another attack with the other weapon. The additional AP is equal to half of the second weapon’s AP cost (rounded up).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Paralyzing Punch",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 8",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nIf you hit a single target creature with at least three melee attacks on a turn, they gain 2 levels of fatigue. If a creature reaches 4 levels of fatigue in this way; they become paralyzed until the end of their next turn. Once a creature has become paralyzed in this way, they cannot become paralyzed again until you roll combat sequence.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Rooted",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 8",
+      "ranks": 1,
+      "description": "(pg 36) Governing ability: Strength.\nYou're part tree! You can spend 4 action points on your turn to become Rooted. While Rooted, your DT increases by 5 and any damage you deal from an attack made with an unarmed or melee weapon is increased by 2. However, moving 5 feet costs 2 action points. You can spend 3 action points to remove the Rooted condition.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Unstoppable Force",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 9",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Strength.\nYour martial might is truly legendary. Whenever you roll damage from an unarmed or melee weapon attack roll against the hit points of a creature, their DT is not subtracted from your damage total",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Never Unarmed",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 9",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Strength.\nAnything can be a weapon if you’re holding it right. You no longer have disadvantage on improvised attack rolls (unless you already have disadvantage, like the prone condition or the long range for thrown objects), and your critical hit chance is decreased by 2 when you attack with an improvised weapon.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Living Weapons",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 10",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Strength.\nYou can use other creatures as improved weapons. If they are unwilling, they must first be grappled to use them as an improvised weapon. Using a creature as an improved weapon costs 5 AP, uses your Melee Weapons skill to hit, critically hits on 20 (x2), and deals a number of d6’s of impact damage depending on their size. Small creatures deal 3d6 impact damage, medium creatures deal 4d6 impact damage, and large creatures deal 5d6 impact damage (you cannot use a creature huge or greater as an improvised weapon). You can also throw them a number of feet equal to 2 x your Strength score. If you throw a creature into another creature and deal impact damage to their hit points, they both fall prone. Whenever a creature is used as an improved weapon, they take half of the impact damage dealt to their hit points.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Slayer",
+    "type": "perk",
+    "system": {
+      "requirements": "Strength 10",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Strength.\nThe slayer walks the earth. Whenever you spend AP to attack with an unarmed or melee weapon attack, it costs 1 less. Additionally, your critical hit chance with all unarmed and melee weapons decreases by 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Careful Aim",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 4",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Perception.\nYou take your time to attack, allowing you to be more accurate. Whenever you spend action points to make an attack roll with a ranged weapon, you can spend 1 additional action point to add 1 to the result of the roll. You can spend up to 3 additional action points to add an additional 1 to the attack per action point used.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Friend of the Night",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 4",
+      "ranks": 2,
+      "description": "(pg 37) Governing ability: Perception.\nYou’ve adapted to low-light conditions and you know how to utilize the darkness to your advantage. You no longer have disadvantage on any attack rolls, ability checks, or skill checks inhibited by low-light conditions.\nRepeat: If you take this perk again, you’ve mutated or upgraded to adapt to the darkness. You have night vision out to 100 feet.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Alertness",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Perception.\nYou've learned to keep your senses alert to any danger. If you do not move from a singular location no larger than a 20 foot radius for at least 10 minutes; you gain a bonus to your passive sense equal to your Perception ability score. (Simply put, your passive sense is equal to 12 + double your Perception ability modifier)",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Infiltrator",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 1,
+      "description": "(pg 37) Governing ability: Perception.\nYou can get in and out of places with ease. You can spend 3 action points and examine a lock or computer within 5 feet of you to learn the Breach DC. Additionally, whenever you fail a Breach check, you can flip one of your Karma Caps to automatically succeed instead.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Empowered Energy",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 3,
+      "description": "(pg 38) Governing ability: Perception.\nWhenever you roll damage from an attack from an energy weapon, you can roll an additional damage dice. Additionally, whenever you critically hit with an energy weapon you can choose to either make an additional attack (up to a maximum of one per turn) or double the critical hit damage.\nRepeat: You can take this perk up to a maximum of three times, each time increasing your energy weapon damage dice by one.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Standoff",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 3,
+      "description": "(pg 38) Governing ability: Perception.\nWhenever you roll Combat Sequence, you and one other creature within 30 feet of you gains a bonus equal to your Perception ability modifier.\nRepeat: You can take this perk up to a maximum of three times, each time you take it increases the amount of creature you can affect by one.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Efficient Diagnosis",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 3,
+      "description": "(pg 38) Governing ability: Perception.\nYou know where and why it hurts. Whenever you use a stimpak, first aid kit, or doctor’s bag on another creature; they heal an additional 2 hit points, alternatively you can flip one of your karma caps to heal double the amount you normally would.\nRepeat: You can take this perk up to a maximum of three times, each time increasing the number healed by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Nose For Trouble",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 5",
+      "ranks": 1,
+      "description": "(pg 38) Governing ability: Perception.\nYou have a keen connection to your sixth sense. Sneak attacks deal half as much damage to you. If a creature rolls a sneak ability check against your passive sense and succeeds by 5 or less, you are aware of the presence but are unable to detect the location of the hiding creature. Additionally, you are always aware if you have failed a sneak check to hide.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Pack Rat",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 6",
+      "ranks": 3,
+      "description": "(pg 38) Governing ability: Perception.\nEach player character’s carry load increases by 10. Additionally, any item you carry that has a load less than 3 is reduced to 1.\nRepeat: You can take this perk up to a maximum of three times, each time increasing each player character’s carry load by 10.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.carryLoad",
+          "mode": "add",
+          "value": 10,
+          "note": "Each player character’s carry load increases by 10 (this character's share; the party's stays text)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Splash Damage",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 6",
+      "ranks": 2,
+      "description": "(pg 38) Governing ability: Perception.\nWhen you're deep in enemy territory, you just start chucking grenades and hope for the best. Whenever you attack with a weapon or equipment that has an area of effect, the area is increased by half.\nRepeat: If you take this perk again, area of effect size is increased by half (effectively doubling your area of effect size).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Careful Detonations",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 6",
+      "ranks": 1,
+      "description": "(pg 38) Governing ability: Perception.\nWhenever you throw an explosive that isn’t placed, you can choose a 5 foot radius area. Any creatures or objects in that 5 foot area take no damage and do not suffer any effects from the explosive. Alternatively, whenever you throw or detonate an explosive; you can choose for the area of effect radius to be up to 5 feet smaller.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Pulsion Perforation",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 7",
+      "ranks": 2,
+      "description": "(pg 38) Governing ability: Perception.\nYour shots pierce right through your enemies! Whenever you make an attack roll with an energy weapon, you can choose to have the attack target up to three creatures that are in a line. The line is drawn starting from your location.\nRepeat: You can take this perk up to a maximum of twice. If you take this perk again you can target up to six creatures in a line.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Demolitions Expert",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 7",
+      "ranks": 3,
+      "description": "(pg 38) Governing ability: Perception.\nYou are an expert when it comes to the fine art of handling explosives. Whenever you deal damage with an explosive, the damage is increased by an additional dice.\nRepeat: You can take this perk up to a maximum of three times.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Act on Instinct",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 7",
+      "ranks": 1,
+      "description": "(pg 39) Governing ability: Perception.\nWhen you roll combat sequence, you gain 3 AP that you can spend immediately before any other creatures act in the combat. If an action would have taken place to initiate the combat, such as an enemy attacking from a hidden spot, you spend these action points after this action occurs.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hit the Deck",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 8",
+      "ranks": 1,
+      "description": "(pg 39) Governing ability: Perception.\nYou react very quickly to the word \"incoming\". Whenever you take damage to your stamina points from an explosive, the damage is halved.\nRepeat: You can take this perk up to a maximum of once.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Meltdown",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 8",
+      "ranks": 1,
+      "description": "(pg 39) Governing ability: Perception.\nWhenever you deal enough damage to bring another creature to 0 hit points from an attack roll made with a weapon that deals laser, plasma, or electricity damage; you can choose for that creature to explode with a corona of energy. Each creature within 10 feet of that creature takes damage equal to the amount you dealt.\nRepeat: You can take this perk up to a maximum of once.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Sniper",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 9",
+      "ranks": 1,
+      "description": "(pg 39) Governing ability: Perception.\nWhenever you spend action points to make an attack roll with a two-handed ranged weapon, you can spend 1 additional action point to add 2 to the result of the roll. You can spend up to 3 additional action points to add an additional 2 to the attack per action point used. Additionally, if you make a targeted attack roll to the head with a rifle that has the Scope mod, you critically hit on the attack roll, and you deal damage to the target’s hit points; the target dies so long as it can’t live without its head, or isn’t wearing a power armor helmet.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Volatile Hucker",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 9",
+      "ranks": 1,
+      "description": "(pg 39) Governing ability: Perception.\nWhenever you spend action points to throw an explosive, you spend 1 less action point to a minimum of 3. Additionally, if you roll a 20 on your Explosives skill check, the explosive explodes at the end of your turn and deals extra damage equal to double the damage dice.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Medicinal Master",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 10",
+      "ranks": 2,
+      "description": "(pg 39) Governing ability: Perception.\nWhen another creature rests for at least an hour, you can use a first aid kit, stimpak, or doctor’s bag to heal them of half of their total hit points. If they rest for at least 4 hours, you you can use a first aid kit, stimpak, or doctor’s bag to heal them of all their hit points.\nRepeat: If you take this perk again, when another creature rests for at least an hour, you can use a first aid kit, stimpak, or doctor’s bag to heal them of all their hit points.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Oracle",
+    "type": "perk",
+    "system": {
+      "requirements": "Perception 10",
+      "ranks": 2,
+      "description": "(pg 39) Governing ability: Perception.\nYour predictions for trouble are supernatural. Whenever you roll Combat Sequence, you can swap the combat sequence rolls of any number of willing creatures.\nRepeat: If you take this perk again, whenever you roll Combat Sequence, you can swap the combat sequence rolls of up to three additional creatures (they do not have to be willing).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Master Chef",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 4",
+      "ranks": 1,
+      "description": "(pg 40) Governing ability: Endurance.\nYou know how to spice up any meal. You can spend 5 minutes cooking pre-made food, or whenever you make cooked food; it always has the filling property, if it has the bland property it instead has the tasty property, and any creature who consumes the food gains temporary stamina points equal to their level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Lifegiver",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 4",
+      "ranks": 2,
+      "description": "(pg 40) Governing ability: Endurance.\nYour maximum hit points increase by 10 and each other player character’s maximum hit points increase by 1.\nRepeat: If you take this perk again, your maximum hit points increase by 10 and each other player character’s maximum hit points increase by 1.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.hpMax",
+          "mode": "add",
+          "value": 10,
+          "note": "Your maximum hit points increase by 10 (the party's +1 each stays text)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Toughness",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 2,
+      "description": "(pg 40) Governing ability: Endurance.\nYour DT increases by 1 and whenever you roll a check to resist becoming frightened, you are not frightened if you succeed by 5 or less.\nRepeat: If you take this perk again, your DT increases by 1 and you have advantage on checks to resist becoming frightened.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 1,
+          "note": "Your DT increases by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Beyond the Sea",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 1,
+      "description": "(pg 40) Governing ability: Endurance.\nWhenever you spend action points to move through water, you can spend 1 action point to move 5 feet instead of 10. Additionally, drinking dirty water does not give you any irradiated levels.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Mad Dash",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 1,
+      "description": "(pg 40) Governing ability: Endurance.\nWhenever you spend action points on your turn to sprint, you move 80 feet in a line instead of 50.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Walk It Off",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 1,
+      "description": "(pg 40) Governing ability: Endurance.\nWhenever you gain a limb condition, the effects last for half as long. Additionally, so long as the limb condition isn’t severe, you can flip your Karma Cap to ignore the effects of the condition.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Trailblazer’s Instinct",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 1,
+      "description": "(pg 40) Governing ability: Endurance.\nWhen you start traveling, once per day you can roll a Survival skill check with the DC equal to 12. The DC increases by 2 if the route you are taking moves through difficult terrain, is longer than 3 days of travel, or is in unfamiliar territory. On a successful roll, you and each other creature you are traveling with move faster by 2 miles per hour. Additionally, you have advantage on any encounter rolls.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Survivorship Bias",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 5",
+      "ranks": 3,
+      "description": "(pg 40) Governing ability: Endurance.\nYour know-how of other creatures and what they can do allows you to have an edge against them. Whenever you can sense another creature, so long as you have rolled combat sequence with the creature type and subtype before; you can spend 3 action points to learn either the hit point, stamina point, action point, AC, or DT total of any of them. Additionally, you can spend 6 action points to learn one of its attacks, or any weaknesses it has (if any).\nRepeat: You can take this perk up to a maximum of three times. Each time you take this perk you learn an additional statistic, action, or weakness when using your action points.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Grit",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 6",
+      "ranks": 2,
+      "description": "(pg 40) Governing ability: Endurance.\nWhenever you are dying, movement does not cost any extra action points and you gain an additional action point at the start of your turn.\nRepeat: If you take this perk again, you gain two additional action points at the start of your turn while you’re dying (for a total of 3).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "The Long Road",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 6",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nWhile traveling, you and each player character can travel an additional hour without gaining a level of exhaustion. Additionally, you gain all of your stamina points after resting for an hour instead of eight.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Alive and Kickin’",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 6",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYour energetic spirit can go the extra mile! You ignore the negative effects of the first three levels of exhaustion.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Solar Powered",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 7",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nWhenever you rest for at least an hour in direct sunlight, you gain temporary stamina points equal to your level. Additionally, you can use this solar power to charge your weapons. Whenever you roll damage, you can lose any number of temporary stamina points gained from this perk to increase the damage by an amount equal to the temporary stamina points lost.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Roughin’ It",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 7",
+      "ranks": 2,
+      "description": "(pg 41) Governing ability: Endurance.\nYou're more at home under the open stars than under a roof. Whenever you rest outside for at least 1 hour, you gain temporary hit points and temporary stamina points equal to your level for the next 8 hours.\nRepeat: You can take this perk up to a maximum of twice. When you take it again, each other creature of your choice who also rests with you gains the same bonus.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Made of Sterner Stuff",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 7",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYour AC increases by 1 regardless if you are armored. Additionally, when you block, you do not need to be wielding a melee weapon. If you are wielding a melee weapon, your DT increases by 2 against other Melee attacks.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": 1,
+          "note": "Your AC increases by 1 regardless if you are armored"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Pure Determination",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 8",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nWhen you fall to 0 hit points for the first time on a turn, you can flip one of your Karma Caps to heal a number of hit points equal to your healing rate. Additionally, you are immune to the shock condition.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Quick Recovery",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 8",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYou can spend 3 action points on your turn to heal a number of stamina points or hit points equal to your healing rate. Once you use this ability, you cannot use it again until you rest for at least 6 hours. Additionally, whenever you heal hit points, you gain a bonus equal to your Endurance modifier.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Implant Y-7",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 9",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYour maximum hit points increase by a number equal to double your level. Additionally, your Healing Rate increases by 2.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.healingRate",
+          "mode": "add",
+          "value": 2,
+          "note": "your Healing Rate increases by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "NEMEAN Sub-Dermal Armor",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 9",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYou can spend 3 action points to activate your implant, when you do; you gain resistance to any three types of damage of your choice (acid, bludgeoning, ballistic, cold, electricity, explosive, fire, impact, laser, piercing, plasma, poison, radiation, or slashing) This lasts for 3 rounds (or 15 seconds). After which, you cannot activate your implant again until you rest for at least 1 hour or roll combat sequence.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Indomitable Spirit",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 10",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nWhen you roll combat sequence, you and any creatures of your choice gain temporary hit points equal to your Endurance modifier. Additionally, you can spend 3 action points on a dying creature within 5 feet of you, if you do they succeed one death save.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "PHOENIX Implant",
+    "type": "perk",
+    "system": {
+      "requirements": "Endurance 10",
+      "ranks": 1,
+      "description": "(pg 41) Governing ability: Endurance.\nYou can spend 3 action points to activate your implant, when you do; you heal a number of hit points at the start of your turn equal to your healing rate. This lasts for 6 rounds (or 30 seconds). After which, you cannot activate your implant again until you rest for at least 1 hour or roll combat sequence.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Savvy Salesman",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 4",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nWhenever you purchase an item, the price is reduced by a percentage number equal to 2 x your Charisma ability score.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Party Animal",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 4",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nNobody has a good time like you! You cannot become addicted to Alcohol and whenever you drink an alcoholic drink, you regain a number of stamina points equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Flaunt ‘n Taunt",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nYou’re good at causing a scene! You can spend 3 action points on your turn to taunt a target creature. Roll a Charisma check, that creature must succeed a Charisma ability check with the DC being equal to your check total. If they fail; the next attack roll against the taunted creature that isn’t from you has advantage. Additionally on their next turn they can only target you with their attacks. If you try to taunt a creature you have previously taunted, they have advantage on their Charisma check. You cannot taunt a creature more than twice.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Dealer's Choice",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nYou’ve got a way with selling even the most useless scrap. Whenever you sell an item, you can sell it for 75% of the price instead of 50%.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Poker Face",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nYou are totally unreadable. Whenever you roll a Speech skill check and the result is lower than 9, the total is instead equal to 9 + your Speech bonus. Additionally, whenever you gamble in a game of cards or dice; you can add your Charisma ability score to the roll.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Battle Cry",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nYou can spend 3 AP on your to encourage your allies, let out a battle cry, or otherwise instigate victory! Each creature of your choice within 20 feet of you gains 2 additional action points to a maximum of 15. Additionally, each chosen creature gains advantage on their first attack roll on their turn. Once you use this ability you cannot use it again until you roll combat sequence again.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Animal Friend",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nWhile in Combat, you will not be targeted by Animals or Insects unless all other targets are out of sight or unconscious. Additionally, you have advantage on any Charisma checks to interact with animals.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Synergizing Teamwork",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 6",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nWhenever another party member fails an attack roll, you can flip one of your Karma Caps to add a bonus equal to your Charisma ability modifier. If the attack hits, the next creature to make an attack roll for the first time on their turn gains a bonus equal to your Charisma ability modifier plus 1. This ability continues to trigger until a party member misses their first attack roll on their turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ferocious Loyalty",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 6",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nThe power of your personality inspires die-hard loyalty from your followers. When you first take damage to your hit points, your party members can regain all their stamina points so long as they can sense you. Once this ability triggers it doesn’t trigger again until you rest for at least 8 hours.\nRepeat: Once a player character has taken this perk, it cannot be taken by any other characters.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Back to Back",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 6",
+      "ranks": 2,
+      "description": "(pg 43) Governing ability: Charisma.\nShoulder to shoulder. When you roll combat sequence, choose one ally. When you and that ally are within 5 feet of each other, you and that ally gain the following benefits; Your AC increases by 1, your DT increases by 2, and whenever either you or the chosen ally take damage, either you or that ally can choose to reduce that damage by half. Then, they take the same amount of damage.\nRepeat: Once a player character has taken this perk, it cannot be taken by any other characters. If you take this perk again, the AC bonus increases by 1, the DT bonus increases by 2, and whenever you or that ally take damage, either you or that ally can choose to reduce that damage to 0. Then, they take the damage instead.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Keeping your Cool",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 7",
+      "ranks": 2,
+      "description": "(pg 43) Governing ability: Charisma.\nDuring combat, you have advantage on all Charisma checks and your AC increases by 1 so long as you haven’t taken any damage to your hit points during the combat. Once you take damage to your hit points, you lose this ability even if you heal back those hit points.\nRepeat: You can take this perk up to a maximum of twice. When you take it again, the bonus to your AC increases by 1 (for a total of 2) and whenever you take damage to your stamina points; it is reduced by 1.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": 1,
+          "condition": "undamaged",
+          "note": "your AC increases by 1 so long as you haven’t taken any damage to your hit points during the combat"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Big Ego",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 5",
+      "ranks": 1,
+      "description": "(pg 42) Governing ability: Charisma.\nEven YOU know why you’re so great! Your Party Nerve modifier is doubled for you.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Inspiring Action",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 7",
+      "ranks": 1,
+      "description": "(pg 43) Governing ability: Charisma.\nYou can spend 3 AP on your turn to inspire a creature within 30 feet. That creature can add 2d10 to any d20 roll they make for the next minute. Once they use the 2d10, they cannot use it again. Once you inspire a creature, you cannot inspire them again until the next day.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Terrifying Presence",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 7",
+      "ranks": 1,
+      "description": "(pg 43) Governing ability: Charisma.\nDuring the first round of combat, regardless if you are first, you intimidate your opponents with threats. Each enemy that can see you in the combat sequence with an intelligence higher than 2 becomes frightened until the end of their turn. (see page 130).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Legend of the Wastelander",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 8",
+      "ranks": 1,
+      "description": "(pg 43) Governing ability: Charisma.\nStories of you are heard from around the wasteland. When you roll combat sequence, each enemy creature’s maximum stamina points are reduced by an amount equal to your party nerve. Yes, even if they’re a creature incapable of comprehending the idea of a legend.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Empowering Personality",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 8",
+      "ranks": 1,
+      "description": "(pg 43) Governing ability: Charisma.\nYou lead by example, whenever another creature within 30 feet of you deals damage from an attack roll; you can flip one of your Karma Caps to increase the damage by a bonus equal to double your Charisma ability modifier. Additionally, whenever another creature takes damage to their hit points, you can flip one of your Karma Caps to reduce this damage by an amount equal to double your Charisma ability modifier.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Commander",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 9",
+      "ranks": 1,
+      "description": "(pg 43) Governing ability: Charisma.\nOnce per turn, you can spend 3 AP to give any allied creature within 60 feet of you a command. That creature gains 6 AP to complete the described action immediately. These action points do not carry over to the next turn and cannot be recycled.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Cunning Strategist",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 9",
+      "ranks": 2,
+      "description": "(pg 43) Governing ability: Charisma.\nWhenever another player character flips their Karma Cap back over when they roll a 1 on a d20 or if they are hit with a critical hit, you can also flip over your Karma Cap.\nRepeat: You can take this perk up to a maximum of twice, when you take it again; whenever another player character flips their Karma Cap back over when they roll a 1 on a d20 or if they are hit with a critical hit, you can choose for another player character to flip over their Karma Cap.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Celebrity",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 10",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Charisma.\nEverybody knows who you are! People around the wasteland go crazy just to meet you! You get free drinks at bars and you have a permanent 20% discount on all items (So long as you don’t act like a jackass). Whenever you meet an NPC who isn’t hostile, in neutral standing towards you, or directly affiliated with a faction; you may roll a Luck check with the DC equal to 30 - your Speech or Barter skill bonus. On a success, the NPC knows who you are. You gain advantage on all Charisma based skill checks with this NPC. Additionally, you can lose one of your Karma Caps to have this NPC follow you and your party. Obeying orders from you (within reason), but won’t outright hurt or kill themselves. If you dismiss this NPC, or they die; you gain your Karma Cap back.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Stand and Fight",
+    "type": "perk",
+    "system": {
+      "requirements": "Charisma 10",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Charisma.\nWhenever another creature within 60 feet of you fails a death save and dies, you can turn that roll into a critical success. Once you use this ability on a creature, you cannot use it on them again for 12 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Retention",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 4",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Intelligence.\nWhenever another player character succeeds a Barter, Breach, Crafting, Intimidation, Medicine, Science, Sneak, Speech, or Survival skill check, you gain a +3 to that skill check the next time you roll it (up to a maximum of +3). Additionally, whenever you read a Skill Magazine, its effects last for 8 hours instead of 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Math Wrath",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 4",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Intelligence.\nWhenever you make a targeted attack, you can spend half the amount of additional AP (rounded up). Additionally, you can make a special attack with a ranged weapon on your turn called a Calculated attack. This attack costs 6 action points regardless of the weapon’s action point cost. When you make a Calculated attack, you can target a creature behind cover or otherwise out of sight so long as there is a plane or surface in which your projectile can ricochet off of (up to GM’s discretion). When you roll damage from a Calculated attack, the damage is reduced by 1 for every 10 feet the projectile travels after ricocheting.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Adroit Alchemist",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 6",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nYou understand the complex formulae of chems and can now alter them to change their effects. Whenever you craft a Chem, you use one less material listed in the crafting materials to a minimum of one. You can also make any Chem potent or diluted so long as you use one of the materials listed in the crafting materials. A potent Chem’s effects are doubled, however the addiction DC is increased by 2. A diluted Chem’s effects are halved, however you cannot become addicted to a diluted Chem.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Patch Up",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Intelligence.\nYou can heal a creature up to their healing rate with 5 AP. Once you heal in this way, that creature can only be healed again after resting for at least 8 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Explorer",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nWhenever you rest and gain a bonus of XP after having discovered new locations, you gain an additional 50% bonus of XP. Additionally; you can learn the direction and distance of any three named locations, to the GM’s discretion.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Weatherboy!",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nYou always know which way is north, what the weather will be for the next three days, and whether the area you’re traveling in is populated or empty (which determines encounters).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "On-the-Go Mechanic",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nWhenever you craft an item, you no longer need a workbench. However, you need to keep your tools on you. Your tools are equal to 5 Load.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Home Remedy Virologist",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nYou know hacks to treat wasteland diseases. The duration of one disease is halved (rounded down) so long as you spend an uninterrupted 10 minutes with the diseased creature and you use one Produce food item combined with one Chem or Medicine item. Once the disease has been treated in this way by this perk, it cannot be treated again in this way by you or any other creature.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Light Touch",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 6",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nYou know how to specially craft your armor to fit you to grant you more flexibility and protection. When you take damage and are reduced to 0 hit points, your Armor only decays 1 level. Additionally; whenever you take damage to your hit points, you can have your armor absorb the blow. The damage is reduced to 0 but your armor decays by 1 level for every 10 damage absorbed.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Chemist",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 5",
+      "ranks": 1,
+      "description": "(pg 44) Governing ability: Intelligence.\nYou know exactly what they put in those chems. The duration of any chems you take last twice as long and you have advantage on resisting addiction.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.advantage.checks.addiction",
+          "mode": "add",
+          "value": 1,
+          "note": "you have advantage on resisting addiction"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Efficient Munitions",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 6",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nWhenever you craft any type of ammunition, the attack and damage rolls made with this ammunition are increased by 2. Alternatively, you can forgo this bonus to instead; double the amount of ammunition you craft whenever you craft any type of ammunition.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Nerd Rage!",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 7",
+      "ranks": 1,
+      "description": "(pg 45) Governing ability: Intelligence.\nYou've been pushed around long enough! Whenever you start your turn with less than half your total hit points, your DT increases by 3 and you deal an additional 3 damage.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "In Shining Armor",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 7",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nYou’ve upgraded your armor with reflective material. You have resistance to laser and plasma damage. Additionally; each time you are hit with laser or plasma damage; roll a Luck check. On an 19 or higher the beam refracts and hits the attacker, dealing the same damage to them.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Power Armor Master",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 7",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nYou know the in’s and out’s of power armor. When you use power armor, you do not overheat if you spend more than 15 AP on a turn. Additionally, you can craft a special upgrade for any power armor that increases its maximum and regained defense points by 2. The crafting materials needed to craft this upgrade are equal to the materials needed to repair the power armor. Finally, when you repair power armor you spend one less of each material.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Computer Whiz",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 8",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nWhenever you fail a Breach skill check to hack a computer, you can spend 10 minutes to make your check equal to 8 + your breach skill bonus, or you can spend an hour to make your check equal to 8 + double your breach skill bonus.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Robotic Expert",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 8",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nYou ignore 2 points of damage threshold when dealing damage to Robots. Additionally, you can attempt to shut down robots with a successful Science check, the DC is equal to the Robots Intelligence score + 10. You cannot shut down robots if you are in combat with them.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Quick Repair",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 9",
+      "ranks": 3,
+      "description": "(pg 46) Governing ability: Intelligence.\nYou can spend 6 action points to Quick repair. Quick repair removes two levels of decay from an item. Once you Quick repair, you cannot do it again until you rest for at least 8 hours.\nRepeat: You can take this perk up to a maximum of three times. When you take it again you can Quick repair an additional time per 8 hour rest.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Remedial Atomizer",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 9",
+      "ranks": 2,
+      "description": "(pg 46) Governing ability: Intelligence.\nYou can spend 6 action points and two stimpaks to cause each non-robotic creature within 20 feet of you to regain hit points equal to their healing rate. Alternatively, you can spend 6 action points and two RobCo Quick Fix-Its to cause each robotic creature within 20 feet of you to regain hit points equal to their healing rate.\nRepeat: You can take this perk up to a maximum of twice. If you take this perk again, you can use four stimpaks or robot repair kits to have each creature heal double their healing rate.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Overcharge",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 10",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nWhen you spend action points to make an attack roll with a ranged weapon, you can spend up to 3 additional AP to add a number of additional damage dice to the damage. The number of additional damage dice that are added is equal to the amount of extra AP spent. You can only use this ability once per turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Expert Engineer",
+    "type": "perk",
+    "system": {
+      "requirements": "Intelligence 10",
+      "ranks": 1,
+      "description": "(pg 46) Governing ability: Intelligence.\nWhenever you craft an item, you use two less materials for each material listed to a minimum of one.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Quick Draw",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 4",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you spend action points to equip or stow an item, it costs 2 less to a minimum of 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Action Hero",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 4",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nYour action point maximum increases by 2 to a maximum of 15.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.apMax",
+          "mode": "add",
+          "value": 2,
+          "note": "Your action point maximum increases by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fan the Hammer",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you attack with a revolver, you can flip one of your Karma Caps and spend 10 AP to make a number of additional attacks without spending any additional AP, the target of these attacks must be within 10 feet of the previous target. The number of attacks you can make is equal to the rounds you have left in the revolver.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Rapid Reload",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you spend AP to reload or take cover, it costs you 3 less to a minimum of 1. Additionally, when you reload a weapon that has Manual Reload, you can spend 1 AP to reload three rounds.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Reaction Reactor",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nIf you end your turn with at least 3 unused action points, you can use them at the end of another creature's turn. If you do not use them, you recycle all of them at the beginning of your next turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "The Dance",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you roll damage from an attack made with a bladed melee weapon, you can choose to add your Agility ability modifier to the damage instead of your Strength ability modifier.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Nimble Dash",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you spend action points on your turn to sprint, you do not stop your movement when small barriers block you. Instead you can spend 10 feet of that movement to vault over or slide under the barrier. Additionally, if you spent all of your action points on a turn to sprint, all attack rolls made against you have disadvantage until the start of your next turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Evasive Action",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 5",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you take damage to your stamina points for the first time after rolling combat sequence, the damage is reduced to 0.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Gunslinger",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 6",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you make an attack roll with a handgun, add 2 to the result. Additionally, whenever you hit a creature with a targeted attack roll to the head with a handgun, you can flip one of your Karma Caps to turn the hit into a critical hit. Once you use this ability, you cannot use it again until you roll combat sequence again.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "And Stay Back",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 6",
+      "ranks": 1,
+      "description": "(pg 47) Governing ability: Agility.\nWhenever you deal damage to a creature with a shotgun, you ignore 2 points of DT. Additionally, the target is within 5 feet of you; you can choose to knock them back 15 feet away from you.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Multitarget Hotshot",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 6",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nWhenever you hit a creature with a ranged attack, your next ranged attack roll is increased by 2 so long as you target a different creature. After this second attack, if you target a different creature than the previous two attacks, the attack roll is increased by 4. After this third attack, you cannot gain the initial increase of 2 until you make another ranged attack. Clarification: You can make one normal ranged attack, then if you target another creature, you get +2. If you target another different creature, you get +4. Then, the bonus resets. You need to attack a creature without this perk’s bonus to start the +2 to +4 cycle again. Further clarification, you do not need to make these attacks all on one turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ninja",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 7",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nYou can spend 5 action points on your turn to perform a spinning attack, this attack targets 3 creatures that are within 5 feet of you and acts as an unarmed attack. Additionally, whenever you attack with a melee weapon or unarmed attack; your crit chance decreases by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Concentrated Fire",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 7",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nWhenever you hit with a targeted attack roll, you can choose the limb condition. Additionally, your attack rolls against creatures are increased by 2 for each limb condition they have.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Guns Akimbo!",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 7",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nOne gun ain’t enough? You can wield two with deadly efficiency. If you wield a gun or energy weapon in one hand while you wield another gun or energy weapon in your other hand, you can spend additional AP when you attack with one weapon to make another attack with the other weapon. The additional AP is equal to half of the second weapon’s AP cost (rounded up).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Mister Sandman",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 8",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nBring me a dream! If you attack an unconscious creature, they die.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ranger’s Deadly Aim",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 8",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nIf you are the first to act in combat sequence, you can choose for your first attack roll to critically hit or, you can attack up to three times without spending any AP.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Group Camouflage",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 9",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nYour Group Sneak score is equal to 20, as are any allies within 30 feet of you.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Efficient Speedster",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 9",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nYou recycle all your unused Action Points at the start of your turn, additionally whenever you sprint you can turn your direction once and continue sprinting.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Anticipated Reflexes",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 10",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nWhenever an attack beats your AC and hits you, you can choose to spend 3 Action Points to increase your AC by 1, 6 Action Points to increase your AC by 2, or 9 Action Points to increase your AC by 3. However, at the start of your next turn you will regain less Action Points equal to the amount you spent.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Nerves of Steel",
+    "type": "perk",
+    "system": {
+      "requirements": "Agility 10",
+      "ranks": 1,
+      "description": "(pg 48) Governing ability: Agility.\nAt the start of each of your turns, so long as your hit point total isn’t below half, you regain stamina points equal to half your level (rounded down).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Scrounger",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 4",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhenever you make a Luck ability check to determine the loot you find, you can roll two checks and choose which result to take.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Big Crits",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 4",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nThe critical hits you cause in combat are more devastating. If you roll a 20 on an attack roll with a weapon, you critically hit and the crit’s damage is doubled.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Bloody Mess",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhenever you deal damage with a weapon or explosive, the damage increases by 2. Additionally, whenever you reduce a creature to 0 hit points, roll a Luck check with the DC equal to 20. If you succeed, the creature’s body bursts into a horrific visceral mess. Each creature of your choice within 30 feet of the explosion becomes frightened for 1 round.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.damage",
+          "mode": "add",
+          "value": 2,
+          "note": "Whenever you deal damage with a weapon or explosive, the damage increases by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fortune Finder",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhen you take this perk, you suddenly come into possession of 800 caps! Additionally, whenever you find bottle caps, you find a number more equal to your Luck ability modifier.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Make it Double",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nYou gain an additional Karma Cap.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.karmaCaps",
+          "mode": "add",
+          "value": 1,
+          "note": "You gain an additional Karma Cap"
+        }
+      ]
+    }
+  },
+  {
+    "name": "It Just Works",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 2,
+      "description": "(pg 49) Governing ability: Luck.\nWhenever any of your weapons or armor would gain a level of decay, roll a Luck check with the DC equal to 12 + the current levels of decay on the weapon or armor. If you fail, the weapon or armor gains a level of decay. If you succeed the weapon or armor still gains a level of decay, but this level of decay doesn’t apply any negative effects for as long as you have it.\nRepeat: You can take this perk up to a maximum of twice, if you take it again; whenever you succeed the aforementioned Luck check, the weapon or armor gains no levels of decay instead.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "On a Fluke!",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhenever you or another party member misses an attack, or fails an ability or skill check; you can flip one of your Karma Caps to turn it into a success (at GM’s discretion).",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Immuno-Four-Leaf Clover",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 5",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhen you or another player character contracts a disease, you can roll a Luck check with the DC equal to 10 + 2d4. If you succeed, you do not contract the disease and the next time you roll this check; the DC increases by 1d4. The DC resets to 10 + 2d4 after you contract a disease.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Grim Reaper's Sprint",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 6",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nWhenever you bring a creature to 0 hit points with a targeted attack, you immediately gain 8 action points. If you bring another creature to 0 hit points with a targeted attack on the same turn, you immediately gain 6 action points. If you bring a third creature to 0 hit points with a targeted attack on the same turn, you immediately gain 4 action points.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Spray and Pray",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 6",
+      "ranks": 1,
+      "description": "(pg 49) Governing ability: Luck.\nYou can liberally blast areas with reckless abandon. Whenever you make a blind attack, you have advantage on the attack roll. Additionally, the blind attack DC is halved.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.advantage.checks.blindAttack",
+          "mode": "add",
+          "value": 1,
+          "note": "whenever you make a blind attack, you have advantage on the attack roll"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Randomizer",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 6",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nWhenever you craft or repair an item, you can randomly choose one of the required materials, the required material is reduced by an amount equal to your Luck ability modifier to a minimum of 1. The required material is also replaced by a randomly chosen junk material. Additionally, whenever you consume a food, drink, or chem, you can choose to roll a Luck ability check with the DC equal to 15, if you succeed; one random food, drink, or chem property is added to the consumed food, drink, or chem.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Critical Banker",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 7",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nWhenever you roll a critical hit, you can choose to deal no extra damage. If you do, you gain a temporary karma cap that you lose when flipped. If you use this temporary karma cap on an attack roll, the attack is automatically a critical hit. You can only have a maximum of one temporary karma cap.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ricochet",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 7",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nWhat goes around comes around! Whenever another creature makes an attack roll against you, and they roll a 1, the attack hits them instead. Additionally, whenever another creature makes an attack roll within 30 feet of you, you can flip one of your Karma Caps to turn the attack roll’s result into a 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Inflictable Opportunity",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 7",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nYou can take the help action with 3 AP instead of 6. Additionally, when you help another creature with a skill check, they can add your full skill bonus to their roll instead of half.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Mysterious Stranger",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 8",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nYou have the protection of the wasteland’s guardian angel. Choose a number from 2 to 19. Whenever you make an attack roll and the result is the chosen number, the Mysterious Stranger appears! When he appears, roll a d20 (you can choose to add your Luck ability modifier to this roll, this is not considered an ability or skill check) and consult the table below.\nLuck Check 1-9: The target of the attack roll takes ballistic damage equal to 2 x your level.\nLuck Check 10 - 20: The target of the attack roll takes ballistic damage equal to 3 x your level.\nLuck Check 21 - 24: Your attack becomes a critical hit. If it was already a critical hit; you do not roll your damage dice and instead deal the maximum amount on each dice.\nLuck Check 25+: The target of the attack roll dies.\nRepeat: This perk can only be taken once and only by one player character.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Dumb Luck",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 8",
+      "ranks": 2,
+      "description": "(pg 50) Governing ability: Luck.\nThere is no sense to your life’s aptitude. Your full Luck ability modifier is added to all your skill modifiers instead of half. Additionally, whenever you flip your Karma Cap to gain advantage on an ability or skill check, you can add double your Luck modifier to the total.\nRepeat: You can take this perk up to a maximum of twice, if you take it again; all your skill modifiers increase by 2. Additionally, whenever you flip your Karma Cap to gain reroll an ability or skill check, you can add double your Luck modifier to the second roll.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Been There, Done That.",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 9",
+      "ranks": 1,
+      "description": "(pg 50) Governing ability: Luck.\nWhenever you or an ally within 100 feet of you makes a Luck ability check, it is increased by 3. Additionally, whenever you gain XP you gain a bonus equal to a 5d10 + every player character Luck scored added together, then halved.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Fortune Favors the Bold",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 9",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Luck.\nWhenever you or any other player characters flip your Karma Cap to gain advantage or a reroll on an ability check, skill check, or attack roll, physically flick and flip your Karma Cap. If it lands facing up then it stays facing up.\nRepeat: You can take this perk up to a maximum of once. If any other player character takes this perk, and if your Karma Cap lands face down; you can physically flip a number of times equal to the amount of player characters who have taken this perk past the first.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Outrageous Advantage",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 10",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Luck.\nWhenever you or any other player characters roll an ability check, skill check, or attack roll with advantage; you roll three d20’s instead of two and choose the highest result.\nRepeat: You can take this perk up to a maximum of once. If any other player character takes this perk, the amount of d20’s rolled with advantage increases by one.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Never Tell Me the Odds",
+    "type": "perk",
+    "system": {
+      "requirements": "Luck 10",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Luck.\nWhenever another creature hits you with an attack, you can flip one of your Karma Caps to turn the hit into a miss. Additionally, whenever you have the dying condition all attacks roll against you automatically miss.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Cannibal",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Ghoul, or Super Mutant",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Race.\nYou dine on the most taboo of meats. Whenever you consume the flesh of a human, ghoul, or super mutant that has died within the past 15 minutes, you heal a number of hit points equal to double your healing rate, once you heal in this way you cannot heal from it again until you rest for at least 8 hours. If you consume prepared human or ghoul flesh, you heal a number of stamina points equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Old World Gourmet",
+    "type": "perk",
+    "system": {
+      "requirements": "Human",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Race.\nThanks to unclean living you've learned the secrets of the lounge lizards! Food and Drinks no longer give you Irradiated levels.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hunter’s Wisdom",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Ghoul, or Super Mutant",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Race.\nWhenever you take damage from attacks made from animals or insects, your DT increases by 2. Additionally, whenever you consume the meat of an animal or insect that has died within the past 15 minutes, you heal a number of hit points equal to your healing rate, once you heal in this way you cannot heal from it again until you rest for at least 8 hours. If you consume prepared animal or insect meat, you heal a number of stamina points equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ghastly Scavenger",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Ghoul, or Super Mutant",
+      "ranks": 1,
+      "description": "(pg 51) Governing ability: Race.\nYou dine on the rarest and most refined of strange meats. Whenever you consume the flesh of an abomination that has died within the past 15 minutes, you heal a number of hit points equal to double your healing rate, once you heal in this way you cannot heal from it again until you rest for at least 8 hours. If you consume prepared abomination flesh, you heal a number of stamina points equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Ice Cream and Apple Pie",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Ghoul, or Super Mutant",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race.\nIf you consume food with the Putrid or Tainted property, you cannot become poisoned or diseased. Additionally, if you consume a food with the Bland property, it is considered Tasty instead.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Computer Cousin",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot or Synth, Level 5",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race.\nRobots will not target you with attacks unless you are the only hostile target within 60 feet. Additionally, you have advantage on Breach skill checks with any computer.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Partition Reset",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot or Synth, Level 10",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race.\nReduce any of your ability scores by 1, 2, or 3. You can increase any other ability score by the amount you decreased plus 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Factory Reset",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot or Synth, Level 10",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race.\nWhen you take this perk, your character becomes 1st level and gains all the XP you previously had. You can rebuild your character and choose new traits, skills bonuses, ability scores, and perks. However, your memory is wiped and you remember nothing up to taking this perk.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Determination is not a Malfunction",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot or Synth, Level 10",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race.\nYou are immune to the frightened condition. Additionally, when you have unused action points at the end of your turn, you recycle all of them on your next turn.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Nuclear Reactor",
+    "type": "perk",
+    "system": {
+      "requirements": "Human",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Human).\nWhile in an irradiated zone you have advantage on all ability and skill checks. Additionally, your AC increases by 1, your DT increases by 2, and you gain temporary hit points equal to your level.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "your AC increases by 1"
+        },
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 2,
+          "condition": "inIrradiatedZone",
+          "note": "your DT increases by 2"
+        },
+        {
+          "key": "system.bonuses.advantage.strength",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.perception",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.endurance",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.charisma",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.intelligence",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.agility",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        },
+        {
+          "key": "system.bonuses.advantage.luck",
+          "mode": "add",
+          "value": 1,
+          "condition": "inIrradiatedZone",
+          "note": "While in an irradiated zone you have advantage on all ability and skill checks"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Rad Absorption",
+    "type": "perk",
+    "system": {
+      "requirements": "Human",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Human).\nWith the Rad Absorption perk, your radiation level slowly decreases on its own over time. Every time you sleep, and you are not in an irradiated zone, your rad level decreases by one.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Rad-Tastic!",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Endurance 5",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Human).\nYour Radiation DC decreases by 3. Additionally, you ignore the negative effects of the first 3 levels of radiation.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Atomic!",
+    "type": "perk",
+    "system": {
+      "requirements": "Human, Endurance 8",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Human).\nWhile in an irradiated zone, you gain additional action points equal to your Endurance ability modifier to a maximum of 15. If your action points are already 15, any actions you take that cost 4 AP or more instead cost 1 less.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Springboard Recovery",
+    "type": "perk",
+    "system": {
+      "requirements": "Human",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Human).\nOn your turn you can spend 3 AP to heal a number of stamina points equal to your healing rate. Once you use this action, you cannot use it again until you rest for at least 8 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Holey Moley",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Ghoul).\nYour arms have some extra holes for aerodynamics! Once per turn, when you make an unarmed attack, you can spend 1 AP to make an additional one. This includes spending 5 AP to make two unarmed attacks, you can spend 6 AP to make three unarmed attacks.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Chem Resistant",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul",
+      "ranks": 1,
+      "description": "(pg 52) Governing ability: Race (Ghoul).\nYou no longer suffer the negative effects of addiction to chems. Additionally, syringes have no effect on you unless they are a stimpak or chem.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Eye for an Eye",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nFinger for a finger. Whenever another creature deals damage to your hit points for the first time on a turn, that creature becomes marked. The next time you attack and hit the marked creature, it is automatically a critical hit. If the hit was already a critical hit, the damage you deal is doubled. Once a creature becomes marked, another creature cannot become marked until you rest.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Stitched Together",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nYour body has seen the worst the wasteland has to offer. If you ever lose any of your limbs, besides your head, you can spend 5 minutes reattaching the limb so long as you have a first aid kit and you still have the limb you lost. Additionally, you can spend 1 minute to heal a number of hit points equal to your healing rate. Once you heal in this way, you cannot do it again until you rest for at least 6 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Savage Sprint",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nYou can spend 3 action points on your turn to sprint instead of 5. Additionally, whenever you long jump you can clear an additional 10 feet and whenever you high jump you can clear an additional 3 feet.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "How do you do, fellow Ghouls?",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul, Level 5",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nFeral Ghouls will not target you with attacks unless you are the only hostile target within 60 feet. Additionally, you have advantage on Speech skill checks with any ghoul.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Can’t Put Me Down",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul, Level 5",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nYour DT increases by 1 and you gain advantage on all Death Saves. If you already have advantage on Death Saves, you roll three d20’s and take the highest result.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 1,
+          "note": "Your DT increases by 1"
+        },
+        {
+          "key": "system.bonuses.advantage.checks.deathSave",
+          "mode": "add",
+          "value": 1,
+          "note": "you gain advantage on all Death Saves (the three-d20 upgrade when you already had advantage is not expressible: effectiveMode resolves to a single kept-highest)"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Reanimated",
+    "type": "perk",
+    "system": {
+      "requirements": "Ghoul, Level 10",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Ghoul).\nWhile you are dying, your speed is not halved and you gain an additional action point at the start of your turn. Additionally, when you die; you immediately gain 20 action points. Once these action points are used, or your turn ends; you die.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Pain Train",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Robot).\nChoo Choo! All aboard! You can charge into enemies and knock them off their feet. If you sprint through another creature's space that has a Strength score equal to or less than yours; they are knocked prone.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hardware Upgrade",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot",
+      "ranks": 1,
+      "description": "(pg 53) Governing ability: Race (Robot).\nYou can choose any two weapons to become one of your Robot weapons, so long as you have the caps to purchase them, the materials to craft them, or own the weapons.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Thick Plating",
+    "type": "perk",
+    "system": {
+      "requirements": "Robot, Level 8",
+      "ranks": 3,
+      "description": "(pg 53) Governing ability: Race (Robot).\nYour AC and DT increase by 1.\nRepeat: You can take this perk up to a maximum of three times.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": 1,
+          "note": "Your AC and DT increase by 1"
+        },
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 1,
+          "note": "Your AC and DT increase by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Adamantium Skeleton",
+    "type": "perk",
+    "system": {
+      "requirements": "Synth",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Synth).\nYou are immune to all limb conditions, and whenever you take damage to your hit points from a targeted attack; the damage is halved.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Light Step",
+    "type": "perk",
+    "system": {
+      "requirements": "Synth",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Synth).\nYou never set off placed explosives or traps.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Pump the Coolant",
+    "type": "perk",
+    "system": {
+      "requirements": "Synth, Level 5",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Synth).\nYou can spend 6 action points on your turn to heal a number of stamina points equal to double your healing rate. Once you use this ability, you cannot use it again until you rest for at least 8 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Reinforced Recovery",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nOn your turn you can spend 6 AP to heal a number of hit points equal to your healing rate. Once you use this action, you cannot use it again until you rest for at least 8 hours.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Fine-Toothed Giant",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nYou no longer suffer the effects of the “Bulky” racial trait. Additionally, whenever you make a crafting check to repair an item, the DC is reduced by 5.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Wasteland Camel",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nYou no longer require double the amount of water each day to avoid dehydration. Additionally, dirty water has the “hydrating” property for you.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "No Gods, No Masters",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant, Level 5",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nSuper mutants will not target you with attacks unless you are the only hostile target within 60 feet. Additionally, you can 3 AP on your turn and choose one target super mutant within 60 feet of you. You learn that target’s total ability scores.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Feel No Wounds",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant, Level 5",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nYour DT increases by 1. Additionally, if you end your turn with at least 6 AP; whenever you take damage to your hit points you can spend 6 AP to reduce the damage by half (rounded down).",
+      "mechanics": [
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 1,
+          "note": "Your DT increases by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Evolution",
+    "type": "perk",
+    "system": {
+      "requirements": "Super Mutant, Level 10",
+      "ranks": 1,
+      "description": "(pg 54) Governing ability: Race (Super Mutant).\nYour AC increases by 1, your DT increases by 1, your hit points increase by a number equal to your level, and your stamina points increase by a number equal to your level. Additionally, choose one damage type. Whenever you take that damage type to your hit points, the total amount is halved (rounded down).",
+      "mechanics": [
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": 1,
+          "note": "Your AC increases by 1"
+        },
+        {
+          "key": "system.bonuses.dt",
+          "mode": "add",
+          "value": 1,
+          "note": "your DT increases by 1"
+        }
+      ]
+    }
+  }
+]

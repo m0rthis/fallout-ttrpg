@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Junk Jet">
+  <title>Junk Jet</title>
+  <defs>
+    <radialGradient id="fjunk-jet" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#fjunk-jet)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#6ee86e" d="M199 103v50h-78v30h270v-30h-78v-50H199zm18 18h78v32h-78v-32zm-79.002 80l30.106 286h175.794l30.104-286H137.998zm62.338 13.38l.64 8.98 16 224 .643 8.976-17.956 1.283-.64-8.98-16-224-.643-8.976 17.956-1.283zm111.328 0l17.955 1.284-.643 8.977-16 224-.64 8.98-17.956-1.284.643-8.977 16-224 .64-8.98zM247 215h18v242h-18V215z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#6ee86e" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#6ee86e" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

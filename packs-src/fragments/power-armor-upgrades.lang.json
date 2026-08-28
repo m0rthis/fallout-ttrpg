@@ -1,0 +1,81 @@
+{
+  "_comment": "Merge into static/lang/en.json under FALLOUT.PowerArmor — these extend the existing namespace, they do not replace it. Every key below is new; nothing here collides with the keys already shipped (verified against en.json at v0.18.0). The drain reasons teslaCoils, jetPack, explosiveVent and manual already exist and are now actually reached.",
+  "FALLOUT": {
+    "PowerArmor": {
+      "entry": {
+        "robot": "A Robot cannot use Power Armor at all (pg 9).",
+        "needsFitting": "A Super Mutant cannot use Power Armor unless it is modded to their body type (pg 11) — this suit needs the Super Mutant Fitting upgrade (pg 59).",
+        "fittedOut": "This suit carries the Super Mutant Fitting: humans and ghouls can no longer use it (pg 59). Removing the fitting costs the same price or crafting materials again."
+      },
+      "suitTraits": "Hydraulic Machine and Longer Strides: Strength counts as 12, size is {size}, and a sprint carries {sprint} feet instead of 50 (+{strides}). Size {size} is reported, not enforced — nothing in this system tracks a creature's size.",
+
+      "noUpgrade": "This suit does not have {upgrade} at the rank that ability requires (pg 59).",
+      "ceasedControl": "The suit has ceased function — slot a fresh Fusion Core before using its upgrades.",
+      "upgrades": "Upgrades",
+      "upgradesHint": "The pg 59 Power Armor upgrades, by rank. Ranks are cumulative and each costs the base price again (pg 58); attaching or removing one takes 15 minutes, not the 1 minute a regular armor upgrade takes.",
+      "syncUpgrades": "Apply upgrade effects",
+      "syncUpgradesHint": "Rebuild the Active Effects a suit's upgrades grant. Run it after editing a rank by hand.",
+      "spendTime": "Spend allotted time",
+      "spendTimeHint": "Charge the suit minutes of operation. The book prints a total per suit model and never a base drain rate, so time only passes when someone says it does.",
+
+      "teslaOn": "Switches the Tesla Coils on ({ap} AP). Each creature within {radius} feet takes {damage} electricity damage now and at the start of their turns; the coils burn {minutes} minutes of allotted time each round they stay on (pg 59).",
+      "teslaOff": "Switches the Tesla Coils off ({ap} AP).",
+      "teslaDamage": "Tesla Coils — every creature within {radius} feet. The book also charges this at the start of each of *their* turns, which this system does not iterate; re-roll it then.",
+      "jetPackFlight": "Flies {feet} feet on the Jet Pack ({ap} AP). The book charges 1 minute of allotted time per 10 feet flown \"or every second that you fly\" — two different rates; distance is what is charged here, rounded up.",
+      "ventFired": "Vents explosively on landing — the upgrade requires a fall of at least {fall} feet, which nothing here can measure. Each creature within {radius} feet takes {damage} fire damage and {damage} explosive damage, and the suit loses {minutes} minutes of allotted time (pg 59).",
+      "ventDamage": "Explosive vent — every creature within {radius} feet.",
+      "overclockSelf": "Deliberately overheats the fusion core ({ap} AP, Overclock Hydraulics rank 2, pg 59).",
+      "overclockActive": "Overclock Hydraulics: while overheated you can also move {feet} feet for {ap} AP and your unarmed attacks deal an additional {damage} fire damage (pg 59). Both are reported — this system has no movement budget and no unarmed damage rider.",
+      "bracers": "A powerful unarmed attack with Optimized bracers ({ap} AP, {damage} bludgeoning, pg 59). Roll the attack as an ordinary unarmed attack.",
+      "bracersPush": "At rank 3 it also pushes the target 15 feet back.",
+      "database": "Internal database ({ap} AP): {name}'s {stat} is {value} (pg 59).",
+      "kineticDynamo": "Kinetic dynamo returns {ap} AP for the {decay} level(s) of decay the suit took since the last turn (pg 59).",
+
+      "stat": {
+        "hp": "hit point total",
+        "sp": "stamina point total",
+        "ac": "AC",
+        "dt": "DT"
+      },
+
+      "cause": {
+        "overclock": "Overclock Hydraulics, deliberately"
+      },
+
+      "upgrade": {
+        "explosiveShielding": "Explosive Shielding",
+        "prismShielding": "Prism shielding",
+        "emergencyProtocols": "Emergency protocols",
+        "kineticDynamo": "Kinetic dynamo",
+        "teslaCoils": "Tesla Coils",
+        "reactivePlates": "Reactive Plates",
+        "coreAssembly": "Core Assembly",
+        "jetPack": "Jet Pack",
+        "sensorArray": "Sensor Array",
+        "vatsMatrix": "VATS matrix overlay",
+        "internalDatabase": "Internal database",
+        "targetingHud": "Targeting HUD",
+        "headlamp": "Headlamp",
+        "rustyKnuckles": "Rusty knuckles",
+        "optimizedBracers": "Optimized bracers",
+        "calibratedShocks": "Calibrated Shocks",
+        "overclockHydraulics": "Overclock Hydraulics",
+        "explosiveVent": "Explosive vent",
+        "superMutantFitting": "Super Mutant Fitting",
+        "overclockOverheated": "Overclock Hydraulics (overheated)"
+      },
+
+      "manual": {
+        "explosiveShielding": "Reduces explosive damage taken by 5 / 10 / 15. Applied when damage is dealt, if the damage pipeline is wired to the suit's shielding.",
+        "prismShielding": "Reduces laser and plasma damage taken by 5 / 10 / 20. The printed ranks read 5 / 5 / 10; taken as totals, rank 2 would buy nothing, so they are read cumulatively.",
+        "reactivePlates": "A melee attacker takes a quarter of the damage they dealt, rounded down, twice over at rank 2; at rank 3 they are knocked 15 feet. Reported — this system applies damage to the target the GM has selected, and the attacker is not it.",
+        "vatsMatrix": "Every targeted attack's additional AP cost drops by 1 per rank, to a floor of 0. The Fusion Core's +5 becomes +3 at rank 2.",
+        "targetingHud": "3 AP marks a creature (one, or three at rank 2); damage you deal to a marked creature adds a die, two dice at rank 3. Not automated: a mark is state about another creature, and the extra die belongs to the attack roll.",
+        "headlamp": "1 AP for a 40 foot bright cone and 40 more of dim, +10 feet per rank; at rank 3 it blinds creatures within 5 feet if lit in darkness. Not automated: light is token configuration, which this system has never touched.",
+        "rustyKnuckles": "An unarmed hit makes the target bleed. Not automated: applying Bleeding needs the attack roll to know it landed and on whom.",
+        "emergencyProtocolsMove": "Rank 1: while under half your hit points you can spend 1 AP to move 10 feet. Not automated: nothing here meters movement.",
+        "superMutantFitting": "Fits the suit to a Super Mutant. Humans and ghouls can no longer wear it; entering is gated on both counts. Removal costs the same price or materials again."
+      }
+    }
+  }
+}

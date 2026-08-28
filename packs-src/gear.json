@@ -1,0 +1,1102 @@
+[
+  {
+    "name": "Armor Upgrade: Insulated",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 100,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 100c.\nRank 1: You are insulated against hypothermia. However, your maximum AP decreases by 1 to a minimum of 6.\nRank 2: Your AP is no longer decreased and you remain insulated. However, this upgrade costs 800 caps instead of 100.\nRank 3: -"
+    }
+  },
+  {
+    "name": "Armor Upgrade: Camouflage",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 125,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 125c.\nRank 1: You gain advantage on sneak checks relying on sight. Your passive sneak increases by 3.\nRank 2: You gain advantage on sneak checks relying on sound. Your passive sneak increases by 3.\nRank 3: While in dim light, you become shadowed. Your passive sneak increases by 3."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Light",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 75,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 75c.\nRank 1: Load reduced by 5. Strength req. reduced by 1. DT reduced by 1.\nRank 2: Load reduced by 10 (minimum of 3).\nRank 3: If you spend at least 4 AP on your turn to move, you can move an additional 10 feet."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Fitted",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 175,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 175c.\nRank 1: When you take damage from an area of effect, your DT is doubled.\nRank 2: Your maximum stamina points increase by a number equal to your level.\nRank 3: You have advantage on combat sequence rolls. If you already have advantage, you gain a +5."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Lead Lined",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 125,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 125c.\nRank 1: Radiation DC decreases by 2.\nRank 2: Radiation DC decreases by 2.\nRank 3: Radiation DC decreases by 2."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Strengthened",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 410,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 410c.\nRank 1: When you take damage from a critical hit, your DT increases by 3.\nRank 2: When you take damage from a critical hit, your DT increases by 5.\nRank 3: If you would gain a severe injury, you instead gain a random limb condition."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Sturdy",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 475,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 475c.\nRank 1: You ignore the negative effects of the first 2 levels of decay for the armor.\nRank 2: You ignore the negative effects of the first 4 levels of decay for the armor.\nRank 3: Your armor no longer decays from being damaged by a critical hit."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Pocketed",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 210,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 210c.\nRank 1: Your carry load is increased by 10.\nRank 2: Your carry load is increased by 15.\nRank 3: Your carry load is increased by 25."
+    }
+  },
+  {
+    "name": "Armor Upgrade: Reinforced",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 450,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 450c.\nRank 1: +1 bonus to DT\nRank 2: +1 bonus to DT\nRank 3: +2 bonus to DT"
+    }
+  },
+  {
+    "name": "Armor Upgrade: Hardened",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 800,
+      "description": "(pg 57) Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 800c.\nRank 1: +1 bonus to AC\nRank 2: +1 bonus to AC\nRank 3: +1 bonus to AC"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Explosive Shielding",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1350,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1350c.\nRank 1: Reduce explosive damage taken by 5\nRank 2: Reduce explosive damage taken by 10\nRank 3: Reduce explosive damage taken by 15"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Prism shielding",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1800,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1800c.\nRank 1: Reduce laser and plasma damage taken by 5\nRank 2: Reduce laser and plasma damage taken by 5\nRank 3: Reduce laser and plasma damage taken by 10"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Emergency protocols",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1800,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1800c.\nRank 1: If you start your turn with less than half your hit points, you can spend 1 AP to move 10 feet.\nRank 2: If you start your turn with less than half your hit points, your DT increases by 5 (only for damage against HP).\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Kinetic dynamo",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2400,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2400c.\nRank 1: You gain an additional AP at the start of your turn for each level of decay the power armor gained since your last turn.\nRank 2: -\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Tesla Coils",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2400,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2400c.\nRank 1: Spend 3 AP to activate or deactivate, each creature within 10 feet of you takes 1d6 electricity damage when you activate and at the start of their turns. For each round active, remove 10 minutes from allotted time.\nRank 2: Electricity damage increases by 1d6. For each round active, remove an additional 5 minutes from allotted time.\nRank 3: Electricity damage increases by 2d6. For each round active, remove an additional 10 minutes from allotted time."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Reactive Plates",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2700,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2700c.\nRank 1: When you take damage from a melee attack, the attacker takes a quarter (rounded down) of the damage they dealt.\nRank 2: The attacker takes another quarter (rounded down) of the damage they dealt. (effectively half of the total).\nRank 3: When you take damage from a melee attack, the attacker is knocked by 15 feet."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Core Assembly",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2250,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2250c.\nRank 1: Spending more than 18 AP on your turn causes overheating instead of 15.\nRank 2: Spending more than 20 AP on your turn causes overheating instead of 15.\nRank 3: Overheating requires 15 minutes of allotted time loss instead of 30."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Jet Pack",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 6000,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 6000c.\nRank 1: You can spend 1 AP on your turn to fly 5 feet. For every 10 feet you fly or every second that you fly you use 1 minute of the fusion core's allotted time.\nRank 2: -\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Sensor Array",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 4500,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 4500c.\nRank 1: Passive sense increases by 5.\nRank 2: Passive sense increases by 5.\nRank 3: Passive sense increases by 10."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: VATS matrix overlay",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2700,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2700c.\nRank 1: Whenever you make a targeted attack roll, reduce the additional AP cost by 1.\nRank 2: Whenever you make a targeted attack roll, reduce the additional AP cost by 1.\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Internal database",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 2400,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 2400c.\nRank 1: If you can see a creature, you can spend 6 AP on your turn to learn its HP total, SP total, AC, or DT.\nRank 2: -\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Targeting HUD",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1800,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1800c.\nRank 1: If you can see a creature, you can spend 3 AP to mark it. You can only have one marked creature at a time. Whenever you deal damage to a marked creature, you deal an additional die of damage.\nRank 2: You can mark up to two more creatures.\nRank 3: Whenever you deal damage to a marked creature, you deal an additional die of damage."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Headlamp",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 250,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 250c.\nRank 1: You can spend 1 AP on your turn to turn on your headlamp. The headlamp shines bright light in a 40 foot cone and dim light for an additional 40.\nRank 2: The bright and dim light both shine an additional 10 feet.\nRank 3: The bright and dim light both shine an additional 10 feet. If you turn on this light while in darkness, each creature within 5 feet of you becomes blinded for one round."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Rusty knuckles",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 100,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 100c.\nRank 1: If you hit a creature with an unarmed attack, they bleed.\nRank 2: -\nRank 3: -"
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Optimized bracers",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1700,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1700c.\nRank 1: You can spend 6 AP on your turn to make a powerful unarmed attack that deals 2d6 bludgeoning damage.\nRank 2: The damage increases by 1d6.\nRank 3: The damage increases by 1d6 and pushes targets 15 feet back."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Calibrated Shocks",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1000,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1000c.\nRank 1: Carry Load increases by 15.\nRank 2: Carry Load increases by 15.\nRank 3: Carry Load increases by 20."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Overclock Hydraulics",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1950,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1950c.\nRank 1: While overheated, your maximum AP increases by 2, you have advantage on all attack rolls, you can move 15 feet with 1 AP, and your unarmed attacks deal an additional 3d6 fire damage.\nRank 2: You can spend 3 AP to overheat the fusion core.\nRank 3: Your maximum AP increases by 2."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Explosive vent",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 1250,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 1250c.\nRank 1: If you fall at least 15 feet, when you hit the ground you can choose to activate this upgrade. Each creature within 20 feet of you takes 3d6 fire damage and 3d6 explosive damage. Remove 20 minutes from the armor's allotted time each time you activate this upgrade.\nRank 2: The fire and explosive damage each increase by 1d6.\nRank 3: The radius increases by 10 feet."
+    }
+  },
+  {
+    "name": "Power Armor Upgrade: Super Mutant Fitting",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 59) Power Armor upgrade. Each rank costs the base price of the upgrade. Base Cost: 50% base cost..\nRank 1: The armor is modified and fitted to allow a super mutant to use it. However, humans and ghouls can no longer use the armor. Once this upgrade has been added, it requires the same price or crafting materials to remove it.\nRank 2: -\nRank 3: -"
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Strengthen",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 55% of the weapon's base cost.\nThe weapon gains Durable. This modification is permanent and cannot be switched.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Double Sided",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 10% of the weapon's base cost.\nThe weapon gains Defensive and Two Handed. Its load is doubled and its Strength requirement increases by 1.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Heavy",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 30% of the weapon's base cost.\nThe weapon's AP increases by 1 to a maximum of 6, its load increases by half, and its Strength requirement increases by 1. The weapon gains Weighted. The weapon's critical hit modifier or damage dice increases by 1. This modification is permanent and cannot be switched.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Upgraded",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 75% of the weapon's base cost.\nWhenever you deal damage with the weapon and roll a 1 or a 2 on the damage dice, the damage is increased by 2. This modification is permanent and cannot be switched.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Light Build",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 25% of the weapon's base cost.\nThe weapon's AP decreases by 1 to a minimum of 3, its load decreases by half, and its Strength requirement decreases by 1. The weapon gains Breakable. This modification is permanent and cannot be switched.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Sharpened, Serrated, or Barbed",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 25% of the weapon's base cost.\nThe weapon gains Mangle.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Melee Weapon Mod: Ergonomic",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 65) Melee weapon modification. Base Cost: 50% of the weapon's base cost.\nThe weapon's critical chance decreases by 1.\nMelee weapons can only have one modification."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Auto-Firing Turret",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 90% of the weapon's base cost.\nTime to Equip/Unequip: 15 - your Intelligence score in minutes.\nMod Slot Total: 3.\nThe weapon is mounted to an immovable stand that turns and aims automatically using artificial intelligence that locks onto targets. The turret must remain connected to the terminal via wiring.\nBefore activating the turret, you can designate any number of creatures who will not be targeted by the turret. You can spend 6 AP to activate or deactivate the turret from its terminal. When you roll combat sequence, roll combat sequence for the turret. The turret's bonus to combat sequence is equal to your Intelligence ability modifier. On each of the turrets turns it gains 10 AP which it uses to attack the closest creature in the weapon's short range. It does not spend its AP to do anything else. The turret is considered a robot with 25 hit points and an AC of 10. If the turret falls to 0 hit points, it ceases function and the weapon gains 1 level of decay.\nEquippable Weapons: Any weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Bayonet",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 20% of the weapon's base cost.\nTime to Equip/Unequip: 6 AP.\nMod Slot Total: 1.\nAttach a knife or combat knife to the front of the weapon, you can attack with the knife without spending AP to switch weapons.\nEquippable Weapons: Any ranged weapon with the Two Handed property."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Boosted Capacitor",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 50% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 3.\nEnhanced power consumption of the primary energy chassis.\nWhen you attack with a weapon that has this modification, you can spend 2 rounds of ammunition instead of 1 to increase the damage by 2.\nEquippable Weapons: Any energy weapon. A weapon cannot have a boosted capacitor if it has an overclocked capacitor."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Double Action",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 75% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nA revolver trigger mechanism upgrade fires the round and cocks the hammer simultaneously.\nWhen you spend AP to attack with the weapon, it costs 1 less to a minimum of 1.\nEquippable Weapons: Any revolver."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Ergonomic Grip",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 60% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nAn overall improvement to the weapon's grip, handling, and design to allow easier and more comfortable use.\nThe weapon's critical hit damage modifier or damage dice increases by 1.\nEquippable Weapons: Any weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Hardened Receiver",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 120% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 3.\nAn improvement to the firing mechanism to increase the power of the projectile.\nThe weapon gains Destructive and Powerful. If the weapon already has Destructive, then the weapon's damage dice rank increases once to a maximum of d12.\nThe weapon's load increases by 2.\nEquippable Weapons: Any handgun, submachine gun, rifle, or shotgun. A weapon cannot have a hardened receiver if it has a Light Build."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Holographic weapon sight",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 60% of the weapon's base cost.\nTime to Equip/Unequip: 5 - (your Intelligence score) in minutes. Minimum of 1 minute.\nMod Slot Total: 2.\nA holographic reticle that is projected onto a non-magnifying sight.\nThe weapon's attack roll total is increased by 1.\nThe weapon's load increases by 1.\nEquippable Weapons: Any ranged weapon. A weapon cannot have a Holographic weapon sight if it already has a Scope or Infrared Scope."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Improved Rifling",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 45% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 2.\nAn upgrade to the grooves in the barrel of a firearm.\nThe weapon's range modifiers are increased by half.\nEquippable Weapons: Any handgun, submachine gun, or rifle except for the Flare Gun, H&H Tools nail gun, or Railway Rifle."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Increased Clip Size",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 20% of the weapon's base cost.\nTime to Equip/Unequip: 6 AP.\nMod Slot Total: 1.\nA longer and larger clip that feeds into the magazine to allow more rounds to be fired.\nThe weapon's number of rounds is increased by 3.\nEquippable Weapons: Any handgun, submachine gun, rifle, or shotgun that does not have Manual Reload or Quick Reload."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Infrared Scope",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 90% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nA highly technological pre-war wonder that uses thermal imaging to locate targets.\nThe weapon's long range modifier is tripled. However, any attacks made at targets within 30 feet are made at disadvantage.\nYou can target creatures that are hidden, shrouded, in complete darkness, or invisible so long as they are not behind full cover. Additionally, the weapons attack rolls are increased by 2.\nThe weapon's load increases by 2.\nEquippable Weapons: Any revolver or rifle including the Laser Rifle, Plasma Rifle, or Gauss Rifle. A weapon cannot have an Infrared Scope if it already has a Scope or Holographic weapon sight."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Laser Sight",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 35% of the weapon's base cost.\nTime to Equip/Unequip: 5 - (your Intelligence score) in minutes. Minimum of 1 minute.\nMod Slot Total: 2.\nA device that projects a beam onto targets, providing a visual reference point.\nThe weapon gains Accurate. If it already has Accurate, then whenever the weapon critically hits; the damage is doubled.\nThe weapon's load increases by 1.\nEquippable Weapons: Any handgun, rifle, or energy weapon except for the Tri-Beam Laser Rifle, Multiplas Rifle, or Gatling Laser."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Light Build",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 25% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 2.\nReplacing parts of the weapon with lighter materials for rebalance and ease of operation.\nThe weapon's load decreases by half.\nThe weapon's Strength requirement decreases by 1.\nThe weapon gains Breakable.\nEquippable Weapons: Any weapon. A weapon cannot have a Light Build if it is Strengthened."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Longer Barrel",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 35% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nAn increase on the length of the barrel to provide more range at the cost of poorer short range.\nThe weapon's long range modifier increases by 10.\nThe weapon's short range modifier decreases by 2.\nThe weapon's load increases by 4.\nEquippable Weapons: Any handgun, rifle, or energy weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Lucky Charm",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 50,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 50c\nTime to Equip/Unequip: 6 AP.\nMod Slot Total: 1.\nA little attachment that personalized your weapon.\nThe weapon's critical hit chance decreases by 1. Each player character can only benefit from one lucky charm. (The charm can be moved to other weapons, but you cannot have two charms on two different weapons.)\nEquippable Weapons: Any weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Muzzle Brake",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 55% of the weapon's base cost.\nTime to Equip/Unequip: 6 AP.\nMod Slot Total: 2.\nA device that is fitted to the muzzle of a firearm to redirect propellant gasses outwards to reduce both recoil and muzzle rise.\nThe weapon's attack roll total is increased by 1.\nThe weapon's Strength requirement decreases by 1.\nThe weapon's load increases by 2.\nEquippable Weapons: Any handgun, submachine gun, rifle, or shotgun except for the Flare Gun, H&H Tools nail gun, or Railway Rifle."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: On-Board Target Tracking",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 120% of the weapon's base cost.\nTime to Equip/Unequip: 15 - your Intelligence score in minutes.\nMod Slot Total: 2.\nA gyroscopic muzzle synchronized with the weapons sights and utilizing an artificial intelligence that locks onto targets and significantly improves aim.\nBefore you make an attack with a weapon that has this modification, you can spend 6 AP to mark a target creature within the weapon's short range. Attack rolls against the marked creature have advantage.\nEquippable Weapons: Any energy weapon except for the Gauss rifle, Gauss pistol, or Gatling Gun."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Overclocked Capacitor",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 110% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 3.\nEven further improvements to the weapons power consumption.\nWhen you attack with a weapon that has this modification, you can spend 3 rounds of ammunition instead of 1 to increase the damage by 4.\nEquippable Weapons: Any energy weapon that doesn't have automatic or charge. A weapon cannot have an overclocked capacitor if it has a boosted capacitor."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Remote Controlled Turret",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 175% of the weapon's base cost.\nTime to Equip/Unequip: 15 - your Intelligence score in minutes.\nMod Slot Total: 3.\nThe weapon is mounted to an immovable stand that turns and aims based on your input from a nearby terminal. The turret must remain connected to the terminal via wiring.\nYou can spend 6 AP to activate or deactivate the turret from its terminal. You can spend AP to attack with a weapon that you place onto the mount. The amount of AP required to attack is reduced by 2 to a minimum of 3. If your Intelligence ability score is less than the weapons Strength requirement, you have disadvantage on attack rolls while operating the weapon in this way. The turret is considered a robot with 25 hit points and an AC of 10. If the turret falls to 0 hit points, it ceases function and the weapon gains 1 level of decay.\nEquippable Weapons: Any weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Scope",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 30% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nA simple glass scope that allows for distant magnification, for weapons that already have a scope; this modification increases the magnification.\nThe weapon's short range modifier is doubled and the long range modifier is quadrupled. However, any attacks made at targets within 50 feet are made at disadvantage.\nThe weapon's load increases by 2.\nEquippable Weapons: Any revolver or rifle. The Laser Rifle, Plasma Rifle, or Gauss Rifle. A weapon cannot have a Scope if it already has an Infrared Scope or Holographic weapon sight."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Semi-Automatic",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 85% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 3.\nAn overhaul of the weapon's firing mechanism to allow rounds to be much more quickly loaded into its chamber.\nThe weapon gains Semi-Automatic.\nEquippable Weapons: Any weapon that doesn't have Manual Reload, Quick Reload, Automatic, Area of Effect, or Energy Weapon."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Silencer",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 65% of the weapon's base cost.\nTime to Equip/Unequip: 6 AP.\nMod Slot Total: 2.\nA muzzle device that reduces the acoustic intensity of the muzzle report.\nWhile you are hidden; any attack rolls you make with a weapon that has a silencer modification does not reveal your presence to nearby creatures, allowing you to remain hidden except against the creature you attacked.\nThe weapon's load increases by 2.\nThe weapon's damage dice rank decreases once to a minimum of d4.\nEquippable Weapons: Any handgun, submachine gun, rifle, or shotgun except for the Flare Gun, H&H Tools nail gun, or Railway Rifle."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Speedloader",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 450,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 450c\nTime to Equip/Unequip: N/A\nMod Slot Total: 0.\nA device used for loading multiple chambers of a revolver simultaneously.\nYou can choose to reload the weapon with 4 AP.\nEquippable Weapons: Any revolver."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Stock",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 45% of the weapon's base cost.\nTime to Equip/Unequip: 15 - (your Intelligence score) in minutes.\nMod Slot Total: 2.\nAdded back portion that provides structural support, for weapons that already have a stock; this modification improves them.\nThe weapon's attack roll total is increased by 1.\nThe weapon's load increases by 4.\nEquippable Weapons: Any submachine gun, rifle, shotgun, energy weapon, or revolver with the long barrel modification."
+    }
+  },
+  {
+    "name": "Ranged Weapon Mod: Strengthen",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 75-77) Ranged weapon modification. Base Cost: 30% of the weapon's base cost.\nTime to Equip/Unequip: 60 - (5 x your Intelligence score) in minutes.\nMod Slot Total: 3.\nReinforcing the weapon's structure and improving its weaker mechanisms and flaws.\nThe weapon gains Sturdy and Defensive.\nThe weapon's load increases by 2.\nEquippable Weapons: Any weapon. A weapon cannot be Strengthened if it has a Light Build."
+    }
+  },
+  {
+    "name": "Dynamite",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 50,
+      "description": "(pg 79) Thrown Explosive.\nAP: 6 AP\nDamage: 3d6 explosive\nRange: STR x 6\nArea of Effect: 5ft. / 20ft. radius\nSpecial Properties: Deafening: 10ft. Destructive.\nLoad: 3"
+    }
+  },
+  {
+    "name": "Molotov Cocktail",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 20,
+      "description": "(pg 79) Thrown Explosive.\nAP: 6 AP\nDamage: 3d10 fire.\nRange: STR x 6\nArea of Effect: 5ft. radius\nSpecial Properties: Incendiary. Shattering.\nLoad: 4"
+    }
+  },
+  {
+    "name": "Frag Grenade",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 150,
+      "description": "(pg 79) Thrown Explosive.\nAP: 5 AP\nDamage: 4d6 explosive\nRange: STR x 10\nArea of Effect: 5ft. / 20ft. radius\nSpecial Properties: Deafening: 10ft. Destructive. Dismember.\nLoad: 3"
+    }
+  },
+  {
+    "name": "Plasma Grenade",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 250,
+      "description": "(pg 79) Thrown Explosive.\nAP: 4 AP\nDamage: 4d8 plasma\nRange: STR x 10\nArea of Effect: 10ft. radius\nSpecial Properties: -\nLoad: 4"
+    }
+  },
+  {
+    "name": "Pulse Grenade",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 150,
+      "description": "(pg 79) Thrown Explosive.\nAP: 4 AP\nDamage: 2d8 electricity\nRange: STR x 10\nArea of Effect: 15ft. radius\nSpecial Properties: Electromagnetic.\nLoad: 4"
+    }
+  },
+  {
+    "name": "Incendiary Grenade",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 125,
+      "description": "(pg 79) Thrown Explosive.\nAP: 5 AP\nDamage: 2d6 explosive and 3d6 fire.\nRange: STR x 10\nArea of Effect: 5ft. / 15ft. radius\nSpecial Properties: Deafening: 5ft. Incendiary.\nLoad: 3"
+    }
+  },
+  {
+    "name": "Cryogenic Grenade",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 125,
+      "description": "(pg 79) Thrown Explosive.\nAP: 4 AP\nDamage: 2d6 explosive and 3d6 cold.\nRange: STR x 10\nArea of Effect: 5ft. / 10ft. radius\nSpecial Properties: Deafening: 5ft. Freezing.\nLoad: 4"
+    }
+  },
+  {
+    "name": "Flash Bang",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 25,
+      "description": "(pg 79) Thrown Explosive.\nAP: 5 AP\nDamage: 1 explosive\nRange: STR x 10\nArea of Effect: 20ft. radius\nSpecial Properties: Blinding: 20ft, Deafening: 20ft.\nLoad: 3"
+    }
+  },
+  {
+    "name": "Long Fuse Dynamite",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 100,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 3d6 explosive\nArm DC: +1 (DC 10 + this bonus)\nArea of Effect: 5ft. / 15ft. radius\nSpecial Properties: Deafening: 10ft. Destructive. Slow: 3 rounds (18 seconds)\nLoad: 3"
+    }
+  },
+  {
+    "name": "Frag Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 8,
+      "cost": 140,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 6d6 explosive\nArm DC: +4 (DC 10 + this bonus)\nArea of Effect: 2.5ft. / 10ft. radius\nSpecial Properties: Proximity. Deafening: 10ft. Destructive. Dismember.\nLoad: 8"
+    }
+  },
+  {
+    "name": "Plasma Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 8,
+      "cost": 180,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 4d8 plasma\nArm DC: +6 (DC 10 + this bonus)\nArea of Effect: 10ft radius\nSpecial Properties: Proximity.\nLoad: 8"
+    }
+  },
+  {
+    "name": "Pulse Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 6,
+      "cost": 80,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 3d8 electricity\nArm DC: +6 (DC 10 + this bonus)\nArea of Effect: 20ft radius\nSpecial Properties: Electromagnetic. Proximity.\nLoad: 6"
+    }
+  },
+  {
+    "name": "Bottlecap Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 250,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 4d6 explosive and 6d6 slashing.\nArm DC: +2 (DC 10 + this bonus)\nArea of Effect: 5ft. / 20ft radius\nSpecial Properties: Proximity. Deafening: 10ft. Destructive. Mangle.\nLoad: 10"
+    }
+  },
+  {
+    "name": "Cryo Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 8,
+      "cost": 140,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 4d6 cold.\nArm DC: +8 (DC 10 + this bonus)\nArea of Effect: 10ft radius\nSpecial Properties: Freezing. Proximity.\nLoad: 8"
+    }
+  },
+  {
+    "name": "C-4 plastic Explosive",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 12,
+      "cost": 350,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 15d6 explosive\nArm DC: +10 (DC 10 + this bonus)\nArea of Effect: 5ft. / 25ft. radius\nSpecial Properties: Deafening: 10ft. Destructive. Detonator. Dismember.\nLoad: 12"
+    }
+  },
+  {
+    "name": "Nuke Mine",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 22,
+      "cost": 600,
+      "description": "(pg 79) Placed Explosive.\nAP: 6 AP\nDamage: 12d10 explosive and two levels of rads.\nArm DC: +10 (DC 10 + this bonus)\nArea of Effect: 45ft radius\nSpecial Properties: Destructive. Proximity.\nLoad: 22"
+    }
+  },
+  {
+    "name": "Bag, Backpack",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 20,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 10 while not worn (a worn bag has no load).\nA leather, burlap, or cloth bag with straps or a sling to grant you more space to store items on you. While you wear a backpack, your carry load increases by 50.\nIf you wear more than one bag that has items stored in it, you are encumbered unless your Strength or Endurance score is greater than or equal to 8."
+    }
+  },
+  {
+    "name": "Bag, Camping Backpack",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 20,
+      "cost": 100,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 20 while not worn (a worn bag has no load).\nThis large, heavy duty backpack has nylon strings made for tightening, a waist belt to help balance, many pockets, and an overhead compartment for larger storage. While you wear a camping backpack, your carry load increases by 100.\nIf you wear more than one bag that has items stored in it, you are encumbered unless your Strength or Endurance score is greater than or equal to 8."
+    }
+  },
+  {
+    "name": "Bag, Range",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 12,
+      "cost": 50,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 12 while not worn (a worn bag has no load).\nThis single bag with one sling is longer to allow weapons to be stored in it with ease. You can store up to three weapons in the bag that have the Two Handed or Unwieldy property, if you do; each weapon’s carry load is halved.\nIf you wear more than one bag that has items stored in it, you are encumbered unless your Strength or Endurance score is greater than or equal to 8."
+    }
+  },
+  {
+    "name": "Bandolier",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 8,
+      "cost": 30,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 8 while not worn (a worn bandolier has no load).\nThis pocketed strap fits across any part of the body to allow for additional items to be carried. It is not considered a bag allowing you to wear it and a backpack without becoming encumbered. While you wear a bandolier your carry load increases by 25."
+    }
+  },
+  {
+    "name": "Ball Bearings",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 10,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 3 AP to scatter these small metal spheres across a flat surface in a 5 foot radius. Any creature who walks or runs through the area falls prone and takes 1d4 impact damage, unless the creature has a passive sense above 15 or has otherwise noticed the ball bearings; they must spend 2 AP for every 5 feet of movement."
+    }
+  },
+  {
+    "name": "Bear Trap",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 30,
+      "cost": 60,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 6 Action Points to arm this bear trap in a 5 foot area. If the trap is already triggered, you can reset it with 6 AP and a Strength check of 15. If a creature moves into the area, the trap triggers and they take 3d4 piercing damage to their hit points and become grappled. You can disarm an untriggered bear trap with 6 AP and a crafting skill check with the DC equal to 15. You can attempt to pry open a triggered bear trap with 6 AP and a Strength ability check equal to 15. If you are grappled by the bear trap when you attempt this ability check; you have disadvantage on the roll unless your Endurance is equal to 6 or greater. On a success, you open the bear trap and any creatures grappled by it are no longer grappled. On a failure, the trap clamps back down on the grappled creature and they take 1d4 piercing damage."
+    }
+  },
+  {
+    "name": "Binoculars",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 25,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 3 AP to look through binoculars. While you look through them, your sight is magnified. You have advantage on any perception ability checks relying on sight when viewing objects, creatures, or a location that are at least 100 feet away."
+    }
+  },
+  {
+    "name": "Caltrops",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 50,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 3 AP to scatter these small sharp objects across a flat surface in a 5 foot radius. Any creature who walks or runs through the area takes 2 piercing damage to their hit points for every 1 foot of movement they make through the area (this damage is not subtracted by DT), unless the creature has a passive sense above 15 or has otherwise noticed the caltrops; they must spend 2 AP for every 5 feet of movement."
+    }
+  },
+  {
+    "name": "Canteen",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 1,
+      "cost": 10,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 1, 2 when full.\nThe metal canteen holds 32 oz. of liquid."
+    }
+  },
+  {
+    "name": "Chain",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 12,
+      "cost": 15,
+      "description": "(pg 80-82) Items and Gear.\nOutside of the typical, practical uses of a chain; if you are holding a chain while attempting to grapple or strangle another creature, you have advantage on your Strength ability rolls. Chains have an AC of 10, a DT of 10, 10 hit points, and vulnerability to ballistic, laser, and plasma damage."
+    }
+  },
+  {
+    "name": "Flare",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 1,
+      "cost": 10,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 6 AP on your turn to light this flare. This flare creates bright red light in a 30 foot radius and dim red light for an additional 30 feet. This light lasts for 1 hour."
+    }
+  },
+  {
+    "name": "Flashlight",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 100,
+      "description": "(pg 80-82) Items and Gear.\nYou can spend 1 AP while holding this flashlight to create bright light in a 20 foot cone and dim light for an additional 20 feet. The light lasts for 8 hours so long as you spend 6 AP to load an energy cell into the flashlight."
+    }
+  },
+  {
+    "name": "Gas mask",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 12,
+      "cost": 80,
+      "description": "(pg 80-82) Items and Gear.\nWhile you wear this mask, your radiation DC decreases by 3 and your passive sense decreases by 2."
+    }
+  },
+  {
+    "name": "Geiger Counter",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 200,
+      "description": "(pg 80-82) Items and Gear.\nWhen you enter an irradiated zone, this device detects the level of radiation and you learn the radiation severity score."
+    }
+  },
+  {
+    "name": "Grappling Hook",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 35,
+      "description": "(pg 80-82) Items and Gear.\nA metal hook that can be tied and attached to rope with 6 AP."
+    }
+  },
+  {
+    "name": "Hazmat Suit",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 50,
+      "cost": 10,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 50 (equal to 10 while worn).\nThis large yellow suit is lined with layers of lead to provide the most protection from radiation without wearing power armor. Due to its bulky design; it takes 1 minute to don or doff, and you cannot wear armor over the suit. However, you can wear armor underneath the suit. While you wear the hazmat suit your radiation DC decreases by 10 and you are immune to radiation damage. If you fail a radiation check, your radiation DC does not increase. For every 5 points of damage you take to your hit points while wearing a hazmat suit, it gains a level of decay. Each level of decay increases your radiation score by 1. To repair a hazmat suit, the crafting DC is equal to 12 (+2) and requires x2 lead and x1 cloth."
+    }
+  },
+  {
+    "name": "Hazmat Suit, Powered",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 80,
+      "cost": 450,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 80 (equal to 5 while worn).\nThis suit includes a geiger counter, an air purification system, impact absorption, further padding, and is topped with a bulbous helmet resembling a space suit. The suit requires power in order to operate. You can spend 6 AP to load 3 energy cells into the suit which allows it to be powered for up to 6 hours. Thanks to its automatic shrink fitting system; It takes 30 seconds to don or doff, however you cannot wear armor while wearing this suit. While you wear the hazmat suit your DT is increased by 3, you cannot gain levels of radiation, and you are immune to radiation damage. For every 5 points of damage you take to your hit points while wearing a hazmat suit, it gains a level of decay. If the suit gains 10 levels of decay, it ceases function until repaired. To repair a hazmat suit, the crafting DC is equal to 15 (+5) and requires x3 lead, x2 leather, and x2 circuitry."
+    }
+  },
+  {
+    "name": "Insulated Clothing",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 20,
+      "cost": 50,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 20 (equal to 5 while worn).\nHeat trapping clothing, furs, weighted jackets, boots, hats, gloves, all the works to keep you warm. It takes 1 minute to put on insulated clothing and 1 minute to take it off. You are considered insulated while you wear this clothing. You cannot wear armor over this clothing (however, there is an insulated armor upgrade). While you wear insulated clothing, your maximum AP is reduced by 1 to a minimum of 6."
+    }
+  },
+  {
+    "name": "Insulated Clothing, Lightweight",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 750,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 10 (equal to 2 while worn).\nThe wonders of pre-war thermal ingenuity. This trendy set of nylon, fabric, and heat trapping cotton can keep you warm without all the bulk. This clothing’s properties are identical to the normal insulated clothing, however your AP is not reduced."
+    }
+  },
+  {
+    "name": "Lockpicks",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 100,
+      "description": "(pg 80-82) Items and Gear.\nThese metal tools allow you to pick locks with far more proficiency. When you make a breach skill check to pick a lock, the DC is reduced by 5. After you use these lockpicks a total of five times, they break and cease function."
+    }
+  },
+  {
+    "name": "Rope",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 8,
+      "cost": 10,
+      "description": "(pg 80-82) Items and Gear.\nRope can be used to tie items together, make a pulley system, climb, or tie someone up. If you are holding a rope while attempting to grapple or strangle another creature, you have advantage on your Strength ability rolls. Rope has an AC of 10, a DT of 2, 5 hit points, and vulnerability to ballistic, laser, plasma, and slashing damage."
+    }
+  },
+  {
+    "name": "Sleeping Bag",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 25,
+      "description": "(pg 80-82) Items and Gear.\nThis nylon, cloth, or hide bag allows you to sleep even in the roughest terrain."
+    }
+  },
+  {
+    "name": "Tent (one person)",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 12,
+      "cost": 20,
+      "description": "(pg 80-82) Items and Gear.\nThis small tent provides shelter from outside sources, weather, and terrain."
+    }
+  },
+  {
+    "name": "Tent (two person)",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 18,
+      "cost": 25,
+      "description": "(pg 80-82) Items and Gear.\nThis larger tent provides shelter from outside sources, weather, and terrain."
+    }
+  },
+  {
+    "name": "Water Skin",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 30,
+      "description": "(pg 80-82) Items and Gear.\nLoad: 2, 4 when full.\nThis leather pouch is fitted with a cap and nozzle and holds 60 oz. of liquid. (Described on pg 81 as \"Waterskin\".)"
+    }
+  },
+  {
+    "name": "Weapon Repair Kit",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 10,
+      "cost": 90,
+      "description": "(pg 80-82) Items and Gear.\nThis plastic box filled with tools and mechanisms was used during the great war to repair soldiers’ weapons with ease. Though, the tech used to create them has long since been forgotten; many are still found across the wasteland. You can spend 6 AP to insert any weapon into the repair kit. After 1 minute, the weapon is ejected and loses 2 levels of decay. The weapon repair kit ceases function after it has been used a total of three times."
+    }
+  },
+  {
+    "name": "Pip-Boy 2000",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 300,
+      "description": "(pg 91) Unique Item. A wearable computer that attaches to the wrist and allows for a variety of helpful functions. Every Pip-Boy has the ability to display maps of various locations, play holotapes, track your location via satellite, record and playback audio, and input text notes. Additionally, if you are wearing a Vault Suit that has no more than five levels of decay, any Pip-Boy you wear can monitor your vitals; whenever you heal your hit points, you heal an additional amount equal to your level.\nPip-Boy 2000. The most basic type of Pip-Boy, this model provides no other features.\nNot automated: no sheet control reads a Pip-Boy. The vitals bonus above — heal an extra amount equal to your level while wearing a Vault Suit with five or fewer levels of decay — is applied by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Pip-Boy 2000 Mark VI",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 600,
+      "description": "(pg 91) Unique Item. A wearable computer that attaches to the wrist and allows for a variety of helpful functions. Every Pip-Boy has the ability to display maps of various locations, play holotapes, track your location via satellite, record and playback audio, and input text notes. Additionally, if you are wearing a Vault Suit that has no more than five levels of decay, any Pip-Boy you wear can monitor your vitals; whenever you heal your hit points, you heal an additional amount equal to your level.\nPip-Boy 2000 Mark VI. This model features a heartbeat and electromagnetic sensor; you can spend 2 AP to activate this sensor to know the cardinal direction of any small or larger creatures within 60 feet of you that aren’t covered by at least a foot of lead or steel\nNot automated: no sheet control reads a Pip-Boy. The vitals bonus above and the 2 AP sensor sweep are applied by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Pip-Boy 3000",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 4,
+      "cost": 550,
+      "description": "(pg 91) Unique Item. A wearable computer that attaches to the wrist and allows for a variety of helpful functions. Every Pip-Boy has the ability to display maps of various locations, play holotapes, track your location via satellite, record and playback audio, and input text notes. Additionally, if you are wearing a Vault Suit that has no more than five levels of decay, any Pip-Boy you wear can monitor your vitals; whenever you heal your hit points, you heal an additional amount equal to your level.\nPip-Boy 3000. This model features a number of new and improved functions. This model functions as a geiger counter, flashlight, and can connect to nearby radio stations.\nNot automated: no sheet control reads a Pip-Boy. The vitals bonus above and this model's geiger counter, flashlight and radio functions are applied by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Pip-Boy 3000 Mark IV",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 850,
+      "description": "(pg 91) Unique Item. A wearable computer that attaches to the wrist and allows for a variety of helpful functions. Every Pip-Boy has the ability to display maps of various locations, play holotapes, track your location via satellite, record and playback audio, and input text notes. Additionally, if you are wearing a Vault Suit that has no more than five levels of decay, any Pip-Boy you wear can monitor your vitals; whenever you heal your hit points, you heal an additional amount equal to your level.\nPip-Boy 3000 Mark IV. This model features a heartbeat and electromagnetic sensor; you can spend 2 AP to activate this sensor to know the cardinal direction of any small or larger creatures within 60 feet of you that aren’t covered by at least a foot of lead or steel. Additionally, this model functions as a geiger counter, flashlight, and can connect to nearby radio stations.\nNot automated: no sheet control reads a Pip-Boy. The vitals bonus above, the 2 AP sensor sweep, and the geiger counter, flashlight and radio functions are all applied by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Stealth Boy",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 500,
+      "description": "(pg 91) Unique Item. A RobCo Stealth Boy 3001 personal stealth device. This technological, pre-war wonder generates a modulating field that transmits the reflected light from one side of an object to the other. You can spend 3 AP to activate a stealth boy, once you activate you become invisible for 1 minute so long as you keep the stealth boy on your body. Once a stealth boy has been activated, it cannot be activated again.\nNot automated: activating a Stealth Boy applies no invisibility, tracks no duration, and does not mark the device spent — resolve all three by hand. The Nightkin Stealth Field (pg 12) establishes this system's invisibility pattern (src/actions/stealth-field.ts); the Stealth Boy is not yet wired to it.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Two-way Radio",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 120,
+      "description": "(pg 91) Unique Item. These small militaristic devices allow for long range communication. The dual radios function so long as you spend 6 AP to load an energy cell into each one, in which they each last for a total of 100 activations. You can spend 3 AP to activate one of the radios, when you activate it; any sound made within 5 feet of the radio is transmitted to the other radio which can be heard out to a range of 5 feet. If both radios are activated simultaneously, neither emit any sound.\nNot automated: the energy cell each radio is loaded with, the 100 activations, and the 5-foot pickup and playback ranges are all tracked by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Electronic Lockpick",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 2,
+      "cost": 500,
+      "description": "(pg 91) Unique Item. You spend 6 AP to attach this mechanical device to any lock within 5 feet of you that requires a breach skill check to open, at the end of your turn the electronic lockpick opens the lock. Due to its fine tuned circuitry and brittle picks, the electronic lockpick breaks after use.\nNot automated: the 6 AP attach, the end-of-turn opening, and the break after use are resolved by hand — nothing consumes or destroys the item.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  },
+  {
+    "name": "Electronic Lockpick Mk II",
+    "type": "gear",
+    "system": {
+      "quantity": 1,
+      "load": 3,
+      "cost": 750,
+      "description": "(pg 91) Unique Item. While far sleeker and more robust in its design, this item’s function is identical to an electronic lockpick except that it breaks after three uses instead of one.\nNot automated: as with the electronic lockpick, the AP cost, the end-of-turn opening, and the three uses before it breaks are tracked by hand.\nAcquiring any of these items is entirely up to GM’s discretion. If your background’s starting equipment grants you this item, be sure to communicate with your GM that you will start the game with one of these items."
+    }
+  }
+]

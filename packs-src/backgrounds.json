@@ -1,0 +1,3547 @@
+[
+  {
+    "key": "custom",
+    "name": "Custom Background",
+    "page": 13,
+    "printedSkills": "+2 to three different skills.",
+    "skills": [],
+    "trait": null,
+    "equipmentNote": "You can choose any background's starting equipment, or you can choose your own items at your GM's discretion with a budget of 850 caps.",
+    "capsBudget": 850,
+    "kits": []
+  },
+  {
+    "key": "cultist",
+    "name": "Cultist",
+    "page": 13,
+    "printedSkills": "Melee Weapons, Speech, Sneak",
+    "skills": [
+      "meleeWeapons",
+      "speech",
+      "sneak"
+    ],
+    "trait": "The Sight Beyond",
+    "kits": [
+      {
+        "label": "Human Cultist",
+        "races": [
+          "human"
+        ],
+        "printed": "x1 cloth armor (with a rank 1 lead lined upgrade), x1 knife, x1 bolt-action pipe pistol, x15 9mm bullets, x1 backpack, x1 chain, x3 cram, x1 diluted RadAway, x1 Rad-X, x1 healing powder, x3 dirty water, x1 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor (with a rank 1 lead lined upgrade)",
+            "count": 1,
+            "upgrade": "with a rank 1 lead lined upgrade",
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 knife",
+            "count": 1,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 bolt-action pipe pistol",
+            "count": 1,
+            "name": "Bolt-action Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 chain",
+            "count": 1,
+            "name": "Chain"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x3 dirty water",
+            "count": 3,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x1 purified water",
+            "count": 1,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul or Super Mutant Cultist",
+        "races": [
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 leather armor, x1 knife, x1 bolt-action pipe pistol, x15 9mm bullets, x1 backpack, x1 chain, x3 cram, x4 dirty water, x1 stimpak, x1 diluted stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 knife",
+            "count": 1,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 bolt-action pipe pistol",
+            "count": 1,
+            "name": "Bolt-action Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 chain",
+            "count": 1,
+            "name": "Chain"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x4 dirty water",
+            "count": 4,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth Cultist",
+        "races": [
+          "gen2synth"
+        ],
+        "printed": "x1 leather armor, x1 knife, x1 bolt-action pipe pistol, x15 9mm bullets, x1 backpack, x1 chain, x1 diluted stimpak, x1 RobCo Quick Fix-it 1.0, x1 overclock hardware, x1 cache clearer, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 knife",
+            "count": 1,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 bolt-action pipe pistol",
+            "count": 1,
+            "name": "Bolt-action Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 chain",
+            "count": 1,
+            "name": "Chain"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x1 overclock hardware",
+            "count": 1,
+            "name": "Overclock Hardware"
+          },
+          {
+            "printed": "x1 cache clearer",
+            "count": 1,
+            "name": "Cache Clearer"
+          }
+        ]
+      },
+      {
+        "label": "Robot Cultist",
+        "races": [
+          "robot"
+        ],
+        "printed": "x1 leather armor, x1 knife, x1 bolt-action pipe pistol, x15 9mm bullets, x1 backpack, x1 chain, x2 RobCo Quick Fix-it 1.0, x1 overclock hardware, x1 cache clearer, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 knife",
+            "count": 1,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 bolt-action pipe pistol",
+            "count": 1,
+            "name": "Bolt-action Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 chain",
+            "count": 1,
+            "name": "Chain"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 1.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x1 overclock hardware",
+            "count": 1,
+            "name": "Overclock Hardware"
+          },
+          {
+            "printed": "x1 cache clearer",
+            "count": 1,
+            "name": "Cache Clearer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "doctor",
+    "name": "Doctor",
+    "page": 13,
+    "printedSkills": "Breach, Medicine, Science",
+    "skills": [
+      "breach",
+      "medicine",
+      "science"
+    ],
+    "trait": "Do No Harm",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Doctor",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 knife with four levels of decay, x1 syringer, x2 stimpak loader syringes, x1 lock joint syringe, x1 backpack, x1 first aid kit, x2 diluted stimpaks, x1 diluted RadAway, x1 Rad-X, x1 healing powder, a sleeping bag, one person tent, x1 noodle cup, x1 instamash, x2 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 knife with four levels of decay",
+            "count": 1,
+            "decay": 4,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 syringer",
+            "count": 1,
+            "name": "Syringer"
+          },
+          {
+            "printed": "x2 stimpak loader syringes",
+            "count": 2,
+            "name": "Syringe — Stimpak Loader"
+          },
+          {
+            "printed": "x1 lock joint syringe",
+            "count": 1,
+            "name": "Syringe — Lock Joint"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x2 diluted stimpaks",
+            "count": 2,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "a sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 noodle cup",
+            "count": 1,
+            "name": "Noodle cup"
+          },
+          {
+            "printed": "x1 instamash",
+            "count": 1,
+            "name": "InstaMash"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Doctor",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 knife with four levels of decay, x1 syringer, x2 stimpak loader syringes, x1 lock joint syringe, x1 backpack, x1 first aid kit, x2 RobCo Quick Fix-it 1.0, x2 RobCo Quick Fix-it 2.0, x1 diluted RadAway, x1 Rad-X, x2 healing powder, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 knife with four levels of decay",
+            "count": 1,
+            "decay": 4,
+            "name": "Knife"
+          },
+          {
+            "printed": "x1 syringer",
+            "count": 1,
+            "name": "Syringer"
+          },
+          {
+            "printed": "x2 stimpak loader syringes",
+            "count": 2,
+            "name": "Syringe — Stimpak Loader"
+          },
+          {
+            "printed": "x1 lock joint syringe",
+            "count": 1,
+            "name": "Syringe — Lock Joint"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 1.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x2 healing powder",
+            "count": 2,
+            "name": "Healing Powder"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "drifter",
+    "name": "Drifter",
+    "page": 13,
+    "printedSkills": "Breach, Sneak, Unarmed",
+    "skills": [
+      "breach",
+      "sneak",
+      "unarmed"
+    ],
+    "trait": "Street Rat",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Drifter",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 shiv, x1 pipe pistol with two levels of decay, x15 9mm bullets, x1 backpack, x5 canned dog food, x1 iguana on a stick, x2 healing powder, x4 dirty water, x2 purified water, x1 lockpicks, x1 one person tent, x1 sleeping bag, x1 whiskey, x1 fixer, x2 jet, x3 cigarettes, x1 psycho, x1 coffee and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 shiv",
+            "count": 1,
+            "name": "Shiv"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x5 canned dog food",
+            "count": 5,
+            "name": "Canned Dog Food"
+          },
+          {
+            "printed": "x1 iguana on a stick",
+            "count": 1,
+            "name": "Iguana on a Stick"
+          },
+          {
+            "printed": "x2 healing powder",
+            "count": 2,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x4 dirty water",
+            "count": 4,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 whiskey",
+            "count": 1,
+            "name": "Whiskey"
+          },
+          {
+            "printed": "x1 fixer",
+            "count": 1,
+            "name": "Fixer"
+          },
+          {
+            "printed": "x2 jet",
+            "count": 2,
+            "name": "Jet"
+          },
+          {
+            "printed": "x3 cigarettes",
+            "count": 3,
+            "name": "Cigarette"
+          },
+          {
+            "printed": "x1 psycho",
+            "count": 1,
+            "name": "Psycho"
+          },
+          {
+            "printed": "x1 coffee",
+            "count": 1,
+            "name": "Coffee"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Drifter",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 shiv, x1 pipe pistol with two levels of decay, x15 9mm bullets, x1 backpack, x1 lockpicks, x2 RobCo Quick Fix-it 1.0, x2 overclock hardware, x2 cache clearer, x1 military auto-tank AI upload, x1 flashlight, x1 energy cell, x1 ¡La Fantoma! skill magazine and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 shiv",
+            "count": 1,
+            "name": "Shiv"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 1.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x2 overclock hardware",
+            "count": 2,
+            "name": "Overclock Hardware"
+          },
+          {
+            "printed": "x2 cache clearer",
+            "count": 2,
+            "name": "Cache Clearer"
+          },
+          {
+            "printed": "x1 military auto-tank AI upload",
+            "count": 1,
+            "name": "Military Auto-Tank AI Upload"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 ¡La Fantoma! skill magazine",
+            "count": 1,
+            "name": "¡La Fantoma!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "entertainer",
+    "name": "Entertainer",
+    "page": 14,
+    "printedSkills": "Barter, Speech, Intimidation",
+    "skills": [
+      "barter",
+      "speech",
+      "intimidation"
+    ],
+    "trait": "A Moment of Respite",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Entertainer",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 switchblade, x1 10mm pistol with three levels of decay, x10 10mm ammo, x1 backpack, x2 dynamite, x3 flares, x3 salisbury steak, x1 desert salad, x1 nuka-cola, x1 dirty wastelander, x1 healing powder, x1 stimpak, x2 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 switchblade",
+            "count": 1,
+            "name": "Switchblade"
+          },
+          {
+            "printed": "x1 10mm pistol with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x10 10mm ammo",
+            "count": 10,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 dynamite",
+            "count": 2,
+            "name": "Dynamite"
+          },
+          {
+            "printed": "x3 flares",
+            "count": 3,
+            "name": "Flares"
+          },
+          {
+            "printed": "x3 salisbury steak",
+            "count": 3,
+            "name": "Salisbury Steak"
+          },
+          {
+            "printed": "x1 desert salad",
+            "count": 1,
+            "name": "Desert Salad"
+          },
+          {
+            "printed": "x1 nuka-cola",
+            "count": 1,
+            "name": "Nuka-Cola"
+          },
+          {
+            "printed": "x1 dirty wastelander",
+            "count": 1,
+            "name": "Dirty Wastelander"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Entertainer",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 switchblade, x1 10mm pistol with two levels of decay, x20 10mm bullets, x1 backpack, x2 dynamite, x3 flares, x2 RobCo Quick FIx-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 switchblade",
+            "count": 1,
+            "name": "Switchblade"
+          },
+          {
+            "printed": "x1 10mm pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x20 10mm bullets",
+            "count": 20,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 dynamite",
+            "count": 2,
+            "name": "Dynamite"
+          },
+          {
+            "printed": "x3 flares",
+            "count": 3,
+            "name": "Flares"
+          },
+          {
+            "printed": "x2 RobCo Quick FIx-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "farmer",
+    "name": "Farmer",
+    "page": 14,
+    "printedSkills": "Crafting, Intimidation, Survival",
+    "skills": [
+      "crafting",
+      "intimidation",
+      "survival"
+    ],
+    "trait": "Hardened by the Earth",
+    "kits": [
+      {
+        "label": "Human, Ghoul or Super Mutant Farmer.",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 pitchfork with five levels of decay, x1 single shotgun with three levels of decay, x8 12 gauge ammo, x1 backpack, x1 healing powder, x5 potatoes, x5 tomatoes, x5 mutfruit, x4 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 pitchfork with five levels of decay",
+            "count": 1,
+            "decay": 5,
+            "name": "Pitchfork"
+          },
+          {
+            "printed": "x1 single shotgun with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "Single Shotgun"
+          },
+          {
+            "printed": "x8 12 gauge ammo",
+            "count": 8,
+            "name": "12 gauge"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x5 potatoes",
+            "count": 5,
+            "name": "Potato"
+          },
+          {
+            "printed": "x5 tomatoes",
+            "count": 5,
+            "name": null
+          },
+          {
+            "printed": "x5 mutfruit",
+            "count": 5,
+            "name": "Mutfruit"
+          },
+          {
+            "printed": "x4 purified water",
+            "count": 4,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Farmer",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 pitchfork with five levels of decay, x1 sickle, x1 single shotgun with three levels of decay, x8 12 gauge ammo, x1 backpack, x1 RobCo Quick Fix-It, x2 potatoes, x2 tomatoes, x1 mutfruit, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 pitchfork with five levels of decay",
+            "count": 1,
+            "decay": 5,
+            "name": "Pitchfork"
+          },
+          {
+            "printed": "x1 sickle",
+            "count": 1,
+            "name": "Sickle"
+          },
+          {
+            "printed": "x1 single shotgun with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "Single Shotgun"
+          },
+          {
+            "printed": "x8 12 gauge ammo",
+            "count": 8,
+            "name": "12 gauge"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-It",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0",
+            "inferred": "unversioned"
+          },
+          {
+            "printed": "x2 potatoes",
+            "count": 2,
+            "name": "Potato"
+          },
+          {
+            "printed": "x2 tomatoes",
+            "count": 2,
+            "name": null
+          },
+          {
+            "printed": "x1 mutfruit",
+            "count": 1,
+            "name": "Mutfruit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "guard",
+    "name": "Guard",
+    "page": 14,
+    "printedSkills": "Guns, Speech, Melee Weapons",
+    "skills": [
+      "guns",
+      "speech",
+      "meleeWeapons"
+    ],
+    "trait": "Vigilant Watch",
+    "kits": [
+      {
+        "label": "Human, Ghoul or Super Mutant Farmer.",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 metal armor with one level of decay 225, x1 police baton with two levels of decay 84, x1 9mm pistol 200, x20 9mm ammo 40, x10 9mm rubber ammo 10c, x1 backpack 20, x1 sleeping bag 20, x1 one person tent 25, x1 binoculars 25c, x1 diluted stimpak 40, x3 purified water 60, x2 pork n' beans 10c, x1 coffee 15c, x2 donuts 16, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 metal armor with one level of decay 225",
+            "printedPrice": "225",
+            "count": 1,
+            "decay": 1,
+            "name": "Metal"
+          },
+          {
+            "printed": "x1 police baton with two levels of decay 84",
+            "printedPrice": "84",
+            "count": 1,
+            "decay": 2,
+            "name": "Police Baton"
+          },
+          {
+            "printed": "x1 9mm pistol 200",
+            "printedPrice": "200",
+            "count": 1,
+            "name": "9mm pistol"
+          },
+          {
+            "printed": "x20 9mm ammo 40",
+            "printedPrice": "40",
+            "count": 20,
+            "name": "9mm"
+          },
+          {
+            "printed": "x10 9mm rubber ammo 10c",
+            "printedPrice": "10c",
+            "count": 10,
+            "name": "9mm — Rubber"
+          },
+          {
+            "printed": "x1 backpack 20",
+            "printedPrice": "20",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag 20",
+            "printedPrice": "20",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent 25",
+            "printedPrice": "25",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 binoculars 25c",
+            "printedPrice": "25c",
+            "count": 1,
+            "name": "Binoculars"
+          },
+          {
+            "printed": "x1 diluted stimpak 40",
+            "printedPrice": "40",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x3 purified water 60",
+            "printedPrice": "60",
+            "count": 3,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x2 pork n' beans 10c",
+            "printedPrice": "10c",
+            "count": 2,
+            "name": "Pork n' Beans"
+          },
+          {
+            "printed": "x1 coffee 15c",
+            "printedPrice": "15c",
+            "count": 1,
+            "name": "Coffee"
+          },
+          {
+            "printed": "x2 donuts 16",
+            "printedPrice": "16",
+            "count": 2,
+            "name": "Donut"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Farmer",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 metal armor with one level of decay, x1 police baton with two levels of decay, x1 9mm pistol 200, x35 9mm ammo, x20 9mm rubber ammo, x1 backpack, x1 binoculars, x2 RobCo Quick Fix-it, x1 Milsurp Review magazine, x1 cache clearer, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 metal armor with one level of decay",
+            "count": 1,
+            "decay": 1,
+            "name": "Metal"
+          },
+          {
+            "printed": "x1 police baton with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Police Baton"
+          },
+          {
+            "printed": "x1 9mm pistol 200",
+            "printedPrice": "200",
+            "count": 1,
+            "name": "9mm pistol"
+          },
+          {
+            "printed": "x35 9mm ammo",
+            "count": 35,
+            "name": "9mm"
+          },
+          {
+            "printed": "x20 9mm rubber ammo",
+            "count": 20,
+            "name": "9mm — Rubber"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 binoculars",
+            "count": 1,
+            "name": "Binoculars"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 1.0",
+            "inferred": "unversioned"
+          },
+          {
+            "printed": "x1 Milsurp Review magazine",
+            "count": 1,
+            "name": "Milsurp Review"
+          },
+          {
+            "printed": "x1 cache clearer",
+            "count": 1,
+            "name": "Cache Clearer"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "hermit",
+    "name": "Hermit",
+    "page": 14,
+    "printedSkills": "Explosives, Medicine, Survival",
+    "skills": [
+      "explosives",
+      "medicine",
+      "survival"
+    ],
+    "trait": "Recluse",
+    "kits": [
+      {
+        "label": "Human Hermit",
+        "races": [
+          "human"
+        ],
+        "printed": "x1 multilayered armor with two levels of decay, x1 sharpened pole, x2 dynamite, x1 backpack, x1 sleeping bag, x1 one person tent, x1 bear trap, x1 mutt chops, x1 gecko steak, x1 diluted RadAway, x3 healing powder, x1 first aid kit, x1 purified water, x2 dirty water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 multilayered armor with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Multilayered"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x2 dynamite",
+            "count": 2,
+            "name": "Dynamite"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 bear trap",
+            "count": 1,
+            "name": "Bear Trap"
+          },
+          {
+            "printed": "x1 mutt chops",
+            "count": 1,
+            "name": "Mutt chops"
+          },
+          {
+            "printed": "x1 gecko steak",
+            "count": 1,
+            "name": "Gecko steak"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x3 healing powder",
+            "count": 3,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x1 purified water",
+            "count": 1,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x2 dirty water",
+            "count": 2,
+            "name": "Dirty water"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul or Super Mutant Hermit",
+        "races": [
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 multilayered armor with two levels of decay, x1 sharpened pole, x2 dynamite, x1 backpack, x1 sleeping bag, x1 one person tent, x1 bear trap, x1 mutt chops, x1 gecko steak, x1 iguana on a stick, x4 healing powder, x1 first aid kit, x4 dirty water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 multilayered armor with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Multilayered"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x2 dynamite",
+            "count": 2,
+            "name": "Dynamite"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 bear trap",
+            "count": 1,
+            "name": "Bear Trap"
+          },
+          {
+            "printed": "x1 mutt chops",
+            "count": 1,
+            "name": "Mutt chops"
+          },
+          {
+            "printed": "x1 gecko steak",
+            "count": 1,
+            "name": "Gecko steak"
+          },
+          {
+            "printed": "x1 iguana on a stick",
+            "count": 1,
+            "name": "Iguana on a Stick"
+          },
+          {
+            "printed": "x4 healing powder",
+            "count": 4,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x4 dirty water",
+            "count": 4,
+            "name": "Dirty water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Hermit",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 multilayered armor, x1 sharpened pole with the strengthened upgrade, x3 dynamite, x1 backpack, x1 bear trap, x2 RobCo Quick Fix-it 2.0 and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 multilayered armor",
+            "count": 1,
+            "name": "Multilayered"
+          },
+          {
+            "printed": "x1 sharpened pole with the strengthened upgrade",
+            "count": 1,
+            "upgrade": "with the strengthened upgrade",
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x3 dynamite",
+            "count": 3,
+            "name": "Dynamite"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 bear trap",
+            "count": 1,
+            "name": "Bear Trap"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "journalist",
+    "name": "Journalist",
+    "page": 15,
+    "printedSkills": "Breach, Speech, Sneak",
+    "skills": [
+      "breach",
+      "speech",
+      "sneak"
+    ],
+    "trait": "Persistent",
+    "kits": [
+      {
+        "label": "Human Journalist",
+        "races": [
+          "human"
+        ],
+        "printed": "x1 cloth armor, x1 switchblade, x1 9mm pistol with three levels of decay, x13 9mm bullets, x1 backpack, x1 flashlight, x1 energy cell 30, x1 bandolier, x1 lockpicks, x3 cram, x1 diluted RadAway, x1 Rad-X, x1 diluted stimpak, x3 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 switchblade",
+            "count": 1,
+            "name": "Switchblade"
+          },
+          {
+            "printed": "x1 9mm pistol with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "9mm pistol"
+          },
+          {
+            "printed": "x13 9mm bullets",
+            "count": 13,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell 30",
+            "printedPrice": "30",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x3 purified water",
+            "count": 3,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul or Super Mutant Journalist",
+        "races": [
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 switchblade, x1 9mm pistol with three levels of decay, x13 9mm bullets, x1 backpack, x1 flashlight, x1 energy cell, x1 bandolier, x1 lockpicks, x3 cram, x1 diluted stimpak, x1 calmex, x3 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 switchblade",
+            "count": 1,
+            "name": "Switchblade"
+          },
+          {
+            "printed": "x1 9mm pistol with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "9mm pistol"
+          },
+          {
+            "printed": "x13 9mm bullets",
+            "count": 13,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x1 calmex",
+            "count": 1,
+            "name": "Calmex"
+          },
+          {
+            "printed": "x3 purified water",
+            "count": 3,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Journalist",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 switchblade, x1 9mm pistol with two levels of decay, x26 9mm bullets, x1 backpack, x1 flashlight, x1 energy cell, x1 bandolier, x1 lockpicks, x1 RobCo Quick Fix-it 1.0, x1 coolant rerouter, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 switchblade",
+            "count": 1,
+            "name": "Switchblade"
+          },
+          {
+            "printed": "x1 9mm pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "9mm pistol"
+          },
+          {
+            "printed": "x26 9mm bullets",
+            "count": 26,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x1 coolant rerouter",
+            "count": 1,
+            "name": "Coolant Rerouter"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "laborer",
+    "name": "Laborer",
+    "page": 15,
+    "printedSkills": "Crafting, Speech, Melee Weapons",
+    "skills": [
+      "crafting",
+      "speech",
+      "meleeWeapons"
+    ],
+    "trait": "Long Days, Long Nights",
+    "kits": [
+      {
+        "label": "Human or Super Mutant Laborer",
+        "races": [
+          "human",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 crowbar, x1 pipe pistol with two levels of decay, x10 9mm bullets, x1 backpack, x1 canteen, x1 rope, x1 sleeping bag, x1 one person tent, x1 potato crisps, x2 instamash, x1 radstag stew, x2 purified water, x2 healing powder, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 crowbar",
+            "count": 1,
+            "name": "Crowbar"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x10 9mm bullets",
+            "count": 10,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 canteen",
+            "count": 1,
+            "name": "Canteen"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 potato crisps",
+            "count": 1,
+            "name": "Potato Crisps"
+          },
+          {
+            "printed": "x2 instamash",
+            "count": 2,
+            "name": "InstaMash"
+          },
+          {
+            "printed": "x1 radstag stew",
+            "count": 1,
+            "name": "Radstag stew"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x2 healing powder",
+            "count": 2,
+            "name": "Healing Powder"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul Laborer",
+        "races": [
+          "ghoul"
+        ],
+        "printed": "x1 cloth armor, x1 crowbar, x1 pipe pistol with two levels of decay, x10 9mm bullets, x1 backpack, x1 canteen, x1 rope, x1 sleeping bag, x1 one person tent, x1 potato crisps, x2 instamash, x1 radstag stew, x4 dirty water, x1 stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 crowbar",
+            "count": 1,
+            "name": "Crowbar"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x10 9mm bullets",
+            "count": 10,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 canteen",
+            "count": 1,
+            "name": "Canteen"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 potato crisps",
+            "count": 1,
+            "name": "Potato Crisps"
+          },
+          {
+            "printed": "x2 instamash",
+            "count": 2,
+            "name": "InstaMash"
+          },
+          {
+            "printed": "x1 radstag stew",
+            "count": 1,
+            "name": "Radstag stew"
+          },
+          {
+            "printed": "x4 dirty water",
+            "count": 4,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Laborer",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 crowbar, x1 pipe pistol with two levels of decay, x10 9mm bullets, x1 backpack, x1 rope, x1 flashlight, x1 energy cell, x1 RobCo Quick Fix-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 crowbar",
+            "count": 1,
+            "name": "Crowbar"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x10 9mm bullets",
+            "count": 10,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 2.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "mechanic",
+    "name": "Mechanic",
+    "page": 15,
+    "printedSkills": "Crafting, Guns, Science",
+    "skills": [
+      "crafting",
+      "guns",
+      "science"
+    ],
+    "trait": "Proper Maintenance",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Mechanic",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 wrench, x1 pipe revolver, x10 .44 bullets, x1 backpack, x1 bandolier, x1 canteen, x1 rope, x1 sleeping bag, x1 one person tent, x3 cram, x3 purified water, x1 weapon repair kit, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 wrench",
+            "count": 1,
+            "name": "Wrench"
+          },
+          {
+            "printed": "x1 pipe revolver",
+            "count": 1,
+            "name": "Pipe revolver"
+          },
+          {
+            "printed": "x10 .44 bullets",
+            "count": 10,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 canteen",
+            "count": 1,
+            "name": "Canteen"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x3 purified water",
+            "count": 3,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 weapon repair kit",
+            "count": 1,
+            "name": "Weapon Repair Kit"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Laborer",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 wrench, x1 pipe revolver, x15 .44 bullets, x1 backpack, x1 bandolier, x1 rope, x1 RobCo Quick Fix-it 1.0, x2 weapon repair kit, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 wrench",
+            "count": 1,
+            "name": "Wrench"
+          },
+          {
+            "printed": "x1 pipe revolver",
+            "count": 1,
+            "name": "Pipe revolver"
+          },
+          {
+            "printed": "x15 .44 bullets",
+            "count": 15,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x2 weapon repair kit",
+            "count": 2,
+            "name": "Weapon Repair Kit"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "mercenary",
+    "name": "Mercenary",
+    "page": 16,
+    "printedSkills": "Guns, Melee Weapons, Survival",
+    "skills": [
+      "guns",
+      "meleeWeapons",
+      "survival"
+    ],
+    "trait": "Sweeten the Deal",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Mercenary.",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 leather armor, x1 combat knife with two levels of decay, x1 trail carbine with two levels of decay, x10 .44 bullets, x1 backpack, x2 cram, x1 sleeping bag, x1 one person tent, x1 diluted stimpak, x1 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 combat knife with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Combat Knife"
+          },
+          {
+            "printed": "x1 trail carbine with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Trail Carbine"
+          },
+          {
+            "printed": "x10 .44 bullets",
+            "count": 10,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 cram",
+            "count": 2,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x1 purified water",
+            "count": 1,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Mercenary.",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 leather armor, x1 combat knife with two levels of decay, x1 trail carbine with two levels of decay, x12 .44 bullets, x1 backpack, x1 RobCo Quick Fix-it 1.0, x1 RobCo Quick Fix-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 combat knife with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Combat Knife"
+          },
+          {
+            "printed": "x1 trail carbine with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Trail Carbine"
+          },
+          {
+            "printed": "x12 .44 bullets",
+            "count": 12,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 2.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pastor",
+    "name": "Pastor",
+    "page": 16,
+    "printedSkills": "Barter, Intimidation, Speech",
+    "skills": [
+      "barter",
+      "intimidation",
+      "speech"
+    ],
+    "trait": "Embolden",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Pastor",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 single shotgun with three levels of decay, x8 12 gauge ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x3 pork ‘n beans, x1 donut, x1 coffee, x3 purified water, x1 first aid kit, x3 healing powder, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 single shotgun with three levels of decay",
+            "count": 1,
+            "decay": 3,
+            "name": "Single Shotgun"
+          },
+          {
+            "printed": "x8 12 gauge ammo",
+            "count": 8,
+            "name": "12 gauge"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x3 pork ‘n beans",
+            "count": 3,
+            "name": "Pork n' Beans"
+          },
+          {
+            "printed": "x1 donut",
+            "count": 1,
+            "name": "Donut"
+          },
+          {
+            "printed": "x1 coffee",
+            "count": 1,
+            "name": "Coffee"
+          },
+          {
+            "printed": "x3 purified water",
+            "count": 3,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x3 healing powder",
+            "count": 3,
+            "name": "Healing Powder"
+          }
+        ]
+      },
+      {
+        "label": "Robot or Gen-2 Synth Pastor",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 single shotgun with two levels of decay, x8 12 gauge ammo, x1 backpack, x1 flashlight, x1 energy cell, x1 first aid kit, x1 RobCo Quick Fix-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 single shotgun with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Single Shotgun"
+          },
+          {
+            "printed": "x8 12 gauge ammo",
+            "count": 8,
+            "name": "12 gauge"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 first aid kit",
+            "count": 1,
+            "name": "First Aid Kit"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 2.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pilgrim",
+    "name": "Pilgrim",
+    "page": 16,
+    "printedSkills": "Energy Weapons, Sneak, Survival",
+    "skills": [
+      "energyWeapons",
+      "sneak",
+      "survival"
+    ],
+    "trait": "Long Roads",
+    "kits": [
+      {
+        "label": "Human Pilgrim",
+        "races": [
+          "human"
+        ],
+        "printed": "x1 leather armor with the light upgrade, x1 sharpened pole, x1 laser rifle with five levels of decay, x1 energy cell, x1 backpack, x1 sleeping bag, x1 one person tent, x2 mutfruit, x2 apples, x1 vegetable soup, x2 purified water, x1 healing powder, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor with the light upgrade",
+            "count": 1,
+            "upgrade": "with the light upgrade",
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 laser rifle with five levels of decay",
+            "count": 1,
+            "decay": 5,
+            "name": "Laser rifle"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x2 mutfruit",
+            "count": 2,
+            "name": "Mutfruit"
+          },
+          {
+            "printed": "x2 apples",
+            "count": 2,
+            "name": "Apple"
+          },
+          {
+            "printed": "x1 vegetable soup",
+            "count": 1,
+            "name": "Vegetable soup"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul or Super Mutant Pilgrim",
+        "races": [
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 leather armor with the light upgrade, x1 sharpened pole, x1 laser rifle with five levels of decay, x1 energy cell, x1 backpack, x1 sleeping bag, x1 one person tent, x2 mutfruit, x2 apples, x1 vegetable soup, x3 dirty water, x1 nuka-cola, x1 diluted stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor with the light upgrade",
+            "count": 1,
+            "upgrade": "with the light upgrade",
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 laser rifle with five levels of decay",
+            "count": 1,
+            "decay": 5,
+            "name": "Laser rifle"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x2 mutfruit",
+            "count": 2,
+            "name": "Mutfruit"
+          },
+          {
+            "printed": "x2 apples",
+            "count": 2,
+            "name": "Apple"
+          },
+          {
+            "printed": "x1 vegetable soup",
+            "count": 1,
+            "name": "Vegetable soup"
+          },
+          {
+            "printed": "x3 dirty water",
+            "count": 3,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x1 nuka-cola",
+            "count": 1,
+            "name": "Nuka-Cola"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Pilgrim",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 leather armor with the light upgrade, x1 sharpened pole, x1 laser rifle with five levels of decay, x1 energy cell, x1 backpack, x1 bandolier, x1 binoculars, x1 grappling hook, x1 rope, RobCo Quick Fix-it 1.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor with the light upgrade",
+            "count": 1,
+            "upgrade": "with the light upgrade",
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 laser rifle with five levels of decay",
+            "count": 1,
+            "decay": 5,
+            "name": "Laser rifle"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 binoculars",
+            "count": 1,
+            "name": "Binoculars"
+          },
+          {
+            "printed": "x1 grappling hook",
+            "count": 1,
+            "name": "Grappling Hook"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "pitFighter",
+    "name": "Pit Fighter",
+    "page": 16,
+    "printedSkills": "Barter, Melee, Unarmed",
+    "skills": [
+      "barter",
+      "meleeWeapons",
+      "unarmed"
+    ],
+    "trait": "Endure the Battle",
+    "kits": [
+      {
+        "label": "Human Ghoul or Super Mutant Pit Fighter",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 lead pipe with two levels of decay, x1 brass knuckles, x1 spiked knuckles, x1 bandolier, x1 ball bearings, x1 sleeping bag, x1 one person tent, x3 cram, x1 vodka, x3 healing powder, x3 purified water, x1 diluted stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 lead pipe with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Lead pipe"
+          },
+          {
+            "printed": "x1 brass knuckles",
+            "count": 1,
+            "name": "Brass Knuckles"
+          },
+          {
+            "printed": "x1 spiked knuckles",
+            "count": 1,
+            "name": "Spiked Knuckles"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 ball bearings",
+            "count": 1,
+            "name": "Ball Bearings"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 vodka",
+            "count": 1,
+            "name": "Vodka"
+          },
+          {
+            "printed": "x3 healing powder",
+            "count": 3,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x3 purified water",
+            "count": 3,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          }
+        ]
+      },
+      {
+        "label": "Gen 2 Synth or Robot Cultist",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 metal armor with one level of decay, x1 lead pipe with two levels of decay, x1 brass knuckles, x1 spiked knuckles, x1 bandolier, x1 ball bearings, x1 RobCo Quick Fix-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 metal armor with one level of decay",
+            "count": 1,
+            "decay": 1,
+            "name": "Metal"
+          },
+          {
+            "printed": "x1 lead pipe with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Lead pipe"
+          },
+          {
+            "printed": "x1 brass knuckles",
+            "count": 1,
+            "name": "Brass Knuckles"
+          },
+          {
+            "printed": "x1 spiked knuckles",
+            "count": 1,
+            "name": "Spiked Knuckles"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 ball bearings",
+            "count": 1,
+            "name": "Ball Bearings"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 2.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "scientist",
+    "name": "Scientist",
+    "page": 17,
+    "printedSkills": "Energy Weapons, Breach, Science",
+    "skills": [
+      "energyWeapons",
+      "breach",
+      "science"
+    ],
+    "trait": "Field Research",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Scientist",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x1 sleeping bag, x1 one person tent, x3 cram, x2 purified water, x1 diluted RadAway, x1 Rad-X, x1 stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 laser pistol",
+            "count": 1,
+            "name": "Laser pistol"
+          },
+          {
+            "printed": "x2 energy cell",
+            "count": 2,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Scientist",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x2 RobCo Quick Fix-it 2.0, x1 Programmer’s Digest magazine, x1 data scrubber, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 laser pistol",
+            "count": 1,
+            "name": "Laser pistol"
+          },
+          {
+            "printed": "x2 energy cell",
+            "count": 2,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          },
+          {
+            "printed": "x1 Programmer’s Digest magazine",
+            "count": 1,
+            "name": "Programmer's Digest"
+          },
+          {
+            "printed": "x1 data scrubber",
+            "count": 1,
+            "name": "Data Scrubber"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "scribe",
+    "name": "Scribe",
+    "page": 17,
+    "printedSkills": "Crafting, Energy Weapons, Medicine",
+    "skills": [
+      "crafting",
+      "energyWeapons",
+      "medicine"
+    ],
+    "trait": "Wasteland Knowledge",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Scientist",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x1 sleeping bag, x1 one person tent, x3 cram, x2 purified water, x1 diluted RadAway, x1 Rad-X, x1 stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 laser pistol",
+            "count": 1,
+            "name": "Laser pistol"
+          },
+          {
+            "printed": "x2 energy cell",
+            "count": 2,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x3 cram",
+            "count": 3,
+            "name": "Cram"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 diluted RadAway",
+            "count": 1,
+            "name": "RadAway (Diluted)"
+          },
+          {
+            "printed": "x1 Rad-X",
+            "count": 1,
+            "name": "Rad-X"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Scientist",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 laser pistol, x2 energy cell, x1 backpack, x2 RobCo Quick Fix-it 2.0, x1 Programmer’s Digest magazine, x1 data scrubber, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 laser pistol",
+            "count": 1,
+            "name": "Laser pistol"
+          },
+          {
+            "printed": "x2 energy cell",
+            "count": 2,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          },
+          {
+            "printed": "x1 Programmer’s Digest magazine",
+            "count": 1,
+            "name": "Programmer's Digest"
+          },
+          {
+            "printed": "x1 data scrubber",
+            "count": 1,
+            "name": "Data Scrubber"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "soldier",
+    "name": "Soldier",
+    "page": 17,
+    "printedSkills": "Explosives, Guns, Medicine",
+    "skills": [
+      "explosives",
+      "guns",
+      "medicine"
+    ],
+    "trait": "Efficient Combatant",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Soldier.",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 leather armor, x1 combat knife with two levels of decay, x1 trail carbine with two levels of decay, x10 .44 bullets, x1 backpack, x2 cram, x1 sleeping bag, x1 one person tent, x1 diluted stimpak, x1 purified water, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 combat knife with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Combat Knife"
+          },
+          {
+            "printed": "x1 trail carbine with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Trail Carbine"
+          },
+          {
+            "printed": "x10 .44 bullets",
+            "count": 10,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x2 cram",
+            "count": 2,
+            "name": "Cram"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          },
+          {
+            "printed": "x1 purified water",
+            "count": 1,
+            "name": "Purified water"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Soldier.",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 leather armor, x1 combat knife with two levels of decay, x1 trail carbine with two levels of decay, x12 .44 bullets, x1 backpack, x1 RobCo Quick Fix-it 1.0, x1 RobCo Quick Fix-it 2.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 combat knife with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Combat Knife"
+          },
+          {
+            "printed": "x1 trail carbine with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Trail Carbine"
+          },
+          {
+            "printed": "x12 .44 bullets",
+            "count": 12,
+            "name": ".44 Magnum"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x1 RobCo Quick Fix-it 2.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 2.0"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "trader",
+    "name": "Trader",
+    "page": 17,
+    "printedSkills": "Barter, Speech, Intimidation",
+    "skills": [
+      "barter",
+      "speech",
+      "intimidation"
+    ],
+    "trait": "Bargaining Chip",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Trader",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 cloth armor, x1 shiv, x1 pipe pistol with two levels of decay, x15 9mm bullets, x1 backpack, x5 canned dog food, x1 iguana on a stick, x2 healing powder, x4 dirty water, x2 purified water, x1 lockpicks, x1 one person tent, x1 sleeping bag, x1 whiskey, x1 fixer, x2 jet, x3 cigarettes, x1 psycho, x1 coffee and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 shiv",
+            "count": 1,
+            "name": "Shiv"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x5 canned dog food",
+            "count": 5,
+            "name": "Canned Dog Food"
+          },
+          {
+            "printed": "x1 iguana on a stick",
+            "count": 1,
+            "name": "Iguana on a Stick"
+          },
+          {
+            "printed": "x2 healing powder",
+            "count": 2,
+            "name": "Healing Powder"
+          },
+          {
+            "printed": "x4 dirty water",
+            "count": 4,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 whiskey",
+            "count": 1,
+            "name": "Whiskey"
+          },
+          {
+            "printed": "x1 fixer",
+            "count": 1,
+            "name": "Fixer"
+          },
+          {
+            "printed": "x2 jet",
+            "count": 2,
+            "name": "Jet"
+          },
+          {
+            "printed": "x3 cigarettes",
+            "count": 3,
+            "name": "Cigarette"
+          },
+          {
+            "printed": "x1 psycho",
+            "count": 1,
+            "name": "Psycho"
+          },
+          {
+            "printed": "x1 coffee",
+            "count": 1,
+            "name": "Coffee"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Trader",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 cloth armor, x1 shiv, x1 pipe pistol with two levels of decay, x15 9mm bullets, x1 backpack, x1 lockpicks, x2 RobCo Quick Fix-it 1.0, x2 overclock hardware, x2 cache clearer, x1 military auto-tank AI upload, x1 flashlight, x1 energy cell, x1 ¡La Fantoma! skill magazine and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 cloth armor",
+            "count": 1,
+            "name": "Cloth"
+          },
+          {
+            "printed": "x1 shiv",
+            "count": 1,
+            "name": "Shiv"
+          },
+          {
+            "printed": "x1 pipe pistol with two levels of decay",
+            "count": 1,
+            "decay": 2,
+            "name": "Pipe pistol"
+          },
+          {
+            "printed": "x15 9mm bullets",
+            "count": 15,
+            "name": "9mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 lockpicks",
+            "count": 1,
+            "name": "Lockpicks"
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 1.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 1.0"
+          },
+          {
+            "printed": "x2 overclock hardware",
+            "count": 2,
+            "name": "Overclock Hardware"
+          },
+          {
+            "printed": "x2 cache clearer",
+            "count": 2,
+            "name": "Cache Clearer"
+          },
+          {
+            "printed": "x1 military auto-tank AI upload",
+            "count": 1,
+            "name": "Military Auto-Tank AI Upload"
+          },
+          {
+            "printed": "x1 flashlight",
+            "count": 1,
+            "name": "Flashlight"
+          },
+          {
+            "printed": "x1 energy cell",
+            "count": 1,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 ¡La Fantoma! skill magazine",
+            "count": 1,
+            "name": "¡La Fantoma!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "vaultDweller",
+    "name": "Vault Dweller",
+    "page": 18,
+    "printedSkills": "Medicine, Speech, Science",
+    "skills": [
+      "medicine",
+      "speech",
+      "science"
+    ],
+    "trait": "Talented",
+    "equipmentNote": "The starting equipment in this background grants powerful unique items, consult with your GM before you take these items.",
+    "kits": [
+      {
+        "label": "Human, Ghoul, or Super Mutant Vault Dweller",
+        "races": [
+          "human",
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 vault suit, x1 10mm pistol, x10 10mm ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x1 canteen, x1 weapon repair kit, x1 pip-boy (any), x1 BlamCo Mac & Cheese, x1 Salisbury Steak, Yum Yum Deviled Eggs, x1 coffee, x4 purified water, x1 stimpak.",
+        "caps": 0,
+        "items": [
+          {
+            "printed": "x1 vault suit",
+            "count": 1,
+            "name": "Vault Suit"
+          },
+          {
+            "printed": "x1 10mm pistol",
+            "count": 1,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x10 10mm ammo",
+            "count": 10,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x1 canteen",
+            "count": 1,
+            "name": "Canteen"
+          },
+          {
+            "printed": "x1 weapon repair kit",
+            "count": 1,
+            "name": "Weapon Repair Kit"
+          },
+          {
+            "printed": "x1 pip-boy (any)",
+            "count": 1,
+            "name": null,
+            "choices": [
+              "Pip-Boy 2000",
+              "Pip-Boy 2000 Mark VI",
+              "Pip-Boy 3000",
+              "Pip-Boy 3000 Mark IV"
+            ]
+          },
+          {
+            "printed": "x1 BlamCo Mac & Cheese",
+            "count": 1,
+            "name": "BlamCo Mac & Cheese"
+          },
+          {
+            "printed": "x1 Salisbury Steak",
+            "count": 1,
+            "name": "Salisbury Steak"
+          },
+          {
+            "printed": "Yum Yum Deviled Eggs",
+            "count": 1,
+            "name": "Yum Yum Deviled Eggs"
+          },
+          {
+            "printed": "x1 coffee",
+            "count": 1,
+            "name": "Coffee"
+          },
+          {
+            "printed": "x4 purified water",
+            "count": 4,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 stimpak",
+            "count": 1,
+            "name": "Stimpak"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Vault Dweller",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 vault suit, x1 laser pistol, x2 energy cell, x1 backpack, x1 pip-boy (any), x2 RobCo Quick Fix-it 2.0, x1 Programmer’s Digest magazine, x1 data scrubber, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 vault suit",
+            "count": 1,
+            "name": "Vault Suit"
+          },
+          {
+            "printed": "x1 laser pistol",
+            "count": 1,
+            "name": "Laser pistol"
+          },
+          {
+            "printed": "x2 energy cell",
+            "count": 2,
+            "name": "Energy Cell"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 pip-boy (any)",
+            "count": 1,
+            "name": null,
+            "choices": [
+              "Pip-Boy 2000",
+              "Pip-Boy 2000 Mark VI",
+              "Pip-Boy 3000",
+              "Pip-Boy 3000 Mark IV"
+            ]
+          },
+          {
+            "printed": "x2 RobCo Quick Fix-it 2.0",
+            "count": 2,
+            "name": "RobCo Quick Fix-it 2.0"
+          },
+          {
+            "printed": "x1 Programmer’s Digest magazine",
+            "count": 1,
+            "name": "Programmer's Digest"
+          },
+          {
+            "printed": "x1 data scrubber",
+            "count": 1,
+            "name": "Data Scrubber"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "key": "wastelander",
+    "name": "Wastelander",
+    "page": 18,
+    "printedSkills": "Guns, Survival, Unarmed",
+    "skills": [
+      "guns",
+      "survival",
+      "unarmed"
+    ],
+    "trait": "Adventurers Instinct",
+    "kits": [
+      {
+        "label": "Human Wastelander",
+        "races": [
+          "human"
+        ],
+        "printed": "x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x2 mutfruit, x2 apples, x1 vegetable soup, x2 purified water, x1 healing powder, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 10mm pistol",
+            "count": 1,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x10 10mm ammo",
+            "count": 10,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x2 mutfruit",
+            "count": 2,
+            "name": "Mutfruit"
+          },
+          {
+            "printed": "x2 apples",
+            "count": 2,
+            "name": "Apple"
+          },
+          {
+            "printed": "x1 vegetable soup",
+            "count": 1,
+            "name": "Vegetable soup"
+          },
+          {
+            "printed": "x2 purified water",
+            "count": 2,
+            "name": "Purified water"
+          },
+          {
+            "printed": "x1 healing powder",
+            "count": 1,
+            "name": "Healing Powder"
+          }
+        ]
+      },
+      {
+        "label": "Ghoul or Super Mutant Wastelander",
+        "races": [
+          "ghoul",
+          "superMutant"
+        ],
+        "printed": "x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm ammo, x1 backpack, x1 sleeping bag, x1 one person tent, x2 mutfruit, x2 apples, x1 vegetable soup, x3 dirty water, x1 nuka-cola, x1 diluted stimpak, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 10mm pistol",
+            "count": 1,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x10 10mm ammo",
+            "count": 10,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 sleeping bag",
+            "count": 1,
+            "name": "Sleeping Bag"
+          },
+          {
+            "printed": "x1 one person tent",
+            "count": 1,
+            "name": "Tent (one person)"
+          },
+          {
+            "printed": "x2 mutfruit",
+            "count": 2,
+            "name": "Mutfruit"
+          },
+          {
+            "printed": "x2 apples",
+            "count": 2,
+            "name": "Apple"
+          },
+          {
+            "printed": "x1 vegetable soup",
+            "count": 1,
+            "name": "Vegetable soup"
+          },
+          {
+            "printed": "x3 dirty water",
+            "count": 3,
+            "name": "Dirty water"
+          },
+          {
+            "printed": "x1 nuka-cola",
+            "count": 1,
+            "name": "Nuka-Cola"
+          },
+          {
+            "printed": "x1 diluted stimpak",
+            "count": 1,
+            "name": "Stimpak (Diluted)"
+          }
+        ]
+      },
+      {
+        "label": "Gen-2 Synth or Robot Wastelander",
+        "races": [
+          "gen2synth",
+          "robot"
+        ],
+        "printed": "x1 leather armor, x1 sharpened pole, x1 10mm pistol, x10 10mm ammo, x1 backpack, x1 bandolier, x1 binoculars, x1 grappling hook, x1 rope, RobCo Quick Fix-it 1.0, and x50 caps.",
+        "caps": 50,
+        "items": [
+          {
+            "printed": "x1 leather armor",
+            "count": 1,
+            "name": "Leather"
+          },
+          {
+            "printed": "x1 sharpened pole",
+            "count": 1,
+            "name": "Sharpened Pole"
+          },
+          {
+            "printed": "x1 10mm pistol",
+            "count": 1,
+            "name": "10mm pistol"
+          },
+          {
+            "printed": "x10 10mm ammo",
+            "count": 10,
+            "name": "10mm"
+          },
+          {
+            "printed": "x1 backpack",
+            "count": 1,
+            "name": "Bag, Backpack"
+          },
+          {
+            "printed": "x1 bandolier",
+            "count": 1,
+            "name": "Bandolier"
+          },
+          {
+            "printed": "x1 binoculars",
+            "count": 1,
+            "name": "Binoculars"
+          },
+          {
+            "printed": "x1 grappling hook",
+            "count": 1,
+            "name": "Grappling Hook"
+          },
+          {
+            "printed": "x1 rope",
+            "count": 1,
+            "name": "Rope"
+          },
+          {
+            "printed": "RobCo Quick Fix-it 1.0",
+            "count": 1,
+            "name": "RobCo Quick Fix-it 1.0"
+          }
+        ]
+      }
+    ]
+  }
+]

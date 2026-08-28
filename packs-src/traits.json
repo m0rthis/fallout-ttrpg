@@ -1,0 +1,803 @@
+[
+  {
+    "name": "Fast Metabolism",
+    "type": "trait",
+    "system": {
+      "prerequisite": "Human",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your Healing Rate is increased by a number equal to your level. However, whenever you succeed a radiation check, your Radiation DC increases by 4 instead of 2.",
+      "description": "(pg 26) Your metabolic rate is increased. Your Healing Rate is increased by 2. However, your Radiation DC is increased by 3.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.healingRate",
+          "mode": "add",
+          "value": 2,
+          "note": "Your Healing Rate is increased by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Cheaper Parts",
+    "type": "trait",
+    "system": {
+      "prerequisite": "Robot",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your Healing Rate is increased by a number equal to your level. However, your AC is decreased by 1, and your DT is decreased by 2.",
+      "description": "(pg 26) You're made from a more accessible and malleable metal. Your Healing Rate is increased by 2. However, your AC is reduced by 1.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.healingRate",
+          "mode": "add",
+          "value": 2,
+          "note": "Your Healing Rate is increased by 2"
+        },
+        {
+          "key": "system.bonuses.ac",
+          "mode": "add",
+          "value": -1,
+          "note": "your AC is reduced by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Dense Circuitry",
+    "type": "trait",
+    "system": {
+      "prerequisite": "Synth",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your Healing Rate is increased by a number equal to your level. However, your Combat Sequence rolls have disadvantage and are decreased by 4.",
+      "description": "(pg 26) Your fragile wiring is more protected, at the cost of input lag. You gain a bonus to your Healing Rate maximum equal to 2. However, your Combat Sequence rolls are decreased by 2.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.healingRate",
+          "mode": "add",
+          "value": 2,
+          "note": "a bonus to your Healing Rate maximum equal to 2"
+        },
+        {
+          "key": "system.bonuses.initiative",
+          "mode": "add",
+          "value": -2,
+          "note": "your Combat Sequence rolls are decreased by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Activated Actinides",
+    "type": "trait",
+    "system": {
+      "prerequisite": "Ghoul",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects; Your Healing Rate is increased by 2. However, whenever you succeed a Radiation check, your Radiation DC increases by 4 instead of 2.",
+      "description": "(pg 26) Through some mutation, you haven’t fully ghoulified. You can heal the full amount from stimpaks and you can use healing powder. However, you are no longer immune to radiation and its effects, but you have advantage on any Radiation checks and are resistant to radiation damage.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.advantage.checks.radiation",
+          "mode": "add",
+          "value": 1,
+          "note": "you have advantage on any Radiation checks"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Onerous Regeneration",
+    "type": "trait",
+    "system": {
+      "prerequisite": "Super Mutant",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your Healing Rate is increased by a number equal to your level. However, whenever you regain stamina points from sleep, you regain half as much.",
+      "description": "(pg 26) Your metabolic rate is increased. Your Healing Rate is increased by 2. However, your maximum stamina points are reduced by a number equal to your level.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.healingRate",
+          "mode": "add",
+          "value": 2,
+          "note": "Your Healing Rate is increased by 2"
+        }
+      ]
+    }
+  },
+  {
+    "name": "The Sight Beyond",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "You may make two Sight rolls after you rest for at least 8 hours, but your Karma Caps no longer flips if you ever roll a 1 on a d20.",
+      "description": "(pg 29) You often hear the whispers of the great beyond, receiving paranormal visions of prophecy. When you finish a rest that lasts at least 8 hours, you may roll a d20 and record the result, this is your Sight roll. With this Sight roll you can replace any attack roll, skill check, or ability check made by you or a creature that you can see. Once you use this Sight roll, you cannot use it again until you rest again for at least 8 hours. However, you start each game with one of your Karma Caps flipped.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Do No Harm",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects; whenever you spend 6 AP to roll a Medicine check on a dying creature to return them to 1 hit point, the check automatically succeeds. However, if you ever damage another creature from an attack you made against them, and this damage kills them; you lose all abilities from this trait.",
+      "description": "(pg 27) “Primum non nocere”, you’ve taken the hippocratic oath and intend to heal others. Whenever you restore hit points, you restore an additional 1 hit point. Whenever you attack another creature and damage them, the damage is reduced by 1 to a minimum of 1.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.damage",
+          "mode": "add",
+          "value": -1,
+          "note": "Whenever you attack another creature and damage them, the damage is reduced by 1 to a minimum of 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Street Rat",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "You've got friends in low places, and your reputation goes even further. In addition to the traits effects; you can use your Discount ability three times before resting. However, there’s a price on your head for over 500 caps. Work with your GM on how you’ve obtained this bounty, who would be after you, and how this will affect your character.",
+      "description": "(pg 29) From your time spent in settlements, you know how to look the part and blend in. You have advantage on any Sneak or Breach checks you make while in a settlement, town, outpost, or otherwise populated location. However your shifty reputation has led others to think twice before helping you. You have disadvantage on any Speech or Barter checks you make while in a settlement, town, outpost, or otherwise populated location.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.advantage.skills.sneak",
+          "mode": "add",
+          "value": 1,
+          "note": "advantage on Sneak checks while in a settlement",
+          "condition": "inSettlement"
+        },
+        {
+          "key": "system.bonuses.advantage.skills.breach",
+          "mode": "add",
+          "value": 1,
+          "note": "advantage on Breach checks while in a settlement",
+          "condition": "inSettlement"
+        }
+      ]
+    }
+  },
+  {
+    "name": "A Moment of Respite",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "The amount of temporary stamina points gained is instead double your Charisma score, but your party’s group stealth is reduced by 5 so long as you’re in the party.",
+      "description": "(pg 27) You're a natural when it comes to lifting spirits. Whenever you and any other player characters rest, you play music, sing a song, recount a story, or give an inspiring speech. You and each other player character resting gain temporary stamina points equal to your Charisma score. However, you and each player character's group stealth is reduced by 2 so long as you are within 500 feet of them.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hardened by the Earth",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects; whenever your hit points or stamina points increase from leveling up, you gain an extra point in each. However, the negative effects from levels of Hunger and Fatigue are doubled.",
+      "description": "(pg 28) You’ve known long days and hard work, you have advantage whenever you roll an Endurance check to resist a level of Hunger or Fatigue. However, you fall unconscious if you reach 8 levels of Hunger or Fatigue instead of 10.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Vigilant Watch",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your turn placement is automatically put before the previous two creatures in the turn order that aren’t player characters, regardless of their roll. However you have disadvantage on Combat Sequence rolls and your bonus is reduced by 2.",
+      "description": "(pg 29) You’ve learned not to hesitate in moments of peril. Whenever combat sequence is determined, your turn placement is automatically put before the creature in the turn order placed before you that isn’t a player character, regardless of their roll. However your Combat Sequence bonus is reduced by 1.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.initiative",
+          "mode": "add",
+          "value": -1,
+          "note": "your Combat Sequence bonus is reduced by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Recluse",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Instead of gaining a perk at 1st and 2nd level, all your Skill modifiers increase by 2.",
+      "description": "(pg 29) You’ve spent more time honing your skills than learning new things. Instead of gaining a perk at 1st level, five different Skill modifiers of your choice increase by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Persistent",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you flip a Karma Cap to reroll an Ability check, Skill check, or attack roll; you make the roll at advantage. However, you start each game with one of your Karma Caps flipped.",
+      "description": "(pg 28) Whenever you flip a Karma Cap to re-roll a Skill check, you make the roll at advantage. However, your Karma Caps no longer flip back over whenever you roll a 1 on a d20.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Long Days, Long Nights",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects; whenever your stamina points increase from leveling up, you gain another extra point (for a total of 2). However, whenever you regain stamina points from any rest that isn’t sleep, you regain a fourth of your maximum stamina points instead of half.",
+      "description": "(pg 28) You’re accustomed to straining your body and enduring physical work, whenever your stamina points increase from leveling up, you gain an extra point. However, you gain an additional level of fatigue whenever you fail an Endurance check to resist sleep.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Proper Maintenance",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever any of your weapons or armor have one or two levels of decay, the negative effects are ignored. However, your weapons and armor become non-functional when they have 5 levels of decay instead of 10.",
+      "description": "(pg 28) You know how to keep good care of your equipment. Whenever any of your weapons or armor have no levels of decay, the first level of decay they gain is ignored. However, your weapons and armor become non-functional when they have 8 levels of decay instead of 10.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Sweeten the Deal",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you use your Discount ability, the percentage of caps off the selected item is sextupled. However, all items cost 25% more for you.",
+      "description": "(pg 29) You know how to strike a bargain and make anything worth your time. Whenever you use your Discount ability, the percentage of caps off the selected item is tripled. However, all items cost 10% more for you.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Embolden",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you roll combat sequence, each other player character gains advantage on their first two attack rolls they make on their turn. However, if any player characters critically hit on their first or second attack after rolling combat sequence, they do not deal any extra damage.",
+      "description": "(pg 27) You know how to prepare others for the worst, and to inspire the soul. Whenever you roll combat sequence, each other player character gains advantage on their first attack roll they make on their turn. However, if any player characters critically hit on their first attack after rolling combat sequence, they do not deal any extra damage.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Long Roads",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "When you and any other player characters travel at a fast pace, you can move an additional five miles per hour. However, if you do, at the end of each hour you and each other player character gains a level of fatigue.",
+      "description": "(pg 28) You’ve traveled far and wide and know how best to handle the open road. When you and any other player characters travel at a fast pace, you can move an additional two miles per hour. However, if you do, at the end of each hour you and each other player character must succeed a DC 12 Endurance check or gain a level of fatigue. The DC increases by 2 for any player character who succeeds this check.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Endure the Battle",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "If you roll an 18, 19, or 20 on your Death Save, you return to 1 hit point. However you do not add your Luck, Endurance, or Party Nerve to your death saves.",
+      "description": "(pg 27) You’ve come back from the brink more often than once. If you roll a 19 or 20 on your Death Save, you return to 1 hit point. However you do not add your Luck or Endurance to your death saves.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Field Research",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to this trait's effects; whenever you rest and gain a bonus of XP after having rolled combat sequence with a creature you have never rolled combat sequence with before, you gain an additional 20% bonus of XP. However, whenever you rest and gain XP after having rolled combat sequence with a creature you have rolled combat sequence with before, you gain 10% less XP.",
+      "description": "(pg 28) Your study of other creatures lends you to better fight them. Whenever you deal damage from an attack to a creature whose type you have fought before, the damage is increased by 2. However, whenever you deal damage from an attack to a creature whose type you haven’t yet fought before, the damage is subtracted by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Wasteland Knowledge",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you roll combat sequence, you can choose to know two of the following: Hit point, stamina point, action point, AC, or DT total of any other creatures that are hostile towards you in the combat sequence. However, for each creature you choose with this ability, they can re-roll their combat sequence twice to potentially score a higher result.",
+      "description": "(pg 29) You’ve accumulated information about different creatures and people in the wasteland. Whenever you roll combat sequence, you can choose to know either the hit point, stamina point, action point, AC, or DT total of any other creatures that are hostile towards you in the combat sequence. However, for each creature you choose with this ability, they can re-roll their combat sequence to potentially score a higher result.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Efficient Combatant",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you make an attack roll and the result is a 1, you can re-roll the attack roll but must take the new result. However, whenever you make an attack roll and the result is a critical hit, you automatically hit but deal no extra damage.",
+      "description": "(pg 27) Due to your training, you're more reliable with a weapon. Whenever you make an attack roll and the result is a 1, you add your modifier and no longer automatically miss. However, your Karma Cap does not flip back over when you roll a 1 on attack rolls.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Bargaining Chip",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you sell an item, you can use your Discount ability to gain a bonus of caps equal to triple your Barter skill modifier. However, you sell all your items for 20% less than their listed value.",
+      "description": "(pg 27) You’ve got a nose for opportunity and know how to strike bargains. Whenever you sell an item, you can use your Discount ability to gain a bonus of caps equal to double your Barter skill modifier. However, you sell all your items for 10% less than their listed value.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Talented",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "You gain two extra perks at 1st level. However, all your skill modifiers decrease by 2.",
+      "description": "(pg 29) You’ve learned many valuable tricks, but haven’t honed your skills as much. You gain an extra perk at 1st level. However, five different skill modifiers of your choice decrease by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Bruiser",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Option 1: When you damage a creature from an attack with a melee weapon that deals bludgeoning damage, or an unarmed attack; the damage is increased by 3. However any unarmed or melee weapon attack you make costs 2 more action points.\nOption 2, true to the original: Your Strength score is increased by 2, however your maximum action points are reduced by 2.",
+      "description": "(pg 30) A little slower, but a little bigger. You may not hit as often, but they will feel it when you do! When you damage a creature from an attack with a melee weapon that deals bludgeoning damage, or an unarmed attack; the damage is increased by an additional damage dice. However any unarmed or melee weapon attack you make costs 1 more action points.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Built to Destroy",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Any damage you deal with a weapon is increased by 2. However, whenever you attack with a weapon, it gaines Breakable (see pg #).",
+      "description": "(pg 30) The flamer that burns twice as bright burns half as long. Any damage you deal with a weapon is increased by 1. However, whenever you roll a 1 on an attack roll with a weapon; the weapon gains two levels of decay instead of one.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.damage",
+          "mode": "add",
+          "value": 1,
+          "note": "Any damage you deal with a weapon is increased by 1"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Enhancement Reliant",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "If you are addicted, you lose the condition after 1 hour. However, you always become addicted after using a Chem or Robot Overclock Program.",
+      "description": "(pg 30) You're accustomed to the rush of chemical enhancements or the electrodes of programs. If you are addicted, you lose the condition whenever you rest for at least 8 hours. However, you have disadvantage on any Endurance check to resist becoming addicted.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.disadvantage.checks.addiction",
+          "mode": "add",
+          "value": 1,
+          "note": "disadvantage on any Endurance check to resist becoming addicted"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Claustrophobia",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "True to the original: You gain advantage on all ability and skill checks while outside, but disadvantage on all ability and skill checks while indoors, underground, or otherwise not outside.",
+      "description": "(pg 30) You have a fear of enclosed spaces. The effects from your Party Nerve are doubled while you are outside (IE: whenever you roll combat sequence and gain temporary stamina points, you gain double the amount and whenever you roll a death save, you double your party nerve bonus.) However, you do not gain the benefits of your Party Nerve while indoors, underground, or otherwise not outside.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Early Bird",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "True to the original: You have a +2 to all skills in the morning (6am to 12pm), but a -1 during the night (6pm to 6am).",
+      "description": "(pg 30) Early to bed, early to rise, makes a ghoul stealthy, wealthy, and want to kill those guys! You can roll a d4 and add the number rolled to any ability or skill check you make from the hours of 6am to 12pm. However, you gain an additional level of fatigue whenever you fail an Endurance check to resist sleep.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Enhancement Resistant",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "You are immune to the addicted condition. However, whenever you use a Chem or Robot Overclock Program, the benefits last for a maximum of one round regardless of its listed duration.",
+      "description": "(pg 30) Your body works hard to be resistant to addiction. You have advantage on any Endurance check to resist becoming addicted. However, whenever you use a Chem or Robot Overclock Program, the benefits last for half as long as the listed duration.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.advantage.checks.addiction",
+          "mode": "add",
+          "value": 1,
+          "note": "advantage on any Endurance check to resist becoming addicted"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Fast Shot",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects: You have advantage whenever you roll combat sequence, however you cannot make targeted attacks with ranged weapons.",
+      "description": "(pg 31) You don't have time to aim because you're already firing! Whenever you spend action points to make an attack with a ranged weapon or explosive; you can choose to have disadvantage on the attack roll, if you do the attack costs 1 less action point to a minimum of 3.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Feral",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to the traits effects; whenever you spend at least 6 action points to move, you immediately gain 2 action points. However, you have disadvantage on all Barter and Speech skill checks. And, regardless of your Charisma ability score, you are considered to have a 4 in Charisma for any perk requirement.",
+      "description": "(pg 31) You’ve survived in the heart of the savage wasteland. Whenever you deal damage with an unarmed or melee weapon attack, you deal an extra 2 damage. However, you do not gain the benefits from Party Nerve.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Finesse",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you critically hit with a weapon, the critical hit damage multiplier either increases by 2 or the damage dice increases by 2. However, whenever you make an attack roll the total is reduced by 2.",
+      "description": "(pg 31) Whenever you critically hit with a weapon, the critical hit damage multiplier either increases by 1 or the damage dice increases by 1. However, whenever you make an attack roll the total is reduced by 1.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Gifted",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Your Carry Load increases by 20, your Combat Sequence bonus increases by 2, you can use Discount two additional times per rest, your Party Nerve increases by 2, and you have two additional Karma Caps. However, you decrease all your skill check bonuses by 6.",
+      "description": "(pg 31) You have more innate abilities than most, so you have not spent as much time honing your skills. Your Carry Load increases by 10, your Combat Sequence bonus increases by 1, you can use Discount an additional time per rest, your Party Nerve increases by 1, and you have an additional Karma Cap. However, you decrease all your skill check bonuses by 3.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.carryLoad",
+          "mode": "add",
+          "value": 10,
+          "note": "Your Carry Load increases by 10"
+        },
+        {
+          "key": "system.bonuses.initiative",
+          "mode": "add",
+          "value": 1,
+          "note": "your Combat Sequence bonus increases by 1"
+        },
+        {
+          "key": "system.bonuses.partyNerve",
+          "mode": "add",
+          "value": 1,
+          "note": "your Party Nerve increases by 1"
+        },
+        {
+          "key": "system.bonuses.karmaCaps",
+          "mode": "add",
+          "value": 1,
+          "note": "you have an additional Karma Cap"
+        },
+        {
+          "key": "system.bonuses.skills.barter",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.breach",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.crafting",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.energyWeapons",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.explosives",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.guns",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.intimidation",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.medicine",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.meleeWeapons",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.science",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.sneak",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.speech",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.survival",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        },
+        {
+          "key": "system.bonuses.skills.unarmed",
+          "mode": "add",
+          "value": -3,
+          "note": "you decrease all your skill check bonuses by 3"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Godspeed",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "While your stamina points are equal to 0, you can choose to gain 2 additional action points at the start of your turn. However, if you do, you do not subtract your DT to any damage dealt to your hit points and your AC is equal to 8.",
+      "description": "(pg 31) While your stamina points are equal to 0, you can choose to gain one additional action point at the start of your turn. However, if you do so, your AC and DT are each decreased by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Good Natured",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Regardless of your Charisma ability score, you are considered to have a 10 in your Charisma ability score for any perk requirement. However, regardless of your Agility and Strength ability scores, you are considered to have a 4 for any Agility or Strength perk requirement.",
+      "description": "(pg 31) You're Good Natured at heart, more prone to solving problems with your mind than violence. Regardless of your Charisma ability score, you are considered to have an additional two points in your Charisma ability score for any perk requirement. (For example, if your Charisma ability score is equal to 5, with this trait it would be considered a 7 for perk requirements). However, regardless of your Agility and Strength ability scores, you are considered to have two points reduced for any Agility or Strength perk requirement.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Brawny",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to this trait’s effects; you gain a bonus to your maximum hit points equal to your level. However your maximum stamina points are reduced by a number equal to your level.",
+      "description": "(pg 32) You gain a bonus to your maximum hit points equal to your level. However your maximum stamina points are reduced by a number equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Hoarder",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "You are immune to the Encumbered condition, however whenever your Carry Load falls below your maximum, you gain a level of fatigue.",
+      "description": "(pg 32) Your Carry Load increases by 25. However, you have disadvantage on all ability checks, skill checks, and attack rolls while you’re not carrying at least 50 load of any combination of weapons, armor, ammunition, explosives, chems, food, drink, or junk items.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.carryLoad",
+          "mode": "add",
+          "value": 25,
+          "note": "Your Carry Load increases by 25"
+        },
+        {
+          "key": "system.bonuses.disadvantage.strength",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.perception",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.endurance",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.charisma",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.intelligence",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.agility",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.luck",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        },
+        {
+          "key": "system.bonuses.disadvantage.attack",
+          "mode": "add",
+          "value": 1,
+          "condition": "carryingHeavy",
+          "negate": true,
+          "note": "disadvantage on all ability checks, skill checks, and attack rolls while you're not carrying at least 50 load"
+        }
+      ]
+    }
+  },
+  {
+    "name": "Hot Blooded",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to this trait's effects: When your stamina points are equal to 0; the damage you deal from any attack roll is increased by 5. However, you have disadvantage on all your attack rolls while your stamina points are equal to 0.",
+      "description": "(pg 32) While your stamina points are equal to 0, you gain the following effects: When you roll a 1 or 2 on a damage die for an attack you make with any weapon, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. Whenever you make an attack roll, subtract 2 from the result.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Jinxed",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever any creature in the game makes an attack roll, the chance to automatically miss the attack is increased by 2.",
+      "description": "(pg 32) The good thing is that everyone around you has more critical failures in combat, the bad thing is - so do you! Whenever any creature in the game makes an attack roll, the chance to automatically miss the attack and for the weapon to gain a level of decay is increased by 1. (Example: If only one player character has taken this perk; then if any creature makes an attack roll and rolls a 1 or 2 on the dice, they automatically miss and their weapon gains a level of decay. However, if your karma cap is flipped you may flip it back over.)",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Loose Cannon",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to this trait's effects: Whenever you throw an explosive, and it deals damage to another player character's hit points, the damage is doubled for all other creatures that aren’t player characters.",
+      "description": "(pg 32) Whenever you spend action points to throw an explosive, you spend 1 less action point to a minimum of 3. However, you can throw them only up to half their listed range.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Night Person",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "True to the original: You have a -1 to all skills in the morning (6am to 12pm), but a +2 during the night (6pm to 6am).",
+      "description": "(pg 32) You’re more of a night-person. You can roll a d4 and add the number rolled to any ability or skill check you make from the hours of 6pm to 6am. However, you gain an additional level of fatigue whenever you fail an Endurance check to resist sleep.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "One Hander",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you deal damage from an attack with a weapon that only requires one hand, add 2 to the total. However, whenever you deal damage from an attack with a weapon that requires two-hands, subtract 2 from the total.",
+      "description": "(pg 33) Whenever you make an attack roll with a weapon that only requires one hand, add 2 to the result. However, whenever you make an attack roll with a weapon that requires two-hands, subtract 2 from the result.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "One in a Million",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "When you critically hit with an attack roll from any weapon, roll a d20. If you roll a 20 on this d20 roll then roll another d20. If you roll a 20 on the third d20 roll then you automatically hit and roll the extra damage listed in the weapon table, however this damage is octupled.",
+      "description": "(pg 33) You're not particularly lucky or unfortunate, but when lightning strikes, it strikes hard! When you critically hit with an attack roll from any weapon, roll a d20. If you roll a 20 on this d20 roll then you automatically hit and roll the extra damage listed in the weapon table, however this damage is quadrupled. If you do not roll a 20, your attack still hits but does not deal any critical hit damage.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Skilled",
+    "type": "trait",
+    "system": {
+      "prerequisite": "An ability score equal to or lower than 3.",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Prerequisite: One Ability Score equal to 1. Increase one Skill modifier by 5.",
+      "description": "(pg 33) Increase one Skill modifier by 2.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Small Frame",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "In addition to this trait’s effects; you gain a bonus to your maximum stamina points equal to your level. However your maximum hit points are reduced by a number equal to your level.",
+      "description": "(pg 33) You gain a bonus to your maximum stamina points equal to your level. However your maximum hit points are reduced by a number equal to your level.",
+      "mechanics": []
+    }
+  },
+  {
+    "name": "Trigger Discipline",
+    "type": "trait",
+    "system": {
+      "prerequisite": "",
+      "wildWasteland": false,
+      "wildWastelandEffect": "Whenever you make a targeted attack roll with a ranged weapon, the additional cost is reduced by 2 AP. However, your combat sequence bonus is reduced by 5.",
+      "description": "(pg 33) Whenever you make a targeted attack roll with a ranged weapon, the additional cost is reduced by 1 AP. However, your combat sequence bonus is reduced by 2.",
+      "mechanics": [
+        {
+          "key": "system.bonuses.initiative",
+          "mode": "add",
+          "value": -2,
+          "note": "your combat sequence bonus is reduced by 2"
+        }
+      ]
+    }
+  }
+]

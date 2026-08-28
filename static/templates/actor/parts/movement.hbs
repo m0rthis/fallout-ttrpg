@@ -1,0 +1,174 @@
+{{!-- Sheet panel: movement (pg 116-118). Context at panels.movement.
+
+      Everything in the top half is a price list. There is no movement budget in
+      this system — nothing counts feet moved on a turn — so these rows report
+      what five feet costs and change nothing, and the AP is reported rather than
+      deducted (roadmap item 14). Four controls write: Fall, an overreaching
+      Jump's check, Travel, and the breath clock. --}}
+<section class="panel movement">
+  <h2>{{localize "FALLOUT.Movement.title"}}
+    <span class="panel-note">{{localize "FALLOUT.Movement.noBudget"}}</span>
+  </h2>
+
+  {{!-- Climbing (pg 116-117). Sheer and Treacherous are both 4 AP; gear is the
+        only thing separating them, and treacherous cannot be climbed without it. --}}
+  <h3>{{localize "FALLOUT.Movement.climbing"}}
+    <span class="panel-note">{{localize "FALLOUT.Movement.climbRounds"
+      rounds=panels.movement.climbRounds}}</span>
+  </h3>
+  <ul class="movement-list">
+    {{#each panels.movement.climb}}
+    <li>
+      <span>
+        {{this.label}} —
+        {{#if this.gearRequired}}{{localize "FALLOUT.Movement.gearOnly" ap=this.geared}}
+        {{else}}{{localize "FALLOUT.Movement.rate" ap=this.bare geared=this.geared}}{{/if}}
+      </span>
+      <span class="panel-controls">
+        <a data-action="climb" data-surface="{{this.key}}"
+           title="{{localize 'FALLOUT.Movement.climbHint'}}">
+          {{localize "FALLOUT.Movement.climbAction"}}
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  <p class="hint">{{localize "FALLOUT.Movement.offBalanceHint"}}</p>
+
+  {{!-- Swimming and diving (pg 117). The current moves you whether or not you
+        spend a single AP, which is the half worth putting on the sheet. --}}
+  <h3>{{localize "FALLOUT.Movement.swimming"}}</h3>
+  <ul class="movement-list">
+    {{#each panels.movement.swim}}
+    <li>
+      <span>
+        {{this.label}} —
+        {{localize "FALLOUT.Movement.swimRate" ap=this.surface dive=this.underwater}}
+        {{#if this.current}} · {{localize "FALLOUT.Movement.currentNote" feet=this.current}}{{/if}}
+        {{#if this.rounds}} · {{localize "FALLOUT.Movement.swimRoundNote" rounds=this.rounds}}{{/if}}
+      </span>
+      <span class="panel-controls">
+        <a data-action="swim" data-water="{{this.key}}"
+           title="{{localize 'FALLOUT.Movement.swimHint'}}">
+          {{localize "FALLOUT.Movement.swimAction"}}
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+
+  {{!-- Jumping (pg 117). Both numbers, because the halving when the last two AP
+        were not spent moving is the part that gets forgotten. --}}
+  <h3>{{localize "FALLOUT.Movement.jumping"}}</h3>
+  <ul class="movement-list">
+    {{#each panels.movement.jumps}}
+    <li>
+      <span>
+        {{this.label}} —
+        {{localize "FALLOUT.Movement.jumpRow" moved=this.moved movedAp=this.movedAp
+          standing=this.standing standingAp=this.standingAp}}
+      </span>
+      <span class="panel-controls">
+        <a data-action="jump" data-kind="{{this.key}}"
+           title="{{localize 'FALLOUT.Movement.jumpHint'}}">
+          {{localize "FALLOUT.Movement.jumpAction"}}
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+
+  {{!-- Sprint and Fall. Sprint is what SPRINT_AP_COST was declared for. --}}
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="sprint"
+       title="{{localize 'FALLOUT.Movement.sprintHint'}}">
+      {{localize "FALLOUT.Movement.sprintAction" feet=panels.movement.sprintFeet}}
+      <span class="ap-cost">{{panels.movement.sprintAp}} AP</span>
+    </a>
+    <a class="pip-button" data-action="fall"
+       title="{{localize 'FALLOUT.Movement.fallHint'}}">
+      {{localize "FALLOUT.Movement.fallAction"}}
+    </a>
+  </div>
+  {{#if panels.movement.sprintHalved}}
+  <p class="hint warning">{{localize "FALLOUT.Movement.sprintDustStorm"}}</p>
+  {{/if}}
+  <p class="hint">{{localize "FALLOUT.Movement.sprintTerrain"}}</p>
+
+  {{!-- Breath and suffocating (pg 117-118). A marker effect carries the clock;
+        a person advances it, because nothing here hooks anything. --}}
+  <h3>{{localize "FALLOUT.Movement.breathing"}}
+    <span class="panel-note">{{localize "FALLOUT.Movement.breathNote"
+      seconds=panels.movement.breathSeconds rounds=panels.movement.suffocationRounds}}</span>
+  </h3>
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="holdBreath"
+       title="{{localize 'FALLOUT.Movement.holdHint'}}">
+      {{localize "FALLOUT.Movement.holdAction"}}
+    </a>
+    {{#if panels.movement.hasBreath}}
+    <a class="pip-button" data-action="spendBreath" data-seconds="6"
+       title="{{localize 'FALLOUT.Movement.spendHint'}}">
+      {{localize "FALLOUT.Movement.spendRound"}}
+    </a>
+    <a class="pip-button" data-action="spendBreath" data-seconds="60"
+       title="{{localize 'FALLOUT.Movement.spendHint'}}">
+      {{localize "FALLOUT.Movement.spendMinute"}}
+    </a>
+    <a class="pip-button" data-action="breathPenalty"
+       title="{{localize 'FALLOUT.Movement.penaltyHint'}}">
+      {{localize "FALLOUT.Movement.penaltyAction" seconds=panels.movement.breathPenaltySeconds}}
+    </a>
+    <a class="pip-button" data-action="reachAir"
+       title="{{localize 'FALLOUT.Movement.airHint'}}">
+      {{localize "FALLOUT.Movement.airAction"}}
+    </a>
+    {{/if}}
+  </div>
+
+  {{#if panels.movement.hasBreath}}
+    {{#if panels.movement.outOfBreath}}
+    <p class="hint warning">
+      {{localize "FALLOUT.Movement.drowning" rounds=panels.movement.suffocating}}
+      <span class="panel-controls">
+        <a data-action="tickSuffocation" title="{{localize 'FALLOUT.Movement.tickHint'}}">
+          {{localize "FALLOUT.Movement.tickAction"}}
+        </a>
+      </span>
+    </p>
+    <p class="hint warning">{{localize "FALLOUT.Movement.suffocationLock"}}</p>
+    {{else}}
+    <p class="hint">{{localize "FALLOUT.Movement.breathRemaining"
+      seconds=panels.movement.breathHeld penalties=panels.movement.breathPenalties}}</p>
+    {{/if}}
+  {{/if}}
+
+  {{!-- Travel pace (pg 116). Passive Sneak uses the party's average Group Sneak
+        bonus, which is already computed for the sheet. --}}
+  <h3>{{localize "FALLOUT.Movement.travelling"}}
+    <span class="panel-note">{{localize "FALLOUT.Movement.hourLimitNote"
+      limit=panels.movement.hourLimit}}</span>
+  </h3>
+  <ul class="movement-list">
+    {{#each panels.movement.paces}}
+    <li>
+      <span>
+        {{this.label}} —
+        {{localize "FALLOUT.Movement.paceRow" miles=this.miles mph=this.mph sneak=this.sneak}}
+        {{#if this.sequence}} · {{this.sequence}}{{/if}}
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  <div class="combat-action-row">
+    <a class="pip-button" data-action="travel"
+       title="{{localize 'FALLOUT.Movement.travelHint'}}">
+      {{localize "FALLOUT.Movement.travelAction"}}
+    </a>
+  </div>
+  <p class="hint">{{localize "FALLOUT.Movement.travelMaxRuling"}}</p>
+
+  {{!-- Two rules the book simply does not print. Named on the sheet so nobody
+        goes looking for a control that could not honestly exist. --}}
+  <p class="hint warning">{{localize "FALLOUT.Movement.crawlUnpriced"}}</p>
+</section>

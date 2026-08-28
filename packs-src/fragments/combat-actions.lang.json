@@ -1,0 +1,59 @@
+{
+  "_comment": "Merge these under the existing FALLOUT object in static/lang/en.json. Four new namespaces (Grapple, Escape, Unarmed, Help, Ready) and no changes to any existing key.",
+  "Grapple": {
+    "action": "Grapple",
+    "hint": "3 AP. An Unarmed skill check against 10 + the target's Unarmed skill; success — or a raw 20 — leaves them grappled, which stops them spending AP to move. Nothing but an Escape ends it.",
+    "flavor": "Grapple {target} — Unarmed vs DC {dc} ({ap} AP)",
+    "succeeded": "{target} is grappled.",
+    "failed": "{target} slips the hold.",
+    "natural20": "(a raw 20 carries it regardless of the DC)",
+    "noTarget": "Target a creature to grapple first.",
+    "grappledBy": "Grappled by {name}"
+  },
+  "Escape": {
+    "action": "Escape",
+    "hint": "5 AP. An Unarmed skill check against 10 + the grappler's Unarmed skill; success — or a raw 20 — frees you from a grapple, restraint, or chokehold.",
+    "flavor": "Escape {captor} — Unarmed vs DC {dc} ({ap} AP)",
+    "succeeded": "Free.",
+    "failed": "Still held.",
+    "restraint": "the restraint",
+    "clasp": "(Clasp: at disadvantage)",
+    "noDC": "Nothing recorded who is holding you, so there is no Unarmed skill to price the DC from — a restraint or a trap needs a DC from the GM (pg 80's bear trap prints its own)."
+  },
+  "Unarmed": {
+    "action": "Unarmed Strike",
+    "hint": "3 AP for one strike, 5 AP for two (new in v2.1). 1d4 + your Strength or Agility modifier, bludgeoning. Bare hands have no printed critical hit chance, so a raw 20 is announced and left to the table.",
+    "header": "Unarmed — {strikes} strike(s) for {ap} AP{extra}",
+    "holeyMoley": " (Holey Moley: one extra strike for 1 AP, once per turn)",
+    "attack": "Unarmed strike {strike} of {strikes}",
+    "miss": "CRITICAL FAILURE — automatic miss (no weapon to decay)",
+    "natural20": "raw 20 — bare hands have no printed crit chance; the table decides",
+    "damage": "Unarmed damage — 1d4 + {ability} modifier (bludgeoning)",
+    "unpriced": "The book prices one unarmed strike at 3 AP and two at 5 AP, and no other bundle — {strikes} has no printed cost."
+  },
+  "Help": {
+    "action": "Help",
+    "hint": "6 AP. v2.1 replaced advantage with a number: the creature you aid adds half your bonus in the related skill, rounded down, to their next check. The attack branch still grants advantage on your ally's first attack before your next turn.",
+    "effect": "Helped by {helper}",
+    "descriptionCheck": "+{bonus} to the next check, from {helper}'s Help. Spent by the next roll.",
+    "descriptionAttack": "Advantage on the first attack roll, from {helper}'s Help. The book's window closes at {helper}'s next turn.",
+    "gaveCheck": "Helps {ally} ({ap} AP) — +{bonus} to their next check, half their {skill} bonus rounded down.",
+    "gaveAttack": "Helps {ally} attack ({ap} AP) — advantage on their first attack roll before this creature's next turn.",
+    "spentCheck": "Spends {helper}'s Help (+{bonus}).",
+    "spentAttack": "Spends {helper}'s Help (advantage on the attack).",
+    "needsSkill": "Help adds half your bonus in the related skill — name the skill you are helping with.",
+    "pending": "Holding {helper}'s Help"
+  },
+  "Ready": {
+    "action": "Ready",
+    "hint": "The readied action's own AP plus 2. If the trigger never fires you may recycle half the total at the start of your next turn — new in v2.1, which previously gave nothing back.",
+    "effect": "Readied action",
+    "description": "Readied: {trigger}. {ap} AP committed.",
+    "readied": "Readies an action ({ap} AP — the action plus the {surcharge} AP surcharge). Trigger: {trigger}. If it never fires, {recycle} AP come back at the start of the next turn.",
+    "freeze": "(Frightened — Freeze, pg 134: readying is the one thing AP may be spent on while the source of fear is in sight.)",
+    "fired": "The trigger fires — {trigger}. No AP comes back.",
+    "lapsed": "The trigger never came. Of {spent} AP committed, {refund} are recycled into the start of the next turn.",
+    "lapsedDazed": "The trigger never came, and {spent} AP are lost: a dazed creature cannot recycle AP (pg 133), and this refund is a recycle.",
+    "nothingReadied": "Nothing is readied."
+  }
+}

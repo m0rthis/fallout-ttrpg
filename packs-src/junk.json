@@ -1,0 +1,453 @@
+[
+  {
+    "name": "Junk: Steel",
+    "type": "gear",
+    "system": {
+      "junkType": "steel",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 175 of its material cells across 168 blueprint(s), among them Scrap Metal, Steel, Power Armor Chassis, T-45.\nNamed outside the Crafting chapter too: reattaching a robot's severed limb costs \"3 steel and 1 circuitry junk\" (pg 11).\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Aluminum",
+    "type": "gear",
+    "system": {
+      "junkType": "aluminum",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 98 of its material cells across 76 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Copper",
+    "type": "gear",
+    "system": {
+      "junkType": "copper",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 17 of its material cells across 11 blueprint(s), among them Tesla Coils, Targeting HUD, Headlamp, Shishkebab.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Lead",
+    "type": "gear",
+    "system": {
+      "junkType": "lead",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 44 of its material cells across 42 blueprint(s), among them Lead Lined, .308 rounds, .50, .357 Magnum.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Gold",
+    "type": "gear",
+    "system": {
+      "junkType": "gold",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 6 of its material cells across 6 blueprint(s), among them Boosted Capacitor, Holographic weapon sight, Infrared Scope, On-Board Target Tracking.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Silver",
+    "type": "gear",
+    "system": {
+      "junkType": "silver",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 3 of its material cells across 3 blueprint(s), among them Yellow Belly, Gauss pistol, Gauss rifle.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Ceramic",
+    "type": "gear",
+    "system": {
+      "junkType": "ceramic",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 8 of its material cells across 4 blueprint(s), among them Explosive Shielding, Kinetic dynamo, Optimized bracers, Geiger Counter.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Glass",
+    "type": "gear",
+    "system": {
+      "junkType": "glass",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 35 of its material cells across 35 blueprint(s), among them Endangerol, Yellow Belly, Sclerosis, Myopic Serum.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Plastic",
+    "type": "gear",
+    "system": {
+      "junkType": "plastic",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 61 of its material cells across 61 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Rubber",
+    "type": "gear",
+    "system": {
+      "junkType": "rubber",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 35 of its material cells across 31 blueprint(s), among them Camouflage, Light, Power Armor Chassis, T-45.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Wood",
+    "type": "gear",
+    "system": {
+      "junkType": "wood",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 40 of its material cells across 40 blueprint(s), among them Shiv, Knife, Sharpened Pole, Combat Knife.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Cloth",
+    "type": "gear",
+    "system": {
+      "junkType": "cloth",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 30 of its material cells across 26 blueprint(s), among them Cloth, Multilayered, Insulated, Camouflage.\nThe one junk material the rules spend outside the Crafting chapter by name: ending the Bleeding condition costs \"1 cloth junk item\" (pg 21, 23).\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Leather",
+    "type": "gear",
+    "system": {
+      "junkType": "leather",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 19 of its material cells across 15 blueprint(s), among them Leather, Multilayered, Steel, Insulated.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Fiberglass",
+    "type": "gear",
+    "system": {
+      "junkType": "fiberglass",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 10 of its material cells across 6 blueprint(s), among them Sensor Array, Calibrated Shocks, Hemorrhage, Holographic weapon sight.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Ballistic Fiber",
+    "type": "gear",
+    "system": {
+      "junkType": "ballistic fiber",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 1 blueprint(s), among them Ballistic Weave.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Cardboard",
+    "type": "gear",
+    "system": {
+      "junkType": "cardboard",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 1 of its material cells across 1 blueprint(s), among them Protest Sign.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Asbestos",
+    "type": "gear",
+    "system": {
+      "junkType": "asbestos",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 10 of its material cells across 7 blueprint(s), among them Reactive Plates, Jet Pack, Explosive vent, Mind Cloud.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Tin Can",
+    "type": "gear",
+    "system": {
+      "junkType": "tin can",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 2 blueprint(s), among them War Drum, Canteen.\nThe Encyclopedia spells this two ways for what is almost certainly one thing — \"x2 tin can\" for the War Drum and \"x2 tin\" for the Canteen. Both resolve here.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Large Animal Bone",
+    "type": "gear",
+    "system": {
+      "junkType": "large animal bone",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 2 blueprint(s), among them Shiv, Bone Club.\n\"x1 large animal bone\" (Bone Club); the Shiv's bare \"bone\" resolves here too.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Large Animal Fur",
+    "type": "gear",
+    "system": {
+      "junkType": "large animal fur",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — raw scrap. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 1 of its material cells across 1 blueprint(s), among them Insulated.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Screws",
+    "type": "gear",
+    "system": {
+      "junkType": "screws",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 120 of its material cells across 114 blueprint(s), among them Scrap Metal, Steel, Reinforced, Hardened.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Nails",
+    "type": "gear",
+    "system": {
+      "junkType": "nails",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 2 blueprint(s), among them Board with a nail, Spiked Knuckles.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Spring",
+    "type": "gear",
+    "system": {
+      "junkType": "spring",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 52 of its material cells across 52 blueprint(s), among them Light, Power Armor Chassis, T-45, T-51.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Gear",
+    "type": "gear",
+    "system": {
+      "junkType": "gear",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 45 of its material cells across 45 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Circuitry",
+    "type": "gear",
+    "system": {
+      "junkType": "circuitry",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 67 of its material cells across 58 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nNamed outside the Crafting chapter too: reattaching a robot's severed limb costs \"3 steel and 1 circuitry junk\" (pg 11), and faulty programming is cleared with \"5 circuitry junk items\" against a DC 20 Crafting check, which are lost on a failure too (pg 88).\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Fiber Optics",
+    "type": "gear",
+    "system": {
+      "junkType": "fiber optics",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 24 of its material cells across 17 blueprint(s), among them Tesla Coils, Sensor Array, VATS matrix overlay, Internal database.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Crystal",
+    "type": "gear",
+    "system": {
+      "junkType": "crystal",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 12 of its material cells across 12 blueprint(s), among them Internal database, Cryo Cell, Laser pistol, Laser rifle.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Power Armor Chassis",
+    "type": "gear",
+    "system": {
+      "junkType": "power armor chassis",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — salvaged components. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 5 of its material cells across 5 blueprint(s), among them T-45, T-51, T-60, X-01.\nNot scrap but a built component: crafted at Crafting +20 in seven days, then consumed whole by each of the five power armor recipes (\"x1 power armor chassis\").\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Adhesive",
+    "type": "gear",
+    "system": {
+      "junkType": "adhesive",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 166 of its material cells across 129 blueprint(s), among them Insulated, Camouflage, Light, Lead Lined.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Acid",
+    "type": "gear",
+    "system": {
+      "junkType": "acid",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 16 of its material cells across 16 blueprint(s), among them Gunpowder, Flares., Fuel, Endangerol.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Oil",
+    "type": "gear",
+    "system": {
+      "junkType": "oil",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 65 of its material cells across 63 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nNamed outside the Crafting chapter too: a robot fills its tank with \"a gallon of fuel or six oil junk items\" (pg 10).\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Antiseptic",
+    "type": "gear",
+    "system": {
+      "junkType": "antiseptic",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 10 of its material cells across 9 blueprint(s), among them Overdrive, Psycho, Psycho buff, Psycho jet.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Abraxo Cleaner",
+    "type": "gear",
+    "system": {
+      "junkType": "abraxo cleaner",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 6 of its material cells across 6 blueprint(s), among them Mind Cloud, Bufftats, Mentats, Berry Mentats.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Fertilizer",
+    "type": "gear",
+    "system": {
+      "junkType": "fertilizer",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 7 of its material cells across 7 blueprint(s), among them Yellow Belly, Buffjet, Jet, Jet fuel.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Paint",
+    "type": "gear",
+    "system": {
+      "junkType": "paint",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 1 blueprint(s), among them Camouflage.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Gunpowder",
+    "type": "gear",
+    "system": {
+      "junkType": "gunpowder",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 31 of its material cells across 31 blueprint(s), among them .308 rounds, .50, .357 Magnum, .44 Magnum.\nCraftable in its own right — Crafting +5, x3 acid and x5 cloth — and then spent by every conventional ammunition recipe.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Nuclear Material",
+    "type": "gear",
+    "system": {
+      "junkType": "nuclear material",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 49 of its material cells across 40 blueprint(s), among them Power Armor Chassis, T-45, T-51, T-60.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Nuclear Component",
+    "type": "gear",
+    "system": {
+      "junkType": "nuclear component",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — chemicals and compounds. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 1 of its material cells across 1 blueprint(s), among them Plasma Cutter.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Yeast",
+    "type": "gear",
+    "system": {
+      "junkType": "yeast",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — brewing intermediates. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 2 of its material cells across 2 blueprint(s), among them Alcohol Yeast, Moonshine.\nA brewing intermediate: Crafting +5, x3 razorgrain and x2 purified water. Junk rather than food because nothing eats it.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Alcohol Yeast",
+    "type": "gear",
+    "system": {
+      "junkType": "alcohol yeast",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — brewing intermediates. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 4 of its material cells across 4 blueprint(s), among them Beer, Rum, Vodka, Wasteland Wine.\nA brewing intermediate: Crafting +8, x1 yeast and x5 citrus. Junk rather than drink because nothing drinks it.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  },
+  {
+    "name": "Junk: Crafting Material",
+    "type": "gear",
+    "system": {
+      "junkType": "crafting material",
+      "quantity": 1,
+      "load": 0,
+      "cost": 0,
+      "description": "(pg 94-115) Junk — generic. Spent as a crafting and repair material by the Vault-Tec Item Blueprint Encyclopedia, which calls for it in 284 of its material cells across 107 blueprint(s), among them Knife, Switchblade, Combat Knife, Throwing Knife.\nThe Encyclopedia's own catch-all: 284 of its cells read \"x1 crafting material\" or similar rather than naming a substance, and almost every melee weapon and firearm is built out of it. It is a material because the book counts it, not because the book describes it — what one *is* is a table question.\nThe book prints no junk table, no price and no Carry Load for any junk material, so cost and load are 0 here rather than invented — set both at your table. Quantity is the size of the stack, and crafting, repair, first aid and robot maintenance consume it by quantity."
+    }
+  }
+]

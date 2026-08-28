@@ -1,0 +1,1998 @@
+[
+  {
+    "name": "Feral Ghoul",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 2, "endurance": 3, "charisma": 2, "intelligence": 1, "agility": 7, "luck": 3},
+    "hp": 3,
+    "sp": 7,
+    "ap": 12,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 9,
+    "healingRate": 2,
+    "skills": {"Unarmed": 4, "Sneak": 4},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+2", "damageAverage": 4, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 10 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: Bottlecap. 2: Duct tape. 3: .38 round. 4: Rad-X. 5: Pre-War Money. 6: Nothing.",
+    "page": 142,
+    "notes": ""
+  },
+  {
+    "name": "Feral Ghoul Roamer",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 2, "endurance": 3, "charisma": 2, "intelligence": 1, "agility": 7, "luck": 3},
+    "hp": 6,
+    "sp": 14,
+    "ap": 12,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 9,
+    "healingRate": 3,
+    "skills": {"Unarmed": 4, "Sneak": 4},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+3", "damageAverage": 5, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 10 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: Bottlecap. 2: Duct tape. 3: .45 round. 4: Rad-X. 5: Silver fork. 6: Nothing.",
+    "page": 142,
+    "notes": ""
+  },
+  {
+    "name": "Feral Ghoul Stalker",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 2, "endurance": 3, "charisma": 2, "intelligence": 1, "agility": 8, "luck": 3},
+    "hp": 6,
+    "sp": 16,
+    "ap": 13,
+    "ac": 10,
+    "dt": 1,
+    "passiveSense": 9,
+    "healingRate": 3,
+    "skills": {"Unarmed": 5, "Sneak": 8},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d4+3", "damageAverage": 8, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 12 Rad Resist check or take one level of rads."},
+      {"name": "Stalker", "text": "If a stalker lies on the ground, it is indistinguishable from a ghoul corpse."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: Bottlecap. 2: Duct tape. 3: 10mm round. 4: Rad-X. 5: Silver fork. 6: Nothing.",
+    "page": 143,
+    "notes": ""
+  },
+  {
+    "name": "Feral Ghoul Reaver",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 2, "endurance": 3, "charisma": 2, "intelligence": 1, "agility": 7, "luck": 3},
+    "hp": 12,
+    "sp": 28,
+    "ap": 12,
+    "ac": 12,
+    "dt": 1,
+    "passiveSense": 9,
+    "healingRate": 5,
+    "skills": {"Unarmed": 4, "Sneak": 7},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "4d4+2", "damageAverage": 12, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 13 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Reaver's always have x1 Scrap Metal armor. Roll a 1d6 to determine what the ghoul drops. 1: Bottlecap. 2: Duct tape. 3: 10mm round. 4: Rad-X. 5: Clipboard. 6: Nothing.",
+    "page": 143,
+    "notes": ""
+  },
+  {
+    "name": "Feral Ghoul, Withered.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 3, "endurance": 5, "charisma": 2, "intelligence": 1, "agility": 7, "luck": 3},
+    "hp": 20,
+    "sp": 28,
+    "ap": 12,
+    "ac": 12,
+    "dt": 2,
+    "passiveSense": 10,
+    "healingRate": 6,
+    "skills": {"Unarmed": 6, "Sneak": 7},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "5d4+2", "damageAverage": 14, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 13 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: 1d6 Bottlecaps. 2: Silver fork. 3: Hairbrush. 4: Duct tape. 5: Wrench. 6: Nothing.",
+    "page": 144,
+    "notes": "Name is printed with a trailing period in the book."
+  },
+  {
+    "name": "Feral Ghoul, Gangrenous.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 3, "endurance": 5, "charisma": 2, "intelligence": 1, "agility": 7, "luck": 3},
+    "hp": 25,
+    "sp": 35,
+    "ap": 12,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 10,
+    "healingRate": 7,
+    "skills": {"Unarmed": 6, "Sneak": 7},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "6d4+2", "damageAverage": 17, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 14 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: 1d6 Bottlecaps. 2: Silver fork. 3: Clipboard. 4: Duct tape. 5: Wrench. 6: Nothing.",
+    "page": 144,
+    "notes": "Name is printed with a trailing period in the book."
+  },
+  {
+    "name": "Feral Ghoul, Rotting.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 4, "endurance": 5, "charisma": 2, "intelligence": 1, "agility": 8, "luck": 3},
+    "hp": 40,
+    "sp": 64,
+    "ap": 13,
+    "ac": 14,
+    "dt": 2,
+    "passiveSense": 11,
+    "healingRate": 10,
+    "skills": {"Unarmed": 6, "Sneak": 7},
+    "immunities": ["poison"],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d8+3", "damageAverage": 16, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 14 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d4 to determine what the ghoul drops. 1: 2d6 Bottlecaps. 2: Silver fork. 3: Hairbrush. 4: Nothing.",
+    "page": 145,
+    "notes": "Name is printed with a trailing period in the book. This is the first ghoul with Damage Immunities (poison) rather than Damage Resistances."
+  },
+  {
+    "name": "Feral Ghoul, Charred.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 5, "endurance": 5, "charisma": 2, "intelligence": 1, "agility": 8, "luck": 3},
+    "hp": 55,
+    "sp": 88,
+    "ap": 14,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "healingRate": 13,
+    "skills": {"Unarmed": 6, "Sneak": 7},
+    "immunities": ["poison"],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "5d8+3", "damageAverage": 25, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 16 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Roll a 1d6 to determine what the ghoul drops. 1: 4d6 Bottlecaps. 2: Rad-X. 3: Radaway. 4 - 6: Nothing.",
+    "page": 145,
+    "notes": "Name is printed with a trailing period in the book."
+  },
+  {
+    "name": "Glowing One",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 3, "endurance": 8, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 3},
+    "hp": 64,
+    "sp": 48,
+    "ap": 11,
+    "ac": 12,
+    "dt": 1,
+    "passiveSense": 10,
+    "healingRate": 12,
+    "skills": {"Unarmed": 4, "Sneak": 7},
+    "immunities": ["poison"],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "4d4+1", "damageAverage": 11, "damageType": "bludgeoning", "special": ""},
+      {"name": "Rad Revive", "apCost": 6, "special": "The Glowing One releases concentrated radiation into the area around it. Any creature within 20 feet of the Glowing One must succeed a DC 13 Rad Resist check or take one level of rads. In addition, all dead ghouls within 20 feet of the glowing come back to life with half their HP and SP."}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 13 Rad Resist check or take one level of rads."},
+      {"name": "Glowing", "text": "Any creature that starts their turn within 10 feet of the Glowing One must succeed a DC 13 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Glowing One's always have x1 Radioactive Gland and have x1 Bottlecap, x1 Rad-X on a successful DC 10 Luck check.",
+    "page": 146,
+    "notes": "Rad Revive is a 6 AP action with no attack roll; recorded under attacks with no toHit."
+  },
+  {
+    "name": "Glowing One, Putrid.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 4, "endurance": 8, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 3},
+    "hp": 104,
+    "sp": 78,
+    "ap": 11,
+    "ac": 14,
+    "dt": 2,
+    "passiveSense": 11,
+    "healingRate": 17,
+    "skills": {"Unarmed": 6, "Sneak": 7},
+    "immunities": ["poison"],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "4d8+1", "damageAverage": 19, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a DC 18 Rad Resist check or take one level of rads."},
+      {"name": "Glowing", "text": "Any creature that starts their turn within 10 feet of the Glowing One must succeed a DC 18 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "Glowing One's always have x1 Radioactive Gland and have x1 Bottlecap on a successful DC 10 Luck check.",
+    "page": 146,
+    "notes": "Name is printed with a trailing period in the book."
+  },
+  {
+    "name": "Glowing One, Bloated.",
+    "size": "Medium",
+    "type": "ghoul",
+    "abilities": {"strength": 6, "perception": 5, "endurance": 8, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 3},
+    "hp": 120,
+    "sp": 90,
+    "ap": 11,
+    "ac": 15,
+    "dt": 3,
+    "passiveSense": 12,
+    "healingRate": 19,
+    "skills": {"Unarmed": 4, "Sneak": 7},
+    "immunities": ["poison"],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Slam", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "4d4+1", "damageAverage": 11, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [
+      {"name": "Irradiated", "text": "When a feral ghoul deals damage to a creature's HP, the target must succeed a Rad Resist check which is increased by 8 or take one level of rads."},
+      {"name": "Glowing", "text": "Any creature that starts their turn within 20 feet of the Glowing One must succeed a Rad Resist check which is increased by 8 or take two levels of rads."},
+      {"name": "Oozing", "text": "Any weapon that hits the Glowing One corrodes and melts. After dealing damage, the weapon decays by 2 levels."}
+    ],
+    "loot": "Glowing One's always have x1 Radioactive Gland and have x1 Bottlecap on a successful DC 10 Luck check.",
+    "page": 147,
+    "notes": "Name is printed with a trailing period in the book. Irradiated/Glowing use a relative DC ('increased by 8') rather than a fixed DC, unlike the other Glowing Ones."
+  },
+  {
+    "name": "Super Mutant",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 8, "perception": 7, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 4, "luck": 3},
+    "hp": 32,
+    "sp": 16,
+    "ap": 9,
+    "ac": 10,
+    "dt": 1,
+    "passiveSense": 14,
+    "healingRate": 8,
+    "skills": {"Guns": 1, "Melee Weapons": 5},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Board", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d8+3", "damageAverage": 7, "damageType": "bludgeoning", "special": ""},
+      {"name": "Hunting rifle", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 1, "range": "55/125 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d10-1", "damageAverage": 10, "damageType": "ballistic", "special": "Reload every 10 attacks."},
+      {"name": "Molotov Cocktail", "apCost": 5, "attackType": "Thrown Explosive", "toHit": 2, "range": "45 ft., 10ft radius", "damage": "3d10", "damageType": "fire", "special": "Can only be used once per encounter. +2 to roll. All creatures in the area take 3d10 fire damage and 1d10 at the start of their turns."}
+    ],
+    "traits": [
+      {"name": "Human Hatred", "text": "Super Mutant's deal an extra 2 damage whenever they attack a human."}
+    ],
+    "loot": "Super Mutants have x1 hunting rifle (3rd level decay), x2 packs of .308's, x1 board, x1 molotov cocktail (unless it was used) and x3 bones.",
+    "page": 148,
+    "notes": "Molotov Cocktail lists '+2 to roll' rather than a to-hit bonus; recorded as toHit 2."
+  },
+  {
+    "name": "Super Mutant Suicider",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 8, "perception": 7, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 4, "luck": 3},
+    "hp": 32,
+    "sp": 16,
+    "ap": 9,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 14,
+    "healingRate": 8,
+    "skills": {"Guns": 1, "Melee Weapons": 5},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Touchdown!", "apCost": 4, "damage": "12d10", "damageAverage": 66, "damageType": "explosive", "special": "The Super Mutant Suicider throws their mini nuke directly below them, blowing up themselves and everyone else around them. All creatures within 30 feet of the super mutant take 66 (12d10) explosive damage."}
+    ],
+    "traits": [
+      {"name": "Mini Nuke", "text": "If the Super Mutant takes damage to their hit points from a targeted attack to their arm, the mini nuke explodes."}
+    ],
+    "loot": "x1 Mini-Nuke (unless it exploded)",
+    "page": 148,
+    "notes": "Touchdown! has no attack roll; recorded under attacks with no toHit."
+  },
+  {
+    "name": "Super Mutant Skirmisher",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 8, "perception": 8, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 5, "luck": 3},
+    "hp": 40,
+    "sp": 20,
+    "ap": 10,
+    "ac": 10,
+    "dt": 1,
+    "passiveSense": 15,
+    "healingRate": 9,
+    "skills": {"Guns": 4, "Melee Weapons": 5},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Board", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d8+3", "damageAverage": 7, "damageType": "bludgeoning", "special": ""},
+      {"name": "Thompson SMG", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 4, "range": "80/120 ft.", "target": "up to three targets within 10 feet of each other", "critChance": "20/x2", "damage": "1d4", "damageAverage": 2, "damageType": "ballistic", "special": "5 AP (makes 3 attacks). Reload every 10 attacks."},
+      {"name": "Molotov Cocktail", "apCost": 5, "attackType": "Thrown Explosive", "toHit": 2, "range": "45 ft., 10ft radius", "damage": "3d10", "damageType": "fire", "special": "Can only be used once per encounter. +2 to roll. All creatures in the area take 3d10 fire damage and 1d10 at the start of their turns."}
+    ],
+    "traits": [
+      {"name": "Human Hatred", "text": "Super Mutant's deal an extra 2 damage whenever they attack a human."}
+    ],
+    "loot": "Super Mutants have x1 thompson smg (3rd level decay), x2 packs of .308's, x1 board, x1 molotov cocktail (unless it was used) and x3 bones.",
+    "page": 149,
+    "notes": "Loot lists .308 ammo but the weapon is a Thompson SMG (as printed)."
+  },
+  {
+    "name": "Super Mutant Brute",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 9, "perception": 9, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 4, "luck": 3},
+    "hp": 72,
+    "sp": 36,
+    "ap": 9,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 15,
+    "healingRate": 13,
+    "skills": {"Guns": 6, "Melee Weapons": 8},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bumper Sword", "apCost": 6, "attackType": "Unarmed Attack", "toHit": 8, "reach": "10 ft.", "target": "one target", "critChance": "20/x3", "damage": "3d6+4", "damageAverage": 14, "damageType": "bludgeoning", "special": ""},
+      {"name": "Combat Shotgun", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 6, "range": "45/60 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d12-1", "damageAverage": 6, "damageType": "ballistic", "special": "Reload every 12 attacks."},
+      {"name": "Frag Grenade", "apCost": 4, "attackType": "Thrown Explosive", "toHit": 4, "range": "90 ft., 10/20ft radius", "damage": "5d6", "damageAverage": 17, "damageType": "explosive", "special": "Can only be used once per encounter. +4 to roll. All creatures in the area take 17 (5d6) explosive damage or half as much in the second range."}
+    ],
+    "traits": [
+      {"name": "Human Hatred", "text": "Super Mutant's deal an extra 2 damage whenever they attack a human."}
+    ],
+    "loot": "Super Mutants have x1 hunting rifle (3rd level decay), x2 packs of 12 gauge, x1 bumper sword, x1 frag grenade (unless it was used) and x3 bones.",
+    "page": 149,
+    "notes": "Bumper Sword is labelled an Unarmed Attack in the book. Loot lists a hunting rifle though the statblock's ranged attack is a Combat Shotgun."
+  },
+  {
+    "name": "Super Mutant Butcher",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 10, "perception": 10, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 5, "luck": 3},
+    "hp": 80,
+    "sp": 50,
+    "ap": 10,
+    "ac": 12,
+    "dt": 2,
+    "passiveSense": 15,
+    "healingRate": 14,
+    "skills": {"Guns": 8, "Melee Weapons": 10},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fire Axe", "apCost": 6, "attackType": "Unarmed Attack", "toHit": 10, "reach": "10 ft.", "target": "one target", "critChance": "20/x3", "damage": "4d10+5", "damageAverage": 27, "damageType": "slashing", "special": ""},
+      {"name": "Frag Grenade", "apCost": 4, "attackType": "Thrown Explosive", "toHit": 4, "range": "90 ft., 10/20ft radius", "damage": "5d6", "damageAverage": 17, "damageType": "explosive", "special": "Can only be used once per encounter. +4 to roll. All creatures in the area take 17 (5d6) explosive damage or half as much in the second range."}
+    ],
+    "traits": [
+      {"name": "Human Hatred", "text": "Super Mutant's deal an extra 2 damage whenever they attack a human."},
+      {"name": "Butcher", "text": "Super Mutant Butcher's are well versed in melee weapons and deal extra damage with them."}
+    ],
+    "loot": "Super Mutant Butchers have x1 fire axe, x1 frag grenade (unless it was used) and x3 bones.",
+    "page": 150,
+    "notes": "Ability score row is printed with irregular spacing; values read STR 10, PER 10, END 8, CHA 3, INT 3, AGI 5, LCK 3."
+  },
+  {
+    "name": "Super Mutant Master",
+    "size": "Medium",
+    "type": "abomination",
+    "abilities": {"strength": 10, "perception": 10, "endurance": 8, "charisma": 3, "intelligence": 3, "agility": 7, "luck": 3},
+    "hp": 104,
+    "sp": 65,
+    "ap": 12,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 15,
+    "healingRate": 17,
+    "skills": {"Guns": 10, "Melee Weapons": 10},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Minigun", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 8, "range": "80/120 ft.", "target": "up to three targets within 10 feet of each other", "critChance": "20/5d6", "damage": "5d6-1", "damageAverage": 16, "damageType": "ballistic", "special": "6 AP (makes 3 attacks). Reload every 4 (12) attacks."},
+      {"name": "Missile Launcher", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 7, "range": "80/200 ft., 10 ft. radius", "critChance": "20/x4", "damage": "8d6-1", "damageAverage": 27, "damageType": "explosive", "special": "Reload after each attack. Must beat an AC 15 to hit the target. Otherwise the attack hits in a random spot 1d8 x 5 feet away from your designated spot."}
+    ],
+    "traits": [
+      {"name": "Human Hatred", "text": "Super Mutant's deal an extra 2 damage whenever they attack a human."}
+    ],
+    "loot": "Super Mutants have x1 Minigun (4th level of Decay), x1 Missile launcher (5th level of decay), x3 packs of 5mm ammo, x3 missiles. On a successful DC 12 Luck check, Master's also have 4d10 caps and x3 stimpaks.",
+    "page": 150,
+    "notes": "Ability score row is printed with irregular spacing; values read STR 10, PER 10, END 8, CHA 3, INT 3, AGI 7, LCK 3. Human Hatred is printed on this statblock even though the surrounding text order differs."
+  },
+  {
+    "name": "Behemoth",
+    "size": "Huge",
+    "type": "abomination",
+    "abilities": {"strength": 12, "perception": 6, "endurance": 10, "charisma": 3, "intelligence": 2, "agility": 5, "luck": 3},
+    "hp": 160,
+    "sp": 80,
+    "ap": 10,
+    "ac": 15,
+    "dt": 5,
+    "passiveSense": 13,
+    "healingRate": 21,
+    "skills": {"Melee Weapons": 10},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fire Hydrant", "apCost": 5, "attackType": "Melee Weapon Attack", "toHit": 10, "reach": "10 ft.", "target": "one target", "critChance": "20/5d10", "damage": "5d10+7", "damageAverage": 34, "damageType": "bludgeoning", "special": "If this attack hits a medium or smaller creature, they are pushed away from the behemoth by 5 - target's END modifier x 5 feet away."},
+      {"name": "Boulder", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 7, "range": "80/160 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d8+7", "damageAverage": 20, "damageType": "bludgeoning", "special": ""}
+    ],
+    "traits": [],
+    "loot": "Roll a 1d6 to determine what the behemoth drops. 1: 2d10 Bottlecaps, x4 pencils, x1 dogbowl. 2: x3 Frag Grenades, x1 bottle, x1 duct tape. 3: x1 sawed-off shotgun (DL 5), x1 coffee pot, x1 deathclaw hide. 4: x1 fat-man (DL 7), x1 pre-war money, x1 big battery",
+    "page": 151,
+    "notes": "Loot says 'Roll a 1d6' but the table only has entries 1-4. Ability score row is printed with irregular spacing; values read STR 12, PER 6, END 10, CHA 3, INT 2, AGI 5, LCK 3."
+  },
+  {
+    "name": "Brahmin",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 8, "perception": 8, "endurance": 8, "charisma": 4, "intelligence": 1, "agility": 3, "luck": 5},
+    "hp": 48,
+    "sp": 18,
+    "ap": 8,
+    "ac": 10,
+    "dt": 1,
+    "passiveSense": 15,
+    "healingRate": 10,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Ram", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 3, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d8+3", "damageAverage": 7, "damageType": "bludgeoning", "special": "5 AP (two attacks). If the Brahmin moves 15 feet before using this attack, it has advantage on the attack roll."}
+    ],
+    "traits": [
+      {"name": "Pack Animal", "text": "Brahmin have double their normal carry load."}
+    ],
+    "loot": "x1 Brahmin meat, x1 Brahmin Hide.",
+    "page": 152,
+    "notes": ""
+  },
+  {
+    "name": "Dog",
+    "size": "Medium",
+    "type": "animal",
+    "abilities": {"strength": 6, "perception": 14, "endurance": 4, "charisma": 6, "intelligence": 1, "agility": 6, "luck": 5},
+    "hp": 4,
+    "sp": 6,
+    "ap": 11,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 21,
+    "healingRate": 3,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d4+1", "damageAverage": 6, "damageType": "bludgeoning", "special": "If this attack deals damage to a medium or smaller creature's HP, they are grappled. Escape DC: Strength Contest."}
+    ],
+    "traits": [],
+    "loot": "x1 Dog Meat.",
+    "page": 152,
+    "notes": "Type is printed as 'Medium animal' (not 'mutated animal')."
+  },
+  {
+    "name": "Mongrel",
+    "size": "Medium",
+    "type": "mutated animal",
+    "abilities": {"strength": 6, "perception": 7, "endurance": 6, "charisma": 6, "intelligence": 1, "agility": 7, "luck": 5},
+    "hp": 6,
+    "sp": 7,
+    "ap": 11,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 14,
+    "healingRate": 4,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+1", "damageAverage": 3, "damageType": "bludgeoning", "special": "If this attack deals damage to a medium or smaller creature's HP, they are grappled. Escape DC: Strength Contest."}
+    ],
+    "traits": [],
+    "loot": "x1 Mongrel Meat.",
+    "page": 153,
+    "notes": ""
+  },
+  {
+    "name": "Mongrel, Alpha.",
+    "size": "Medium",
+    "type": "mutated animal",
+    "abilities": {"strength": 6, "perception": 8, "endurance": 6, "charisma": 6, "intelligence": 1, "agility": 7, "luck": 5},
+    "hp": 18,
+    "sp": 21,
+    "ap": 11,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 15,
+    "healingRate": 6,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+1", "damageAverage": 3, "damageType": "bludgeoning", "special": "If this attack deals damage to a medium or smaller creature's HP, they are grappled. Escape DC: Strength Contest."}
+    ],
+    "traits": [],
+    "loot": "x1 Mongrel Meat.",
+    "page": 153,
+    "notes": "Name is printed with a trailing period. Type is printed as 'Medium mutated animal'. Bite is identical to the base Mongrel's despite the higher HP/SP."
+  },
+  {
+    "name": "Mole Rat",
+    "size": "Small",
+    "type": "mutated animal",
+    "abilities": {"strength": 3, "perception": 4, "endurance": 5, "charisma": 3, "intelligence": 1, "agility": 6, "luck": 3},
+    "hp": 2,
+    "sp": 3,
+    "ap": 11,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 11,
+    "healingRate": 1,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d2-2", "damageAverage": 1, "damageType": "piercing", "special": ""}
+    ],
+    "traits": [
+      {"name": "Diseased", "text": "When a mole rat deals damage to a creature's HP, they must succeed a DC 6 Luck check or become Diseased."}
+    ],
+    "loot": "x1 Mole Rat Meat.",
+    "page": 153,
+    "notes": ""
+  },
+  {
+    "name": "Mole Rat Brood Mother",
+    "size": "Medium",
+    "type": "mutated animal",
+    "abilities": {"strength": 3, "perception": 4, "endurance": 5, "charisma": 3, "intelligence": 1, "agility": 6, "luck": 3},
+    "hp": 30,
+    "sp": 36,
+    "ap": 11,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 11,
+    "healingRate": 8,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d6-2", "damageAverage": 8, "damageType": "piercing", "special": ""}
+    ],
+    "traits": [
+      {"name": "Diseased", "text": "When a mole rat deals damage to a creature's HP, they must succeed a DC 6 Luck check or become Diseased."},
+      {"name": "Burrower", "text": "A Mole Rat can burrow into the ground with 2 AP per 5 feet, while burrowing it has full cover."}
+    ],
+    "loot": "x1 Mole Rat Meat and x1 Mole Rat Hide.",
+    "page": 154,
+    "notes": ""
+  },
+  {
+    "name": "Radstag",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 7, "perception": 10, "endurance": 6, "charisma": 3, "intelligence": 1, "agility": 6, "luck": 4},
+    "hp": 12,
+    "sp": 12,
+    "ap": 11,
+    "ac": 10,
+    "dt": 1,
+    "passiveSense": 18,
+    "healingRate": 5,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Ram", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 3, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d8+2", "damageAverage": 6, "damageType": "bludgeoning", "special": "5 AP (two attacks). If the Radstag moves 15 feet before using this attack, it has advantage on the attack roll."}
+    ],
+    "traits": [
+      {"name": "Cowardly", "text": "If a Radstag is fleeing, it gains +3 AP."}
+    ],
+    "loot": "x1 Radstag Meat and x1 Radstag Hide. On a successful DC 12 Luck check; 1d10 caps.",
+    "page": 154,
+    "notes": ""
+  },
+  {
+    "name": "Mutated Bear",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 9, "perception": 13, "endurance": 8, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 5},
+    "hp": 88,
+    "sp": 66,
+    "ap": 11,
+    "ac": 12,
+    "dt": 3,
+    "passiveSense": 20,
+    "healingRate": 15,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/5d8", "damage": "3d8+4", "damageAverage": 17, "damageType": "slashing", "special": "If the mutated bear moves 15 feet before using this attack, the target falls prone."},
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "3d8+4", "damageAverage": 26, "damageType": "bludgeoning", "special": "If this attack deals damage to a medium or smaller creature's HP, they are grappled. Escape DC: Strength Contest."}
+    ],
+    "traits": [
+      {"name": "Apex Predator", "text": "A mutated bear can climb and swim with 1 AP per 5 feet."}
+    ],
+    "loot": "x1 bear meat.",
+    "page": 155,
+    "notes": "Bite is printed as '26 (3d8+4)' - the stated average (26) does not match 3d8+4 (avg 17.5); Claw with the same dice is printed as 17. Transcribed as printed."
+  },
+  {
+    "name": "Deathclaw",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 12, "perception": 10, "endurance": 8, "charisma": 2, "intelligence": 2, "agility": 9, "luck": 5},
+    "hp": 104,
+    "sp": 117,
+    "ap": 14,
+    "ac": 15,
+    "dt": 4,
+    "passiveSense": 20,
+    "healingRate": 17,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison", "laser", "plasma"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/5d8", "damage": "4d10+7", "damageAverage": 29, "damageType": "slashing", "special": "Causes bleeding."},
+      {"name": "Toss", "apCost": 5, "damage": "4d6", "damageAverage": 14, "special": "The Deathclaw picks up one object or creature and hurls it 30 feet away. If the target is a creature they must contest Strength. The creature being thrown or object that hits a creature takes 14 (4d6)"},
+      {"name": "Dirt Fling", "apCost": 6, "special": "Each creature within a 15 foot cone in front of the deathclaw becomes blinded until the end of their next turn."}
+    ],
+    "traits": [
+      {"name": "Apex Predator", "text": "Deathclaws can climb and swim with 1 AP per 5 feet."},
+      {"name": "Terrifying", "text": "When another creature can see the Deathclaw for the first time, they must succeed a DC 15 Endurance check or become frightened."}
+    ],
+    "loot": "x1 Deathclaw hand, Deathclaw hide, Deathclaw meat.",
+    "page": 155,
+    "notes": "Toss and Dirt Fling are AP-costed actions with no attack roll; recorded under attacks with no toHit. Toss's damage sentence has no damage type and no terminating period as printed."
+  },
+  {
+    "name": "Giant Ant",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 7, "perception": 3, "endurance": 5, "charisma": 1, "intelligence": 1, "agility": 3, "luck": 4},
+    "hp": 5,
+    "sp": 3,
+    "ap": 8,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 10,
+    "healingRate": 3,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2", "damageAverage": 2, "damageType": "piercing", "special": "Flat 2 damage; no dice expression printed."}
+    ],
+    "traits": [
+      {"name": "Pack tactics", "text": "If another Ant is within 5 feet of the target of the ant's attack, it has advantage."}
+    ],
+    "loot": "x1 ant meat.",
+    "page": 156,
+    "notes": "Bite damage is printed as a flat '2 piercing damage' with no dice."
+  },
+  {
+    "name": "Giant Ant, Soldier",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 10, "perception": 3, "endurance": 5, "charisma": 1, "intelligence": 1, "agility": 3, "luck": 4},
+    "hp": 10,
+    "sp": 6,
+    "ap": 8,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 10,
+    "healingRate": 4,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+5", "damageAverage": 7, "damageType": "piercing", "special": ""}
+    ],
+    "traits": [
+      {"name": "Pack tactics", "text": "If another Ant is within 5 feet of the target of the ant's attack, it has advantage."}
+    ],
+    "loot": "x1 ant meat.",
+    "page": 156,
+    "notes": "Bite line ends without a period in the book."
+  },
+  {
+    "name": "Fire Ant",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 7, "perception": 2, "endurance": 4, "charisma": 1, "intelligence": 1, "agility": 3, "luck": 4},
+    "hp": 8,
+    "sp": 6,
+    "ap": 8,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 9,
+    "healingRate": 4,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": ["fire", "laser"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+2", "damageAverage": 4, "damageType": "piercing", "special": ""},
+      {"name": "Fire Breath", "apCost": 6, "damage": "2", "damageAverage": 2, "damageType": "fire", "special": "Each creature within a 10 foot cone of the Fire Ant takes 2 fire damage and takes 2 fire damage at the start of each of their turns unless they extinguish the fire with 5 AP."}
+    ],
+    "traits": [
+      {"name": "Pack tactics", "text": "If another Ant is within 5 feet of the target of the ant's attack, it has advantage."}
+    ],
+    "loot": "x1 Fire Ant meat.",
+    "page": 156,
+    "notes": "Fire Breath has no attack roll and deals flat 2 fire damage."
+  },
+  {
+    "name": "Fire Ant, Queen",
+    "size": "Huge",
+    "type": "mutated insect",
+    "abilities": {"strength": 10, "perception": 5, "endurance": 6, "charisma": 1, "intelligence": 1, "agility": 3, "luck": 4},
+    "hp": 72,
+    "sp": 36,
+    "ap": 8,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 12,
+    "healingRate": 15,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": ["fire", "laser"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d6+2", "damageAverage": 12, "damageType": "piercing", "special": ""},
+      {"name": "Fire Breath", "apCost": 6, "damage": "2d6", "damageAverage": 7, "damageType": "fire", "special": "Each creature within a 20 foot cone of the Fire Ant takes 7 (2d6) fire damage and takes 7 (2d6) fire damage at the start of each of their turns unless they extinguish the fire with 5 AP."}
+    ],
+    "traits": [
+      {"name": "Colony", "text": "When the Queen Fire Ant first takes damage to her HP, all Ants within 100 feet of her regain all their SP and have advantage on all attacks."}
+    ],
+    "loot": "x3 Fire Ant meat, x3 Ant egg.",
+    "page": 157,
+    "notes": ""
+  },
+  {
+    "name": "Bloatfly",
+    "size": "Small",
+    "type": "mutated insect",
+    "abilities": {"strength": 3, "perception": 3, "endurance": 4, "charisma": 1, "intelligence": 1, "agility": 7, "luck": 4},
+    "hp": 1,
+    "sp": 2,
+    "ap": 12,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 10,
+    "healingRate": 1,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Whack", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2", "damageAverage": 2, "damageType": "piercing", "special": "Flat 2 damage; no dice expression printed."},
+      {"name": "Spittle", "apCost": 4, "attackType": "Ranged Weapon Attack", "toHit": 4, "range": "20/60 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d4+2", "damageAverage": 4, "damageType": "bludgeoning", "special": "On a Luck check of 3, the target becomes diseased."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Bloatfly can fly 5 feet with 1 AP."},
+      {"name": "Sporadic Movement", "text": "All ranged attacks against the Bloatfly have disadvantage."}
+    ],
+    "loot": "x1 Bloatfly meat.",
+    "page": 157,
+    "notes": ""
+  },
+  {
+    "name": "Bloatfly, Black",
+    "size": "Small",
+    "type": "mutated insect",
+    "abilities": {"strength": 3, "perception": 3, "endurance": 5, "charisma": 1, "intelligence": 1, "agility": 8, "luck": 4},
+    "hp": 5,
+    "sp": 8,
+    "ap": 13,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 10,
+    "healingRate": 3,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Whack", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2", "damageAverage": 2, "damageType": "piercing", "special": "Flat 2 damage; no dice expression printed."},
+      {"name": "Spittle", "apCost": 4, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/60 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d4+3", "damageAverage": 8, "damageType": "bludgeoning", "special": "On a Luck check of 5, the target becomes diseased."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Bloatfly can fly 5 feet with 1 AP."},
+      {"name": "Sporadic Movement", "text": "All ranged attacks against the Bloatfly have disadvantage."}
+    ],
+    "loot": "x1 Bloatfly meat.",
+    "page": 158,
+    "notes": ""
+  },
+  {
+    "name": "Bloodbug",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 3, "perception": 10, "endurance": 4, "charisma": 1, "intelligence": 1, "agility": 8, "luck": 4},
+    "hp": 12,
+    "sp": 24,
+    "ap": 13,
+    "ac": 11,
+    "dt": 0,
+    "passiveSense": 10,
+    "healingRate": 5,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Proboscis", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "1d6+3", "damageAverage": 6, "damageType": "piercing", "special": "Also deals 7 (2d6) poison damage."},
+      {"name": "Blood Spit", "apCost": 4, "toHit": 5, "range": "within 10 feet", "damage": "3d6", "damageAverage": 10, "damageType": "poison", "special": "If the Bloodbug has dealt damage to a creature's HP, provided they had blood, the Bloodbug can spit the blood at a creature within 10 feet of it. This attack has a +5 to hit and deals 10 (3d6) poison damage. On a Luck check of 5, the target becomes diseased."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Bloodbug can fly 5 feet with 1 AP."},
+      {"name": "Blood Sac", "text": "All ranged attacks against the Bloodbug have disadvantage until it deals damage to a creature's HP, provided the creature has blood."}
+    ],
+    "loot": "x1 Bloodbug meat",
+    "page": 158,
+    "notes": ""
+  },
+  {
+    "name": "Fog Crawler",
+    "size": "Huge",
+    "type": "mutated animal",
+    "abilities": {"strength": 13, "perception": 10, "endurance": 9, "charisma": 1, "intelligence": 1, "agility": 12, "luck": 6},
+    "hp": 72,
+    "sp": 96,
+    "ap": 12,
+    "ac": 15,
+    "dt": 5,
+    "passiveSense": 17,
+    "healingRate": 14,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["ballistic", "explosive"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 10, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d8+8", "damageAverage": 21, "damageType": "slashing", "special": ""},
+      {"name": "Pincer", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 10, "reach": "5 ft.", "target": "one target", "critChance": "20/x4", "damage": "4d8+8", "damageAverage": 26, "damageType": "slashing", "special": "The creature is grappled and restrained."},
+      {"name": "Ground Slam", "apCost": 6, "damage": "5d10+8", "damageAverage": 35, "damageType": "bludgeoning", "special": "The Fog Crawler leaps into the air. At the start of its next turn it chooses a point within 60 feet and slams into the ground. Each creature within 20 feet of the chosen point takes 35 (5d10+8) bludgeoning damage and is knocked prone if their Strength is 7 or less."}
+    ],
+    "traits": [
+      {"name": "Flutter", "text": "The Fog Crawler uses its wings to give itself a burst of speed. At the end of any other creature's turn, the Fog Crawler can move up to 20 feet. Once it uses this ability it cannot use it until the start of its next turn."},
+      {"name": "Fog Blend", "text": "If a Fog Crawler would be lightly obscured, it is instead heavily obscured."}
+    ],
+    "loot": "x5 mirelurk meat.",
+    "page": 159,
+    "notes": "Loot is printed as 'mirelurk meat' for the Fog Crawler."
+  },
+  {
+    "name": "Mirelurk",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 9, "perception": 3, "endurance": 8, "charisma": 1, "intelligence": 1, "agility": 4, "luck": 4},
+    "hp": 24,
+    "sp": 18,
+    "ap": 9,
+    "ac": 14,
+    "dt": 2,
+    "passiveSense": 10,
+    "healingRate": 7,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d6+4", "damageAverage": 11, "damageType": "slashing", "special": "3 AP (only makes one attack per turn)"}
+    ],
+    "traits": [
+      {"name": "Shell", "text": "The Mirelurk takes half the damage it normally would from area of effect attacks."}
+    ],
+    "loot": "x1 mirelurk meat.",
+    "page": 160,
+    "notes": ""
+  },
+  {
+    "name": "Mirelurk Razorclaw",
+    "size": "Large",
+    "type": "mutated animal",
+    "abilities": {"strength": 9, "perception": 3, "endurance": 8, "charisma": 1, "intelligence": 1, "agility": 4, "luck": 4},
+    "hp": 40,
+    "sp": 20,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 10,
+    "healingRate": 9,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d10+4", "damageAverage": 20, "damageType": "slashing", "special": "3 AP (only makes one attack per turn)"}
+    ],
+    "traits": [
+      {"name": "Shell", "text": "The Mirelurk takes half the damage it normally would from area of effect attacks."}
+    ],
+    "loot": "x1 mirelurk meat.",
+    "page": 160,
+    "notes": ""
+  },
+  {
+    "name": "Mirelurk Queen",
+    "size": "Huge",
+    "type": "mutated animal",
+    "abilities": {"strength": 13, "perception": 10, "endurance": 12, "charisma": 1, "intelligence": 1, "agility": 5, "luck": 4},
+    "hp": 192,
+    "sp": 80,
+    "ap": 10,
+    "ac": 13,
+    "dt": 5,
+    "passiveSense": 17,
+    "healingRate": 22,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 10, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d10+8", "damageAverage": 24, "damageType": "slashing", "special": "3 AP (makes two attacks)"},
+      {"name": "Acid Spray", "apCost": 6, "damage": "4d10", "damageAverage": 22, "damageType": "poison", "special": "The Mirelurk Queen chooses six separate 5ft radius areas. At the start of her next turn; each creature in these areas takes 22 (4d10) poison."}
+    ],
+    "traits": [
+      {"name": "Shell", "text": "The Mirelurk takes half the damage it normally would from area of effect attacks."},
+      {"name": "Rad Field", "text": "Any creature that starts their turn within 15 feet of the Mirelurk Queen must succeed a DC 10 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "x5 mirelurk meat.",
+    "page": 161,
+    "notes": ""
+  },
+  {
+    "name": "Cazador",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 7, "perception": 9, "endurance": 3, "charisma": 1, "intelligence": 1, "agility": 10, "luck": 4},
+    "hp": 12,
+    "sp": 40,
+    "ap": 15,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 16,
+    "healingRate": 5,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 9, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "4d6+2", "damageAverage": 16, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 5 rounds."}
+    ],
+    "traits": [
+      {"name": "Adept Flying", "text": "The Cazador can fly 10 feet with 1 AP."},
+      {"name": "Sporadic Movement", "text": "All ranged attacks against the Cazador have disadvantage."}
+    ],
+    "loot": "x1 Cazador Poison Gland. A successful Luck check of 15 will yield x1 Cazador Egg.",
+    "page": 161,
+    "notes": ""
+  },
+  {
+    "name": "Cazador, Young.",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 5, "perception": 7, "endurance": 3, "charisma": 1, "intelligence": 1, "agility": 10, "luck": 4},
+    "hp": 6,
+    "sp": 20,
+    "ap": 15,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 14,
+    "healingRate": 3,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 7, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "2d6", "damageAverage": 7, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 1 poison damage at the start of each turn for 5 rounds."}
+    ],
+    "traits": [
+      {"name": "Adept Flying", "text": "The Cazador can fly 10 feet with 1 AP."},
+      {"name": "Sporadic Movement", "text": "All ranged attacks against the Cazador have disadvantage."}
+    ],
+    "loot": "x1 Cazador Poison Gland.",
+    "page": 162,
+    "notes": "Name is printed with a trailing period."
+  },
+  {
+    "name": "Cazador, Legendary.",
+    "size": "Huge",
+    "type": "mutated insect",
+    "abilities": {"strength": 9, "perception": 10, "endurance": 3, "charisma": 1, "intelligence": 1, "agility": 10, "luck": 4},
+    "hp": 21,
+    "sp": 70,
+    "ap": 15,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 17,
+    "healingRate": 8,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 10, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "6d6+4", "damageAverage": 25, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 5 rounds."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Cazador can fly 10 feet with 1 AP."},
+      {"name": "Sporadic Movement", "text": "All ranged attacks against the Cazador have disadvantage."}
+    ],
+    "loot": "x1 Cazador Poison Gland. A successful Luck check of 10 will yield x1 Cazador Egg.",
+    "page": 162,
+    "notes": "Name is printed with a trailing period. Trait is named 'Flying' here (not 'Adept Flying') despite the same 10 feet per AP text."
+  },
+  {
+    "name": "Radscorpion",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 9, "perception": 9, "endurance": 9, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 4},
+    "hp": 36,
+    "sp": 24,
+    "ap": 11,
+    "ac": 11,
+    "dt": 2,
+    "passiveSense": 16,
+    "healingRate": 8,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6+4", "damageAverage": 7, "damageType": "slashing", "special": ""},
+      {"name": "Stinger", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "1d4+4", "damageAverage": 6, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 2 rounds."}
+    ],
+    "traits": [
+      {"name": "Burrow", "text": "The Radscorpion can burrow into dirt, sand, or loose earth with 3 AP, gaining total cover and advantage on Sneak checks. It can move through the ground with 2 AP per 5 feet and can resurface with 1 AP."}
+    ],
+    "loot": "x1 Radscorpion poison gland, x1 Radscorpion meat. A successful Luck check of 15 will yield x1 Radscorpion Egg.",
+    "page": 163,
+    "notes": ""
+  },
+  {
+    "name": "Radscorpion, Glowing.",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 10, "perception": 10, "endurance": 9, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 4},
+    "hp": 72,
+    "sp": 48,
+    "ap": 11,
+    "ac": 13,
+    "dt": 3,
+    "passiveSense": 16,
+    "healingRate": 12,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d6+5", "damageAverage": 12, "damageType": "slashing", "special": ""},
+      {"name": "Stinger", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "1d4+5", "damageAverage": 7, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 3 rounds."}
+    ],
+    "traits": [
+      {"name": "Burrow", "text": "The Radscorpion can burrow into dirt, sand, or loose earth with 3 AP, gaining total cover and advantage on Sneak checks. It can move through the ground with 2 AP per 5 feet and can resurface with 1 AP."},
+      {"name": "Glowing", "text": "Any creature that starts their turn within 10 feet of the Radscorpion must succeed a DC 13 Rad Resist check or take one level of rads."}
+    ],
+    "loot": "x1 Radscorpion poison gland, x1 Radscorpion meat. A successful Luck check of 15 will yield x1 Radscorpion Egg.",
+    "page": 163,
+    "notes": "Name is printed with a trailing period."
+  },
+  {
+    "name": "Radscorpion, Stalker.",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 11, "perception": 11, "endurance": 9, "charisma": 2, "intelligence": 1, "agility": 6, "luck": 4},
+    "hp": 144,
+    "sp": 96,
+    "ap": 11,
+    "ac": 15,
+    "dt": 3,
+    "passiveSense": 17,
+    "healingRate": 20,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": ["Irradiated"],
+    "resistances": ["poison"],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "3d10+6", "damageAverage": 22, "damageType": "slashing", "special": ""},
+      {"name": "Stinger", "apCost": 5, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "2d4+6", "damageAverage": 11, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 3 poison damage at the start of each turn for 3 rounds."}
+    ],
+    "traits": [
+      {"name": "Burrow", "text": "The Radscorpion can burrow into dirt, sand, or loose earth with 3 AP, gaining total cover and advantage on Sneak checks. It can move through the ground with 2 AP per 5 feet and can resurface with 1 AP."}
+    ],
+    "loot": "x1 Radscorpion poison gland, x1 Radscorpion meat. A successful Luck check of 15 will yield x1 Radscorpion Egg.",
+    "page": 164,
+    "notes": "Name is printed with a trailing period."
+  },
+  {
+    "name": "Radroach",
+    "size": "Small",
+    "type": "mutated insect",
+    "abilities": {"strength": 2, "perception": 4, "endurance": 5, "charisma": 1, "intelligence": 1, "agility": 5, "luck": 3},
+    "hp": 2,
+    "sp": 3,
+    "ap": 10,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 11,
+    "healingRate": 1,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 2, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6-3", "damageAverage": 2, "damageType": "piercing", "special": "If this attack deals damage to a target creature's HP, they increase their Irradiated score (from consuming irradiated food and drink) by 2."}
+    ],
+    "traits": [],
+    "loot": "x1 Radroach Meat.",
+    "page": 164,
+    "notes": ""
+  },
+  {
+    "name": "Rattler",
+    "size": "Large",
+    "type": "mutated insect",
+    "abilities": {"strength": 9, "perception": 14, "endurance": 5, "charisma": 2, "intelligence": 2, "agility": 8, "luck": 4},
+    "hp": 25,
+    "sp": 40,
+    "ap": 13,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 21,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Bite", "apCost": 6, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d4+4", "damageAverage": 9, "damageType": "piercing", "special": "If this deals damage to the target's HP then the target becomes poisoned and takes 5 (1d10) poison damage at the start of each turn for 1 minute (10 rounds)."}
+    ],
+    "traits": [
+      {"name": "Web Sprint", "text": "Rattler's can move 10 feet with 1 AP in their own webbing."}
+    ],
+    "loot": "x1 Rattler poison gland.",
+    "page": 165,
+    "notes": "Healing Rate is printed as '-' (a dash) with no value, so healingRate is omitted. Page 165 carries an author's note: 'A Rattler is a creature I came up with for our Fallout: Zero campaign. It's a mix of a brown recluse spider and a rattlesnake.'"
+  },
+  {
+    "name": "Stingwing",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 5, "perception": 9, "endurance": 4, "charisma": 1, "intelligence": 1, "agility": 8, "luck": 4},
+    "hp": 4,
+    "sp": 8,
+    "ap": 13,
+    "ac": 11,
+    "dt": 0,
+    "passiveSense": 16,
+    "healingRate": 3,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "1d10", "damageAverage": 5, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 2 rounds."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Stingwing can fly 5 feet with 1 AP."},
+      {"name": "Dizzying Movement", "text": "All ranged attacks against the Stingwing have disadvantage."}
+    ],
+    "loot": "x1 Stingwing Meat",
+    "page": 166,
+    "notes": ""
+  },
+  {
+    "name": "Stingwing Skimmer",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 5, "perception": 10, "endurance": 5, "charisma": 1, "intelligence": 1, "agility": 9, "luck": 4},
+    "hp": 10,
+    "sp": 18,
+    "ap": 14,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 17,
+    "healingRate": 4,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "2d10", "damageAverage": 11, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 4 rounds."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Stingwing can fly 5 feet with 1 AP."},
+      {"name": "Dizzying Movement", "text": "All ranged attacks against the Stingwing have disadvantage."}
+    ],
+    "loot": "x1 Stingwing Meat",
+    "page": 166,
+    "notes": ""
+  },
+  {
+    "name": "Stingwing Chaser",
+    "size": "Medium",
+    "type": "mutated insect",
+    "abilities": {"strength": 6, "perception": 11, "endurance": 6, "charisma": 1, "intelligence": 1, "agility": 10, "luck": 4},
+    "hp": 30,
+    "sp": 50,
+    "ap": 15,
+    "ac": 11,
+    "dt": 2,
+    "passiveSense": 18,
+    "healingRate": 8,
+    "skills": {},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Stinger", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 10, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "3d10+1", "damageAverage": 17, "damageType": "piercing", "special": "If this damage was dealt to HP then the target also becomes poisoned for 1 minute and takes 2 poison damage at the start of each turn for 6 rounds."}
+    ],
+    "traits": [
+      {"name": "Flying", "text": "The Stingwing can fly 5 feet with 1 AP."},
+      {"name": "Dizzying Movement", "text": "All ranged attacks against the Stingwing have disadvantage."}
+    ],
+    "loot": "x1 Stingwing Meat",
+    "page": 167,
+    "notes": ""
+  },
+  {
+    "name": "Assaultron",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 12, "endurance": 8, "charisma": 4, "intelligence": 4, "agility": 6, "luck": 2},
+    "hp": 80,
+    "sp": 0,
+    "ap": 11,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 19,
+    "repairRate": 12,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 5, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "2d8+3", "damageAverage": 12, "damageType": "bludgeoning", "special": ""},
+      {"name": "Charge Laser Beam", "apCost": 6, "special": "The Assaultron charges it's laser beam attack to use on it's next turn."},
+      {"name": "Laser Beam", "apCost": 6, "damage": "10d10", "damageAverage": 55, "damageType": "laser", "special": "The Assaultron blasts it's laser beam across a wide area, this action can only be taken if the \"Charge Laser Beam\" action was taken on the previous turn. All creatures within a 30 foot cone centered on the Assaultron take 55 (10d10) laser damage."}
+    ],
+    "traits": [
+      {"name": "Robotic Body", "text": "Assaultrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Aluminum. x1 Robot Repair Kit.",
+    "page": 168,
+    "notes": "No Stamina Points line printed (robots use Repair Rate instead of Healing Rate); sp recorded as 0."
+  },
+  {
+    "name": "Assaultron Invader",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 9, "perception": 12, "endurance": 8, "charisma": 4, "intelligence": 4, "agility": 6, "luck": 2},
+    "hp": 104,
+    "sp": 0,
+    "ap": 11,
+    "ac": 14,
+    "dt": 2,
+    "passiveSense": 19,
+    "repairRate": 15,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Shock Claw", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8 and the target is stunned until the end of their next turn", "damage": "2d8+4", "damageAverage": 13, "damageType": "bludgeoning", "special": "Also deals 11 (2d10) electricity damage."},
+      {"name": "Charge Laser Beam", "apCost": 6, "special": "The Assaultron charges it's laser beam attack to use on it's next turn."},
+      {"name": "Laser Beam", "apCost": 6, "damage": "10d10", "damageAverage": 55, "damageType": "laser", "special": "The Assaultron blasts it's laser beam across a wide area, this action can only be taken if the \"Charge Laser Beam\" action was taken on the previous turn. All creatures within a 30 foot cone centered on the Assaultron take 55 (10d10) laser damage."}
+    ],
+    "traits": [
+      {"name": "Robotic Body", "text": "Assaultrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Aluminum. x1 Robot Repair Kit.",
+    "page": 168,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Assaultron Dominator",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 10, "perception": 13, "endurance": 8, "charisma": 4, "intelligence": 4, "agility": 6, "luck": 2},
+    "hp": 136,
+    "sp": 0,
+    "ap": 11,
+    "ac": 15,
+    "dt": 2,
+    "passiveSense": 20,
+    "repairRate": 19,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Armblade", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 8, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "3d10+5", "damageAverage": 21, "damageType": "bludgeoning", "special": ""},
+      {"name": "Charge Laser Beam", "apCost": 6, "special": "The Assaultron charges it's laser beam attack to use on it's next turn."},
+      {"name": "Laser Beam", "apCost": 6, "damage": "10d10", "damageAverage": 55, "damageType": "laser", "special": "The Assaultron blasts it's laser beam across a wide area, this action can only be taken if the \"Charge Laser Beam\" action was taken on the previous turn. All creatures within a 30 foot cone centered on the Assaultron take 55 (10d10) laser damage."},
+      {"name": "Cloaking (Recharge 5-6)", "apCost": 3, "special": "The Assaultron becomes Invisible for 3 rounds."}
+    ],
+    "traits": [
+      {"name": "Robotic Body", "text": "Assaultrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(2d6 x Luck Modifier) Energy cells, x2 Aluminum. x1 Robot Repair Kit.",
+    "page": 169,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Eyebot",
+    "size": "Small",
+    "type": "robot",
+    "abilities": {"strength": 3, "perception": 10, "endurance": 5, "charisma": 5, "intelligence": 4, "agility": 8, "luck": 4},
+    "hp": 25,
+    "sp": 0,
+    "ap": 13,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 17,
+    "repairRate": 7,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Laser", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "60/120 ft.", "critChance": "20/x2, 2d4 fire damage", "damage": "1d4", "damageAverage": 2, "damageType": "laser", "special": ""}
+    ],
+    "traits": [
+      {"name": "Eyebot Body", "text": "Eyebots have no limbs to be targeted."},
+      {"name": "Flying", "text": "The Eyebot can fly 5 feet with 1 AP."}
+    ],
+    "loot": "x2 Steel",
+    "page": 169,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Mister Gutsy",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 5, "perception": 6, "endurance": 8, "charisma": 4, "intelligence": 6, "agility": 7, "luck": 4},
+    "hp": 72,
+    "sp": 0,
+    "ap": 12,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 13,
+    "repairRate": 12,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "10mm SMG", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/45 ft.", "target": "up to three targets within 10 feet of each other", "critChance": "20/x2", "damage": "1d4+2", "damageAverage": 4, "damageType": "ballistic", "special": "5 AP (makes 3 attacks). Reload every 10 attacks."},
+      {"name": "Flamer", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "15ft. line", "critChance": "18-20, 1d10 fire damage each turn", "damage": "2d10+2", "damageAverage": 13, "damageType": "fire", "special": "Reload every 5 attacks."}
+    ],
+    "traits": [
+      {"name": "Hover", "text": "The Mister Gutsy does not touch the ground when it moves."},
+      {"name": "Robotic Body", "text": "The Mister Gutsy takes no damage from targeted attacks, but still takes on their effects."}
+    ],
+    "loot": "x2 Steel and x(1d4 x Luck modifier) 10mm rounds.",
+    "page": 170,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Major Gutsy",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 5, "perception": 7, "endurance": 8, "charisma": 4, "intelligence": 6, "agility": 7, "luck": 4},
+    "hp": 152,
+    "sp": 0,
+    "ap": 12,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 14,
+    "repairRate": 22,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Automatic Laser Rifle", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "40/80 ft.", "target": "up to three targets within 10 feet of each other", "critChance": "20/x2", "damage": "2d6+2", "damageAverage": 9, "damageType": "laser", "special": "5 AP (makes 3 attacks). Reload every 24 (8) attacks."},
+      {"name": "Flamer", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "15ft. line", "critChance": "18-20, 1d10 fire damage each turn", "damage": "2d10+2", "damageAverage": 13, "damageType": "fire", "special": "Reload every 5 attacks."}
+    ],
+    "traits": [
+      {"name": "Hover", "text": "The Major Gutsy does not touch the ground when it moves."},
+      {"name": "Robotic Body", "text": "The Major Gutsy takes no damage from targeted attacks, but still takes on their effects."}
+    ],
+    "loot": "x2 Steel and x(1d4 x Luck modifier) Energy Cells.",
+    "page": 170,
+    "notes": "No Stamina Points line printed; sp recorded as 0. Automatic Laser Rifle reload is printed as 'Reload every 24 (8) attacks.'"
+  },
+  {
+    "name": "Mister Handy",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 5, "perception": 5, "endurance": 6, "charisma": 7, "intelligence": 6, "agility": 7, "luck": 4},
+    "hp": 42,
+    "sp": 0,
+    "ap": 12,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 12,
+    "repairRate": 10,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Buzzsaw", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 3, "reach": "5 ft.", "target": "one target", "critChance": "20/x3", "damage": "1d10+2", "damageAverage": 7, "damageType": "slashing", "special": ""},
+      {"name": "Flamer (Recharge 5 - 6)", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "15ft. line", "critChance": "18-20, 1d10 fire damage each turn", "damage": "2d10+2", "damageAverage": 13, "damageType": "fire", "special": ""}
+    ],
+    "traits": [
+      {"name": "Hover", "text": "The Mister Handy does not touch the ground when it moves."},
+      {"name": "Robotic Body", "text": "The Mister Handy takes no damage from targeted attacks, but still takes on their effects."}
+    ],
+    "loot": "x2 Steel and x(1d4 x Luck modifier) 10mm rounds.",
+    "page": 171,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Protectron",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 9, "charisma": 4, "intelligence": 2, "agility": 4, "luck": 2},
+    "hp": 27,
+    "sp": 0,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "repairRate": 4,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": ""},
+      {"name": "Laser", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 2, "range": "30 ft.", "critChance": "20/x2, 2d4 fire damage", "damage": "2d6-1", "damageAverage": 6, "damageType": "laser", "special": ""}
+    ],
+    "traits": [
+      {"name": "Hobbler", "text": "Protectrons can only move a maximum of 30 feet on their turn."},
+      {"name": "Robotic Body", "text": "Protectrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Steel. x1 Robot Repair Kit.",
+    "page": 171,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Protectron Medic",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 9, "charisma": 4, "intelligence": 2, "agility": 4, "luck": 2},
+    "hp": 54,
+    "sp": 0,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "repairRate": 7,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Defibrillator", "apCost": 6, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": "Also deals 9 (2d8) electricity damage."}
+    ],
+    "traits": [
+      {"name": "Hobbler", "text": "Protectrons can only move a maximum of 30 feet on their turn."},
+      {"name": "Robotic Body", "text": "Protectrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Steel. x1 Robot Repair Kit.",
+    "page": 172,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Protectron Fire Brigadier",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 9, "charisma": 4, "intelligence": 2, "agility": 4, "luck": 2},
+    "hp": 54,
+    "sp": 0,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "repairRate": 7,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": ""},
+      {"name": "Cryo Spray (Recharge 5 - 6)", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "15ft. cone", "critChance": "20, paralyzed until the start of targets next turn", "damage": "1d10", "damageAverage": 6, "damageType": "cold", "special": ""}
+    ],
+    "traits": [
+      {"name": "Hobbler", "text": "Protectrons can only move a maximum of 30 feet on their turn."},
+      {"name": "Robotic Body", "text": "Protectrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Steel. x1 Robot Repair Kit.",
+    "page": 172,
+    "notes": "No Stamina Points line printed; sp recorded as 0. Cryo Spray is printed as 'Hit: 6 (1d10) cold.' - the stated average (6) does not match 1d10 (avg 5.5); transcribed as printed."
+  },
+  {
+    "name": "Protectron, Utility.",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 9, "charisma": 4, "intelligence": 2, "agility": 4, "luck": 2},
+    "hp": 54,
+    "sp": 0,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "repairRate": 7,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": ""},
+      {"name": "Nail Gun", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "10/20ft", "critChance": "20/x4", "damage": "1d6-1", "damageAverage": 3, "damageType": "piercing", "special": ""}
+    ],
+    "traits": [
+      {"name": "Hobbler", "text": "Protectrons can only move a maximum of 30 feet on their turn."},
+      {"name": "Robotic Body", "text": "Protectrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Steel. x1 Robot Repair Kit.",
+    "page": 173,
+    "notes": "Name is printed with a trailing period. No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Protectron, Police.",
+    "size": "Medium",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 9, "charisma": 4, "intelligence": 2, "agility": 4, "luck": 2},
+    "hp": 54,
+    "sp": 0,
+    "ap": 9,
+    "ac": 14,
+    "dt": 3,
+    "passiveSense": 12,
+    "repairRate": 7,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": ""},
+      {"name": "Taser", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 6, "reach": "5 ft.", "target": "one target", "critChance": "20 target becomes stunned until the start of their next turn", "damage": "1d6+3", "damageAverage": 6, "damageType": "bludgeoning", "special": "Also deals 9 (2d8) electricity damage."}
+    ],
+    "traits": [
+      {"name": "Hobbler", "text": "Protectrons can only move a maximum of 30 feet on their turn."},
+      {"name": "Robotic Body", "text": "Protectrons take no damage from targeted attacks, but still take on their effects."}
+    ],
+    "loot": "x(1d6 x Luck Modifier) Energy cells, x2 Steel. x1 Robot Repair Kit.",
+    "page": 173,
+    "notes": "Name is printed with a trailing period. No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Sentry Bot",
+    "size": "Large",
+    "type": "robot",
+    "abilities": {"strength": 9, "perception": 8, "endurance": 10, "charisma": 3, "intelligence": 3, "agility": 9, "luck": 4},
+    "hp": 200,
+    "sp": 0,
+    "ap": 14,
+    "ac": 15,
+    "dt": 3,
+    "passiveSense": 15,
+    "repairRate": 21,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Double Chainguns", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 7, "range": "30/50 ft.", "target": "up to six targets within 10 feet of each other", "critChance": "20/x2", "damage": "1d6+4", "damageAverage": 7, "damageType": "ballistic", "special": "5 AP (makes 6 attacks). Reload every attack."},
+      {"name": "Bash", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 7, "reach": "5 ft.", "target": "one target", "critChance": "20/1d8", "damage": "1d8+4", "damageAverage": 8, "damageType": "bludgeoning", "special": "Or 12 (2d8+4) if the Sentry Bot moved at least 20 feet before attacking."}
+    ],
+    "traits": [
+      {"name": "Robotic Body", "text": "The Sentry Bot takes no damage from targeted attacks, but still takes on their effects."},
+      {"name": "Wheels", "text": "The Sentry Bot can move 10 feet with 1 AP."},
+      {"name": "Overheated", "text": "At the start of the Sentry Bot's 5th turn, it becomes incapacitated until the start of its next turn and exposes its Fusion Cores. These Fusion Cores can be targeted with a -3 to attack rolls, the Sentry Bot is vulnerable to all damage dealt to the fusion cores."},
+      {"name": "Self-Destruct", "text": "When the Sentry Bot is reduced to 0 HP, it becomes immune to all damage and on it's next turn initiates it's self-destruct. At the start of it's next turn; it explodes. All creatures within 30 feet of the Sentry Bot take 66 (12d10) explosive damage."}
+    ],
+    "loot": "x2 Fusion Cores, x4 Steel, x2 Gears.",
+    "page": 174,
+    "notes": "No Stamina Points line printed; sp recorded as 0."
+  },
+  {
+    "name": "Robobrain",
+    "size": "Large",
+    "type": "robot",
+    "abilities": {"strength": 8, "perception": 5, "endurance": 7, "charisma": 6, "intelligence": 6, "agility": 8, "luck": 4},
+    "hp": 35,
+    "sp": 0,
+    "ap": 13,
+    "ac": 13,
+    "dt": 2,
+    "passiveSense": 15,
+    "repairRate": 8,
+    "skills": {},
+    "immunities": ["poison"],
+    "conditionImmunities": ["irradiated", "poisoned"],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Tesla Rifle", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 6, "range": "30 ft.", "critChance": "20, targets one additional creature within 30 feet", "damage": "2d8+3", "damageAverage": 12, "damageType": "electricity", "special": ""},
+      {"name": "Mesmetron (Recharge 5 - 6)", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 6, "range": "15 ft.", "special": "Target becomes incapacitated until the end of their next turn."}
+    ],
+    "traits": [
+      {"name": "Robotic Body", "text": "The Robobrain takes no damage from targeted attacks, but still takes on their effects."},
+      {"name": "All Terrain Rollers", "text": "The Robobrain does not have to spend extra AP to move through difficult terrain (pg 11). Note this waives the AP surcharge only: sprinting still ends on difficult terrain (pg 117), and the book does not say whether extreme difficult terrain is covered."}
+    ],
+    "loot": "x4 Steel, x2 Energy Cells.",
+    "page": 174,
+    "notes": "No Stamina Points line printed; sp recorded as 0. Mesmetron deals no damage."
+  },
+  {
+    "name": "Brotherhood Initiate",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 5, "perception": 8, "endurance": 6, "charisma": 4, "intelligence": 7, "agility": 5, "luck": 5},
+    "hp": 18,
+    "sp": 15,
+    "ap": 10,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 15,
+    "healingRate": 6,
+    "skills": {"Energy Weapons": 5, "Crafting": 4, "Science": 4},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Baton", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 0, "reach": "5 ft.", "target": "one target", "critChance": "20/1d6", "damage": "1d6", "damageAverage": 4, "damageType": "bludgeoning", "special": ""},
+      {"name": "Laser Pistol", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "45/95 ft.", "target": "one target", "critChance": "20/x2, 2d4 fire damage", "damage": "1d8+3", "damageAverage": 7, "damageType": "laser", "special": "Reload every 30 attacks."}
+    ],
+    "traits": [
+      {"name": "Defensive Tactics", "text": "Members of the Brotherhood of Steel gain +1 to AC."}
+    ],
+    "loot": "Initiates have x1 leather armor, x1 baton, x1 laser pistol, and x2d8 fusion cells, and 2d4 x LCK score of caps.",
+    "page": 175,
+    "notes": "Type is printed as 'Medium Human' (capitalised). The Humanoids section opens with 'This area isn't totally done yet, there will be more to come in the future!'"
+  },
+  {
+    "name": "Brotherhood Knight",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 7, "perception": 9, "endurance": 6, "charisma": 4, "intelligence": 7, "agility": 6, "luck": 5},
+    "hp": 36,
+    "sp": 36,
+    "ap": 11,
+    "ac": 12,
+    "dt": 1,
+    "passiveSense": 16,
+    "healingRate": 9,
+    "skills": {"Melee Weapons": 4, "Energy Weapons": 8, "Guns": 5, "Crafting": 5, "Science": 5},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Baton", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/1d6", "damage": "1d6+2", "damageAverage": 5, "damageType": "bludgeoning", "special": ""},
+      {"name": "Laser Rifle", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": 8, "range": "70/140 ft.", "target": "one target", "critChance": "20/x2, 2d4 fire damage", "damage": "2d6+4", "damageAverage": 11, "damageType": "laser", "special": "Reload every 24 attacks."},
+      {"name": "Pulse Grenade", "apCost": 4, "attackType": "Thrown Explosive", "toHit": 4, "range": "70 ft., 10ft radius", "damage": "3d8", "damageAverage": 16, "damageType": "electricity", "special": "Can only be used once per encounter. +4 to roll. All creatures in the area take 16 (3d8) electricity damage, robots are stunned for 4 - END mod (min. 1) rounds."}
+    ],
+    "traits": [
+      {"name": "Defensive Tactics", "text": "Members of the Brotherhood of Steel gain +1 to AC."}
+    ],
+    "loot": "Knights have x1 steel armor. x1 baton, x1 laser rifle, x2d8 fusion cells, and 3d4 x LCK score of caps.",
+    "page": 175,
+    "notes": "Type is printed as 'Medium Human' (capitalised)."
+  },
+  {
+    "name": "Brotherhood Scribe",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 5, "perception": 8, "endurance": 5, "charisma": 5, "intelligence": 9, "agility": 6, "luck": 6},
+    "hp": 30,
+    "sp": 36,
+    "ap": 11,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 16,
+    "healingRate": 8,
+    "skills": {"Medicine": 6, "Crafting": 8, "Science": 8},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Power Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/prone and knockback 15 feet", "damage": "4d6", "damageAverage": 14, "damageType": "bludgeoning", "special": ""},
+      {"name": "Plasma Pistol", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "45/95 ft.", "target": "one target", "critChance": "20/x3", "damage": "2d8+3", "damageAverage": 12, "damageType": "plasma", "special": "Reload every 16 attacks."},
+      {"name": "Pulse Grenade", "apCost": 4, "attackType": "Thrown Explosive", "toHit": 4, "range": "50 ft., 10ft radius", "damage": "3d8", "damageAverage": 16, "damageType": "electricity", "special": "Can only be used once per encounter. +4 to roll. All creatures in the area take 16 (3d8) electricity damage, robots are stunned for 4 - END mod (min. 1) rounds."},
+      {"name": "Stimpak", "apCost": 5, "special": "Can only be used twice per encounter. The Scribe uses the stimpak on themselves or another creature within 5 feet of them. They regain HP equal to their Healing Rate."}
+    ],
+    "traits": [
+      {"name": "Defensive Tactics", "text": "Members of the Brotherhood of Steel gain +1 to AC."}
+    ],
+    "loot": "Scribes have x1 reinforced cloth armor, x1 power fist, x1 pulse grenade (if available), x2 stimpaks (if available), x2d8 microfusion cells, and 4d4 x LCK score of caps.",
+    "page": 176,
+    "notes": "Type is printed as 'Medium Human' (capitalised)."
+  },
+  {
+    "name": "Brotherhood Paladin",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 8, "perception": 9, "endurance": 6, "charisma": 5, "intelligence": 8, "agility": 7, "luck": 6},
+    "hp": 60,
+    "sp": 70,
+    "ap": 12,
+    "ac": 17,
+    "dt": 8,
+    "passiveSense": 16,
+    "healingRate": 13,
+    "skills": {"Melee Weapons": 6, "Energy Weapons": 8, "Guns": 5, "Crafting": 5, "Science": 5},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Power Fist", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/prone and knockback 15 feet", "damage": "4d6+3", "damageAverage": 17, "damageType": "bludgeoning", "special": ""},
+      {"name": "Gatling Laser", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 8, "range": "70/105 ft.", "target": "up to five targets within 10 feet of each other", "critChance": "20/2d10 fire", "damage": "2d10+4", "damageAverage": 15, "damageType": "laser", "special": "6 AP (makes 5 attacks). Reload every 20 (100) attacks."},
+      {"name": "Plasma Grenade", "apCost": 4, "attackType": "Thrown Explosive", "toHit": 4, "range": "80 ft., 10ft radius", "damage": "6d8", "damageAverage": 27, "damageType": "plasma", "special": "Can only be used twice per encounter. +4 to roll. All creatures in the area take 27 (6d8) plasma damage."},
+      {"name": "Auto-Inject Stimpak", "apCost": 0, "special": "0 AP, is used when HP is equal to 30 or lower. Can only be used twice per encounter. The Paladin regains HP equal to their Healing Rate."}
+    ],
+    "traits": [
+      {"name": "Defensive Tactics", "text": "Members of the Brotherhood of Steel gain +1 to AC."}
+    ],
+    "loot": "Paladins have x1 T-60 Power Armor, x1 power fist, x1 gatling laser, x2 plasma grenades (if available), x2 auto inject stimpaks (if available), x3 fusion cores, and 5d4 x LCK score of caps.",
+    "page": 176,
+    "notes": "Type is printed as 'Medium Human' (capitalised). A stray lone 'x' is printed on the line below 'Action Points 12' in the book."
+  },
+  {
+    "name": "Civilian",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 5, "perception": 5, "endurance": 5, "charisma": 5, "intelligence": 5, "agility": 5, "luck": 5},
+    "hp": 5,
+    "sp": 5,
+    "ap": 10,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 12,
+    "healingRate": 3,
+    "skills": {"Survival": 1},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Knife", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 0, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6", "damageAverage": 4, "damageType": "slashing", "special": ""},
+      {"name": "9mm Pistol", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": -1, "range": "20/60 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6-1", "damageAverage": 3, "damageType": "ballistic", "special": "Reload every 13 attacks."}
+    ],
+    "traits": [
+      {"name": "Self Preservation", "text": "Civilians become Frightened when taking damage to their HP."}
+    ],
+    "loot": "Civilians have 1d6+LCK mod. caps, x1 knife, x1 9mm pistol (DL 2), x1 pack of 9mm ammo, x1 cloth armor, and x1 Salisbury steaks, and x2 purified waters.",
+    "page": 177,
+    "notes": "Type is printed as 'Medium Human' (capitalised). 9mm Pistol to-hit is a negative value (-1) as printed."
+  },
+  {
+    "name": "Doctor",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 5, "perception": 7, "endurance": 5, "charisma": 4, "intelligence": 7, "agility": 5, "luck": 5},
+    "hp": 10,
+    "sp": 10,
+    "ap": 10,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 12,
+    "healingRate": 3,
+    "skills": {"Survival": 3, "Medicine": 10},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Knife", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 0, "reach": "5 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6", "damageAverage": 4, "damageType": "slashing", "special": ""},
+      {"name": "Stimpak", "apCost": 5, "special": "Can only be used twice per encounter. The Doctor uses the stimpak on themselves or another creature within 5 feet of them. They regain HP equal to their Healing Rate + 1."},
+      {"name": "First Aid Kit", "apCost": 5, "special": "The doctor immediately stops bleeding on themselves or another creature."}
+    ],
+    "traits": [
+      {"name": "First Aid", "text": "The Doctor gains a +1 bonus to all healing. Additionally; with 1 hour they can heal a creature up to half of their max HP and remove up to two levels of rads."}
+    ],
+    "loot": "Doctors have 4d10+LCK mod. caps, x1 knife, x1, x1 cloth armor, x2 stimpaks, x1 first aid kit, and x1 Salisbury steaks, and x2 purified waters.",
+    "page": 177,
+    "notes": "Type is printed as 'Medium Human' (capitalised). PER is printed as '7 (+1)' - the modifier shown (+1) is inconsistent with the +2 used elsewhere in the book for a score of 7; the score 7 is transcribed. Loot contains a stray 'x1,' with no item as printed."
+  },
+  {
+    "name": "Guard",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 7, "perception": 6, "endurance": 8, "charisma": 4, "intelligence": 4, "agility": 7, "luck": 5},
+    "hp": 24,
+    "sp": 21,
+    "ap": 12,
+    "ac": 11,
+    "dt": 1,
+    "passiveSense": 13,
+    "healingRate": 7,
+    "skills": {"Guns": 6, "Melee Weapons": 6, "Intimidation": 2},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Baton", "apCost": 4, "attackType": "Unarmed Attack", "toHit": 4, "reach": "5 ft.", "target": "one target", "critChance": "20/1d6", "damage": "1d6+2", "damageAverage": 5, "damageType": "bludgeoning", "special": ""},
+      {"name": "10mm Pistol", "apCost": 4, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/70 ft.", "target": "one target", "critChance": "20/x2", "damage": "2d4+1", "damageAverage": 6, "damageType": "ballistic", "special": "Reload every 12 attacks."},
+      {"name": "Hunting Shotgun", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/35 ft.", "target": "one target", "critChance": "20/21 (6d6)", "damage": "3d6", "damageAverage": 10, "damageType": "ballistic", "special": "Reload every 5 attacks."}
+    ],
+    "traits": [
+      {"name": "Eye for Trouble", "text": "Guards have advantage on their Combat Sequence rolls."}
+    ],
+    "loot": "Guards have 2d10+LCK mod. caps, x1 baton, x1 10mm pistol (DL 2), x1 hunting shotgun (DL 4) x1 hardened leather armor, x1 first aid kit, and x1 brahmin steak, and x2 purified waters.",
+    "page": 178,
+    "notes": "Type is printed as 'Medium Human' (capitalised). Hunting Shotgun crit is printed as 'Crit Chance, 20/21 (6d6).' which is an unusual notation. Eye for Trouble grants advantage on Combat Sequence rather than a numeric bonus, so combatSequenceBonus is omitted."
+  },
+  {
+    "name": "Junkie",
+    "size": "Medium",
+    "type": "Human",
+    "abilities": {"strength": 5, "perception": 3, "endurance": 4, "charisma": 3, "intelligence": 3, "agility": 8, "luck": 4},
+    "hp": 4,
+    "sp": 8,
+    "ap": 12,
+    "ac": 10,
+    "dt": 0,
+    "passiveSense": 10,
+    "healingRate": 3,
+    "skills": {"Survival": 1, "Medicine": 1, "Crafting": 1},
+    "immunities": [],
+    "conditionImmunities": [],
+    "resistances": [],
+    "vulnerabilities": [],
+    "attacks": [
+      {"name": "Shiv", "apCost": 3, "attackType": "Unarmed Attack", "toHit": 0, "reach": "5 ft.", "target": "one target", "critChance": "20/1d6", "damage": "1d4", "damageAverage": 5, "damageType": "piercing", "special": ""},
+      {"name": "9mm Pistol", "apCost": 5, "attackType": "Ranged Weapon Attack", "toHit": -1, "range": "20/60 ft.", "target": "one target", "critChance": "20/x2", "damage": "1d6-1", "damageAverage": 3, "damageType": "ballistic", "special": "Reload every 13 attacks."},
+      {"name": "Psycho", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/35 ft.", "target": "one target", "critChance": "20/21 (6d6)", "damage": "3d6", "damageAverage": 10, "damageType": "ballistic", "special": "Reload every 5 attacks."},
+      {"name": "Jet", "apCost": 6, "attackType": "Ranged Weapon Attack", "toHit": 5, "range": "20/35 ft.", "target": "one target", "critChance": "20/21 (6d6)", "damage": "3d6", "damageAverage": 10, "damageType": "ballistic", "special": "Reload every 5 attacks."}
+    ],
+    "traits": [
+      {"name": "Self Preservation", "text": "Junkies become Frightened when taking damage to their HP."}
+    ],
+    "loot": "",
+    "page": 178,
+    "notes": "Type is printed as 'Medium Human' (capitalised). The Loot heading is printed with no content after it. Shiv is printed as 'Hit: 5 (1d4) piercing.' - the stated average (5) does not match 1d4 (avg 2.5). The 'Psycho' and 'Jet' entries are printed verbatim as Ranged Weapon Attacks dealing 10 (3d6) ballistic damage with 'Reload every 5 attacks' - almost certainly a copy/paste of the Guard's Hunting Shotgun, since Psycho and Jet are drugs, not weapons."
+  }
+]

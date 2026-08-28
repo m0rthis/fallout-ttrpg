@@ -1,0 +1,56 @@
+{{!-- Sheet panel: the pg 59 Power Armor upgrade table and its controls.
+      Context is at panels.powerArmor. The suit's state — allotted time, decay,
+      overheat threshold, radiation band — is the separate block in the main
+      template; this is the upgrades that sit alongside it.
+
+      `worn` gates the whole panel: no suit, no markup. --}}
+{{#if panels.powerArmor.worn}}
+<section class="panel power-armor-upgrades">
+  <h2>{{localize "FALLOUT.PowerArmor.upgrades"}}
+    <span class="panel-note">{{panels.powerArmor.suit}}</span>
+  </h2>
+
+  <p class="hint">{{localize "FALLOUT.PowerArmor.upgradesHint"}}</p>
+  <p class="hint">{{localize "FALLOUT.PowerArmor.rankHint"}}</p>
+  {{#if panels.powerArmor.ceased}}
+  <p class="hint warning">{{localize "FALLOUT.PowerArmor.ceasedControl"}}</p>
+  {{/if}}
+
+  {{!-- Nineteen rows, generated from POWER_ARMOR_UPGRADES. A row's pips stop at
+        the maximum rank the pg 59 table prints, and the badge says how far this
+        system actually takes the upgrade. --}}
+  <div class="upgrade-table">
+    {{#each panels.powerArmor.upgrades}}
+    <div class="upgrade-row {{#unless automated}}text-only{{/unless}}" data-upgrade="{{key}}">
+      <span class="upgrade-name {{#unless installed}}uninstalled{{/unless}}">{{label}}</span>
+      <span class="upgrade-ranks" title="{{localize 'FALLOUT.PowerArmor.rankHint'}}">
+        {{#each pips}}
+        <a class="rank-pip {{#if filled}}filled{{/if}}"
+           data-action="setUpgradeRank" data-upgrade="{{../key}}" data-rank="{{rank}}"
+           title="{{localize 'FALLOUT.PowerArmor.setRank' upgrade=../label rank=rank}}">{{rank}}</a>
+        {{/each}}
+      </span>
+      <span class="automation-badge automation-{{automation}}"
+            title="{{hint}}">{{automationLabel}}</span>
+    </div>
+    {{/each}}
+  </div>
+
+  <p class="hint">{{localize "FALLOUT.PowerArmor.automationLegend"}}</p>
+
+  {{!-- The seven controls plus the effect rebuild. `available` is the printed
+        rank requirement only: the action handlers refuse a ceased suit on their
+        own, and say why. --}}
+  <div class="pa-control-row">
+    {{#each panels.powerArmor.controls}}
+    <a class="pip-button {{#unless available}}unavailable{{/unless}}"
+       data-action="{{action}}" title="{{hint}}">
+      {{label}}
+      {{#if cost}}<span class="ap-cost">{{cost}}</span>{{/if}}
+    </a>
+    {{/each}}
+  </div>
+
+  <p class="hint">{{localize "FALLOUT.PowerArmor.ventFallHint" fall=panels.powerArmor.fallFeet}}</p>
+</section>
+{{/if}}

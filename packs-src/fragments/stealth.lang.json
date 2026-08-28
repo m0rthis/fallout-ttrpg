@@ -1,0 +1,159 @@
+{
+  "_comment": "Merge these under the existing FALLOUT object in static/lang/en.json. Nine new namespaces (Stealth, Hide, Search, Surprise, Dodge, Shove, TakeCover, Stand, Stow, Equip) and no changes to any existing key. FALLOUT.Cover.degrees.*, FALLOUT.Sheet.passiveSense, FALLOUT.Sheet.groupSneak, FALLOUT.Skills.*, FALLOUT.Abilities.* and FALLOUT.CombatPanel.cancel already exist and are reused.",
+
+  "Stealth": {
+    "title": "Stealth & Combat Actions",
+    "targetHint": "Hide reads the passive sense of every creature you have targeted and resolves per observer — one roll can hide you from two guards and not from their sergeant (pg 127). Search contests the one creature you target, if they are hiding. Determine Surprise takes the whole opposing side. Shift-click for advantage, Ctrl-click for disadvantage.",
+    "actionsTitle": "The rest of the pg 126 table",
+    "passiveSneakTitle": "Passive Sneak (travelling)",
+    "passiveSneakHint": "pg 116: while travelling, creatures whose passive sense is lower than the party's Passive Sneak score cannot detect them — unless the party blows its cover by entering combat, making noise, or becoming obvious, which stays the GM's call. This is the second thing in the book that consumes Group Sneak. Travel distance, the fatigue rule, and each pace's advantage or disadvantage on Combat Sequence belong to the Movement chapter, not to this panel.",
+    "sneakAttackOn": "Sneak attack against {target} (pg 128): your attack is a critical hit and ignores their stamina points, but must still beat their AC. Tick the sneak-attack box on the attack roll.",
+    "advantageOnly": "Hidden from {target}: advantage on your attack roll (pg 24) — but not a sneak attack. pg 127 is explicit that enemies still know your general location, and pg 128 needs them unaware of your presence. Surprise (pg 125) is what supplies that.",
+    "nothingOn": "Nothing stealthy applies against {target} right now: you are not hidden from them and they are not surprised.",
+    "pace": {
+      "slow": "Slow (18 miles, 2.25 mph)",
+      "normal": "Normal (24 miles, 3 mph)",
+      "fast": "Fast (30 miles, 3.75 mph)"
+    }
+  },
+
+  "Hide": {
+    "action": "Hide",
+    "title": "Hide",
+    "hint": "6 AP. A Sneak check against the passive sense of every nearby enemy; you are hidden from each one whose passive sense your roll beats (pg 126-127). You must be heavily obscured or within full cover to try it at all.",
+    "effect": "Hidden",
+    "description": "Hidden on a Sneak total of {total}. A Search contests this with a fresh Perception check against a fresh Sneak check (pg 24); leaving full cover ends it (pg 127).",
+    "concealmentPick": "What are you concealed by?",
+    "concealment": {
+      "fullCover": "Full cover (pg 127, 130 calls it total cover)",
+      "heavilyObscured": "Heavily obscured — darkness, opaque fog, dense foliage (pg 118)",
+      "invisible": "Invisible (pg 134: \"for the purpose of hiding, the creature is heavily obscured\")"
+    },
+    "dcPick": "DC, used only when nothing is targeted ({count} targeted)",
+    "dialogHint": "pg 127 sets the DC at \"any nearby enemies passive sense scores\" and then resolves it per enemy, so the creatures you have targeted are the real test and this field is the fallback for a patrol with no tokens. pg 127 requires heavy obscurement or full cover; pg 24's looser \"if you have cover\" is not followed, because taking it would leave pg 127's requirement doing nothing.",
+    "hidden": "Hides ({ap} AP) — Sneak {total} vs DC {dc}: hidden.",
+    "failed": "Hides ({ap} AP) — Sneak {total} vs DC {dc}: seen.",
+    "against": "Hidden from: {hiddenFrom}. Seen by: {seenBy}.",
+    "obscuredOnly": "Hidden by obscurement rather than full cover — pg 127's \"no longer within full cover\" clause names cover only, so nothing here will end this automatically.",
+    "state": "Hidden — Sneak {total} vs DC {dc}",
+    "hiddenFrom": "hidden from {names}",
+    "seenBy": "seen by {names}",
+    "attacked": "Attacked",
+    "attackedHint": "Attacking reveals you. The book never says so directly — it is established by the exception the Silencer mod carves out of it (pg 77), which is the only sentence in 136 pages about what attacking does to hiding.",
+    "silencedButton": "Attacked (silenced)",
+    "silencedHint": "Silencer (pg 77): the attack \"does not reveal your presence to nearby creatures, allowing you to remain hidden except against the creature you attacked\". Weapon mods are a bare text field in this system, so this is declared rather than detected.",
+    "lostCoverButton": "Left full cover",
+    "lostCoverHint": "pg 127: \"If you are no longer within full cover of an enemy you are hidden from, you are no longer hidden.\"",
+    "revealButton": "Reveal",
+    "obscuredNote": "This hiding came from heavy obscurement, not full cover. pg 127's breaking clause only mentions cover, so nothing ends this on its own — call it at the table when the darkness goes.",
+    "revealed": "No longer hidden.",
+    "revealedByAttack": "Attacked from hiding, and so revealed (pg 77, by the exception the Silencer makes).",
+    "silenced": "Attacked with a silenced weapon (pg 77): still hidden from everyone except the creature attacked.",
+    "lostCover": "Out of full cover, and so no longer hidden (pg 127).",
+    "obscuredSurvives": "Still hidden: this hiding came from heavy obscurement, and pg 127's breaking clause names full cover only.",
+    "needsConcealment": "pg 127: \"In order to hide you must be heavily obscured or within full cover.\" Half or three-quarters cover is not enough — pg 24's looser wording is not the rule this system follows.",
+    "noObservers": "Hide's DC is the passive sense of nearby enemies (pg 127). Target the creatures you are hiding from, or give the dialog a DC."
+  },
+
+  "Search": {
+    "action": "Search",
+    "hint": "3 AP. An active Perception check to look for someone or something hidden (pg 127). Against a targeted creature who is hiding, it runs pg 24's contest: your Perception check against a fresh Sneak check from them.",
+    "flavor": "Search — active Perception check ({ap} AP)",
+    "contest": "Sneak, contesting {searcher}'s Search (pg 24)",
+    "noQuarry": "Nothing hidden was targeted, so there is no contest to run. pg 127 prints no DC for a Search — pg 21 draws the line instead: an active Perception check is your character deliberately looking, as against the passive sense that works unasked. The GM sets the bar.",
+    "detected": "{target} is found — Perception {searcher} beats Sneak {hider} (pg 24).",
+    "stillHidden": "{target} stays hidden — Perception {searcher} against Sneak {hider}. The book addresses \"their total is higher\" and \"your total is higher\" and never a tie; a tie leaves the hider where they were.",
+    "found": "Found, and no longer hidden."
+  },
+
+  "Surprise": {
+    "action": "Determine Surprise",
+    "hint": "Combat step 1 (pg 125). Compares the Sneak checks of anyone hiding against the passive sense of each creature on the opposing side — the creatures you have targeted. A recorded Hide supplies its total; otherwise a Sneak check is rolled here.",
+    "effect": "Surprised",
+    "description": "Surprised (pg 125): no movement and no action on your first turn of combat, and no reaction until that turn ends. Passive sense {sense} missed the threat. Nothing here enforces the AP ban — this system gates no AP spending anywhere — but this marker is what makes you unaware for the pg 128 sneak attack.",
+    "sneakFlavor": "Sneak, for Surprise (pg 125)",
+    "result": "Surprise (pg 125) — surprised: {surprised}. Alert: {alert}.",
+    "nobodyHiding": "Nobody was hiding, so nobody is surprised: \"If neither side tries to be stealthy, they automatically notice each other\" (pg 125). Alert: {alert}.",
+    "state": "Surprised — passive sense {sense} missed {missed}",
+    "end": "First turn over",
+    "endHint": "pg 125: the ban lasts your first turn of the combat, and the reaction ban \"until that turn ends\". Press this when it does — the window is a deadline about your own turn, and a Foundry duration would expire it silently.",
+    "over": "No longer surprised.",
+    "noSide": "Target the creatures on the opposing side first. pg 125 compares the hiders' Sneak checks against \"the passive sense score of each creature on the opposing side\"."
+  },
+
+  "Dodge": {
+    "action": "Dodge",
+    "hint": "6 AP. Until the start of your next turn, attacks against you have disadvantage if you can see the attacker, and you may move 15 feet once in reaction to another creature's action, free (pg 126).",
+    "effect": "Dodging",
+    "description": "Dodging (pg 126): attack rolls against you have disadvantage if you can see the attacker, and you have one free {feet}-foot reactive move until the start of your next turn.",
+    "descriptionLost": "Dodging, with the benefit lost (pg 126): \"You lose this benefit if you are dying or you cannot spend AP to move.\"",
+    "started": "Dodges ({ap} AP) — attacks against them have disadvantage while they can see the attacker, plus one free {feet}-foot reactive move (pg 126).",
+    "lost": "The benefit is lost: dying, or unable to spend AP to move (pg 126).",
+    "state": "Dodging — attackers roll at disadvantage if you can see them",
+    "lostNote": "The Dodge is doing nothing: pg 126 removes it while you are dying or cannot spend AP to move — that is Grappled (pg 134) or Restrained (pg 135). The 6 AP is spent regardless.",
+    "move": "Move {feet} ft",
+    "moveHint": "pg 126 grants one 15-foot reactive move before the start of your next turn, and prices no AP for it — three free 5-foot steps in a chapter where movement is 1 AP each.",
+    "moved": "Uses the Dodge's free {feet}-foot reactive move (pg 126).",
+    "moveSpent": "The Dodge's reactive move is \"one time before the start of your next turn\" (pg 126), and it has been used.",
+    "end": "Drop",
+    "endHint": "The Dodge lasts \"until the start of your next turn\" (pg 126). Drop it there — the disadvantage it grants is declared by the attacker, so an effect that expired quietly would be worse than one a person clears.",
+    "ended": "No longer dodging.",
+    "notDodging": "Not dodging: the free reactive move comes with the Dodge action (pg 126)."
+  },
+
+  "Shove": {
+    "action": "Shove",
+    "title": "Shove {target}",
+    "hint": "4 AP. Your Unarmed check against the target's Unarmed check or Agility check — their choice. Win and you knock them prone or push them 5 feet (pg 127). The last opposed roll left in the book, and the only one of the three without a \"roll a 20\" rider.",
+    "flavor": "Shove {target} — Unarmed check ({ap} AP)",
+    "defense": "Defends with {defense}",
+    "defensePick": "The target's defence — the book gives them the choice",
+    "reach": "Within your reach (pg 127)",
+    "size": "No more than one size larger than you (pg 127)",
+    "dialogHint": "pg 127: \"you make an Unarmed check contested by the target's Unarmed check or Agility check (the target chooses the ability to use)\". Those are two different quantities — a skill bonus and a raw ability modifier — and the larger of the two is pre-selected so a target prompted on somebody else's turn is not defended badly by default. Reach and size are declared: this system measures no distance, and nothing in it or in the book records a size for a player character.",
+    "knockProne": "Knock prone",
+    "push": "Push {feet} ft",
+    "knockedProne": "{target} is knocked prone — {shover} against {defender}.",
+    "pushed": "{target} is pushed {feet} feet — {shover} against {defender}. The token is not moved: which direction 5 feet goes is the map's answer, not the sheet's.",
+    "failed": "{target} holds their ground — {shover} against {defender}. You must win the contest (pg 127), so a tie is a loss for the shover, and there is no raw-20 rider here as there is on Grapple and Escape.",
+    "noTarget": "Target the creature you are shoving first (pg 127).",
+    "refused": "pg 127 requires the target to be within your reach and no more than one size larger than you."
+  },
+
+  "TakeCover": {
+    "button": "Take Cover (from {degree})",
+    "hint": "3 AP. From three-quarters or half cover, squat, kneel, or duck into full cover (pg 127). Full cover cannot be targeted directly by an attack at all (pg 130).",
+    "effect": "In full cover",
+    "description": "Full cover, taken (pg 127). A target in full cover \"can't be targeted directly by an attack\" (pg 130) — declare total cover on the attack. Attacking ends it.",
+    "took": "Takes cover ({ap} AP) — from {from} into full cover (pg 127). Attacks against them should now be declared as total cover, which refuses outright.",
+    "state": "In full cover, taken from {from}",
+    "leave": "Attacked",
+    "leaveHint": "pg 127: \"If you attack while taking cover, you no longer have full cover.\"",
+    "left": "Attacked from cover, so no longer in full cover (pg 127).",
+    "needsPartial": "pg 127 gates Take Cover on having \"only three quarters or half cover\". With no cover there is nothing to duck into, and full cover is already the outcome."
+  },
+
+  "Stand": {
+    "action": "Stand up",
+    "hint": "5 AP to stand up from prone (pg 126). pg 135: a prone creature's only movement option is to crawl, unless it stands up and thereby ends the condition.",
+    "stood": "Stands up from prone ({ap} AP, pg 126).",
+    "notProne": "Not prone, so there is nothing to stand up from."
+  },
+
+  "Stow": {
+    "action": "Stow",
+    "hint": "3 AP: \"You take a weapon you are holding and put it into your inventory\" (pg 127).",
+    "row": "Held: {weapon}",
+    "stowed": "Stows {weapon} ({ap} AP, pg 127).",
+    "notHeld": "That weapon is not in hand, so there is nothing to stow."
+  },
+
+  "Equip": {
+    "action": "Equip",
+    "hint": "3 AP: \"You take a weapon within reach and prepare to attack with it with any hands you have free\" (pg 126). The drop clause is reported, not enforced — there is no hands resource in this system or in the book.",
+    "row": "Stowed: {weapon}",
+    "equipped": "Equips {weapon} ({ap} AP, pg 126).",
+    "wouldDrop": "pg 126 would drop these on the ground: {weapons}. Not enforced — the sentence needs to know which hands are free, and 136 pages never say how many hands a creature has or that a Two Handed weapon occupies two. The same gap leaves the v2.1 free-hand reload requirement reported rather than checked.",
+    "alreadyHeld": "That weapon is already in hand."
+  }
+}

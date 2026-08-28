@@ -1,0 +1,321 @@
+<div class="sheet-body">
+  <header class="sheet-header">
+    <img class="portrait" src="{{item.img}}" data-edit="img" alt="{{item.name}}" />
+    <div class="identity">
+      <input class="char-name" type="text" name="name" value="{{item.name}}" placeholder="Name" />
+      <span class="type-label">{{typeLabel}}</span>
+    </div>
+  </header>
+
+  {{#if (eq item.type "weapon")}}
+  <div class="form-grid">
+    <label>{{localize "FALLOUT.Sheet.attack"}}
+      <select name="system.weaponType">{{selectOptions weaponTypes selected=system.weaponType}}</select>
+    </label>
+    <label>{{localize "FALLOUT.Sheet.apCost"}}
+      <input type="number" name="system.apCost" value="{{system.apCost}}" min="1" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.damage"}}
+      <input type="text" name="system.damage" value="{{system.damage}}" placeholder="3d6" />
+    </label>
+    <label>Damage Type
+      <select name="system.damageType">{{selectOptions damageTypes selected=system.damageType}}</select>
+    </label>
+    <label>{{localize "FALLOUT.Sheet.crit"}} Chance
+      <input type="number" name="system.critChance" value="{{system.critChance}}" min="2" max="20" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.crit"}}
+      <input type="text" name="system.crit" value="{{system.crit}}" placeholder="x3 or 2d6" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.range"}} (normal &times; PER)
+      <input type="number" name="system.rangeNormal" value="{{system.rangeNormal}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.range"}} (long &times; PER)
+      <input type="number" name="system.rangeLong" value="{{system.rangeLong}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.ammo"}}
+      <input type="text" name="system.ammoType" value="{{system.ammoType}}" placeholder="10mm" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.magazineSize"}}
+      <input type="number" name="system.magazineSize" value="{{system.magazineSize}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.loadedAmmo"}}
+      <input type="number" name="system.loadedAmmo" value="{{system.loadedAmmo}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.strengthReq"}}
+      <input type="number" name="system.strengthReq" value="{{system.strengthReq}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.load"}}
+      <input type="number" name="system.load" value="{{system.load}}" min="0" step="0.1" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.decay"}}
+      <input type="number" name="system.decay" value="{{system.decay}}" min="0" max="10" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.cost"}}
+      <input type="number" name="system.cost" value="{{system.cost}}" min="0" step="0.5" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.special"}}
+      <input type="text" name="system.special" value="{{system.special}}" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.mods"}}
+      <input type="text" name="system.mods" value="{{system.mods}}" />
+    </label>
+  </div>
+
+  <section class="mods-panel">
+    <h3>
+      {{localize "FALLOUT.Mods.panelTitle"}}
+      <span class="slot-readout {{#if modSlots.ceased}}over{{/if}}">
+        {{localize "FALLOUT.Mods.slotsNow" used=modSlots.used limit=modSlots.limit}}
+      </span>
+    </h3>
+    {{#if modSlots.ceased}}
+    <p class="warn">{{localize "FALLOUT.Mods.ceasesFunction"}}</p>
+    {{/if}}
+    {{#if modChoicesPending.length}}
+    <p class="warn">{{localize "FALLOUT.Mods.choicesPendingPanel"}}</p>
+    {{/if}}
+
+    {{#if attachedMods.length}}
+    <ul class="mod-list">
+      {{#each attachedMods}}
+      <li class="mod-row" data-mod-key="{{key}}">
+        <span class="mod-name">{{name}}</span>
+        <span class="mod-meta">pg {{page}} · {{localize "FALLOUT.Mods.slotsOf" slots=slots}} · {{automation}}</span>
+        {{#if choice}}
+        <select class="mod-choice" data-mod-key="{{key}}" name="system.modOptions.{{key}}">
+          {{selectOptions ../modChoiceOptions selected=choice.selected blank=(localize "FALLOUT.Mods.choiceUnanswered")}}
+        </select>
+        {{/if}}
+        {{#if ../editable}}
+        <button type="button" data-action="detachMod" data-mod-key="{{key}}"
+                title="{{localize 'FALLOUT.Mods.detachTitle'}}">
+          <i class="fas fa-minus"></i>
+        </button>
+        {{/if}}
+      </li>
+      {{/each}}
+    </ul>
+    {{else}}
+    <p class="hint">{{localize "FALLOUT.Mods.noneAttached"}}</p>
+    {{/if}}
+
+    {{#if editable}}
+    <div class="mod-attach">
+      <select name="mod-to-attach" class="mod-picker">
+        {{selectOptions attachableMods blank=(localize "FALLOUT.Mods.pickPrompt")}}
+      </select>
+      <button type="button" data-action="attachMod">
+        {{localize "FALLOUT.Mods.attachButton"}}
+      </button>
+    </div>
+    <p class="hint">{{localize "FALLOUT.Mods.panelHint"}}</p>
+    {{/if}}
+  </section>
+  {{/if}}
+
+  {{#if (eq item.type "armor")}}
+  <div class="form-grid">
+    <label>Type
+      <select name="system.armorType">{{selectOptions armorTypes selected=system.armorType}}</select>
+    </label>
+    <label>{{localize "FALLOUT.Sheet.ac"}}
+      <input type="number" name="system.ac" value="{{system.ac}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.dt"}}
+      <input type="number" name="system.dt" value="{{system.dt}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.slots"}}
+      <input type="number" name="system.slots" value="{{system.slots}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.strengthReq"}}
+      <input type="number" name="system.strengthReq" value="{{system.strengthReq}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.load"}}
+      <input type="number" name="system.load" value="{{system.load}}" min="0" step="0.1" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.decay"}}
+      <input type="number" name="system.decay" value="{{system.decay}}" min="0" max="10" />
+    </label>
+    <label>
+      <input type="checkbox" name="system.equipped" {{#if system.equipped}}checked{{/if}} />
+      {{localize "FALLOUT.Sheet.equipped"}}
+    </label>
+    <label>{{localize "FALLOUT.Sheet.cost"}}
+      <input type="number" name="system.cost" value="{{system.cost}}" min="0" step="0.5" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.upgrades"}}
+      <input type="text" name="system.upgrades" value="{{system.upgrades}}" />
+    </label>
+    <label>
+      <input type="checkbox" name="system.isPowerArmor" {{#if system.isPowerArmor}}checked{{/if}} />
+      {{localize "FALLOUT.Sheet.isPowerArmor"}}
+    </label>
+    {{#if system.isPowerArmor}}
+    <label>{{localize "FALLOUT.Sheet.defensePoints"}}
+      <input type="number" name="system.defensePointsValue" value="{{system.defensePointsValue}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.defensePoints"}} (max)
+      <input type="number" name="system.defensePoints" value="{{system.defensePoints}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.repairDC"}}
+      <input type="number" name="system.repairDC" value="{{system.repairDC}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.fusionCore"}}
+      <input type="number" name="system.fusionCoreMinutes" value="{{system.fusionCoreMinutes}}" min="0" />
+    </label>
+    {{/if}}
+  </div>
+  {{/if}}
+
+  {{#if (eq item.type "ammo")}}
+  <div class="form-grid">
+    <label>Type
+      <input type="text" name="system.ammoType" value="{{system.ammoType}}" placeholder="10mm" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.quantity"}}
+      <input type="number" name="system.quantity" value="{{system.quantity}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.costPerRound"}}
+      <input type="number" name="system.costPerRound" value="{{system.costPerRound}}" min="0" step="0.5" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.cost"}}
+      <input type="number" name="system.cost" value="{{system.cost}}" min="0" step="0.5" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.special"}}
+      <input type="text" name="system.special" value="{{system.special}}" />
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if (eq item.type "aid")}}
+  <div class="form-grid">
+    <label>Type
+      <select name="system.aidType">{{selectOptions aidTypes selected=system.aidType}}</select>
+    </label>
+    <label>{{localize "FALLOUT.Sheet.quantity"}}
+      <input type="number" name="system.quantity" value="{{system.quantity}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.load"}}
+      <input type="number" name="system.load" value="{{system.load}}" min="0" step="0.1" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.apCost"}}
+      <input type="number" name="system.apCost" value="{{system.apCost}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.cost"}}
+      <input type="number" name="system.cost" value="{{system.cost}}" min="0" step="0.5" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.duration"}}
+      <input type="text" name="system.duration" value="{{system.duration}}" placeholder="1 hour" />
+    </label>
+    <label>
+      <input type="checkbox" name="system.healsHealingRate" {{#if system.healsHealingRate}}checked{{/if}} />
+      {{localize "FALLOUT.Sheet.healsHealingRate"}}
+    </label>
+    <label>{{localize "FALLOUT.Sheet.healRateMultiplier"}}
+      <input type="number" name="system.healRateMultiplier" value="{{system.healRateMultiplier}}"
+             min="0" step="0.5" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.healFormula"}}
+      <input type="text" name="system.healFormula" value="{{system.healFormula}}" placeholder="2d4" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.removesRads"}}
+      <input type="number" name="system.removesRads" value="{{system.removesRads}}" min="0" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.effect"}}
+      <input type="text" name="system.effect" value="{{system.effect}}" />
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.properties"}}
+      <input type="text" name="system.properties" value="{{system.properties}}"
+             placeholder="Anabolic, Stimulant" />
+    </label>
+    <label>
+      <input type="checkbox" name="system.addictive" {{#if system.addictive}}checked{{/if}} />
+      {{localize "FALLOUT.Chems.addictive"}}
+    </label>
+    <label class="wide">{{localize "FALLOUT.Chems.withdrawal"}}
+      <input type="text" name="system.withdrawal" value="{{system.withdrawal}}" />
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if (eq item.type "perk")}}
+  <div class="form-grid">
+    <label class="wide">{{localize "FALLOUT.Sheet.requirements"}}
+      <input type="text" name="system.requirements" value="{{system.requirements}}" placeholder="Strength 4" />
+    </label>
+    <label>Ranks
+      <input type="number" name="system.ranks" value="{{system.ranks}}" min="1" />
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if (eq item.type "trait")}}
+  <div class="form-grid">
+    <label class="wide">{{localize "FALLOUT.Sheet.prerequisite"}}
+      <input type="text" name="system.prerequisite" value="{{system.prerequisite}}" placeholder="Human" />
+    </label>
+    <label>
+      <input type="checkbox" name="system.wildWasteland" {{#if system.wildWasteland}}checked{{/if}} />
+      {{localize "FALLOUT.Sheet.wildWasteland"}}
+    </label>
+    <label class="wide">{{localize "FALLOUT.Sheet.wildWasteland"}} {{localize "FALLOUT.Sheet.effect"}}
+      <input type="text" name="system.wildWastelandEffect" value="{{system.wildWastelandEffect}}" />
+    </label>
+  </div>
+  {{/if}}
+
+  {{#if (eq item.type "gear")}}
+  <div class="form-grid">
+    <label>{{localize "FALLOUT.Sheet.quantity"}}
+      <input type="number" name="system.quantity" value="{{system.quantity}}" min="0" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.load"}}
+      <input type="number" name="system.load" value="{{system.load}}" min="0" step="0.1" />
+    </label>
+    <label>{{localize "FALLOUT.Sheet.cost"}}
+      <input type="number" name="system.cost" value="{{system.cost}}" min="0" step="0.5" />
+    </label>
+    {{!-- Free text, not a select: the schema's own rationale is that a closed
+          set would refuse a GM's homebrew junk outright. The shipped materials
+          normalise through junkTypeKey, so "Steel"/"steel"/"steels" all match;
+          empty means "not junk", which is what every non-junk gear stays. --}}
+    <label title="{{localize 'FALLOUT.Junk.typeHint'}}">{{localize "FALLOUT.Junk.typeLabel"}}
+      <input type="text" name="system.junkType" value="{{system.junkType}}" />
+    </label>
+  </div>
+  {{/if}}
+
+  <div class="description">
+    <label>{{localize "FALLOUT.Sheet.description"}}</label>
+    {{!-- The body is what a closed toggled editor displays; the value attribute
+          is what it loads when opened. Both are required. --}}
+    <prose-mirror name="system.description" value="{{system.description}}"
+                  toggled compact-button>{{{enrichedDescription}}}</prose-mirror>
+  </div>
+
+  {{!-- Active Effects: a perk or trait applies these to its owner --}}
+  <div class="active-effects">
+    <h3>{{localize "FALLOUT.Effects.title"}}
+      <a class="item-create" data-action="createEffect" title="{{localize 'FALLOUT.Effects.add'}}">
+        <i class="fas fa-plus"></i>
+      </a>
+    </h3>
+    {{#each effects}}
+    <div class="effect-row {{#if disabled}}suppressed{{/if}}" data-effect-id="{{id}}">
+      <img class="effect-icon" src="{{img}}" alt="" />
+      <span class="effect-name" data-action="editEffect">{{name}}</span>
+      <span class="row-controls">
+        <a data-action="toggleEffect" title="{{localize 'FALLOUT.Effects.toggle'}}">
+          <i class="fas {{#if disabled}}fa-toggle-off{{else}}fa-toggle-on{{/if}}"></i>
+        </a>
+        <a data-action="deleteEffect" title="{{localize 'FALLOUT.Effects.remove'}}">
+          <i class="fas fa-trash"></i>
+        </a>
+      </span>
+    </div>
+    {{else}}
+    <p class="hint">{{localize "FALLOUT.Effects.none"}}</p>
+    {{/each}}
+  </div>
+</div>

@@ -1,0 +1,27 @@
+{
+  "FirstAid": {
+    "bleedingAction": "End Bleeding",
+    "bleedingButton": "End Bleeding ({ap} AP, Medicine DC {dc})",
+    "bleedingHint": "A DC 15 Medicine check on a creature within 5 feet, costing 6 AP and 1 cloth junk item, ends every level of Bleeding (pg 21, 23). Deduct the AP and the cloth by hand. A First Aid Kit or Doctor's Bag Tourniquet removes only two levels for the same 6 AP, but needs no check.",
+    "bleedingCheck": "First aid on {target} — Medicine vs DC {dc} to end Bleeding",
+    "bleedingSucceeded": "Stops the bleeding on {target} — {levels} level(s) of Bleeding ended.",
+    "bleedingFailed": "The bleeding on {target} does not stop — the Medicine check missed DC {dc}. Nothing is lost but the AP; the attempt can be made again.",
+    "notBleeding": "{target} is not bleeding.",
+    "floorBlocked": "{target}'s remaining {levels} level(s) of Bleeding are held in place by a disease (pg 120) — first aid cannot reach them.",
+    "floorRemains": "{levels} level(s) of Bleeding stay: a disease is holding them in place (pg 120).",
+    "cost": "Costs {ap} AP and {cloth} cloth junk item, within {feet} feet (pg 21, 23). Spend them by hand — nothing here is deducted, and this system ships no junk items to consume.",
+
+    "stabilizeAction": "Administer First Aid",
+    "stabilizeButton": "Administer First Aid ({ap} AP)",
+    "stabilizeHint": "6 AP and a Medicine check against 10 minus the dying creature's Endurance modifier (pg 131). On a success they return to 1 hit point and their death saves are cleared. Pg 21/23 print a different DC for the same action — 10 plus their failed death saves minus their successful ones; this system follows the combat chapter and shows the other number on the card.",
+    "stabilizeCheck": "Administering first aid to {target} — Medicine vs DC {dc}",
+    "stabilizeSucceeded": "{target} returns to 1 hit point.",
+    "stabilizeFailed": "{target} is not stabilised — the Medicine check missed DC {dc}. The attempt can be made again.",
+    "stabilizeCost": "Costs {ap} AP (pg 131). Spend it by hand. Pg 21/23 add “at GM's discretion” to this attempt.",
+    "otherPrinting": "The book prints two DCs for this. Pg 21/23 would have asked for {dc} (10 + failed − successful death saves); this system follows pg 131's 10 − Endurance modifier, because the combat chapter beats the ability-score summary.",
+    "stabilizeBleeding": "{target} has {levels} level(s) of Bleeding. Pg 133 redirects *healing* on a bleeding creature into removing two levels instead of restoring hit points; pg 131 sets stabilising against healing (“if healing is unavailable”), so this system treats them as different acts and hands back the hit point. Overrule it here if your table reads it the other way — and note a bleeding dying creature also fails a death save every turn.",
+    "deathSavesCleared": "Death saves cleared ({successes} success(es) / {failures} failure(s) discarded). The book does not say they clear; at 1 hit point the creature is no longer dying, and three successful death saves clear them the same way (pg 131).",
+    "notDying": "{target} is not dying — first aid to stabilise only reaches a creature at 0 hit points (pg 131).",
+    "tooLate": "{target} has failed all of their death saves ({failures}) — no Medicine check brings them back (pg 21, 23, 131)."
+  }
+}

@@ -1,0 +1,188 @@
+{{!-- Sheet panel: hiding, detection and Surprise (pg 24, 125, 127, 128), and the
+      rest of the pg 126 Actions in Combat table (pg 126-127). Context at
+      panels.stealth. Every AP figure comes from COMBAT_ACTION_AP — the pg 126
+      table itself — and every one is reported rather than spent (roadmap 14). --}}
+<section class="panel stealth">
+  <h2>{{localize "FALLOUT.Stealth.title"}}
+    <span class="panel-note">
+      {{localize "FALLOUT.Skills.sneak"}}
+      {{#if (gte panels.stealth.sneakBonus 0)}}+{{/if}}{{panels.stealth.sneakBonus}}
+      ({{panels.stealth.sneakAbility}}) ·
+      {{localize "FALLOUT.Sheet.passiveSense"}} {{panels.stealth.passiveSense}}
+    </span>
+  </h2>
+
+  {{!-- Hide and Search: the two rows of the pg 126 table that are a chapter. --}}
+  <div class="stealth-row">
+    <a class="pip-button" data-action="hide"
+       title="{{localize 'FALLOUT.Hide.hint'}}">
+      {{localize "FALLOUT.Hide.action"}}
+      <span class="ap-cost">{{panels.stealth.hideAp}} AP</span>
+    </a>
+    <a class="pip-button" data-action="searchFor"
+       title="{{localize 'FALLOUT.Search.hint'}}">
+      {{localize "FALLOUT.Search.action"}}
+      <span class="ap-cost">{{panels.stealth.searchAp}} AP</span>
+    </a>
+    <a class="pip-button" data-action="determineSurprise"
+       title="{{localize 'FALLOUT.Surprise.hint'}}">
+      {{localize "FALLOUT.Surprise.action"}}
+    </a>
+  </div>
+  <p class="hint">{{localize "FALLOUT.Stealth.targetHint"}}</p>
+
+  {{!-- Hiding is per-observer in v2.1, so both lists are shown: one roll can
+        hide you from two guards and not from their sergeant (pg 127). --}}
+  {{#if panels.stealth.hidden}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Hide.state" total=panels.stealth.hidden.total dc=panels.stealth.hidden.dc}}
+    — {{localize "FALLOUT.Hide.hiddenFrom" names=panels.stealth.hidden.hiddenFrom}}
+    · {{localize "FALLOUT.Hide.seenBy" names=panels.stealth.hidden.seenBy}}
+    <span class="panel-controls">
+      <a data-action="revealAfterAttacking" data-silenced="false"
+         title="{{localize 'FALLOUT.Hide.attackedHint'}}">{{localize "FALLOUT.Hide.attacked"}}</a>
+      <a data-action="revealAfterAttacking" data-silenced="true"
+         title="{{localize 'FALLOUT.Hide.silencedHint'}}">{{localize "FALLOUT.Hide.silencedButton"}}</a>
+      <a data-action="breakHiding"
+         title="{{localize 'FALLOUT.Hide.lostCoverHint'}}">{{localize "FALLOUT.Hide.lostCoverButton"}}</a>
+      <a data-action="revealHidden">{{localize "FALLOUT.Hide.revealButton"}}</a>
+    </span>
+  </p>
+  {{#unless panels.stealth.hidden.fullCover}}
+  <p class="hint">{{localize "FALLOUT.Hide.obscuredNote"}}</p>
+  {{/unless}}
+  {{/if}}
+
+  {{#if panels.stealth.surprised}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Surprise.state" sense=panels.stealth.surprised.passiveSense
+      missed=panels.stealth.surprised.missed}}
+    <span class="panel-controls">
+      <a data-action="endSurprise"
+         title="{{localize 'FALLOUT.Surprise.endHint'}}">{{localize "FALLOUT.Surprise.end"}}</a>
+    </span>
+  </p>
+  {{/if}}
+
+  {{!-- What the stealth is actually worth against the creature targeted right
+        now: pg 24's advantage, or pg 128's sneak attack. The two are different
+        rules with different requirements, and this is the row that says which. --}}
+  {{#if panels.stealth.posture}}
+  <p class="hint{{#if panels.stealth.posture.sneakAttack}} warning{{/if}}">
+    {{#if panels.stealth.posture.sneakAttack}}
+      {{localize "FALLOUT.Stealth.sneakAttackOn" target=panels.stealth.posture.target}}
+    {{else if panels.stealth.posture.advantage}}
+      {{localize "FALLOUT.Stealth.advantageOnly" target=panels.stealth.posture.target}}
+    {{else}}
+      {{localize "FALLOUT.Stealth.nothingOn" target=panels.stealth.posture.target}}
+    {{/if}}
+  </p>
+  {{/if}}
+
+  {{!-- Dodge, Shove, Take Cover, Stand: the remaining pg 126 rows. --}}
+  <h3>{{localize "FALLOUT.Stealth.actionsTitle"}}</h3>
+  <div class="stealth-row">
+    <a class="pip-button" data-action="dodge"
+       title="{{localize 'FALLOUT.Dodge.hint'}}">
+      {{localize "FALLOUT.Dodge.action"}}
+      <span class="ap-cost">{{panels.stealth.dodgeAp}} AP</span>
+    </a>
+    <a class="pip-button" data-action="shove"
+       title="{{localize 'FALLOUT.Shove.hint'}}">
+      {{localize "FALLOUT.Shove.action"}}
+      <span class="ap-cost">{{panels.stealth.shoveAp}} AP</span>
+    </a>
+    {{#each panels.stealth.coverFrom}}
+    <a class="pip-button" data-action="takeCover" data-cover="{{this.degree}}"
+       title="{{localize 'FALLOUT.TakeCover.hint'}}">
+      {{localize "FALLOUT.TakeCover.button" degree=this.label}}
+      <span class="ap-cost">{{this.ap}} AP</span>
+    </a>
+    {{/each}}
+    {{#if panels.stealth.prone}}
+    <a class="pip-button" data-action="standUp"
+       title="{{localize 'FALLOUT.Stand.hint'}}">
+      {{localize "FALLOUT.Stand.action"}}
+      <span class="ap-cost">{{panels.stealth.standAp}} AP</span>
+    </a>
+    {{/if}}
+  </div>
+
+  {{!-- The Dodge's disadvantage lands on somebody else's attack roll, which this
+        system cannot write from here — so it is announced and declared, exactly
+        as cover is. The free 15-foot reaction move is the half nobody remembers. --}}
+  {{#if panels.stealth.dodging}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Dodge.state"}}
+    <span class="panel-controls">
+      {{#unless panels.stealth.dodging.used}}
+      <a data-action="useDodgeMove"
+         title="{{localize 'FALLOUT.Dodge.moveHint'}}">
+        {{localize "FALLOUT.Dodge.move" feet=panels.stealth.dodging.moveFeet}}
+      </a>
+      {{/unless}}
+      <a data-action="endDodge"
+         title="{{localize 'FALLOUT.Dodge.endHint'}}">{{localize "FALLOUT.Dodge.end"}}</a>
+    </span>
+  </p>
+  {{#if panels.stealth.dodgeLost}}
+  <p class="hint warning">{{localize "FALLOUT.Dodge.lostNote"}}</p>
+  {{/if}}
+  {{/if}}
+
+  {{#if panels.stealth.takingCover}}
+  <p class="hint warning">
+    {{localize "FALLOUT.TakeCover.state" from=panels.stealth.takingCover.from}}
+    <span class="panel-controls">
+      <a data-action="leaveCover"
+         title="{{localize 'FALLOUT.TakeCover.leaveHint'}}">{{localize "FALLOUT.TakeCover.leave"}}</a>
+    </span>
+  </p>
+  {{/if}}
+
+  {{!-- Stow and Equip: 3 AP each, and the two lists the pair moves items between. --}}
+  {{#if panels.stealth.held}}
+  <ul class="stealth-list">
+    {{#each panels.stealth.held}}
+    <li>
+      <span>{{localize "FALLOUT.Stow.row" weapon=this.name}}</span>
+      <span class="panel-controls">
+        <a data-action="stowWeapon" data-item-id="{{this.id}}"
+           title="{{localize 'FALLOUT.Stow.hint'}}">
+          {{localize "FALLOUT.Stow.action"}} ({{this.ap}} AP)
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+  {{#if panels.stealth.stowed}}
+  <ul class="stealth-list">
+    {{#each panels.stealth.stowed}}
+    <li>
+      <span>{{localize "FALLOUT.Equip.row" weapon=this.name}}</span>
+      <span class="panel-controls">
+        <a data-action="equipWeapon" data-item-id="{{this.id}}"
+           title="{{localize 'FALLOUT.Equip.hint'}}">
+          {{localize "FALLOUT.Equip.action"}} ({{this.ap}} AP)
+        </a>
+      </span>
+    </li>
+    {{/each}}
+  </ul>
+  {{/if}}
+
+  {{!-- Passive Sneak (pg 116): the other consumer of Group Sneak, which this
+        system has computed since v0.5 and read nowhere. Pace distance, fatigue
+        and the combat-sequence rider belong to the Movement chapter. --}}
+  <h3>{{localize "FALLOUT.Stealth.passiveSneakTitle"}}
+    <span class="panel-note">{{localize "FALLOUT.Sheet.groupSneak"}}
+      {{#if (gte panels.stealth.groupSneak 0)}}+{{/if}}{{panels.stealth.groupSneak}}</span>
+  </h3>
+  <ul class="stealth-list">
+    {{#each panels.stealth.passiveSneak}}
+    <li><span>{{this.label}}</span><span>{{this.score}}</span></li>
+    {{/each}}
+  </ul>
+  <p class="hint">{{localize "FALLOUT.Stealth.passiveSneakHint"}}</p>
+</section>

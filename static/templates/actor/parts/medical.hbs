@@ -1,0 +1,53 @@
+{{!-- Sheet panel: first aid (pg 21, 23, 131). Context at panels.medical. --}}
+<section class="panel first-aid">
+  <h2>{{localize "FALLOUT.FirstAid.title"}}
+    <span class="panel-note">
+      {{localize "FALLOUT.Sheet.medicine"}}
+      {{#if (gte panels.medical.bonus 0)}}+{{/if}}{{panels.medical.bonus}}
+      ({{panels.medical.ability}})
+    </span>
+  </h2>
+
+  <div class="first-aid-row">
+    <a class="pip-button" data-action="endBleeding"
+       title="{{localize 'FALLOUT.FirstAid.bleedingHint'}}">
+      {{localize "FALLOUT.FirstAid.bleedingButton"}}
+      <span class="ap-cost">{{panels.medical.ap}} AP</span>
+    </a>
+    <a class="pip-button" data-action="stabilizeCreature"
+       title="{{localize 'FALLOUT.FirstAid.stabilizeHint'}}">
+      {{localize "FALLOUT.FirstAid.stabilizeButton"}}
+      <span class="ap-cost">{{panels.medical.ap}} AP</span>
+    </a>
+  </div>
+
+  <p class="hint">{{localize "FALLOUT.FirstAid.targetHint"}}</p>
+  {{#if panels.medical.selfDying}}
+  <p class="hint warning">{{localize "FALLOUT.FirstAid.selfDying"}}</p>
+  {{/if}}
+
+  {{!-- Robot severed limbs (pg 11). Crafting, not Medicine, and shown to every
+        character: anyone can bolt a robot's arm back on, and the target decides
+        whether the rule applies at all. --}}
+  <h2>{{localize "FALLOUT.Robots.reattachTitle"}}
+    <span class="panel-note">
+      {{localize "FALLOUT.Skills.crafting"}}
+      {{#if (gte panels.medical.crafting 0)}}+{{/if}}{{panels.medical.crafting}}
+    </span>
+  </h2>
+
+  <div class="first-aid-row">
+    <a class="pip-button" data-action="reattachLimb"
+       title="{{localize 'FALLOUT.Robots.reattachHint'}}">
+      {{localize "FALLOUT.Robots.reattachButton"}}
+      {{#if panels.medical.reattachMinutes}}
+      <span class="ap-cost">{{panels.medical.reattachMinutes}} min</span>
+      {{else}}
+      <span class="ap-cost">{{panels.medical.reattachAp}} AP</span>
+      {{/if}}
+    </a>
+  </div>
+
+  <p class="hint">{{localize "FALLOUT.Robots.reattachJunk"
+      steel=panels.medical.steel circuitry=panels.medical.circuitry}}</p>
+</section>

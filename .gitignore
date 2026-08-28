@@ -1,0 +1,9 @@
+node_modules/
+dist/
+*.log
+fallout-ttrpg-system.zip
+scripts/smoke.config.json*
+smoke-output/
+
+# Local-only notes that carry credentials or host details. Never committed.
+*.local.md

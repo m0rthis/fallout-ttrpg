@@ -1,0 +1,43 @@
+{
+  "Crafting": {
+    "title": "Craft {item}",
+    "action": "Craft",
+    "hint": "A skill check against 10 + the item's Craft DC (pg 92). Meeting the listed bonus crafts it outright with no roll. Failing costs 1d4 of each material, failing by 8 or more costs 1d6, and succeeding by 8 or more saves 1d4 from one material. Not every table rolls Crafting — food is Survival, medicine is Medicine, energy ammunition is Science.",
+    "rank": "Rank {rank} of {of}",
+    "rankLabel": "Rank to build",
+    "pushLuck": "Roll anyway to try to save materials (risks failing)",
+    "assistantsLabel": "Creatures assisting",
+    "dcLabel": "Craft DC bonus from the Blueprint Encyclopedia",
+
+    "check": "{who} — {skill} vs DC {dc}",
+    "succeededWell": "Crafted {item} ×{quantity}, and beat DC {dc} by 8 or more: one material comes in cheaper.",
+    "succeeded": "Crafted {item} ×{quantity} against DC {dc}.",
+    "failed": "{item} was not crafted — the check missed DC {dc}.",
+    "failedBadly": "{item} was not crafted, and the check missed DC {dc} by 8 or more.",
+    "automatic": "{skill} bonus already meets the listed {bonus} — crafted outright, no roll needed.",
+    "multiCheck": "This row prints two requirements under \"{heading}\": {checks}. Both must be passed.",
+    "rider": "Also printed in the DC cell: {text}",
+
+    "materialsUsed": "Materials used: {materials}.",
+    "materialsLost": "Materials lost: {materials}. The rest are still on the bench.",
+    "materialOf": "x{spent} {name} (of x{required})",
+    "alternatives": "The printed cell offers alternatives — only the first is costed above: {text}",
+
+    "time": "Time: {time} (printed {printed}).",
+    "timeText": "Time: {text}",
+    "assisted": "{count} creature(s) assisting ({names}) — the time above is already halved once per assistant.",
+    "assistantFailed": "{who} failed their check, which fails the whole craft however well anyone else rolled (pg 92).",
+
+    "powerArmor": "Power Armor: {days} day(s) of work, one check each, and the materials above are the printed daily cost multiplied by the original {multiplier} days (pg 94).",
+    "powerArmorRestart": "One failed day fails the entire armor build — you must restart from nothing (pg 94).",
+    "dailyRolls": "Daily check totals: {rolls}.",
+
+    "workbench": "You still need suitable space and tools — a Workbench, or something jury-rigged at the GM's discretion (pg 92).",
+
+    "noBlueprint": "{item} carries no Blueprint Encyclopedia entry, so there is no recipe to follow.",
+    "uncraftable": "{item} cannot be crafted: the Encyclopedia prints \"{text}\".",
+    "modifier": "{item} is a modifier row, not a recipe — its {text} is added to a base item's DC (pg 102), so craft the base item instead.",
+    "unparsed": "{item}'s Craft DC cell reads \"{text}\", which is more than one number. Supply the DC bonus by hand.",
+    "drinkGate": "Brewing any drink needs Crafting, Survival and Science all at +8 or better (pg 115). Short in: {skills}."
+  }
+}

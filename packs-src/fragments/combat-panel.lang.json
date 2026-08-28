@@ -1,0 +1,45 @@
+{
+  "CombatPanel": {
+    "title": "Combat Actions",
+    "cancel": "Cancel",
+
+    "grappleTargetHint": "Grapple targets the creature you have targeted, and refuses unless that is exactly one (pg 126). Escape takes no target — it rolls against whoever is holding you. Shift-click for advantage, Ctrl-click for disadvantage.",
+    "escapeDc": "Escape DC {dc}",
+    "grappledState": "Grappled (pg 134): you cannot spend AP to move. Nothing but an Escape ends it — the book names no other trigger, so nothing here watches for one.",
+    "restrainedState": "Restrained (pg 135): you cannot move, and damage you take cannot be subtracted from your stamina points. Escape ends a restraint too (pg 126).",
+    "heldWithoutRecord": "Something is holding you that no Grapple recorded — a restraint, a trap, or a Clasp weapon (pg 61, 80, 81). Escape will ask for a DC, because pg 126 prices it off a creature's Unarmed skill and none of those is a creature.",
+    "notHeld": "Nothing is holding you: no Grapple recorded a grappler, and neither the grappled nor the restrained status is set. Escape frees you from \"a grapple, restrain, or chokehold\" (pg 126) and there is none to roll against.",
+
+    "escapeTitle": "Escape a restraint",
+    "escapeDcPick": "DC for this escape",
+    "escapeClasp": "Clasp weapon (pg 61) — at disadvantage",
+    "escapeDcHint": "pg 126 sets the DC at 10 + the creature's Unarmed skill, and a trap or a rope has none. The book answers that with a bespoke DC per object — pg 80's bear trap prints \"a Strength ability check equal to 15\" to pry it open — so the GM names one here. Clasp (pg 61) still describes this roll in v2.0's vocabulary; read as disadvantage on the pg 126 check, which is the only reading that leaves the property doing anything.",
+
+    "strikeButton": "Strike ×{strikes}",
+    "strikeAbility": "damage adds your {ability} modifier",
+
+    "helpNoTarget": "Target the ally you are helping first (pg 127).",
+    "helpTitle": "Help {ally}",
+    "helpPick": "Related skill — your bonus, and the half your ally receives",
+    "helpHint": "v2.1 replaced advantage with a number: the creature you aid adds half your bonus in the related skill, rounded down, to their next check (pg 127). The book prints no floor, so a negative bonus hands your ally a penalty. The attack branch takes no skill and is the half v2.1 did not change — advantage on your ally's first attack roll before your next turn.",
+    "helpCheck": "Help a check",
+    "helpAttack": "Help an attack",
+    "helpTargetHint": "Help targets the creature you have targeted, and refuses unless that is exactly one. 6 AP either way (pg 126).",
+    "helpHeldCheck": "+{bonus} on your next roll. Spent by the next roll you make, and by nothing else — the book says \"their next ability check\", which is a trigger and not a clock.",
+    "helpHeldAttack": "Advantage on your first attack roll. The book's window closes at the helper's next turn (pg 127), which is a deadline about somebody else's turn — honour it at the table.",
+
+    "readyTitle": "Ready an action",
+    "readyTrigger": "Trigger — what has to happen",
+    "readyCost": "The readied action's own AP (a further {surcharge} AP is added)",
+    "readyNeedsTrigger": "Ready needs a trigger and an AP cost: pg 126 says \"you must specify what the trigger is and spend the necessary AP with an additional 2 AP\".",
+    "readySurcharge": "the action's own AP, plus {surcharge}",
+    "readiedRow": "Readied: {trigger} — {ap} AP committed",
+    "fire": "Trigger fired",
+    "fireHint": "The trigger occurred, so the action happens and no AP comes back (pg 126).",
+    "lapse": "Never fired",
+    "lapseHint": "The trigger never occurred: half the committed AP recycles at the start of your next turn (pg 126). New in v2.1 — v2.0 gave back nothing. Press it after your turn has ended, which is both when the refund is paid and the only moment you can honestly know the trigger never came.",
+    "readyRefund": "If none of this fires, {refund} AP recycle at the start of your next turn (pg 126).",
+    "readyRefundDazed": "Nothing recycles: a dazed creature cannot recycle AP (pg 133), and Ready's refund is a recycle (pg 126). Neither rule cites the other; this is the reading that leaves both meaning something.",
+    "readyMultiple": "More than one action is readied, and Ready resolves per creature rather than per marker — either control here clears every one of them and settles the refund on the total."
+  }
+}

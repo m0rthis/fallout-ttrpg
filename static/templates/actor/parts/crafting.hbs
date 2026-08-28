@@ -1,0 +1,67 @@
+{{!-- Sheet panel: the crafting bench (pg 92; the Item Blueprint Encyclopedia,
+      pg 94-115). Context at panels.crafting.
+
+      Everything with a placeholder in it is localized in the panel module, not
+      here: the values it interpolates (skill names, DCs, printed cells) are
+      computed there anyway, and one localize call per string is easier to keep
+      honest than a hash-argument helper. --}}
+<section class="panel crafting-bench">
+  <h2>{{localize "FALLOUT.Crafting.Bench.title"}}
+    <span class="panel-controls">
+      <a class="pip-button" data-action="openCraftBench"
+         title="{{localize 'FALLOUT.Crafting.Bench.browseHint'}}">
+        {{localize "FALLOUT.Crafting.Bench.browse"}}
+      </a>
+    </span>
+  </h2>
+
+  {{!-- The DC column of fourteen of the thirty-three tables is headed with a
+        skill other than Crafting, so all five are on the bench. --}}
+  <div class="craft-skills">
+    {{#each panels.crafting.skills}}
+    <span class="craft-skill">
+      {{this.label}} {{this.bonus}}
+      <span class="panel-note">({{this.ability}})</span>
+    </span>
+    {{/each}}
+  </div>
+  <p class="hint">{{localize "FALLOUT.Crafting.Bench.skillsNote"}}</p>
+
+  {{#if panels.crafting.drinkWarning}}
+  <p class="hint warning">{{panels.crafting.drinkWarning}}</p>
+  {{/if}}
+
+  {{#if panels.crafting.recipes.length}}
+  <h3>{{localize "FALLOUT.Crafting.Bench.ownedTitle"}}</h3>
+  {{#each panels.crafting.recipes}}
+  <div class="inventory-row craft-row">
+    <span class="item-name">{{this.name}}</span>
+    <span class="item-meta">{{this.check}}</span>
+    {{#if this.automatic}}
+    <span class="craft-auto" title="{{localize 'FALLOUT.Crafting.Bench.autoTitle'}}">
+      {{localize "FALLOUT.Crafting.Bench.auto"}}
+    </span>
+    {{/if}}
+    <span class="item-meta">{{this.summary}}</span>
+    <span class="row-controls">
+      {{#if this.craftable}}
+      <a class="pip-button" data-action="craftOwned" data-item-id="{{this.id}}"
+         title="{{localize 'FALLOUT.Crafting.Bench.craftHint'}}">
+        {{localize "FALLOUT.Crafting.Bench.craft"}}
+      </a>
+      {{else}}
+      <span class="craft-blocked" title="{{this.blocked}}">
+        {{localize "FALLOUT.Crafting.Bench.cannot"}}
+      </span>
+      {{/if}}
+    </span>
+  </div>
+  {{/each}}
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.Crafting.Bench.noRecipes"}}</p>
+  {{/if}}
+
+  {{!-- Not a disclaimer: there is no junk document in this system to decrement,
+        so what a build costs is printed and the table settles it (pg 92). --}}
+  <p class="panel-note">{{localize "FALLOUT.Crafting.Bench.materialsNote"}}</p>
+</section>

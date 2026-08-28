@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" width="256" height="256" role="img" aria-label="Microfusion Cell — Overcharged">
+  <title>Microfusion Cell — Overcharged</title>
+  <defs>
+    <radialGradient id="fmicrofusion-cell-overcharged" cx="50%" cy="38%" r="70%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="url(#fmicrofusion-cell-overcharged)"/>
+  <g transform="translate(128 128) scale(0.330000) translate(-256 -256)">
+    <path fill="#cfc9a8" d="M226 16c-24.93 0-45 13.38-45 30v15h-45c-29.547 0-60 30.453-60 60v315c0 29.547 30.453 60 60 60h240c29.547 0 60-30.453 60-60V121c0-29.547-30.453-60-60-60h-45V46c0-16.62-20.07-30-45-30h-60zm-90 105h240v315H136V121zm120 30v105h-75l75 150V301h75l-75-150z"/>
+  </g>
+  <rect x="6" y="6" width="244" height="244" rx="26" fill="none" stroke="#cfc9a8" stroke-width="3"/>
+  <rect x="13" y="13" width="230" height="230" rx="20" fill="none" stroke="#cfc9a8" stroke-opacity="0.22" stroke-width="1.5"/>
+</svg>

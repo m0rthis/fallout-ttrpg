@@ -1,0 +1,54 @@
+{
+  "Escape": {
+    "cleared": "Freed from: {statuses} (pg 126 — “a grapple, restrain, or chokehold”). Chokehold is named in that sentence and defined nowhere else in the book, so there is no third condition to clear.",
+    "nothingHeld": "Nothing was holding them — the check succeeded against a DC with no condition behind it. Grappled and Restrained are both off."
+  },
+
+  "Bleeding": {
+    "healRedirect": "No hit points restored: “If a creature who has any levels of bleeding is healed, they do not gain any hit points, instead they remove two levels of bleeding” (pg 133). {refused} hit point(s) of healing became {shed} level(s) of Bleeding shed — {levels} level(s) remain.",
+    "healRedirectFloor": "No hit points restored, and no Bleeding shed either: pg 133 refuses the {refused} hit point(s) because the creature is bleeding, and a disease is holding all {levels} remaining level(s) in place (pg 120). The book states both rules and never says what happens when they meet; the hit points are refused because pg 133's trigger is simply having levels of Bleeding."
+  },
+
+  "PowerArmor": {
+    "reflected": "Reactive Plates throw {damage} damage back at {attacker} (pg 59) — a quarter of the damage dealt per rank, to a maximum of two quarters. The rank 2 gloss calls that “effectively half of the total”, which is not what two roundings-down produce on an odd number; the arithmetic is printed twice and the gloss once, so the arithmetic wins.",
+    "reflectedNothing": "Reactive Plates catch the blow but the hit was too small to reflect: a quarter of it, rounded down, is nothing (pg 59).",
+    "reflectedKnockback": "{attacker} is knocked back {feet} feet (Reactive Plates rank 3, pg 59). Nothing here moves tokens — move them.",
+    "vatsReduced": "VATS matrix overlay: additional AP reduced from {printed} to {ap} (pg 59). The suit takes 1 off per rank, to a maximum of rank 2. Pg 130 floors the melee discount at 1 additional AP; pg 59 prints no floor of its own, so a rank 2 suit can take that last point off.",
+    "vatsHint": "Costs shown already include your VATS matrix overlay, which is taking up to {ap} AP off the additional cost (pg 59)."
+  },
+
+  "FirstAid": {
+    "notAKit": "{item} is not a First Aid Kit or a Doctor's Bag — only those two carry the pg 86 actions.",
+    "kitLacksAction": "A {item} does not offer {action}. Set Bone is printed in the Doctor's Bag entry only (pg 86).",
+
+    "kitTitle": "Use {item}",
+    "kitPick": "Choose an action, on {target}:",
+    "kitHint": "Pg 86. None of these rolls anything — that is what the kit buys over a Medicine check, and what it pays for in supplies. This kit holds {uses} action(s); after the last one “the supplies are used and it no longer functions”. AP and minutes are reported, not deducted, and “so long as they are next to you” is on your honour — nothing here reads token positions.",
+    "kitUsed": "{item} → <strong>{action}</strong> on {target}. {cost}, within {feet} feet (pg 86).",
+    "kitAp": "Costs {ap} AP",
+    "kitMinutes": "Takes {minutes} minutes",
+    "kitSupplies": "{item}: {spent} of {total} action(s) used.",
+    "kitExhausted": "{item}: {spent} of {total} action(s) used — the supplies are spent and this one no longer functions (pg 86).",
+
+    "kitActions": {
+      "tourniquet": "Tourniquet",
+      "painKiller": "Pain Killer",
+      "stitchWounds": "Stitch Wounds",
+      "setBone": "Set Bone"
+    },
+    "kitHints": {
+      "tourniquet": "6 AP, remove up to two levels of bleeding",
+      "painKiller": "6 AP, heal a dying creature 1 hit point",
+      "stitchWounds": "10 minutes, heal double their healing rate + your Medicine bonus",
+      "setBone": "10 minutes, remove Broken Arm or Broken Leg (Doctor's Bag only)"
+    },
+
+    "tourniquetDone": "Tourniquet on {target}: {levels} level(s) of Bleeding removed (up to {max}, pg 86), {remaining} remaining. The DC 15 Medicine check on pg 21/23 removes every level for the same 6 AP, but needs a check and a cloth junk item.",
+    "painKillerDone": "Pain Killer: {target} returns to {hp} hit point (pg 86). No check — this is the no-roll alternative to the pg 131 Medicine check.",
+    "painKillerRedirected": "Pg 86 calls this <em>healing</em>, and pg 133 refuses hit points to a healed bleeding creature — so {target} sheds Bleeding and stays at 0, still dying. This system rules the redirect <em>off</em> for the pg 131 stabilise action, because pg 131 sets stabilising against healing in its own first sentence (“if healing is unavailable”); pg 86 draws no such contrast and uses the word “heal”, so it stands here. Administer First Aid (Medicine, DC 10 − their Endurance modifier) is the route that gets them up. Overrule this at the table if you read it otherwise — this is the most arguable call in the chapter.",
+    "stitchDone": "Stitch Wounds: {target} heals {hp} hit point(s) — double their healing rate ({rate}) plus your Medicine bonus ({medicine}), pg 86.",
+    "stitchNothing": "{target} has nothing for Stitch Wounds to heal, so the kit keeps its use. The book never says whether supplies are spent on an action with no effect; an 80-cap item destroyed by a misclick is the worse guess.",
+    "setBoneDone": "Set Bone on {target}: {minutes} minutes, and a Broken Arm or Broken Leg may be removed (pg 86). <strong>Remove it at the table.</strong> Broken Arm is a pg 129 targeted-attack condition this system prints on a card and stores in no field, and <em>Broken Leg appears on pg 86 and nowhere else in the book</em> — the pg 129 leg row's fourth condition is Leg Cripple. The use is spent because the book spends it.",
+    "efficientDiagnosis": "Efficient Diagnosis ×{ranks}: +{hp} hit points (pg 38). The perk's alternative — flip a Karma Cap to heal double instead — is yours to take; no cap-spend workflow exists here to do it for you. “On another creature” is literal, so treating yourself gains nothing."
+  }
+}

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400" role="img" aria-label="Super Mutant">
+  <title>Super Mutant</title>
+  <defs>
+    <radialGradient id="fsuper-mutant" cx="50%" cy="42%" r="62%">
+      <stop offset="0%" stop-color="#26312a"/>
+      <stop offset="100%" stop-color="#0d110d"/>
+    </radialGradient>
+  </defs>
+  <circle cx="200" cy="200" r="189" fill="url(#fsuper-mutant)"/>
+  <circle cx="200" cy="200" r="175" fill="none" stroke="#000000" stroke-opacity="0.55" stroke-width="10"/>
+  <g transform="translate(200 200) scale(0.484375) translate(-256 -256)">
+    <path fill="#ffb641" d="M448 36c-29.4 44.05-63.2 65.7-126.3 64.8A79.99 75.99 0 0 0 256 68.01a79.99 75.99 0 0 0-65.8 32.79c-63 .9-96.85-20.77-126.2-64.8-30.29 45.43 21.04 110.9 112.2 112.4a79.99 75.99 0 0 0 8.1 29.2C44.84 197.1 16.82 388.1 32 464h80c0-48 16-112 64-144l-16 144c0 16 64 16 64 0 0-32 16-64 32-64s32 32 32 64c0 16 64 16 64 0l-16-144c48 32 64 96 64 144h80c15.2-75.9-12.8-267-152.4-286.4a79.99 75.99 0 0 0 8.2-29.2C426.9 146.9 478.3 81.44 448 36zm-256 87.8c13.5 15.7 27.2 31.3 48 40.2 0 0-22.9 15.7-32 8.7-10.1-7.9-16-48.9-16-48.9zm128 0s-5.9 41-16 48.9c-9.1 7-32-8.7-32-8.7 20.8-8.9 34.5-24.5 48-40.2z"/>
+  </g>
+  <circle cx="200" cy="200" r="189" fill="none" stroke="#ffb641" stroke-width="14"/>
+  <circle cx="200" cy="200" r="179" fill="none" stroke="#ffb641" stroke-opacity="0.25" stroke-width="2"/>
+</svg>

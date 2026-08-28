@@ -1,0 +1,31 @@
+{{!--
+  The leveled-condition row, shared by the character sheet and the NPC
+  statblock.
+
+  It is a partial because the two had drifted: the character sheet learned the
+  per-condition ceiling and the disease floor, and the NPC sheet — which
+  inherits the very same context, since `FalloutNpcSheet` overrides only
+  `PARTS` and `DEFAULT_OPTIONS` — kept a hardcoded `min="0" max="10"` and used
+  neither. One copy of the markup means the next correction cannot land on only
+  one of them.
+
+  Two things this row reads that a flat `min`/`max` cannot express:
+
+  - `floor` — levels a disease pins in place until it is cured (Dysentery's four
+    Dehydration, Parasites' four Hunger). It is the input's minimum, and the row
+    says so with the lock rather than silently refusing a smaller number.
+  - `max` — the printed track's ceiling, which is *not* the schema's: the schema
+    has no maximum at all. Ten is the convention for the conditions whose tracks
+    stop there, and `null` for Short Circuit, which doubles on becoming wet
+    (pg 135) with no cap. A flat ten stored such a value fine and then refused to
+    let a GM type it back in, which is the worst of both — the number was real
+    and the sheet would not accept it.
+--}}
+{{#each conditions}}
+<label class="condition{{#if floor}} locked{{/if}}"
+       {{#if floor}}title="{{localize 'FALLOUT.Diseases.floorHint' floor=floor}}"{{/if}}>
+  <span>{{label}}{{#if floor}} <i class="fas fa-lock"></i>{{/if}}</span>
+  <input type="number" name="system.conditions.{{key}}" value="{{value}}"
+         min="{{floor}}" {{#if max}}max="{{max}}"{{/if}} />
+</label>
+{{/each}}

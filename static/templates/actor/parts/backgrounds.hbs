@@ -1,0 +1,68 @@
+{{!-- Sheet panel: backgrounds (pg 13-18). Context is at panels.backgrounds.
+
+      Two states, never both: the receipt for an applied background, or the
+      list of the twenty-one printed rows. Every string with a value in it is
+      localized in the panel module, matching crafting.hbs. --}}
+<section class="panel backgrounds">
+  <h2>{{localize "FALLOUT.Backgrounds.title"}}
+    <span class="panel-note">{{panels.backgrounds.raceLabel}}</span>
+  </h2>
+
+  {{#if panels.backgrounds.applied}}
+  <div class="inventory-row background-applied">
+    <span class="item-name">{{panels.backgrounds.applied.name}}</span>
+    <span class="item-meta">pg {{panels.backgrounds.applied.page}}</span>
+    <span class="item-meta">{{panels.backgrounds.applied.skills}}</span>
+    <span class="row-controls">
+      <a class="pip-button" data-action="clearBackground"
+         title="{{localize 'FALLOUT.Backgrounds.clearHint'}}">
+        {{localize "FALLOUT.Backgrounds.clear"}}
+      </a>
+    </span>
+  </div>
+  <p class="hint">
+    {{panels.backgrounds.applied.kitLabel}} —
+    {{panels.backgrounds.applied.remaining}}/{{panels.backgrounds.applied.granted}}
+    {{localize "FALLOUT.Backgrounds.itemsStillHeld"}},
+    {{panels.backgrounds.applied.caps}} {{localize "FALLOUT.Backgrounds.caps"}}
+  </p>
+  {{#if panels.backgrounds.applied.raceChanged}}
+  <p class="hint warning">
+    {{localize "FALLOUT.Backgrounds.raceChanged"}} ({{panels.backgrounds.applied.appliedRace}})
+  </p>
+  {{/if}}
+  <p class="hint">{{localize "FALLOUT.Backgrounds.clearNote"}}</p>
+
+  {{else}}
+  <p class="hint">{{localize "FALLOUT.Backgrounds.pickHint"}}</p>
+  {{#each panels.backgrounds.choices}}
+  <div class="inventory-row background-row">
+    <span class="item-name">{{this.name}}</span>
+    <span class="item-meta">pg {{this.page}}</span>
+    <span class="item-meta">{{this.skills}}</span>
+    {{#if this.trait}}
+    <span class="item-tag">{{this.trait}}</span>
+    {{/if}}
+    <span class="row-controls">
+      {{#if this.custom}}
+      <span class="item-meta" title="{{this.printedKit}}">
+        {{localize "FALLOUT.Backgrounds.customNote"}}
+      </span>
+      {{else if this.hasKit}}
+      <a class="pip-button" data-action="applyBackground" data-background="{{this.key}}"
+         title="{{this.printedKit}}">
+        {{localize "FALLOUT.Backgrounds.apply"}}
+      </a>
+      {{else}}
+      <span class="unavailable" title="{{localize 'FALLOUT.Backgrounds.noKitHint'}}">
+        {{localize "FALLOUT.Backgrounds.noKit"}}
+      </span>
+      {{/if}}
+    </span>
+  </div>
+  {{#if this.reported}}
+  <p class="hint warning">{{localize "FALLOUT.Backgrounds.reportedPrefix"}} {{this.reported}}</p>
+  {{/if}}
+  {{/each}}
+  {{/if}}
+</section>

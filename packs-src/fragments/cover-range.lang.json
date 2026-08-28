@@ -1,0 +1,28 @@
+{
+  "Cover": {
+    "degrees": {
+      "none": "No cover",
+      "half": "Half cover",
+      "threeQuarters": "Three-quarters cover",
+      "total": "Total cover"
+    },
+    "note": "[{degree} — +{ac} to the target's AC (pg 130); this side of the roll never sees an AC, so apply it when you compare]",
+    "noteExplosive": "[{degree} — +{ac} to the target's AC, and resistance to explosive and trap damage from beyond the cover (pg 130); the book never says what resistance does to a number]",
+    "totalBlocks": "Total cover (pg 130): the target can't be targeted directly by an attack — only an area of effect can reach it.",
+    "creature": "[using a creature as cover (pg 130) — a total of {max} or below hits the covering creature instead]",
+    "creatureHit": "— {total} is {max} or below: the damage goes to the covering creature (pg 130), applied by hand",
+    "dialogTitle": "Cover and distance",
+    "pickCover": "Target's cover (pg 130)",
+    "pickCreature": "The cover is another creature (pg 130)",
+    "pickDistance": "Distance to the target, in feet (pg 21) — leave blank to skip the range bands",
+    "hint": "Cover and distance are declared, not measured: the degrees are a GM call (\"at least half of its body\", \"about three-quarters\"), and the attacking token is not something a character sheet knows about.",
+    "takeCover": "Take Cover (pg 127): 3 AP turns half or three-quarters cover into full cover; attacking gives it up again."
+  },
+  "Range": {
+    "long": "[{distance} ft — past this weapon's {normal} ft normal range{shrunk}: disadvantage (pg 21, pg 66)]",
+    "beyond": "[{distance} ft — past this weapon's {long} ft long range{shrunk}: pg 66 says only a natural 20 hits; pg 21 says you can't attack at all. The book contradicts itself here; pg 66 is followed]",
+    "beyondHit": "— a natural 20 beyond long range: it hits (pg 66)",
+    "beyondMiss": "— beyond long range without a natural 20: the attack misses (pg 66)",
+    "shrunk": ", already cut by weather or Kickback"
+  }
+}

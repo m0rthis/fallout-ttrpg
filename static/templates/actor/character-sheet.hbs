@@ -1,0 +1,650 @@
+<div class="sheet-body">
+
+  {{!-- ================= Header ================= --}}
+  <header class="sheet-header">
+    <img class="portrait" src="{{actor.img}}" data-edit="img" alt="{{actor.name}}" />
+    <div class="identity">
+      <input class="char-name" type="text" name="name" value="{{actor.name}}" placeholder="Name" />
+      <div class="identity-row">
+        <label>{{localize "FALLOUT.Sheet.race"}}
+          <select name="system.details.race">
+            {{selectOptions races selected=system.details.race}}
+          </select>
+        </label>
+        {{#if isRobot}}
+        <label title="{{localize "FALLOUT.RobotType.hint"}}">{{localize "FALLOUT.RobotType.label"}}
+          <select name="system.details.robotType">
+            {{selectOptions robotTypes selected=system.details.robotType}}
+          </select>
+        </label>
+        {{/if}}
+        {{#if isSuperMutant}}
+        <label title="{{localize "FALLOUT.MutantVariant.hint"}}">{{localize "FALLOUT.MutantVariant.label"}}
+          <select name="system.details.mutantVariant">
+            {{selectOptions mutantVariants selected=system.details.mutantVariant}}
+          </select>
+        </label>
+        {{/if}}
+        {{#if isNightkin}}
+        <a class="item-create" data-action="stealthField" title="{{localize 'FALLOUT.StealthField.hint'}}">
+          {{#if stealthFieldUp}}{{localize "FALLOUT.StealthField.active"}}{{else}}{{localize "FALLOUT.StealthField.ready" ap=3}}{{/if}}
+        </a>
+        {{/if}}
+        <label>{{localize "FALLOUT.Sheet.background"}}
+          <input type="text" name="system.details.background" value="{{system.details.background}}" />
+        </label>
+        <label>{{localize "FALLOUT.Sheet.level"}}
+          <input type="number" name="system.details.level" value="{{system.details.level}}" min="1" max="30" />
+        </label>
+        <label>{{localize "FALLOUT.Sheet.xp"}}
+          <input type="number" name="system.details.xp" value="{{system.details.xp}}" min="0" />
+        </label>
+        <label>{{localize "FALLOUT.Sheet.caps"}}
+          <input type="number" name="system.currency.caps" value="{{system.currency.caps}}" min="0" />
+        </label>
+        <label>{{localize "FALLOUT.Sheet.karmaCaps"}}
+          <input type="number" name="system.currency.karmaCaps" value="{{system.currency.karmaCaps}}" min="0" />
+        </label>
+        <span class="karma-caps" title="{{localize 'FALLOUT.Sheet.karmaCapHint'}}">
+          {{#each karmaCapList}}
+          <a class="karma-cap {{#if flipped}}flipped{{/if}}" data-action="flipKarmaCap" data-index="{{index}}">
+            <i class="fas {{#if flipped}}fa-circle-half-stroke{{else}}fa-circle{{/if}}"></i>
+          </a>
+          {{/each}}
+        </span>
+      </div>
+    </div>
+  </header>
+
+  {{!-- ================= S.P.E.C.I.A.L. ================= --}}
+  <section class="special-strip" title="{{localize 'FALLOUT.Sheet.rollHint'}}">
+    {{#each abilities}}
+    <div class="special-box">
+      <a class="special-letter" data-action="rollAbility" data-ability="{{key}}">{{abbr}}</a>
+      <input type="number" name="system.abilities.{{key}}.value" value="{{value}}" min="1" max="20" />
+      <span class="special-mod">{{#if (gte mod 0)}}+{{/if}}{{mod}}</span>
+    </div>
+    {{/each}}
+  </section>
+
+  {{!-- ================= Main grid ================= --}}
+  <div class="main-grid">
+
+    {{!-- Skills --}}
+    <section class="skills panel">
+      <h2>{{localize "FALLOUT.Sheet.skills"}}</h2>
+      <table class="skills-table" title="{{localize 'FALLOUT.Sheet.rollHint'}}">
+        <thead>
+          <tr>
+            <th></th>
+            <th>{{localize "FALLOUT.Sheet.points"}}</th>
+            <th>{{localize "FALLOUT.Sheet.bonus"}}</th>
+          </tr>
+        </thead>
+        <tbody>
+          {{#each skills}}
+          <tr>
+            <td>
+              <a class="skill-roll" data-action="rollSkill" data-skill="{{key}}">
+                <span class="skill-ability">({{ability}})</span> {{label}}
+              </a>
+            </td>
+            <td><input type="number" name="system.skills.{{key}}.points" value="{{points}}" min="0" /></td>
+            <td class="skill-bonus">{{#if (gte bonus 0)}}+{{/if}}{{bonus}}</td>
+          </tr>
+          {{/each}}
+        </tbody>
+      </table>
+    </section>
+
+    {{!-- Vitals --}}
+    <section class="vitals panel">
+      <div class="vital-row">
+        <div class="vital">
+          <label>{{localize "FALLOUT.Sheet.sp"}}</label>
+          <div class="pool">
+            <input type="number" name="system.resources.sp.value" value="{{system.resources.sp.value}}" min="0" />
+            <span>/ {{derived.spMax}}</span>
+          </div>
+          {{#if system.resources.sp.locked}}
+          <span class="rad-locked" title="{{localize 'FALLOUT.Sheet.radLocked'}}">
+            &#9763; {{system.resources.sp.locked}}
+          </span>
+          {{/if}}
+        </div>
+        <div class="vital">
+          <label>{{localize "FALLOUT.Sheet.hp"}}</label>
+          <div class="pool">
+            <input type="number" name="system.resources.hp.value" value="{{system.resources.hp.value}}" min="0" />
+            <span>/ {{derived.hpMax}}</span>
+          </div>
+          {{#if system.resources.hp.locked}}
+          <span class="rad-locked" title="{{localize 'FALLOUT.Sheet.radLocked'}}">
+            &#9763; {{system.resources.hp.locked}}
+          </span>
+          {{/if}}
+          <label class="temp-hp" title="{{localize 'FALLOUT.Sheet.tempHpHint'}}">
+            {{localize "FALLOUT.Sheet.tempHp"}}
+            <input type="number" name="system.resources.tempHp" value="{{system.resources.tempHp}}" min="0" />
+          </label>
+        </div>
+        <div class="vital">
+          <label>{{localize "FALLOUT.Sheet.ap"}}</label>
+          <div class="pool">
+            <input type="number" name="system.resources.ap.value" value="{{system.resources.ap.value}}" min="0" />
+            <span>/ {{derived.apMax}}</span>
+          </div>
+          {{#if system.resources.ap.recycled}}
+          <span class="rad-locked" style="color: var(--flt-amber);"
+                title="{{localize 'FALLOUT.Sheet.apRecycled'}}">&#8635; {{system.resources.ap.recycled}}</span>
+          {{/if}}
+        </div>
+      </div>
+
+      <div class="stat-row">
+        <div class="stat"><label>{{localize "FALLOUT.Sheet.ac"}}</label><span class="stat-value">{{derived.ac}}</span></div>
+        <div class="stat"><label>{{localize "FALLOUT.Sheet.dt"}}</label><span class="stat-value">{{derived.dt}}</span></div>
+        <div class="stat"><label>{{localize "FALLOUT.Sheet.healingRate"}}</label><span class="stat-value">{{derived.healingRate}}</span></div>
+        <div class="stat">
+          <label>{{localize "FALLOUT.Sheet.combatSequence"}}</label>
+          <a class="stat-value rollable" data-action="rollAbility" data-ability="perception"
+             title="{{localize 'FALLOUT.Sheet.rollHint'}}">d20</a>
+        </div>
+        <div class="stat"><label>{{localize "FALLOUT.Sheet.passiveSense"}}</label><span class="stat-value">{{derived.passiveSense}}</span></div>
+        <div class="stat">
+          <label>{{localize "FALLOUT.Sheet.carryLoad"}}</label>
+          <span class="stat-value {{#if derived.encumbrance}}over-limit{{/if}}"
+                title="{{#if (eq derived.encumbrance 'heavy')}}{{localize 'FALLOUT.Sheet.heavilyEncumbered'}}{{else if derived.encumbrance}}{{localize 'FALLOUT.Sheet.encumbered'}}{{/if}}">
+            {{derived.carryLoad}} / {{derived.carryLoadMax}}
+            {{#if (eq derived.encumbrance "heavy")}}&#9650;&#9650;{{else if derived.encumbrance}}&#9650;{{/if}}
+          </span>
+        </div>
+        <div class="stat">
+          <label>{{localize "FALLOUT.Sheet.radiationDC"}}</label>
+          <span class="stat-value">{{#if derived.radiationDC}}{{derived.radiationDC}}{{else}}&mdash;{{/if}}</span>
+        </div>
+        <div class="stat">
+          <label>{{localize "FALLOUT.Sheet.partyNerve"}}</label>
+          <span class="stat-value">{{#if (gte partyNerve 0)}}+{{/if}}{{partyNerve}}</span>
+        </div>
+        <div class="stat">
+          <label>{{localize "FALLOUT.Sheet.groupSneak"}}</label>
+          <span class="stat-value">{{#if (gte groupSneak 0)}}+{{/if}}{{groupSneak}}</span>
+        </div>
+      </div>
+
+      {{#if showDeathSaves}}
+      <div class="death-saves">
+        <a class="death-save-roll" data-action="rollDeathSave">{{localize "FALLOUT.DeathSave.button"}}</a>
+        <span>{{localize "FALLOUT.DeathSave.tally" successes=system.resources.deathSaves.successes failures=system.resources.deathSaves.failures}}</span>
+      </div>
+      {{/if}}
+
+      <div class="level-helper">
+        {{localize "FALLOUT.Sheet.levelHelper" perks=levelHelper.perkTotal spent=levelHelper.skillSpent skills=levelHelper.skillTotal}}
+        {{#if levelHelper.levelMismatch}}
+        <span class="penalty">{{localize "FALLOUT.Sheet.levelMismatch" level=levelHelper.suggestedLevel}}</span>
+        {{/if}}
+      </div>
+
+      <div class="conditions">
+        <h3>{{localize "FALLOUT.Sheet.conditions"}}
+          {{#if derived.d20Penalty}}<span class="penalty">({{localize "FALLOUT.Sheet.d20Penalty"}}: &minus;{{derived.d20Penalty}})</span>{{/if}}
+        </h3>
+        <div class="condition-track">
+          {{> "systems/fallout-ttrpg/templates/actor/parts/condition-track.hbs"}}
+        </div>
+        {{#if system.conditions.shortCircuit}}
+        <div class="short-circuit-row">
+          <span>{{localize "FALLOUT.ShortCircuit.carrying" levels=system.conditions.shortCircuit}}</span>
+          <button type="button" data-action="rerouteShortCircuit">
+            {{localize "FALLOUT.ShortCircuit.reroute" ap=shortCircuitAp}}
+          </button>
+        </div>
+        {{/if}}
+        <input type="text" class="condition-notes" name="system.conditions.notes"
+               value="{{system.conditions.notes}}" placeholder="{{localize 'FALLOUT.Sheet.conditionNotes'}}" />
+        <div class="defense-row">
+          <input type="text" name="system.defenses.resistances" value="{{system.defenses.resistances}}"
+                 placeholder="{{localize 'FALLOUT.Sheet.resistances'}}" title="{{localize 'FALLOUT.Sheet.defenseHint'}}" />
+          <input type="text" name="system.defenses.vulnerabilities" value="{{system.defenses.vulnerabilities}}"
+                 placeholder="{{localize 'FALLOUT.Sheet.vulnerabilities'}}" title="{{localize 'FALLOUT.Sheet.defenseHint'}}" />
+        </div>
+      </div>
+
+      {{!-- Chem limit and addictions (pg 89) --}}
+      <div class="chems">
+        <h3>{{localize "FALLOUT.Chems.title"}}
+          <span class="chem-count {{#if derived.chemsOverLimit}}penalty{{/if}}"
+                title="{{localize 'FALLOUT.Chems.limitHint'}}">
+            {{system.chems.usedToday}} / {{derived.chemLimit}}
+          </span>
+          <a class="new-day" data-action="newDay" title="{{localize 'FALLOUT.Chems.newDayHint'}}">
+            {{localize "FALLOUT.Chems.newDay"}}
+          </a>
+        </h3>
+        {{#if derived.chemsOverLimit}}
+        <div class="penalty">{{localize "FALLOUT.Chems.overLimitWarning" over=derived.chemsOverLimit}}</div>
+        {{/if}}
+        <input type="text" class="addictions" name="system.chems.addictions"
+               value="{{system.chems.addictions}}"
+               placeholder="{{localize 'FALLOUT.Chems.addictionsPlaceholder'}}"
+               title="{{localize 'FALLOUT.Chems.recovery' weeks=derived.addictionRecoveryWeeks}}" />
+      </div>
+
+      {{!-- Situations: what a conditional perk or trait is waiting on --}}
+      <div class="situations">
+        <h3>{{localize "FALLOUT.Situations.title"}}
+          <a data-action="syncSituations" title="{{localize 'FALLOUT.Situations.syncHint'}}">
+            <i class="fas fa-rotate"></i>
+          </a>
+        </h3>
+        <div class="situation-flags">
+          {{#each situations}}
+          <a class="situation {{#if holds}}holds{{/if}} {{#if derived}}derived{{/if}}"
+             data-action="{{#unless derived}}toggleSituation{{/unless}}" data-situation="{{key}}"
+             title="{{#if derived}}{{localize 'FALLOUT.Situations.derivedHint'}}{{else}}{{localize 'FALLOUT.Situations.declaredHint'}}{{/if}}">
+            {{label}}
+          </a>
+          {{/each}}
+        </div>
+        {{#each situationalEffects}}
+        <div class="situational-effect {{#if stale}}stale{{/if}}">
+          <span>{{name}} <em>({{source}})</em></span>
+          <span class="situation-state">
+            {{conditionLabel}} &middot;
+            {{#if active}}{{localize "FALLOUT.Situations.on"}}{{else}}{{localize "FALLOUT.Situations.off"}}{{/if}}
+            {{#if stale}}&#9888;{{/if}}
+          </span>
+        </div>
+        {{/each}}
+      </div>
+
+      {{!-- Power Armor: the suit's state beyond its Defense Point pool (pg 57-59) --}}
+      {{#if derived.powerArmor}}
+      <div class="power-armor {{#if derived.powerArmor.overheated}}overheated{{/if}}">
+        <h3>{{derived.powerArmor.name}}
+          <a data-action="swapFusionCore" title="{{localize 'FALLOUT.PowerArmor.swapHint'}}">
+            <i class="fas fa-battery-half"></i>
+          </a>
+        </h3>
+        <div class="pa-row">
+          <span title="{{localize 'FALLOUT.PowerArmor.allottedHint'}}">
+            {{localize "FALLOUT.PowerArmor.allotted"}}
+            <strong>{{derived.powerArmor.minutes}}</strong> / {{derived.powerArmor.capacity}}
+          </span>
+          <span title="{{localize 'FALLOUT.PowerArmor.decayHint'}}">
+            {{localize "FALLOUT.PowerArmor.decay"}} <strong>{{derived.powerArmor.decay}}</strong> / 10
+          </span>
+          <span title="{{localize 'FALLOUT.PowerArmor.thresholdHint'}}">
+            {{localize "FALLOUT.PowerArmor.threshold"}}
+            <strong>{{derived.powerArmor.overheatThreshold}}</strong> AP
+          </span>
+        </div>
+        <div class="pa-row">
+          <span class="pa-radiation" title="{{localize 'FALLOUT.PowerArmor.radiationHint'}}">
+            {{localize "FALLOUT.PowerArmor.radiation"}} &middot; {{powerArmorRadiation}}
+          </span>
+          {{#if derived.powerArmor.coreDamage}}
+          <span title="{{localize 'FALLOUT.PowerArmor.coreDamageHint'}}">
+            {{localize "FALLOUT.PowerArmor.coreDamage"}} <strong>{{derived.powerArmor.coreDamage}}</strong>
+          </span>
+          {{/if}}
+          {{#if derived.powerArmor.overheated}}
+          <span class="pa-warning">{{localize "FALLOUT.PowerArmor.isOverheated"}}</span>
+          {{/if}}
+          {{#unless derived.powerArmor.refillsDefensePoints}}
+          <span class="pa-warning">{{localize "FALLOUT.PowerArmor.noRefill"}}</span>
+          {{/unless}}
+        </div>
+      </div>
+      {{/if}}
+
+      {{!-- Survival: irradiated food, snack pairing, the drink ladder (pg 82-83) --}}
+      <div class="survival">
+        <h3>{{localize "FALLOUT.Survival.title"}}
+          <a data-action="rest" title="{{localize 'FALLOUT.Rest.hintShort' long=restHours}}">
+            <i class="fas fa-campground"></i> {{localize "FALLOUT.Rest.action"}}
+          </a>
+        </h3>
+        <div class="survival-row">
+          <span title="{{localize 'FALLOUT.Survival.irradiatedHint' per=survival.perRad}}">
+            {{localize "FALLOUT.Survival.irradiatedLabel"}}
+            <strong>{{survival.irradiated}}/{{survival.perRad}}</strong>
+          </span>
+          <span title="{{localize 'FALLOUT.Survival.snackHint' needed=survival.snacksNeeded}}">
+            {{localize "FALLOUT.Survival.snackLabel"}}
+            <strong>{{survival.snacks}}/{{survival.snacksNeeded}}</strong>
+          </span>
+          <span class="{{#if survival.drunk}}penalty{{/if}}"
+                title="{{localize 'FALLOUT.Survival.stageHint'}}">
+            {{survival.stageLabel}}
+            {{#if survival.drunk}}({{survival.drinkHours}}h){{/if}}
+          </span>
+        </div>
+        <div class="survival-row">
+          <span title="{{localize 'FALLOUT.Survival.intakeHint'}}">
+            {{localize "FALLOUT.Survival.today"}}
+            <strong>{{survival.foodsToday}}</strong> {{localize "FALLOUT.Survival.foods"}},
+            <strong>{{survival.drinksToday}}</strong> {{localize "FALLOUT.Survival.drinks"}}{{#if survival.hydratedToday}}*{{/if}},
+            {{#if survival.sleptToday}}{{localize "FALLOUT.Survival.slept"}}{{else}}{{localize "FALLOUT.Survival.notSlept"}}{{/if}}
+          </span>
+        </div>
+        {{#if survival.alcoholAddiction}}
+        <div class="penalty">{{localize "FALLOUT.Survival.addictedWarning"}}</div>
+        {{/if}}
+        {{#if survival.blackout}}
+        <div class="penalty">{{localize "FALLOUT.Survival.blackout"}}</div>
+        {{/if}}
+      </div>
+
+      {{!-- Diseases (v2.1 pg 120) --}}
+      <div class="diseases">
+        <h3>{{localize "FALLOUT.Diseases.title"}}
+          <a data-action="contractDisease" title="{{localize 'FALLOUT.Diseases.contractHint'}}">
+            <i class="fas fa-virus"></i>
+          </a>
+          <a data-action="sleep" title="{{localize 'FALLOUT.Diseases.sleepHint'}}">
+            <i class="fas fa-bed"></i>
+          </a>
+        </h3>
+        {{#each diseases}}
+        <div class="disease-row {{#if suppressed}}suppressed{{/if}}" data-disease="{{key}}">
+          <span class="disease-name" title="{{effect}}">{{name}}</span>
+          <span class="disease-clock">
+            {{#if suppressed}}{{localize "FALLOUT.Diseases.suppressedFor" hours=suppressedHours}}
+            {{else}}{{remaining}}{{/if}}
+            {{#if doses}}<span class="disease-doses" title="{{cureHint}}">{{doses}}</span>{{/if}}
+            {{#if wait}}<span class="penalty">{{localize "FALLOUT.Diseases.waitHours" hours=wait}}</span>{{/if}}
+          </span>
+          <span class="row-controls">
+            <a data-action="treatDisease" title="{{cureHint}}"><i class="fas fa-syringe"></i></a>
+            <a data-action="removeDisease" title="{{localize 'FALLOUT.Diseases.remove'}}">
+              <i class="fas fa-trash"></i>
+            </a>
+          </span>
+        </div>
+        {{else}}
+        <div class="hint">{{localize "FALLOUT.Diseases.none"}}</div>
+        {{/each}}
+      </div>
+
+      {{#if rollSwings.length}}
+      <div class="roll-swings">
+        {{#each rollSwings}}
+        <span class="swing {{kind}}">{{label}}: {{text}}</span>
+        {{/each}}
+      </div>
+      {{/if}}
+
+      {{!-- Active Effects: perk/trait bonuses and running chem buffs --}}
+      {{#if activeEffects.length}}
+      <div class="active-effects">
+        <h3>{{localize "FALLOUT.Effects.title"}}</h3>
+        {{#each activeEffects}}
+        <div class="effect-row {{#if disabled}}suppressed{{/if}}{{#if expired}} suppressed{{/if}}"
+             data-effect-id="{{id}}">
+          <img class="effect-icon" src="{{img}}" alt="" />
+          <span class="effect-name" data-action="editEffect">{{name}}</span>
+          {{#if expired}}<span class="effect-remaining">{{localize "FALLOUT.Effects.expired"}}</span>
+          {{else if remaining}}<span class="effect-remaining">{{remaining}}</span>{{/if}}
+          <span class="row-controls">
+            <a data-action="toggleEffect" title="{{localize 'FALLOUT.Effects.toggle'}}">
+              <i class="fas {{#if disabled}}fa-toggle-off{{else}}fa-toggle-on{{/if}}"></i>
+            </a>
+            <a data-action="deleteEffect" title="{{localize 'FALLOUT.Effects.remove'}}">
+              <i class="fas fa-trash"></i>
+            </a>
+          </span>
+        </div>
+        {{/each}}
+      </div>
+      {{/if}}
+    </section>
+
+    {{!-- Weapons --}}
+    <section class="weapons panel">
+      <h2>{{localize "FALLOUT.Sheet.weapons"}}
+        <a class="item-create {{#if blocking}}blocking{{/if}}" data-action="toggleBlock"
+           title="{{localize 'FALLOUT.Block.hint'}}">
+          {{#if blocking}}
+            {{localize "FALLOUT.Block.active" dt=blockDt}}
+          {{else}}
+            {{localize "FALLOUT.Block.ready" ap=3 dt=blockDt}}
+          {{/if}}
+        </a>
+        <a class="item-create" data-action="rollImprovised"
+           title="{{localize 'FALLOUT.Improvised.hint'}}">{{localize "FALLOUT.Improvised.title"}}</a>
+        <a class="item-create" data-action="createItem" data-type="weapon" title="+"><i class="fas fa-plus"></i></a>
+      </h2>
+      {{#each weapons}}
+      <div class="weapon-card" data-item-id="{{item.id}}">
+        <div class="weapon-title">
+          <a class="equip-toggle {{#if system.equipped}}equipped{{/if}}" data-action="toggleEquip"
+             title="{{localize 'FALLOUT.Sheet.wielded'}}"><i class="fas fa-hand-fist"></i></a>
+          <span class="weapon-name">{{item.name}}</span>
+          <span class="weapon-controls">
+            <a data-action="editItem" title="Edit"><i class="fas fa-edit"></i></a>
+            <a data-action="deleteItem" title="Delete"><i class="fas fa-trash"></i></a>
+          </span>
+        </div>
+        <div class="weapon-stats">
+          <a class="weapon-roll" data-action="rollAttack" title="{{localize 'FALLOUT.Sheet.rollHint'}}">
+            {{localize "FALLOUT.Sheet.attack"}} {{#if (gte attackBonus 0)}}+{{/if}}{{attackBonus}}
+          </a>
+          <a class="weapon-roll" data-action="rollDamage">
+            {{localize "FALLOUT.Sheet.damage"}} {{system.damage}}
+          </a>
+          <a class="weapon-roll" data-action="rollTargeted" title="{{localize 'FALLOUT.Targeted.hint'}}">
+            {{localize "FALLOUT.Sheet.targeted"}}
+          </a>
+          {{!-- Cover and distance are declared, not measured — see the AttackOptions
+                docstring in src/dice/rolls.ts. A separate control, so the plain attack
+                button keeps costing nobody a dialog. --}}
+          <a class="weapon-roll" data-action="rollInSituation"
+             title="{{localize 'FALLOUT.Cover.hint'}}">
+            {{localize "FALLOUT.Cover.attackButton"}}
+          </a>
+          {{#if canBurst}}
+          <a class="weapon-roll" data-action="rollBurst" title="{{localize 'FALLOUT.Keywords.burstHint'}}">
+            {{localize "FALLOUT.Keywords.burst" extra=burstShots}}
+          </a>
+          {{/if}}
+          {{#if canSwitch}}
+          <a class="weapon-roll {{#if autoMode}}one-handed{{/if}}" data-action="toggleAutoMode"
+             title="{{localize 'FALLOUT.Keywords.switchHint' ap=switchAp}}">
+            {{#if autoMode}}{{localize "FALLOUT.Keywords.automatic"}}{{else}}{{localize "FALLOUT.Keywords.singleShot"}}{{/if}}
+          </a>
+          {{/if}}
+          <span>{{localize "FALLOUT.Sheet.apCost"}} {{system.apCost}}</span>
+          <span>{{localize "FALLOUT.Sheet.range"}} {{range}}</span>
+          <span>{{localize "FALLOUT.Sheet.crit"}} {{system.critChance}}+ ({{system.crit}})</span>
+          {{#if system.ammoType}}
+          <span>{{localize "FALLOUT.Sheet.ammo"}} {{system.loadedAmmo}}/{{system.magazineSize}} {{system.ammoType}}</span>
+          {{/if}}
+          {{#if canReload}}
+          <a class="weapon-roll" data-action="reload"
+             title="{{localize 'FALLOUT.Keywords.reloadHint' ap=reloadAp every=decayEvery}}">
+            {{localize "FALLOUT.Sheet.reload"}} ({{reloadAp}})
+          </a>
+          {{/if}}
+          {{#if keywords.twoHanded}}
+          <a class="weapon-roll {{#if system.oneHanded}}one-handed{{/if}}" data-action="toggleOneHanded"
+             title="{{localize 'FALLOUT.Keywords.twoHandedHint'}}">
+            {{#if system.oneHanded}}
+              {{localize "FALLOUT.Keywords.usingOneHand"}}
+            {{else}}
+              {{localize "FALLOUT.Keywords.usingTwoHands"}}
+            {{/if}}
+          </a>
+          {{/if}}
+          <span>{{localize "FALLOUT.Sheet.decay"}} {{system.decay}}</span>
+          {{#if system.decay}}
+          <a class="weapon-roll" data-action="repairItem"
+             title="{{localize 'FALLOUT.Repair.hint'}}">{{localize "FALLOUT.Repair.action"}}</a>
+          {{/if}}
+          {{#if kickbackHalved}}<span>{{localize "FALLOUT.Keywords.kickback"}}</span>{{/if}}
+        </div>
+        {{#if system.special}}<div class="weapon-special">{{system.special}}</div>{{/if}}
+        {{#if keywords.semiAutomatic}}
+        <div class="weapon-note">{{localize "FALLOUT.Keywords.semiAutomatic"}}</div>
+        {{/if}}
+      </div>
+      {{/each}}
+
+      <h2>{{localize "FALLOUT.Sheet.armor"}}
+        <a class="item-create" data-action="createItem" data-type="armor" title="+"><i class="fas fa-plus"></i></a>
+      </h2>
+      {{#each armor}}
+      <div class="inventory-row" data-item-id="{{id}}">
+        <a class="equip-toggle {{#if system.equipped}}equipped{{/if}}" data-action="toggleEquip"
+           title="{{localize 'FALLOUT.Sheet.equipped'}}"><i class="fas fa-shield-halved"></i></a>
+        <span class="item-name">{{name}}</span>
+        <span class="item-meta">{{localize "FALLOUT.Sheet.ac"}} {{system.ac}} &middot; {{localize "FALLOUT.Sheet.dt"}} {{system.dt}} &middot; {{localize "FALLOUT.Sheet.decay"}} {{system.decay}}</span>
+        <span class="row-controls">
+          {{#if system.decay}}
+          <a data-action="repairItem" title="{{localize 'FALLOUT.Repair.hint'}}"><i class="fas fa-wrench"></i></a>
+          {{/if}}
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+    </section>
+  </div>
+
+  {{!-- ================= Traits & Perks ================= --}}
+  <section class="panel traits-perks">
+    <h2>{{localize "FALLOUT.Sheet.traitsPerks"}}
+      <a class="item-create" data-action="createItem" data-type="trait" title="+ Trait">T+</a>
+      <a class="item-create" data-action="createItem" data-type="perk" title="+ Perk">P+</a>
+    </h2>
+    <div class="two-col">
+      {{#each traits}}
+      <div class="inventory-row" data-item-id="{{id}}">
+        <span class="item-tag">T</span>
+        <span class="item-name">{{name}}</span>
+        {{#if system.wildWasteland}}<span class="item-meta">{{localize "FALLOUT.Sheet.wildWasteland"}}</span>{{/if}}
+        <span class="row-controls">
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+      {{#each perks}}
+      <div class="inventory-row" data-item-id="{{id}}">
+        <span class="item-tag">P</span>
+        <span class="item-name">{{name}}{{#if (gt system.ranks 1)}} (x{{system.ranks}}){{/if}}</span>
+        <span class="item-meta">{{system.requirements}}</span>
+        <span class="row-controls">
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+
+  {{!-- ================= Inventory ================= --}}
+  <section class="panel inventory">
+    <h2>{{localize "FALLOUT.Sheet.inventory"}}
+      <a class="item-create" data-action="createItem" data-type="aid" title="+ Aid">A+</a>
+      <a class="item-create" data-action="createItem" data-type="ammo" title="+ Ammo">M+</a>
+      <a class="item-create" data-action="createItem" data-type="gear" title="+ Gear">G+</a>
+    </h2>
+    <div class="two-col">
+      {{#each aid}}
+      <div class="inventory-row" data-item-id="{{item.id}}">
+        <span class="item-tag" title="{{typeLabel}}">A</span>
+        <span class="item-name">{{item.name}} (x{{system.quantity}})
+          {{#if addicted}}<span class="penalty" title="{{localize 'FALLOUT.Chems.addictedTag'}}">&#9760;</span>{{/if}}
+        </span>
+        <span class="item-meta">{{system.effect}}{{#if system.duration}} &middot; {{system.duration}}{{/if}}</span>
+        <span class="row-controls">
+          <a class="use-button" data-action="useAid" title="{{system.apCost}} AP">{{localize "FALLOUT.Sheet.use"}}</a>
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+      {{#each ammo}}
+      <div class="inventory-row" data-item-id="{{id}}">
+        <span class="item-tag">M</span>
+        <span class="item-name">{{name}} (x{{system.quantity}})</span>
+        <span class="item-meta">{{system.ammoType}}</span>
+        <span class="row-controls">
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+      {{#each gear}}
+      <div class="inventory-row" data-item-id="{{id}}">
+        <span class="item-tag">G</span>
+        <span class="item-name">{{name}} (x{{system.quantity}})</span>
+        <span class="item-meta">{{localize "FALLOUT.Sheet.load"}} {{system.load}}</span>
+        <span class="row-controls">
+          <a data-action="editItem"><i class="fas fa-edit"></i></a>
+          <a data-action="deleteItem"><i class="fas fa-trash"></i></a>
+        </span>
+      </div>
+      {{/each}}
+    </div>
+  </section>
+
+  {{!-- ================= Environment (v2.1 pg 121-124) ================= --}}
+  <section class="panel environment">
+    <h2>{{localize "FALLOUT.Environment.title"}}
+      <span class="weather-readout">{{weatherLabel}}</span>
+      <span class="panel-controls">
+        {{#if isGM}}
+        <a data-action="setWeather" title="{{localize 'FALLOUT.Weather.setHint'}}">
+          <i class="fas fa-cloud-bolt"></i>
+        </a>
+        {{/if}}
+        <a data-action="passTime" title="{{localize 'FALLOUT.Weather.passHint'}}">
+          <i class="fas fa-hourglass-half"></i>
+        </a>
+        <a data-action="hazardCheck" title="{{localize 'FALLOUT.Hazards.hint'}}">
+          <i class="fas fa-radiation"></i>
+        </a>
+        <a data-action="recoverExposure" title="{{localize 'FALLOUT.Weather.recoverHint'}}">
+          <i class="fas fa-temperature-half"></i>
+        </a>
+      </span>
+    </h2>
+    <div class="environment-flags">
+      {{#each environmentFlags}}
+      <label class="environment-flag" title="{{hint}}">
+        <input type="checkbox" name="system.environment.{{key}}" {{#if value}}checked{{/if}} />
+        <span>{{label}}</span>
+      </label>
+      {{/each}}
+    </div>
+    {{#if moveCapFeet}}
+    <div class="penalty">{{localize "FALLOUT.Diseases.moveCap" feet=moveCapFeet}}</div>
+    {{/if}}
+  </section>
+
+  {{!-- ================= Biography ================= --}}
+  {{!-- Registered sheet panels (src/sheets/panel-registry.ts). Each owns one
+        partial; adding a panel needs no edit here beyond its include. --}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/power-armor.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/combat-actions.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/medical.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/crafting.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/stealth.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/movement.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/progression.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/vision.hbs"}}
+  {{> "systems/fallout-ttrpg/templates/actor/parts/backgrounds.hbs"}}
+
+  <section class="panel biography">
+    <h2>{{localize "FALLOUT.Sheet.biography"}}</h2>
+    {{!-- The body is what a closed toggled editor displays; the value attribute
+          is what it loads when opened. Both are required. --}}
+    <prose-mirror name="system.details.biography" value="{{system.details.biography}}"
+                  toggled compact-button>{{{enrichedBiography}}}</prose-mirror>
+  </section>
+
+</div>

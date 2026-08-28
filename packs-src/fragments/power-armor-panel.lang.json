@@ -1,0 +1,60 @@
+{
+  "_comment": "Merge into static/lang/en.json under FALLOUT.PowerArmor — these extend the existing namespace, they do not replace it. Keys for the upgrades sheet panel (src/sheets/panels/power-armor.ts, static/templates/actor/parts/power-armor.hbs). Every key below is new; checked against en.json after the power-armor-upgrades fragment was merged, so `upgrades`, `upgradesHint`, `spendTime`, `spendTimeHint`, `syncUpgrades`, `syncUpgradesHint`, `noSuit`, `ceasedControl`, `stat.*`, `upgrade.*` and `manual.*` are reused as they stand and are NOT repeated here. The panel also uses FALLOUT.Targeted.cancel, which already exists. `automation.*` and `automationHint.*` are keyed by the UpgradeAutomation union in src/rules/power-armor.ts — a new member of that union needs a new key in both.",
+  "FALLOUT": {
+    "PowerArmor": {
+      "rankHint": "Click a rank to install an upgrade at it; clicking the rank a suit already has steps it back down, which is how a rank returns to 0. Ranks are cumulative — a rank 3 upgrade has the abilities of ranks 1, 2 and 3 (pg 58) — and stop at the maximum the pg 59 table prints. Each rank costs the base price again, and attaching or removing one takes 15 minutes rather than the 1 minute a regular armor upgrade takes (pg 57-58).",
+      "setRank": "{upgrade} rank {rank}. Click it again to drop back a rank.",
+
+      "automation": {
+        "code": "Automated",
+        "control": "Button",
+        "effect": "Effect",
+        "helper": "Reported",
+        "text": "Text only"
+      },
+      "automationHint": {
+        "code": "Automated: this system enforces the rule wherever it applies.",
+        "control": "Button: a control on this panel does it, and the suit's state moves.",
+        "effect": "Effect: an Active Effect on the suit carries the bonus. Press “Apply upgrade effects” after changing a rank anywhere but here.",
+        "helper": "Reported: the arithmetic is here and correct, but the place that has to apply it — the damage pipeline, the targeted-attack table, the attack roll — is not part of this subsystem. The number is announced, not enforced.",
+        "text": "Text only: deliberately not automated. Read the upgrade on pg 59 and apply it by hand."
+      },
+      "automationLegend": "The badge on each row says how far this system takes that upgrade: Automated and Effect run by themselves, Button needs a press, Reported gives you the number to apply, Text only does nothing mechanically. Hover a badge for the reason.",
+
+      "apCost": "{ap} AP",
+      "perFeetCost": "{ap} AP / {feet} ft",
+      "minutesCost": "{minutes} min",
+      "requiresRank": "This suit needs {upgrade} at rank {rank} (pg 59).",
+
+      "teslaOnButton": "Tesla Coils on",
+      "teslaOffButton": "Tesla Coils off",
+      "teslaButtonHint": "3 AP to switch the coils on or off (pg 59). While on, every creature within 10 feet takes the coils' electricity damage on activation and at the start of their own turns — the second half is re-rolled by hand, because this system does not iterate other creatures' turns — and the suit burns 10 to 25 minutes of allotted time each round they stay on.",
+
+      "jetPackButton": "Fly (Jet Pack)",
+      "jetPackButtonHint": "1 AP per 5 feet flown, and 1 minute of allotted time per 10 feet (pg 59). The book charges that minute per 10 feet “or every second that you fly”; those are two different rates, and distance is the one that can be metered, so distance is what is charged, rounded up.",
+      "jetPackFeet": "Feet flown",
+      "fly": "Fly",
+
+      "ventButton": "Explosive vent",
+      "ventButtonHint": "On a landing, every creature within 20 feet (30 at rank 3) takes 3d6 fire and 3d6 explosive damage, and the suit loses 20 minutes of allotted time (pg 59). The two damage types are rolled separately, so resistance to one is not resistance to the other.",
+      "ventFallHint": "Explosive vent requires a fall of at least {fall} feet (pg 59). Nothing here knows how far a token dropped, so that precondition is yours to check.",
+
+      "overclockButton": "Overheat on purpose",
+      "overclockButtonHint": "Overclock Hydraulics rank 2: spend 3 AP to overheat the fusion core deliberately (pg 59), because rank 1 is a large buff while overheated. It costs the suit a full cooling cycle, and on a core down to 30 minutes or less it ejects you and stops the suit — the book carves out no exception for choosing it.",
+
+      "bracersButton": "Bracer strike",
+      "bracersButtonHint": "6 AP for a powerful unarmed attack: 2d6 bludgeoning, rising a die per rank, and a 15-foot push at rank 3 (pg 59). Roll the attack as an ordinary unarmed attack — this rolls the damage the upgrade changes, and reports the push, because nothing here moves tokens.",
+
+      "databaseButton": "Query database",
+      "databaseButtonHint": "6 AP to learn a creature you can see's HP total, SP total, AC or DT (pg 59). Line of sight is the GM's call, so this reads whoever you have targeted. The book does not say the reading is private, so it posts to chat like any other card.",
+      "databasePick": "Read which stat?",
+      "query": "Query",
+
+      "minutes": "Minutes",
+      "spend": "Spend",
+
+      "pickOneTarget": "Target exactly one creature — the Internal database reads one creature's numbers, and this will not guess which.",
+      "syncDone": "Upgrade effects rebuilt: {count} effect(s) created, updated or removed."
+    }
+  }
+}
